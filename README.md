@@ -1,6 +1,4 @@
-# cheatsheets
-A collection of cheatsheets
+# A collection of cheatsheets
 
-[beanstalkd Commands](beanstalkd.md)
-
-[Build Tools, Build Systems, Package Managers, Dependency Managers](build-tools.md)
+- [beanstalkd Commands](beanstalkd.md)
+- [Build Tools, Build Systems, Package Managers, Dependency Managers](build-tools.md)
