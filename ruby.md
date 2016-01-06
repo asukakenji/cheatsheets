@@ -4,7 +4,7 @@
 
 Assignment: `answer = 42`
 
-## Numbers
+## Fixnum
 
 ### Arithmetic Operations
 
@@ -57,31 +57,61 @@ then the quotient and the remainder follow.
 
 ## Strings
 
-Single quote (no escape sequence): `'Hello\tworld'` == "Hello\\tworld"
+Single quote (no escape sequence): `'Hello\tworld'` == `"Hello\\tworld"`
 
 Double quote (escape sequence available): `"Hello\tworld"`
 
-### Operations
+### Methods
 
 Name          | Method  | Example           | Result
 ------------- | ------- | ----------------- | ------------
-Reverse       | reverse | "Kenji".reverse   | "ijneK"
 Length        | length  | "Kenji".length    | 5
 Concatenation | +       | "Kenji" + 65.to_s | "Kenji65"
 Append        | <<      | "Kenji" << 65     | "KenjiA"
 Copy          | *       | "Kenji" * 2       | "KenjiKenji"
 Format        | %       | "%05d" % 123      | "00123"
+Reverse       | reverse | "Kenji".reverse   | "ijneK"
+Lines | lines
+Bytes | bytes
+Characters | chars
+Find String? | [] | s['another string']
+Containment | include? | poem.include? "my hand"
+Lowercase | downcase |
+Remove Characters | delete |
 
 ## Arrays
 
-Empty Array: []
+Empty Array: `[]`
 
-Non-empty array: [12, 47, 35]
+Non-empty Array: `[12, 47, 35]`
 
-### Operations
+### Methods
 
-Name                    | Method | Example            | Result
------------------------ | ------ | ------------------ | ------------
-Maximum                 | max    | [12, 47, 35].max   | 47
-Sort (returns new copy) | sort   | [12, 47, 35].sort  | [12, 35, 47]
-Sort (in place)         | sort!  | [12, 47, 35].sort! | [12, 35, 47]
+Name                    | Method | Example             | Result
+----------------------- | ------ | ------------------- | ------------
+Length                  | length | [12, 47, 35].length | 3
+Index                   | []     | [12, 47, 35][2]     | 35
+Maximum                 | max    | [12, 47, 35].max    | 47
+Sort (returns new copy) | sort   | [12, 47, 35].sort   | [12, 35, 47]
+Sort (in place)         | sort!  | [12, 47, 35].sort!  | [12, 35, 47]
+| join
+
+## Hashes
+
+Empty Hash: `{}`
+
+Non-empty Hash: `{"Hello"=>1, "World"=>2}`
+
+### Methods
+
+Name    | Method | Example                           | Result
+------- | ------ | --------------------------------- | ------
+Length  | length | {"Hello"=>1, "World"=>2}.length   | 2
+Index   | []     | {"Hello"=>1, "World"=>2}["Hello"] | 1
+Key Set | keys   | {"Hello"=>1, "World"=>2}.keys     | ["Hello", "World"]
+
+## Symbols
+
+:hp
+
+:mp
