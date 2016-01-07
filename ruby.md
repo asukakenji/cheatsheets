@@ -46,6 +46,10 @@ name = FullName.new("Kenji", "Asuka")
 name.salute
 ```
 
+Note:
+Classes could be "re-opened" after definition,
+just define the same class again with additional methods to re-open it.
+
 ### Assignment
 
 Example:
@@ -99,6 +103,140 @@ end
 
 See: http://stackoverflow.com/q/7156955/142239
 
+### Control Flows
+
+`if`-`elsif`-`else` Statement
+
+`if` Modifier (Perl-like syntax)
+
+`unless`-`else` Statement
+
+`unless` Modifier (Perl-like syntax)
+
+`case`-`when`-`else` Statement (multiple conditions could be listed in `when` by separating with comma)
+
+### Ranges
+
+`0 .. 2`
+
+### Raising Exceptions
+
+`raise Exception.new`
+
+### `begin`-`rescue` (`try`-`catch`)
+
+```ruby
+begin
+  do_something
+rescue SomeException
+  # Deal with the exception
+end
+```
+
+### Splat Arguments (Varargs)
+
+```ruby
+def do_something(category, *elements)
+  # Access elements as if it is an array
+end
+
+do_something("Fruits")
+do_something("Fruits", "apple", "banana", "cherry")
+```
+
+### Named Arguments
+
+```ruby
+def do_something(name, properties = {})
+  # Access properties as if it is a hash
+end
+
+do_something("Kenji")
+do_something("Kenji", country: "HK")
+```
+
+
+### Attribute Accessors (Properties)
+
+```ruby
+class FullName
+  attr_accessor :gn, :fn
+  def initialize(given_name, family_name)
+    @gn = given_name
+    @fn = family_name
+  end
+end
+```
+
+is the same as:
+
+```ruby
+class FullName
+  def initialize(given_name, family_name)
+    @gn = given_name
+    @fn = family_name
+  end
+
+  def gn=(value)
+    @gn = value
+  end
+
+  def gn
+    @gn
+  end
+
+  def fn=(value)
+    @fn = value
+  end
+
+  def fn
+    @fn
+  end
+end
+```
+
+### Attribute Readers (Read-Only Properties)
+
+```ruby
+class FullName
+  attr_accessor :gn
+  attr_reader :fn
+  def initialize(given_name, family_name)
+    @gn = given_name
+    @fn = family_name
+  end
+end
+```
+
+### `self` (`this`)
+
+```ruby
+class FullName
+  def initialize(given_name, family_name)
+    self.given_name = given_name
+    self.family_name = family_name
+  end
+end
+```
+
+is similar to
+
+```ruby
+class FullName
+  def initialize(given_name, family_name)
+    @given_name = given_name
+    @family_name = family_name
+  end
+end
+```
+
+The difference is that `@` accesses the instance variable directly,
+while `self.` sends `self` a message.
+If the method is overridden by a subclass,
+then the overridden method is called.
+
+
+
 
 
 ## Fixnum (Native Machine Integers)
@@ -127,10 +265,10 @@ Arithmetic Right Shift | `>>`   | `11 >> 3` | `1`
 
 ### Other Operations
 
-Name              | Method | Example   | Result
------------------ | ------ | --------- | ------
-Convert to String | `to_s` | `42.to_s` | `"42"`
-
+Name              | Method  | Example                     | Result
+----------------- | ------- | --------------------------- | ---------------------------
+Convert to String | `to_s`  | `42.to_s`                   | `"42"`
+Times             | `times` | `2.times { print "Hello" }` | `2` (prints `"HelloHello"`)
 
 ### Euclidean Division and Modulo
 
@@ -158,8 +296,6 @@ Division   | Result | Modulo     | Result | Expression
 Observation:
 The one which is "equal to or just less than" the dividend is selected as the "product",
 then the quotient and the remainder follow.
-
-5.times { print "Hello" }
 
 Documentation: http://ruby-doc.org/core/Fixnum.html
 
@@ -236,6 +372,8 @@ Documentation: http://ruby-doc.org/core/Array.html
 Empty Hash: `{}`, `Hash.new(0)`
 
 Non-empty Hash: `{"Hello"=>1, "World"=>2}`
+
+Ruby 1.9 Hash Syntax: `{a:1, b:2}` == `{:a=>1, :b=>2}`
 
 ### Methods
 
