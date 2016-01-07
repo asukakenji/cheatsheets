@@ -1,10 +1,66 @@
 # Ruby
 
+
+
 ## Basics
 
-Assignment: `answer = 42`
+REPL: `irb`
 
-## Fixnum
+### Assignment
+
+```ruby
+answer = 42
+```
+
+### Equality
+
+#### `==` (Value Equality)
+
+> At the `Object` level, `==` returns `true` only if `obj` and `other` are the same object.
+> Typically, this method is overridden in descendant classes to provide class-specific meaning.
+
+#### `===` (Case Equality)
+
+> For class `Object`, effectively the same as calling `#==`,
+> but typically overridden by descendants to provide meaningful semantics in `case` statements.
+
+Example:
+```ruby
+case some_object
+when /a regex/
+  # The regex matches
+when 2..4
+  # some_object is in the range 2..4
+when lambda {|x| some_crazy_custom_predicate }
+  # the lambda returned true
+end
+```
+
+#### `eql?` (Hash Equality)
+
+> The `eql?` method returns true if `obj` and `other` refer to the same hash key.
+> This is used by `Hash` to test members for equality.
+> For objects of class `Object`, `eql?` is synonymous with `==`.
+> Subclasses normally continue this tradition by aliasing `eql?` to their overridden `==` method,
+> but there are exceptions.
+> `Numeric` types, for example, perform type conversion across `==`, but not across `eql?`,
+> so:
+> ```ruby
+> 1 == 1.0     #=> true
+> 1.eql? 1.0   #=> false
+> ```
+
+#### `equal?` (Identity Equality)
+
+> Unlike `==`, the `equal?` method should never be overridden by subclasses:
+> it is used to determine object identity
+> (that is, `a.equal?(b)` iff `a` is the same object as `b`).
+
+See: http://stackoverflow.com/q/7156955/142239
+
+
+
+## Fixnum (Native Machine Integers)
 
 ### Arithmetic Operations
 
@@ -55,6 +111,12 @@ Observation:
 The one which is "equal to or just less than" the dividend is selected as the "product",
 then the quotient and the remainder follow.
 
+5.times { print "Hello" }
+
+Documentation: http://ruby-doc.org/core/Fixnum.html
+
+
+
 ## Strings
 
 Single quote (no escape sequence): `'Hello\tworld'` == `"Hello\\tworld"`
@@ -79,6 +141,10 @@ Containment | include? | poem.include? "my hand"
 Lowercase | downcase |
 Remove Characters | delete |
 
+Documentation: http://ruby-doc.org/core/String.html
+
+
+
 ## Arrays
 
 Empty Array: `[]`
@@ -96,22 +162,33 @@ Sort (returns new copy) | sort   | [12, 47, 35].sort   | [12, 35, 47]
 Sort (in place)         | sort!  | [12, 47, 35].sort!  | [12, 35, 47]
 | join
 
+Documentation: http://ruby-doc.org/core/Array.html
+
+
+
 ## Hashes
 
-Empty Hash: `{}`
+Empty Hash: `{}`, `Hash.new(0)`
 
 Non-empty Hash: `{"Hello"=>1, "World"=>2}`
 
 ### Methods
 
-Name    | Method | Example                           | Result
-------- | ------ | --------------------------------- | ------
-Length  | length | {"Hello"=>1, "World"=>2}.length   | 2
-Index   | []     | {"Hello"=>1, "World"=>2}["Hello"] | 1
-Key Set | keys   | {"Hello"=>1, "World"=>2}.keys     | ["Hello", "World"]
+Name      | Method | Example                           | Result
+--------- | ------ | --------------------------------- | ------
+Length    | length | {"Hello"=>1, "World"=>2}.length   | 2
+Index     | []     | {"Hello"=>1, "World"=>2}["Hello"] | 1
+Key Set   | keys   | {"Hello"=>1, "World"=>2}.keys     | ["Hello", "World"]
+Value Set | values | {"Hello"=>1, "World"=>2}.values   | [1, 2]
+
+Documentation: http://ruby-doc.org/core/Hash.html
+
+
 
 ## Symbols
 
 :hp
 
 :mp
+
+Documentation: http://ruby-doc.org/core/Symbol.html
