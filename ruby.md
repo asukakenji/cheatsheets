@@ -1,5 +1,22 @@
 # Ruby
 
+Official Site:
+
+Ruby Programming Language: https://www.ruby-lang.org/
+
+Tutorials:
+
+Try Ruby: http://tryruby.org/
+
+Ruby Bits: https://www.codeschool.com/courses/ruby-bits
+
+Rails for Zombies Redux: https://www.codeschool.com/courses/rails-for-zombies-redux/
+
+Documentations:
+
+Ruby Core Documentation: http://ruby-doc.org/core/
+
+Ruby Standard Library Documentation: http://ruby-doc.org/stdlib/
 
 
 ## Basics
@@ -49,6 +66,25 @@ name.salute
 Note:
 Classes could be "re-opened" after definition,
 just define the same class again with additional methods to re-open it.
+
+### Inheritance
+
+```ruby
+class Animal
+  def initialize(name)
+    @ame = name
+  end
+end
+
+class Dog < Animal
+  def initialize(name, breed)
+    # Note: The first statement need not to be a call to super
+    @breed = breed
+    super(name)
+  end
+end
+```
+
 
 ### Assignment
 
@@ -362,6 +398,7 @@ Sort (returns new copy)            | `sort`   | `[12, 47, 35].sort`   | `[12, 35
 Sort (in place)                    | `sort!`  | `[12, 47, 35].sort!`  | `[12, 35, 47]`
 Join the elements to form a string | `join`   | `[12, 47, 35].join`   | `"124735"`
 Each | `each` | `[12, 47, 35].each { |x| print x + 1, " " }` | `[12, 47, 35]` (prints `"13 48 36 "`)
+Append                             | `<<`     | `[12, 47, 35] << 42`  | `[12, 47, 35, 42]`
 
 Documentation: http://ruby-doc.org/core/Array.html
 
