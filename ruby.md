@@ -6,8 +6,49 @@
 
 REPL: `irb`
 
+### Import Libraries
+
+Example:
+```ruby
+require 'name_of_library'
+```
+
+### Method Definition
+
+Example:
+```ruby
+def method_name(param1, param2)
+  # Implementation here (indent with 2 spaces)
+  # The value of the last statement is the return value
+end
+```
+
+### Class Definition
+
+Example:
+```ruby
+# The FullName class
+class FullName
+  def initialize(given_name, family_name)
+    @gn = given_name
+    @fn = family_name
+  end
+
+  def salute
+    puts "Hello, #{@gn} #{@fn}!"
+  end
+end
+
+# Create a new object
+name = FullName.new("Kenji", "Asuka")
+
+# Output "Hello, Kenji Asuka!"
+name.salute
+```
+
 ### Assignment
 
+Example:
 ```ruby
 answer = 42
 ```
@@ -84,6 +125,13 @@ Bitwise XOR            | ^      | 11 ^ 5      | 14
 Arithmetic Left Shift  | <<     | 11 << 3     | 88
 Arithmetic Right Shift | >>     | 11 >> 3     | 1
 
+### Other Operations
+
+Name              | Method | Example | Result
+----------------- | ------ | --------| ------
+Convert to String | to_s   | 42.to_s | "42"
+
+
 ### Euclidean Division and Modulo
 
 Division | Result | Modulo    | Result | Expression
@@ -125,21 +173,37 @@ Double quote (escape sequence available): `"Hello\tworld"`
 
 ### Methods
 
-Name          | Method  | Example           | Result
-------------- | ------- | ----------------- | ------------
-Length        | length  | "Kenji".length    | 5
-Concatenation | +       | "Kenji" + 65.to_s | "Kenji65"
-Append        | <<      | "Kenji" << 65     | "KenjiA"
-Copy          | *       | "Kenji" * 2       | "KenjiKenji"
-Format        | %       | "%05d" % 123      | "00123"
-Reverse       | reverse | "Kenji".reverse   | "ijneK"
-Lines | lines
-Bytes | bytes
-Characters | chars
-Find String? | [] | s['another string']
-Containment | include? | poem.include? "my hand"
+#### General Operations
+
+Name          | Method   | Example           | Result
+------------- | -------- | ----------------- | ------------
+Length        | length   | "Kenji".length    | 5
+Concatenation | +        | "Kenji" + 65.to_s | "Kenji65"
+Append        | <<       | "Kenji" << 65     | "KenjiA"
+Copy          | *        | "Kenji" * 2       | "KenjiKenji"
+Format        | %        | "%05d" % 123      | "00123"
+Reverse       | reverse  | "Kenji".reverse   | "ijneK"
 Lowercase | downcase |
 Remove Characters | delete |
+Split the string based on a delimiter | split | "K:e:n:j:i".split(":") |
+Strip leading and trailing whitespace | strip | " Kenji ".strip | "Kenji"
+
+#### Element Operations
+
+Name               | Method   | Example               | Result
+------------------ | -------- | --------------------- | ---------------------------------
+Element Reference  | []       | "Kenji"[3, 2]         | "ji"
+Element Reference  | []       | "Kenji"["en"]         | "en"
+Element Assignment | []=      | "Kenji"["e"] = "a"    | "a" (the variable becomes "Kanji"
+Containment        | include? | "Kenji".include? "en" | true
+
+#### Conversion Operations
+
+Name                           | Method | Example                     | Result
+------------------------------ | ------ | --------------------------- | -------------------------------
+Convert to array of bytes      | bytes  | "Kenji".bytes               | [75, 101, 110, 106, 105]
+Convert to array of characters | chars  | "Kenji".chars               | ["K", "e", "n", "j", "i"]
+Convert to array of lines      | lines  | "Hello\nWorld\nKenji".lines | ["Hello\n", "World\n", "Kenji"]
 
 Documentation: http://ruby-doc.org/core/String.html
 
@@ -153,14 +217,16 @@ Non-empty Array: `[12, 47, 35]`
 
 ### Methods
 
-Name                    | Method | Example             | Result
------------------------ | ------ | ------------------- | ------------
-Length                  | length | [12, 47, 35].length | 3
-Index                   | []     | [12, 47, 35][2]     | 35
-Maximum                 | max    | [12, 47, 35].max    | 47
-Sort (returns new copy) | sort   | [12, 47, 35].sort   | [12, 35, 47]
-Sort (in place)         | sort!  | [12, 47, 35].sort!  | [12, 35, 47]
-| join
+Name                               | Method | Example             | Result
+---------------------------------- | ------ | ------------------- | ------------
+Length                             | length | [12, 47, 35].length | 3
+Index                              | []     | [12, 47, 35][2]     | 35
+Maximum                            | max    | [12, 47, 35].max    | 47
+Sort (returns new copy)            | sort   | [12, 47, 35].sort   | [12, 35, 47]
+Sort (in place)                    | sort!  | [12, 47, 35].sort!  | [12, 35, 47]
+Join the elements to form a string | join   | [12, 47, 35].join   | "124735"
+
+[12, 47, 35].each { |x| print x + 1, " " } | [12, 47, 35] (prints "13 48 36 ")
 
 Documentation: http://ruby-doc.org/core/Array.html
 
@@ -175,7 +241,7 @@ Non-empty Hash: `{"Hello"=>1, "World"=>2}`
 ### Methods
 
 Name      | Method | Example                           | Result
---------- | ------ | --------------------------------- | ------
+--------- | ------ | --------------------------------- | ------------------
 Length    | length | {"Hello"=>1, "World"=>2}.length   | 2
 Index     | []     | {"Hello"=>1, "World"=>2}["Hello"] | 1
 Key Set   | keys   | {"Hello"=>1, "World"=>2}.keys     | ["Hello", "World"]
@@ -192,3 +258,8 @@ Documentation: http://ruby-doc.org/core/Hash.html
 :mp
 
 Documentation: http://ruby-doc.org/core/Symbol.html
+
+
+## Kernel
+
+Documentation: http://ruby-doc.org/core/Kernel.html
