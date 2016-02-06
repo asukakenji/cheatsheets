@@ -39,12 +39,12 @@ Shield Bash      | Successful blocks deal 10 Damage                             
 Boss Hunter      | Bosses are worth 5% more gold and XP.                        | req lv. 12   | 5
 Charge Speed     | Decreases Charge up time by 1 seconds.                       | req lv. 12   | 10 (#3)
 Quick Usage      | Decreases Item Cooldown by 2%                                | req lv. 13   | 10
-Parry            | Successful blocks increase Critical Hit chance by 33%.       | req lv. 14, req 'Shield Training' skill | 3?
+Parry            | Successful blocks increase Critical Hit chance by 33%.       | req lv. 14, req 'Shield Training' skill | 3
 Charge           | Increases Charge Damage by 5.                                | req lv. 15   | 10
 Quick Cast       | Decreases Spell Cooldown by 2%.                              | req lv. 16   | 10
 Spike Aura       | Returns 2 Damage when attacked.                              | req lv. 17   | 5
 Thick Skin       | Increases Resist chance by 1%.                               | req lv. 18   | 10
-Mage Studies     | Increases intelligence by 2.                                 | req lv. 19, req 'Adept Studies' skill | 10?
+Mage Studies     | Increases intelligence by 2.                                 | req lv. 19, req 'Adept Studies' skill | 10
 Mana Miser       | Decreases spell Mana Cost by 2%                              | req lv. 21   | 10
 Mad Duper        | Adds 1% chance to keep a non-rare item after use.            | req lv. 22   | 10
 Double Cast      | Adds 1% chance to cast a spell twice.                        | req lv. 23, req 'Mage Studies' skill | 10
