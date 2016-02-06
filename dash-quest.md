@@ -65,8 +65,8 @@ Salvage          | Find more Loot from Rare monsters.                           
 HP II            | Increases HP by 5.                                           | req lv. 50, req 'HP' skill | ?
 Charge Crit      | Adds a 1% chance for a Critical Hit on Charge Attack.        | req lv. 55   | 5
 Free Cast        | Adds a 1% chance to not consume Mana when casting spells.    | req lv. 60   | 5
-Ninja Training   | Adds a 1% chance to drop a Smoke Bomb when hit.              | req lv. 70   | ?
-Sneak Attack     | Adds a 1% chance to Damage an enemy on Dodge.                | req lv. 75   | ?
+Ninja Training   | Adds a 1% chance to drop a Smoke Bomb when hit.              | req lv. 70   | 5
+Sneak Attack     | Adds a 1% chance to Damage an enemy on Dodge.                | req lv. 75, req 'Ninja Training' skill   | 5
 
 Note:
 If a skill appears in "Requirements", it must be raised to the maximum level in
