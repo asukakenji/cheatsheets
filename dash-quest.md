@@ -1,5 +1,21 @@
 # Dash Quest
 
+## Attributes
+
+Abbreviation | Meaning
+------------ | -------------------------
+DPS          | Damage per second
+DEF          | Reduces incoming damage
+SPD          | Movement speed
+INT          | Increases spell power
+LCK          | Affects random things
+ATK          | Attack speed
+RNG          | Your attack range
+CRIT%        | Chance for extra damage
+DODGE        | Chance to evade attacks
+RESIST       | Chance to resist ailments
+
+
 ## Skills
 
 Name             | Description                                                  | Requirements | Max LV
