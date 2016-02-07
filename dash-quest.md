@@ -49,7 +49,7 @@ Bandit's Shank   |      50 |  +70  | +119 | -17
 ## Gears - Weapons (Extra Attributes)
 
 Name             | HP   | MP  | DEF | SPD | INT | CRIT% | DODGE% | RESIST% | Other
----------------- | ---- | --- | --- | --- | --- | ----- | ------ | ------- | -----------------------------------
+---------------- | ---- | --- | --- | --- | --- | ----- | ------ | ------- | -----
 Training Sword   |      |     |     |     |     |       |        |         |
 Wooden Club      |      |     |     |     |     |    +2 |        |         |
 Iron Sword       |      |     | +14 |     |     |       |        |         |
@@ -57,22 +57,22 @@ Wooden Staff     |      | +10 |     |     | +5  |       |        |         |
 Broad Sword      |  +20 |     |     |     |     |       |        |         |
 Great Axe        |      |     |     |     |     |       |        |         | CRIT DAMAGE% +50
 Poison Dagger    |      |     |     | +23 |     |       |        |         | POISON +1
-Assassin Shiv    |      |     |     |     |     |       |        |         | INSTANT KILL% +2, AIRSTREAM +10
+Assassin Shiv    |      |     |     |     |     |       |        |         | INSTANT KILL% +2 <br> AIRSTREAM +10
 Light Keeper     |      |     |     |     | +5  |       |        |         | KNOCKBACK +2
 Veteran's Rapier |      |     |     |     |     |       |        |         |
 Mage's Staff     |      | +15 |     |     | +10 |       |        |         |
 Rune Blade       |      |     |     |     |     |       |        |      +5 | CHARGE SPEED -2
-Frost Hammer     |      |     |     |     |     |       |        |         | KNOCKBACK +2, FROST +1
-Arcane Staff     |      |     |     |     |     |       |        |         | SPELL COOLDOWN% -20, MANA COST% -20
+Frost Hammer     |      |     |     |     |     |       |        |         | KNOCKBACK +2 <br> FROST +1
+Arcane Staff     |      |     |     |     |     |       |        |         | SPELL COOLDOWN% -20 <br> MANA COST% -20
 Masamune         |      |     |     |     |     |    +5 |     +5 |         |
 Wizard's Staff   |      | +20 |     |     | +15 |       |        |         |
-Dragon Slayer    |      |     |     |     |     |       |        |         | BOSS LOOT% +10, VS. BOSSES% +10
-Pain Bringer     |      |     |     |     |     |       |        |         | KNOCKBACK +5, POISON +1
-Doom Scythe      |      |     |     |     |     |       |        |         | VS. WEAKNESS% +20, INSTANT KILL% +5
-Excalibur        |      |     |     |     |     |       |        |         | REVIVE% +10, CHARGE DAMAGE +100
+Dragon Slayer    |      |     |     |     |     |       |        |         | BOSS LOOT% +10 <br> VS. BOSSES% +10
+Pain Bringer     |      |     |     |     |     |       |        |         | KNOCKBACK +5 <br> POISON +1
+Doom Scythe      |      |     |     |     |     |       |        |         | VS. WEAKNESS% +20 <br> INSTANT KILL% +5
+Excalibur        |      |     |     |     |     |       |        |         | REVIVE% +10 <br> CHARGE DAMAGE +100
 Titan Lance      | +125 |     |     |     |     |       |        |         | SIZE +25
 Lich's Demise    |      |     |     |     |     |       |        |         |
-Messy Reaver     |      |     |     |     |     |       |        |         | SUPER RANGE% +1, AUTO SMASH% +1
+Messy Reaver     |      |     |     |     |     |       |        |         | SUPER RANGE% +1 <br> AUTO SMASH% +1
 Bandit's Shank   |      |     |     |     |     |   +20 |        |         | POISON +1
 
 
@@ -104,20 +104,20 @@ Odin's Plate  |      70 | +85 | +170 |  +93
 
 # Gear Attributes (Reverse Table)
 
-Attribute                   | Weapons                                                                        |
---------------------------- | ------------------------------------------------------------------------------ |
-Max Health (HP)             | Broad Sword (+20), Titan Lance (+125)                                          |
-Max Mana (MP)               | Wooden Staff (+10), Mage's Staff (+15), Wizard's Staff (+20)                   |
-Damage (DAM)                | (All)                                                                          |
-Defense (DEF)               | Iron Sword (+14)                                                               |
-Speed (SPD)                 | Poison Dagger (+23)                                                            |
-Intelligence (INT)          | Wooden Staff (+5), Light Keeper (+5), Mage's Staff (+10), Wizard's Staff (+15) |
-Luck (LCK)                  | (None)                                                                         |
-Attack (ATK)                | (None)                                                                         |
-Range (RNG)                 | (None)                                                                         |
-Critical Hit chance (CRIT%) | Wooden Club (+2), Masamune (+5), Bandit's Shank (+20)                          |
-Dodge chance (DODGE%)       | Masamune (+5)                                                                  |
-Resist chance (RESIST%)     | Rune Blade (+5)                                                                |
+Attribute                   | Weapons                                                                                    |
+--------------------------- | ------------------------------------------------------------------------------------------ |
+Max Health (HP)             | Broad Sword (+20) <br> Titan Lance (+125)                                                  |
+Max Mana (MP)               | Wooden Staff (+10) <br> Mage's Staff (+15) <br> Wizard's Staff (+20)                       |
+Damage (DAM)                | (All)                                                                                      |
+Defense (DEF)               | Iron Sword (+14)                                                                           |
+Speed (SPD)                 | Poison Dagger (+23)                                                                        |
+Intelligence (INT)          | Wooden Staff (+5) <br> Light Keeper (+5) <br> Mage's Staff (+10) <br> Wizard's Staff (+15) |
+Luck (LCK)                  | (None)                                                                                     |
+Attack (ATK)                | (None)                                                                                     |
+Range (RNG)                 | (None)                                                                                     |
+Critical Hit chance (CRIT%) | Wooden Club (+2) <br> Masamune (+5) <br> Bandit's Shank (+20)                              |
+Dodge chance (DODGE%)       | Masamune (+5)                                                                              |
+Resist chance (RESIST%)     | Rune Blade (+5)                                                                            |
 
 
 ## Skills
