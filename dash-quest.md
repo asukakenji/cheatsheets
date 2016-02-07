@@ -128,6 +128,43 @@ Rogue's Kit   |     |     |     |     |   +10 |    +15 |         |
 Odin's Plate  |     |     |     |     |       |        |         | AUTO LIGHTNING% +1 <br> LIT DAMAGE% +50
 
 
+## Gears - Accessories
+
+Name               | Req Lv. | Effect 1         | Effect 2
+------------------ | ------- | ---------------- | --------
+Memento            |     N/A | LCK +1           | ???
+Adventurer's Ring  |     N/A | HP +10           | MP +5
+Adventurer's Charm |     N/A | HP +5            | MP +10
+Swift Boots        |     N/A | SPD +23          | AIRSTREAM +5
+Vigor Belt         |     N/A | HP +25           |
+Bracer             |     N/A | DEF +14          |
+Gold Earring       |     N/A | INT +5           | MP +15
+Mitten             |     N/A | DEF +6           | ICE DAMAGE% +10
+Battle Specs       |     N/A | CRIT% +5         | VS. WEAKNESS% +10
+Power Glove        |     N/A | DAM +10          | BOMB DAMAGE +50
+Lucky Dice         |     N/A | LCK +10          |
+Phoenix Feather    |     N/A | HP +50           | REVIVE% +5
+Ranger Sling       |     N/A | DAM +15          | ITEM COOLDOWN% -15
+Wizard's Book      |     N/A | MP +30           | MANA COST% -15
+Zephyr Cape        |     N/A | DODGE% +5        | AIRSTREAM +15
+Pocket Watch       |     N/A | SPD +46          | ATK -57
+Golden Egg         |     N/A | PET XP% +50      |
+Mimic Box          |     N/A | COPY SPELL% +5   | DUPE ITEM% +5
+Crystal Earring    |     N/A | INT +10          | MP +50
+Sorceror's Orb     |     N/A | MP +100          | SPELL COOLDOWN% -25
+Spiked Shield      |     N/A | DEF +43          | BLOCK DAMAGE +10
+Mystical Pendant   |     N/A | HP +100          | SIZE +25
+Bomb Pouch         |     N/A | BOMB DAMAGE +100 | MEGA BOMB% +10
+Wrath Wrists       |     N/A | DAM +20          | INSTANT KILL% +2
+Pegasus Treads     |     N/A | AUTO HASTE% +5   | AIRSTREAM +25
+Mysterious Mask    |     N/A | ???              | ???
+Hero's Ring        |     N/A | HP +100          | CHARGE DAMAGE +50
+Soldier's Cap      |     N/A | DEF +57          | CHARGE SIZE +2
+Angel's Harp       |     N/A | REVIVE% +100     | REVIVE LIMIT +1
+Titan Mitt         |     N/A | SUPER RANGE% +5  | DAM +25
+Holy Relic         |      60 | REVIVE HP +9999  | HOLY DAMAGE% +50
+
+
 # Gear Attributes (Reverse Table)
 
 Attribute                   | Weapons                                                                                    | Armors                                                           |
