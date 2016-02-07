@@ -16,34 +16,64 @@ DODGE%       | Chance to evade attacks
 RESIST%      | Chance to resist ailments
 
 
-## Gears - Weapons
+## Gears - Weapons (Basic Attributes)
 
-Name             | Req Lv. | DAM   | ATK  | RNG | HP   | MP  | DEF | SPD | INT | CRIT% | DODGE% | RESIST% | Other                               |
----------------- | ------- | ----- | ---- | --- | ---- | --- | --- | --- | --- | ----- | ------ | ------- | ----------------------------------- |
-Training Sword   |     N/A |   +0  |   +0 |  +0 |      |     |     |     |     |       |        |         |                                     |
-Wooden Club      |     N/A |   +4  |   +0 |  +8 |      |     |     |     |     |    +2 |        |         |                                     |
-Iron Sword       |     N/A |   +9  |   +0 |  +8 |      |     | +14 |     |     |       |        |         |                                     |
-Wooden Staff     |     N/A |  +10* |   +6 |  +0 |      | +10 |     |     | +5  |       |        |         |                                     |
-Broad Sword      |     N/A |  +16  |  +17 | +17 |  +20 |     |     |     |     |       |        |         |                                     |
-Great Axe        |     N/A |  +28  |   +6 | +34 |      |     |     |     |     |       |        |         | CRIT DAMAGE% +50                       |
-Poison Dagger    |       5 |   +1  |  +40 | -17 |      |     |     | +23 |     |       |        |         | POISON +1                           |
-Assassin Shiv    |      10 |  +16  |  +85 | -17 |      |     |     |     |     |       |        |         | INSTANT KILL% +2, AIRSTREAM +10     |
-Light Keeper     |      10 |  +27  |  +40 | +26 |      |     |     |     | +5  |       |        |         | KNOCKBACK +2                        |
-Veteran's Rapier |      10 |       |      |     |      |     |     |     |     |       |        |         |                                     |
-Mage's Staff     |      12 |  +30* |  +40 | +26 |      | +15 |     |     | +10 |       |        |         |                                     |
-Rune Blade       |      12 |  +32  |  +40 | +34 |      |     |     |     |     |       |        |      +5 | CHARGE SPEED -2                     |
-Frost Hammer     |      14 |  +40  |  +51 | +34 |      |     |     |     |     |       |        |         | KNOCKBACK +2, FROST +1              |
-Arcane Staff     |      15 |  +45* |  +51 | +34 |      |     |     |     |     |       |        |         | SPELL COOLDOWN% -20, MANA COST% -20 |
-Masamune         |      18 |  +47  | +119 | +34 |      |     |     |     |     |    +5 |     +5 |         |                                     |
-Wizard's Staff   |      18 |  +60* |  +85 | +34 |      | +20 |     |     | +15 |       |        |         |                                     |
-Dragon Slayer    |      19 |  +50  |  +74 | +34 |      |     |     |     |     |       |        |         | BOSS LOOT% +10, VS. BOSSES% +10     |
-Pain Bringer     |      22 |  +84  |  +85 | +34 |      |     |     |     |     |       |        |         | KNOCKBACK +5, POISON +1             |
-Doom Scythe      |      23 |  +86* |  +74 | +34 |      |     |     |     |     |       |        |         | VS. WEAKNESS% +20, INSTANT KILL% +5 |
-Excalibur        |      25 |  +80  |  +96 | +34 |      |     |     |     |     |       |        |         | REVIVE% +10, CHARGE DAMAGE +100     |
-Titan Lance      |      30 | +105  |  +74 | +34 | +125 |     |     |     |     |       |        |         | SIZE +25                            |
-Lich's Demise    |      50 |       |      |     |      |     |     |     |     |       |        |         |                                     |
-Messy Reaver     |      50 | +134  |  +51 | +34 |      |     |     |     |     |       |        |         | SUPER RANGE% +1, AUTO SMASH% +1     |
-Bandit's Shank   |      50 |  +70  | +119 | -17 |      |     |     |     |     |   +20 |        |         | POISON +1                           |
+Name             | Req Lv. | DAM   | ATK  | RNG
+---------------- | ------- | ----- | ---- | ---
+Training Sword   |     N/A |   +0  |   +0 |  +0
+Wooden Club      |     N/A |   +4  |   +0 |  +8
+Iron Sword       |     N/A |   +9  |   +0 |  +8
+Wooden Staff     |     N/A |  +10* |   +6 |  +0
+Broad Sword      |     N/A |  +16  |  +17 | +17
+Great Axe        |     N/A |  +28  |   +6 | +34
+Poison Dagger    |       5 |   +1  |  +40 | -17
+Assassin Shiv    |      10 |  +16  |  +85 | -17
+Light Keeper     |      10 |  +27  |  +40 | +26
+Veteran's Rapier |      10 |       |      |
+Mage's Staff     |      12 |  +30* |  +40 | +26
+Rune Blade       |      12 |  +32  |  +40 | +34
+Frost Hammer     |      14 |  +40  |  +51 | +34
+Arcane Staff     |      15 |  +45* |  +51 | +34
+Masamune         |      18 |  +47  | +119 | +34
+Wizard's Staff   |      18 |  +60* |  +85 | +34
+Dragon Slayer    |      19 |  +50  |  +74 | +34
+Pain Bringer     |      22 |  +84  |  +85 | +34
+Doom Scythe      |      23 |  +86* |  +74 | +34
+Excalibur        |      25 |  +80  |  +96 | +34
+Titan Lance      |      30 | +105  |  +74 | +34
+Lich's Demise    |      50 |       |      |
+Messy Reaver     |      50 | +134  |  +51 | +34
+Bandit's Shank   |      50 |  +70  | +119 | -17
+
+
+## Gears - Weapons (Extra Attributes)
+
+Name             | HP   | MP  | DEF | SPD | INT | CRIT% | DODGE% | RESIST% | Other
+---------------- | ---- | --- | --- | --- | --- | ----- | ------ | ------- | -----------------------------------
+Training Sword   |      |     |     |     |     |       |        |         |
+Wooden Club      |      |     |     |     |     |    +2 |        |         |
+Iron Sword       |      |     | +14 |     |     |       |        |         |
+Wooden Staff     |      | +10 |     |     | +5  |       |        |         |
+Broad Sword      |  +20 |     |     |     |     |       |        |         |
+Great Axe        |      |     |     |     |     |       |        |         | CRIT DAMAGE% +50
+Poison Dagger    |      |     |     | +23 |     |       |        |         | POISON +1
+Assassin Shiv    |      |     |     |     |     |       |        |         | INSTANT KILL% +2, AIRSTREAM +10
+Light Keeper     |      |     |     |     | +5  |       |        |         | KNOCKBACK +2
+Veteran's Rapier |      |     |     |     |     |       |        |         |
+Mage's Staff     |      | +15 |     |     | +10 |       |        |         |
+Rune Blade       |      |     |     |     |     |       |        |      +5 | CHARGE SPEED -2
+Frost Hammer     |      |     |     |     |     |       |        |         | KNOCKBACK +2, FROST +1
+Arcane Staff     |      |     |     |     |     |       |        |         | SPELL COOLDOWN% -20, MANA COST% -20
+Masamune         |      |     |     |     |     |    +5 |     +5 |         |
+Wizard's Staff   |      | +20 |     |     | +15 |       |        |         |
+Dragon Slayer    |      |     |     |     |     |       |        |         | BOSS LOOT% +10, VS. BOSSES% +10
+Pain Bringer     |      |     |     |     |     |       |        |         | KNOCKBACK +5, POISON +1
+Doom Scythe      |      |     |     |     |     |       |        |         | VS. WEAKNESS% +20, INSTANT KILL% +5
+Excalibur        |      |     |     |     |     |       |        |         | REVIVE% +10, CHARGE DAMAGE +100
+Titan Lance      | +125 |     |     |     |     |       |        |         | SIZE +25
+Lich's Demise    |      |     |     |     |     |       |        |         |
+Messy Reaver     |      |     |     |     |     |       |        |         | SUPER RANGE% +1, AUTO SMASH% +1
+Bandit's Shank   |      |     |     |     |     |   +20 |        |         | POISON +1
 
 
 ## Skills
