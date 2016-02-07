@@ -16,6 +16,36 @@ DODGE        | Chance to evade attacks
 RESIST       | Chance to resist ailments
 
 
+## Gears - Weapons
+
+Name             | Req Lv. | DAM   | ATK  | RNG |
+---------------- | ------- | ----- | ---- | --- |
+Training Sword   |     N/A |   +0  |   +0 |  +0 |
+Wooden Club      |     N/A |   +4  |   +0 |  +8 |
+Iron Sword       |     N/A |   +9  |   +0 |  +8 |
+Wooden Staff     |     N/A |  +10* |   +6 |  +0 |
+Broad Sword      |     N/A |  +16  |  +17 | +17 |
+Great Axe        |     N/A |  +28  |   +6 | +34 |
+Poison Dagger    |       5 |   +1  |  +40 | -17 |
+Assassin Shiv    |      10 |  +16  |  +85 | -17 |
+Light Keeper     |      10 |  +27  |  +40 | +26 |
+Veteran's Rapier |      10 |       |      |     |
+Mage's Staff     |      12 |  +30* |  +40 | +26 |
+Rune Blade       |      12 |  +32  |  +40 | +34 |
+Frost Hammer     |      14 |  +40  |  +51 | +34 |
+Arcane Staff     |      15 |  +45* |  +51 | +34 |
+Masamune         |      18 |  +47  | +119 | +34 |
+Wizard's Staff   |      18 |  +60* |  +85 | +34 |
+Dragon Slayer    |      19 |  +50  |  +74 | +34 |
+Pain Bringer     |      22 |  +84  |  +85 | +34 |
+Doom Scythe      |      23 |  +86* |  +74 | +34 |
+Excalibur        |      25 |  +80  |  +96 | +34 |
+Titan Lance      |      30 | +105  |  +74 | +34 |
+Lich's Demise    |      50 |       |      |     |
+Messy Reaver     |      50 | +134  |  +51 | +34 |
+Bandit's Shank   |      50 |  +70  | +119 | -17 |
+
+
 ## Skills
 
 Name             | Description                                                  | Requirements | Max LV
