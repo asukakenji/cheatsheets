@@ -102,6 +102,32 @@ Rogue's Kit   |      50 | +77 | +140 |   +0
 Odin's Plate  |      70 | +85 | +170 |  +93
 
 
+## Gears - Armors (Extra Attributes)
+
+Name          | MP  | DAM | INT | ATK | CRIT% | DODGE% | RESIST% | Other
+------------- | --- | --- | --- | --- | ----- | ------ | ------- | -----
+Wool Pajamas  |     |     |     |     |       |        |         |
+Cloth Tunic   |     |     |     |     |       |        |         |
+Leather Armor |     |     |     |     |       |        |         |
+Mage Robe     | +15 |     |  +5 |     |       |        |         |
+Track Suit    |     |     |     | -23 |       |        |         | AIRSTREAM +10
+Warrior Vest  |     | +10 |     |     |       |        |         |
+Plate Armor   |     |     |     |     |       |        |      +5 |
+Ninja Gear    |     |     |     |     |       |    +10 |         | AUTO STAR% +10
+Mithril Mail  |     |     |     |     |       |        |         | CHARGE DAMAGE +25
+Spiked Armor  |     |     |     |     |       |        |         | RETURN DAMAGE +5 <br> BLOCK DAMAGE +10
+Wizard Mantle | +50 |     | +15 |     |       |        |         |
+Dragon Mail   |     |     |     |     |       |        |         | BOSS LOOT% +10 <br> VS. BOSSES% +10
+Ranger Cloak  |     | +15 |     |     |       |        |         | ITEM COOLDOWN% -15
+Aegis Armor   |     |     |     |     |       |        |     +10 | REVIVE% +10
+Hero Garb     |     |     |     |     |       |        |         | CHARGE DAMAGE +50 <br> CHARGE SPEED -2
+King Suit     |     |     |     |     |       |        |     +20 | REVIVE% +25
+Arcane Mantle |     |     | +25 |     |       |        |         | AUTO SPEEL% +1
+Obsidian Mail |     |     |     |     |       |        |         |
+Rogue's Kit   |     |     |     |     |   +10 |    +15 |         |
+Odin's Plate  |     |     |     |     |       |        |         | AUTO LIGHTNING% +1 <br> LIT DAMAGE% +50
+
+
 # Gear Attributes (Reverse Table)
 
 Attribute                   | Weapons                                                                                    |
