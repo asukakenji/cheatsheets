@@ -46,6 +46,32 @@ Messy Reaver     |      50 | +134  |  +51 | +34
 Bandit's Shank   |      50 |  +70  | +119 | -17
 
 
+## Gears - Armors (Basic Attributes)
+
+Name          | Req Lv. | DEF | HP   | SPD
+------------- | ------- | --- | ---- | ----
+Wool Pajamas  |     N/A |  +7 |   +5 |  +23
+Cloth Tunic   |     N/A | +14 |  +10 |  +28
+Leather Armor |     N/A | +23 |  +10 |  +35
+Mage Robe     |     N/A | +28 |  +15 |  +46
+Track Suit    |     N/A | +14 |  +10 |  +93
+Warrior Vest  |       6 | +34 |  +20 |  +70
+Plate Armor   |       8 | +40 |  +30 |  +58
+Ninja Gear    |      10 | +28 |  +25 |  +93
+Mithril Mail  |      10 | +45 |  +50 |  +81
+Spiked Armor  |      12 | +51 |  +50 |  +81
+Wizard Mantle |      14 | +54 |  +75 |  +93
+Dragon Mail   |      15 | +57 |  +80 |  +81
+Ranger Cloak  |      16 | +45 |  +60 | +104
+Aegis Armor   |      18 | +61 |  +85 |  +93
+Hero Garb     |      20 | +65 | +100 |   +0
+King Suit     |      20 | +71 | +125 | +104
+Arcane Mantle |      50 | +74 | +130 |   +0
+Obsidian Mail |      50 |     |      | 
+Rogue's Kit   |      50 | +77 | +140 |   +0
+Odin's Plate  |      70 | +85 | +170 |  +93
+
+
 ## Gears - Weapons (Extra Attributes)
 
 Name             | HP   | MP  | DEF | SPD | INT | CRIT% | DODGE% | RESIST% | Other
@@ -76,6 +102,24 @@ Messy Reaver     |      |     |     |     |     |       |        |         | SUP
 Bandit's Shank   |      |     |     |     |     |   +20 |        |         | POISON +1
 
 
+# Gear Attributes (Reverse Table)
+
+Attribute                   | Weapons                                                                        |
+--------------------------- | ------------------------------------------------------------------------------ |
+Max Health (HP)             | Broad Sword (+20), Titan Lance (+125)                                          |
+Max Mana (MP)               | Wooden Staff (+10), Mage's Staff (+15), Wizard's Staff (+20)                   |
+Damage (DAM)                | (All)                                                                          |
+Defense (DEF)               | Iron Sword (+14)                                                               |
+Speed (SPD)                 | Poison Dagger (+23)                                                            |
+Intelligence (INT)          | Wooden Staff (+5), Light Keeper (+5), Mage's Staff (+10), Wizard's Staff (+15) |
+Luck (LCK)                  | (None)                                                                         |
+Attack (ATK)                | (None)                                                                         |
+Range (RNG)                 | (None)                                                                         |
+Critical Hit chance (CRIT%) | Wooden Club (+2), Masamune (+5), Bandit's Shank (+20)                          |
+Dodge chance (DODGE%)       | Masamune (+5)                                                                  |
+Resist chance (RESIST%)     | Rune Blade (+5)                                                                |
+
+
 ## Skills
 
 Name             | Description                                                  | Requirements | Max LV
@@ -94,7 +138,7 @@ Amplify          | Increases Damage vs. Weaknesses by 5%.                       
 Mana             | Increases Max Mana by 3.                                     | req lv. 8    | 15
 Agility          | Increases Dodge by 1%.                                       | req lv. 9    | 5
 Boom             | Increases Bomb Damage by 50.                                 | req lv. 9    | 5
-Combat II        | Increases damage by 4.                                       | req lv. 10, req 'Combat' skill | 10
+Combat II        | Increases Damage by 4.                                       | req lv. 10, req 'Combat' skill | 10
 Shield Bash      | Successful blocks deal 10 Damage                             | req lv. 11, req 'Shield Training' skill | 5
 Boss Hunter      | Bosses are worth 5% more gold and XP.                        | req lv. 12   | 5
 Charge Speed     | Decreases Charge up time by 1 seconds.                       | req lv. 12   | 10 (#4)
@@ -104,7 +148,7 @@ Charge           | Increases Charge Damage by 5.                                
 Quick Cast       | Decreases Spell Cooldown by 2%.                              | req lv. 16   | 10
 Spike Aura       | Returns 2 Damage when attacked.                              | req lv. 17   | 5
 Thick Skin       | Increases Resist chance by 1%.                               | req lv. 18   | 10
-Mage Studies     | Increases intelligence by 2.                                 | req lv. 19, req 'Adept Studies' skill | 10
+Mage Studies     | Increases Intelligence by 2.                                 | req lv. 19, req 'Adept Studies' skill | 10
 Mana Miser       | Decreases spell Mana Cost by 2%                              | req lv. 21   | 10
 Mad Duper        | Adds 1% chance to keep a non-rare item after use.            | req lv. 22   | 10
 Double Cast      | Adds 1% chance to cast a spell twice.                        | req lv. 23, req 'Mage Studies' skill | 10
