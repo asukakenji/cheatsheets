@@ -122,7 +122,7 @@ Ranger Cloak  |     | +15 |     |     |       |        |         | ITEM COOLDOWN
 Aegis Armor   |     |     |     |     |       |        |     +10 | REVIVE% +10
 Hero Garb     |     |     |     |     |       |        |         | CHARGE DAMAGE +50 <br> CHARGE SPEED -2
 King Suit     |     |     |     |     |       |        |     +20 | REVIVE% +25
-Arcane Mantle |     |     | +25 |     |       |        |         | AUTO SPEEL% +1
+Arcane Mantle |     |     | +25 |     |       |        |         | AUTO SPELL% +1
 Obsidian Mail |     |     |     |     |       |        |         |
 Rogue's Kit   |     |     |     |     |   +10 |    +15 |         |
 Odin's Plate  |     |     |     |     |       |        |         | AUTO LIGHTNING% +1 <br> LIT DAMAGE% +50
@@ -130,20 +130,20 @@ Odin's Plate  |     |     |     |     |       |        |         | AUTO LIGHTNIN
 
 # Gear Attributes (Reverse Table)
 
-Attribute                   | Weapons                                                                                    |
---------------------------- | ------------------------------------------------------------------------------------------ |
-Max Health (HP)             | Broad Sword (+20) <br> Titan Lance (+125)                                                  |
-Max Mana (MP)               | Wooden Staff (+10) <br> Mage's Staff (+15) <br> Wizard's Staff (+20)                       |
-Damage (DAM)                | (All)                                                                                      |
-Defense (DEF)               | Iron Sword (+14)                                                                           |
-Speed (SPD)                 | Poison Dagger (+23)                                                                        |
-Intelligence (INT)          | Wooden Staff (+5) <br> Light Keeper (+5) <br> Mage's Staff (+10) <br> Wizard's Staff (+15) |
-Luck (LCK)                  | (None)                                                                                     |
-Attack (ATK)                | (None)                                                                                     |
-Range (RNG)                 | (None)                                                                                     |
-Critical Hit chance (CRIT%) | Wooden Club (+2) <br> Masamune (+5) <br> Bandit's Shank (+20)                              |
-Dodge chance (DODGE%)       | Masamune (+5)                                                                              |
-Resist chance (RESIST%)     | Rune Blade (+5)                                                                            |
+Attribute                   | Weapons                                                                                    | Armors                                                           |
+--------------------------- | ------------------------------------------------------------------------------------------ | ---------------------------------------------------------------- |
+Max Health (HP)             | Broad Sword (+20) <br> Titan Lance (+125)                                                  | (All)                                                            |
+Max Mana (MP)               | Wooden Staff (+10) <br> Mage's Staff (+15) <br> Wizard's Staff (+20)                       | Mage Robe (+15) <br> Wizard Mantle (+50)                         |
+Damage (DAM)                | (All)                                                                                      | Warrior Vest (+10) <br> Ranger Cloak (+15)                       |
+Defense (DEF)               | Iron Sword (+14)                                                                           | (All)                                                            |
+Speed (SPD)                 | Poison Dagger (+23)                                                                        | (All)                                                            |
+Intelligence (INT)          | Wooden Staff (+5) <br> Light Keeper (+5) <br> Mage's Staff (+10) <br> Wizard's Staff (+15) | Mage Robe (+5) <br> Wizard Mantle (+15) <br> Arcane Mantle (+25) |
+Luck (LCK)                  | (None)                                                                                     | (None)                                                           |
+Attack (ATK)                | (All)                                                                                      | Track Suit (-23)                                                 |
+Range (RNG)                 | (All)                                                                                      | (None)                                                           |
+Critical Hit chance (CRIT%) | Wooden Club (+2) <br> Masamune (+5) <br> Bandit's Shank (+20)                              | Rogue's Kit (+10)                                                |
+Dodge chance (DODGE%)       | Masamune (+5)                                                                              | Ninja Gear (+10) <br> Rogue's Kit (+15)                          |
+Resist chance (RESIST%)     | Rune Blade (+5)                                                                            | Plate Armor (+5) <br> Aegis Armor (+10) <br> King Suit (+20)     |
 
 
 ## Skills
