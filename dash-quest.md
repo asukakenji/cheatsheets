@@ -46,32 +46,6 @@ Messy Reaver     |      50 | +134  |  +51 | +34
 Bandit's Shank   |      50 |  +70  | +119 | -17
 
 
-## Gears - Armors (Basic Attributes)
-
-Name          | Req Lv. | DEF | HP   | SPD
-------------- | ------- | --- | ---- | ----
-Wool Pajamas  |     N/A |  +7 |   +5 |  +23
-Cloth Tunic   |     N/A | +14 |  +10 |  +28
-Leather Armor |     N/A | +23 |  +10 |  +35
-Mage Robe     |     N/A | +28 |  +15 |  +46
-Track Suit    |     N/A | +14 |  +10 |  +93
-Warrior Vest  |       6 | +34 |  +20 |  +70
-Plate Armor   |       8 | +40 |  +30 |  +58
-Ninja Gear    |      10 | +28 |  +25 |  +93
-Mithril Mail  |      10 | +45 |  +50 |  +81
-Spiked Armor  |      12 | +51 |  +50 |  +81
-Wizard Mantle |      14 | +54 |  +75 |  +93
-Dragon Mail   |      15 | +57 |  +80 |  +81
-Ranger Cloak  |      16 | +45 |  +60 | +104
-Aegis Armor   |      18 | +61 |  +85 |  +93
-Hero Garb     |      20 | +65 | +100 |   +0
-King Suit     |      20 | +71 | +125 | +104
-Arcane Mantle |      50 | +74 | +130 |   +0
-Obsidian Mail |      50 |     |      | 
-Rogue's Kit   |      50 | +77 | +140 |   +0
-Odin's Plate  |      70 | +85 | +170 |  +93
-
-
 ## Gears - Weapons (Extra Attributes)
 
 Name             | HP   | MP  | DEF | SPD | INT | CRIT% | DODGE% | RESIST% | Other
@@ -100,6 +74,32 @@ Titan Lance      | +125 |     |     |     |     |       |        |         | SIZ
 Lich's Demise    |      |     |     |     |     |       |        |         |
 Messy Reaver     |      |     |     |     |     |       |        |         | SUPER RANGE% +1, AUTO SMASH% +1
 Bandit's Shank   |      |     |     |     |     |   +20 |        |         | POISON +1
+
+
+## Gears - Armors (Basic Attributes)
+
+Name          | Req Lv. | DEF | HP   | SPD
+------------- | ------- | --- | ---- | ----
+Wool Pajamas  |     N/A |  +7 |   +5 |  +23
+Cloth Tunic   |     N/A | +14 |  +10 |  +28
+Leather Armor |     N/A | +23 |  +10 |  +35
+Mage Robe     |     N/A | +28 |  +15 |  +46
+Track Suit    |     N/A | +14 |  +10 |  +93
+Warrior Vest  |       6 | +34 |  +20 |  +70
+Plate Armor   |       8 | +40 |  +30 |  +58
+Ninja Gear    |      10 | +28 |  +25 |  +93
+Mithril Mail  |      10 | +45 |  +50 |  +81
+Spiked Armor  |      12 | +51 |  +50 |  +81
+Wizard Mantle |      14 | +54 |  +75 |  +93
+Dragon Mail   |      15 | +57 |  +80 |  +81
+Ranger Cloak  |      16 | +45 |  +60 | +104
+Aegis Armor   |      18 | +61 |  +85 |  +93
+Hero Garb     |      20 | +65 | +100 |   +0
+King Suit     |      20 | +71 | +125 | +104
+Arcane Mantle |      50 | +74 | +130 |   +0
+Obsidian Mail |      50 |     |      | 
+Rogue's Kit   |      50 | +77 | +140 |   +0
+Odin's Plate  |      70 | +85 | +170 |  +93
 
 
 # Gear Attributes (Reverse Table)
