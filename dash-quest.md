@@ -138,12 +138,36 @@ Damage (DAM)                | (All)                                             
 Defense (DEF)               | Iron Sword (+14)                                                                           | (All)                                                            |
 Speed (SPD)                 | Poison Dagger (+23)                                                                        | (All)                                                            |
 Intelligence (INT)          | Wooden Staff (+5) <br> Light Keeper (+5) <br> Mage's Staff (+10) <br> Wizard's Staff (+15) | Mage Robe (+5) <br> Wizard Mantle (+15) <br> Arcane Mantle (+25) |
-Luck (LCK)                  | (None)                                                                                     | (None)                                                           |
+Luck (LCK)                  |                                                                                            |                                                                  |
 Attack (ATK)                | (All)                                                                                      | Track Suit (-23)                                                 |
-Range (RNG)                 | (All)                                                                                      | (None)                                                           |
+Range (RNG)                 | (All)                                                                                      |                                                                  |
 Critical Hit chance (CRIT%) | Wooden Club (+2) <br> Masamune (+5) <br> Bandit's Shank (+20)                              | Rogue's Kit (+10)                                                |
 Dodge chance (DODGE%)       | Masamune (+5)                                                                              | Ninja Gear (+10) <br> Rogue's Kit (+15)                          |
 Resist chance (RESIST%)     | Rune Blade (+5)                                                                            | Plate Armor (+5) <br> Aegis Armor (+10) <br> King Suit (+20)     |
+CRIT DAMAGE%                | Great Axe (+50)                                                                            |                                                                  |
+POISON                      | Poison Dagger (+1) <br> Pain Bringer (+1) <br> Bandit's Shank (+1)                         |                                                                  |
+INSTANT KILL%               | Assassin Shiv (+2) <br> Doom Scythe (+5)                                                   |                                                                  |
+AIRSTREAM                   | Assassin Shiv (+10)                                                                        | Track Suit (+10)                                                 |
+KNOCKBACK                   | Light Keeper (+2) <br> Frost Hammer (+2) <br> Pain Bringer (+5)                            |                                                                  |
+CHARGE SPEED                | Rune Blade (-2)                                                                            | Hero Garb (-2)                                                   |
+FROST                       | Frost Hammer (+1)                                                                          |                                                                  |
+SPELL COOLDOWN%             | Arcane Staff (-20)                                                                         |                                                                  |
+MANA COST%                  | Arcane Staff (-20)                                                                         |                                                                  |
+BOSS LOOT%                  | Dragon Slayer (+10)                                                                        | Dragon Mail (+10)                                                |
+VS. BOSSES%                 | Dragon Slayer (+10)                                                                        | Dragon Mail (+10)                                                |
+VS. WEAKNESS%               | Doom Scythe (+20)                                                                          |                                                                  |
+REVIVE%                     | Excalibur (+10)                                                                            | Aegis Armor (+10) <br> King Suit (+25)                           |
+CHARGE DAMAGE               | Excalibur (+100)                                                                           | Mithril Mail (+25) <br> Hero Garb (+50)                          |
+SIZE                        | Titan Lance (+25)                                                                          |                                                                  |
+SUPER RANGE%                | Messy Reaver (+1)                                                                          |                                                                  |
+AUTO SMASH%                 | Messy Reaver (+1)                                                                          |                                                                  |
+AUTO STAR%                  |                                                                                            | Ninja Gear (+10)                                                 |
+RETURN DAMAGE               |                                                                                            | Spiked Armor (+5)                                                |
+BLOCK DAMAGE                |                                                                                            | Spiked Armor (+10)                                               |
+ITEM COOLDOWN%              |                                                                                            | Ranger Cloak (-15)                                               |
+AUTO SPELL%                 |                                                                                            | Arcane Mantle (+1)                                               |
+AUTO LIGHTNING%             |                                                                                            | Odin's Plate (+1)                                                |
+LIT DAMAGE%                 |                                                                                            | Odin's Plate (+50)                                               |
 
 
 ## Skills
