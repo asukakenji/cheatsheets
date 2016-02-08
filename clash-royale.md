@@ -4,11 +4,11 @@
 
 ### Training Camp
 
-|           | Common                                                            | Rare                                     | Epic
-| --------- | ----------------------------------------------------------------- | ---------------------------------------- | ----------------------------------------------------- |
-| Troops    | [Bomber](#bomber) <br> [Archers](#archers) <br> [Knight](#knight) | Mini P.E.K.K.A <br> Musketeer <br> Giant | Prince <br> Baby Dragon <br> Skeleton Army <br> Witch |
-| Spells    | [Arrows](#arrows)                                                 | Fireball                                 |                                                       |
-| Buildings |                                                                   |                                          |                                                       |
+|           | Common                                                            | Rare                                                                            | Epic
+| --------- | ----------------------------------------------------------------- | ------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------ |
+| Troops    | [Bomber](#bomber) <br> [Archers](#archers) <br> [Knight](#knight) | [Mini P.E.K.K.A](#mini-pekka) <br> [Musketeer](#musketeer) <br> [Giant](#giant) | [Prince](#prince) <br> [Baby Dragon](#baby-dragon) <br> [Skeleton Army](#skeleton-army) <br> [Witch](#witch) |
+| Spells    | [Arrows](#arrows)                                                 | [Fireball](#fireball)                                                           |                                                                                                              |
+| Buildings |                                                                   |                                                                                 |                                                                                                              |
 
 
 ## King Level (Player Level)
