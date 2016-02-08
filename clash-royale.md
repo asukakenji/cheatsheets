@@ -16,8 +16,8 @@
 
 | Bone Pit              | Common                                                            | Rare                                                                            | Epic
 | --------------------- | ----------------------------------------------------------------- | ------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------ |
-| Troops                |                                                                   |                                                                                 |                                                                                                              |
-| Buildings             |                                                                   |                                                                                 |                                                                                                              |
+| Troops                | [Skeletons](#skeletons) <br> [Minions](#minions)                  | [Giant Skeleton](#giant-skeleton) <br> [Balloon](#balloon)                      |                                                                                                              |
+| Buildings             |                                                                   | [Tombstone](#tombstone) <br> [Bomb Tower](#bomb-tower)                          |                                                                                                              |
 | Spells                |                                                                   |                                                                                 |                                                                                                              |
 
 | Barbarian Bowl        | Common                                                            | Rare                                                                            | Epic
@@ -93,9 +93,9 @@ Deploy Time | 1sec
 
 Attribute          | LV1  | LV2  | LV3  | LV4  | LV5  | LV6  | LV7  | LV8  | LV9  | LV10 | LV11 | LV12
 ------------------ | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ----
-Hitpoints          |  600 |  660 |  726 |  798 |      |      |      |      | 1272 | 1398 |      | 1686
-Damage per Second  |   68 |   74 |   81 |   90 |      |      |      |      |  144 |  158 |      |  190
-Damage             |   75 |   82 |   90 |   99 |      |      |      |      |  159 |  174 |      |  210
+Hitpoints          |  600 |  660 |  726 |  798 |  876 |      |      |      | 1272 | 1398 |      | 1686
+Damage per Second  |   68 |   74 |   81 |   90 |   99 |      |      |      |  144 |  158 |      |  190
+Damage             |   75 |   82 |   90 |   99 |  109 |      |      |      |  159 |  174 |      |  210
 Cards Required     |    2 |    4 |   10 |   20 |      |      |      |      |      |      |      |
 Gold Required      |    5 |   20 |   50 |  150 |      |      |      |      |      |      |      |
 Experience Gained  |    4 |    5 |    6 |      |      |      |      |      |      |      |      |
@@ -166,9 +166,9 @@ Deploy Time | 1sec
 
 Attribute          | LV1  | LV2  | LV3  | LV4  | LV5  | LV6  | LV7  | LV8  | LV9  | LV10
 ------------------ | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ----
-Hitpoints          | 1900 | 2090 |      |      |      |      |      | 3667 |      |
-Damage per Second  |   80 |   88 |      |      |      |      |      |  154 |      |
-Damage             |  120 |  132 |      |      |      |      |      |  231 |      |
+Hitpoints          | 1900 | 2090 | 2299 |      |      |      |      | 3667 |      |
+Damage per Second  |   80 |   88 |   96 |      |      |      |      |  154 |      |
+Damage             |  120 |  132 |  145 |      |      |      |      |  231 |      |
 Cards Required     |    2 |    4 |      |      |      |      |      |      |      |
 Gold Required      |   50 |  150 |      |      |      |      |      |      |      |
 Experience Gained  |    6 |      |      |      |      |      |      |      |      |
@@ -190,9 +190,9 @@ Deploy Time | 1sec
 
 Attribute          | LV1  | LV2  | LV3  | LV4  | LV5  | LV6  | LV7  | LV8  | LV9  | LV10
 ------------------ | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ----
-Hitpoints          |  340 |  374 |      |      |      |      |      |      |      |
-Damage per Second  |  109 |  120 |      |      |      |      |      |      |      |
-Damage             |  120 |  132 |      |      |      |      |      |      |      |
+Hitpoints          |  340 |  374 |  411 |      |      |      |      |      |      |
+Damage per Second  |  109 |  120 |  131 |      |      |      |      |      |      |
+Damage             |  120 |  132 |  145 |      |      |      |      |      |      |
 Cards Required     |    2 |    4 |      |      |      |      |      |      |      |
 Gold Required      |   50 |  150 |      |      |      |      |      |      |      |
 Experience Gained  |    6 |      |      |      |      |      |      |      |      |
@@ -214,9 +214,9 @@ Deploy Time | 1sec
 
 Attribute          | LV1  | LV2  | LV3  | LV4  | LV5  | LV6  | LV7  | LV8  | LV9  | LV10
 ------------------ | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ----
-Hitpoints          |  580 |  638 |      |      |      |      | 1020 | 1119 |      |
-Damage per Second  |  180 |  198 |      |      |      |      |  317 |  348 |      |
-Damage             |  325 |  357 |      |      |      |      |  572 |  627 |      |
+Hitpoints          |  580 |  638 |  701 |      |      |      | 1020 | 1119 |      |
+Damage per Second  |  180 |  198 |  218 |      |      |      |  317 |  348 |      |
+Damage             |  325 |  357 |  393 |      |      |      |  572 |  627 |      |
 Cards Required     |    2 |    4 |      |      |      |      |      |      |      |
 Gold Required      |   50 |  150 |      |      |      |      |      |      |      |
 Experience Gained  |    6 |      |      |      |      |      |      |      |      |
@@ -265,9 +265,9 @@ Count       | x 20
 
 Attribute          | LV1  | LV2  | LV3  | LV4  | LV5  | LV6  | LV7  | LV8
 ------------------ | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ----
-Hitpoints          |   27 |      |      |      |      |      |      |
-Damage per Second  |   27 |      |      |      |      |      |      |
-Damage             |   27 |      |      |      |      |      |      |
+Hitpoints          |   27 |   29 |      |      |      |      |      |
+Damage per Second  |   27 |   29 |      |      |      |      |      |
+Damage             |   27 |   29 |      |      |      |      |      |
 Cards Required     |    2 |    4 |      |      |      |      |      |
 Gold Required      |  400 |      |      |      |      |      |      |
 Experience Gained  |      |      |      |      |      |      |      |
@@ -333,8 +333,8 @@ Radius      | 4
 
 Attribute          | LV1  | LV2  | LV3  | LV4  | LV5  | LV6  | LV7  | LV8  | LV9  | LV10 | LV11 | LV12
 ------------------ | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ----
-Area Damage        |  115 |  126 |  139 |  152 |      |      |      |      |  243 |  267 |  294 |
-Crown Tower Damage |   58 |   63 |   70 |   76 |      |      |      |      |  122 |  134 |  147 |
+Area Damage        |  115 |  126 |  139 |  152 |  167 |      |      |      |  243 |  267 |  294 |
+Crown Tower Damage |   58 |   63 |   70 |   76 |   84 |      |      |      |  122 |  134 |  147 |
 Cards Required     |    2 |    4 |   10 |   20 |      |      |      |      |      |      |      |
 Gold Required      |    5 |   20 |   50 |  150 |      |      |      |      |      |      |      |
 Experience Gained  |    4 |    5 |    6 |      |      |      |      |      |      |      |      |
@@ -352,8 +352,8 @@ Radius      | 2.5
 
 Attribute          | LV1  | LV2  | LV3  | LV4  | LV5  | LV6  | LV7  | LV8  | LV9  | LV10
 ------------------ | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ----
-Area Damage        |  325 |  357 |      |      |      |  520 |  572 |  627 |  689 |
-Crown Tower Damage |  163 |  179 |      |      |      |  260 |  286 |  314 |  345 |
+Area Damage        |  325 |  357 |  393 |      |      |  520 |  572 |  627 |  689 |
+Crown Tower Damage |  163 |  179 |  197 |      |      |  260 |  286 |  314 |  345 |
 Cards Required     |    2 |    4 |      |      |      |      |      |      |      |
 Gold Required      |   50 |  150 |      |      |      |      |      |      |      |
 Experience Gained  |    6 |      |      |      |      |      |      |      |      |
@@ -380,9 +380,9 @@ Count       | x 3
 
 Attribute          | LV1  | LV2  | LV3  | LV4  | LV5  | LV6  | LV7  | LV8  | LV9  | LV10 | LV11 | LV12
 ------------------ | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ----
-Hitpoints          |   88 |   96 |      |      |      |      |      |      |  169 |  186 |  204 |
-Damage per Second  |   50 |   54 |      |      |      |      |      |      |   96 |  105 |  116 |
-Damage             |   55 |   60 |      |      |      |      |      |      |  106 |  116 |  128 |
+Hitpoints          |   80 |   88 |   96 |      |  116 |      |      |      |  169 |  186 |  204 |
+Damage per Second  |   45 |   50 |   54 |      |   66 |      |      |      |   96 |  105 |  116 |
+Damage             |   50 |   55 |   60 |      |   73 |      |      |      |  106 |  116 |  128 |
 Cards Required     |    2 |    4 |   10 |   20 |      |      |      |      |      |      |      |
 Gold Required      |    5 |   20 |   50 |  150 |      |      |      |      |      |      |      |
 Experience Gained  |    4 |    5 |    6 |      |      |      |      |      |      |      |      |
@@ -405,9 +405,9 @@ Count       | x 3
 
 Attribute          | LV1  | LV2  | LV3  | LV4  | LV5  | LV6  | LV7  | LV8  | LV9  | LV10 | LV11 | LV12
 ------------------ | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ----
-Hitpoints          |   52 |   57 |   62 |   69 |      |      |      |      |  110 |  121 |  133 |  146
-Damage per Second  |   18 |   20 |   22 |   23 |      |      |      |      |   38 |   42 |   46 |   51
-Damage             |   24 |   26 |   29 |   31 |      |      |      |      |   50 |   55 |   61 |   67
+Hitpoints          |   52 |   57 |   62 |   69 |   75 |      |      |      |  110 |  121 |  133 |  146
+Damage per Second  |   18 |   20 |   22 |   23 |   26 |      |      |      |   38 |   42 |   46 |   51
+Damage             |   24 |   26 |   29 |   31 |   35 |      |      |      |   50 |   55 |   61 |   67
 Cards Required     |    2 |    4 |   10 |   20 |      |      |      |      |      |      |      |
 Gold Required      |    5 |   20 |   50 |  150 |      |      |      |      |      |      |      |
 Experience Gained  |    4 |    5 |    6 |      |      |      |      |      |      |      |      |
@@ -429,9 +429,9 @@ Deploy Time | 1sec
 
 Attribute          | LV1  | LV2  | LV3  | LV4  | LV5  | LV6  | LV7  | LV8  | LV9  | LV10
 ------------------ | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ----
-Hitpoints          |  800 |  880 |      |      |      |      |      | 1544 |      |
-Damage per Second  |   68 |   75 |      |      |      |      |      |  132 |      |
-Area Damage        |  110 |  121 |      |      |      |      |      |  212 |      |
+Hitpoints          |  800 |  880 |  968 |      |      |      |      | 1544 |      |
+Damage per Second  |   68 |   75 |   83 |      |      |      |      |  132 |      |
+Area Damage        |  110 |  121 |  133 |      |      |      |      |  212 |      |
 Cards Required     |    2 |    4 |      |      |      |      |      |      |      |
 Gold Required      |   50 |  150 |      |      |      |      |      |      |      |
 Experience Gained  |    6 |      |      |      |      |      |      |      |      |
@@ -451,8 +451,8 @@ Lifetime    | 1min 0sec
 
 Attribute          | LV1  | LV2  | LV3  | LV4  | LV5  | LV6  | LV7  | LV8  | LV9  | LV10
 ------------------ | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ----
-Hitpoints          |  700 |  770 |      |      |      |      | 1232 | 1351 | 1484 |
-Spear Goblin Level |    3 |    4 |      |      |      |      |    9 |   10 |   11 |
+Hitpoints          |  700 |  770 |  847 |  931 |      |      | 1232 | 1351 | 1484 |
+Spear Goblin Level |    3 |    4 |    5 |    6 |      |      |    9 |   10 |   11 |
 Cards Required     |    2 |    4 |      |      |      |      |      |      |      |
 Gold Required      |   50 |  150 |      |      |      |      |      |      |      |
 Experience Gained  |    6 |      |      |      |      |      |      |      |      |
@@ -498,3 +498,19 @@ Crown Tower Damage |  325 |      |      |  432 |  475 |  520 |  572 |
 Cards Required     |    2 |    4 |      |      |      |      |      |
 Gold Required      |  400 |      |      |      |      |      |      |
 Experience Gained  |      |      |      |      |      |      |      |
+
+
+
+## Bone Pit
+
+### Skeletons
+
+### Minions
+
+### Giant Skeleton
+
+### Balloon
+
+### Tombstone
+
+### Bomb Tower
