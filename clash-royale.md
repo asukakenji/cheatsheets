@@ -39,12 +39,12 @@ Deploy Time | 1sec
 
 Attribute          | LV1  | LV2  | LV3  | LV4  | LV5  | LV6  | LV7  | LV8  | LV9  | LV10 | LV11 | LV12
 ------------------ | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ----
-Hitpoints          |  150 |  165 |      |      |      |      |      |      |      |      |      |
-Damage per Second  |   52 |   57 |      |      |      |      |      |      |      |      |      |
-Area Damage        |  100 |  110 |      |      |      |      |      |      |      |      |      |
-Cards Required     |    2 |    4 |      |      |      |      |      |      |      |      |      |
-Gold Required      |    5 |   20 |      |      |      |      |      |      |      |      |      |
-Experience Gained  |    4 |      |      |      |      |      |      |      |      |      |      |
+Hitpoints          |  150 |  165 |  181 |      |      |      |      |      |  318 |  349 |  384 |  421
+Damage per Second  |   52 |   57 |   63 |      |      |      |      |      |  111 |  122 |  134 |  147
+Area Damage        |  100 |  110 |  121 |      |      |      |      |      |  212 |  233 |  256 |  281
+Cards Required     |    2 |    4 |   10 |      |      |      |      |      |      |      |      |
+Gold Required      |    5 |   20 |   50 |      |      |      |      |      |      |      |      |
+Experience Gained  |    4 |    5 |      |      |      |      |      |      |      |      |      |
 
 ### Archers
 
@@ -64,12 +64,12 @@ Count       | x 2
 
 Attribute          | LV1  | LV2  | LV3  | LV4  | LV5  | LV6  | LV7  | LV8  | LV9  | LV10 | LV11 | LV12
 ------------------ | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ----
-Hitpoints          |  125 |  137 |      |      |      |      |      |      |      |      |      |
-Damage per Second  |   33 |   36 |      |      |      |      |      |      |      |      |      |
-Damage             |   40 |   44 |      |      |      |      |      |      |      |      |      |
-Cards Required     |    2 |    4 |      |      |      |      |      |      |      |      |      |
-Gold Required      |    5 |   20 |      |      |      |      |      |      |      |      |      |
-Experience Gained  |    4 |      |      |      |      |      |      |      |      |      |      |
+Hitpoints          |  125 |  137 |  151 |      |      |      |      |      |  265 |  291 |  320 |  351
+Damage per Second  |   33 |   36 |   40 |      |      |      |      |      |   70 |   77 |   85 |   93
+Damage             |   40 |   44 |   48 |      |      |      |      |      |   84 |   93 |  102 |  112
+Cards Required     |    2 |    4 |   10 |      |      |      |      |      |      |      |      |
+Gold Required      |    5 |   20 |   50 |      |      |      |      |      |      |      |      |
+Experience Gained  |    4 |    5 |      |      |      |      |      |      |      |      |      |
 
 ### Knight
 
@@ -88,12 +88,12 @@ Deploy Time | 1sec
 
 Attribute          | LV1  | LV2  | LV3  | LV4  | LV5  | LV6  | LV7  | LV8  | LV9  | LV10 | LV11 | LV12
 ------------------ | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ----
-Hitpoints          |  600 |  660 |      |      |      |      |      |      |      |      |      |
-Damage per Second  |   68 |   74 |      |      |      |      |      |      |      |      |      |
-Damage             |   75 |   82 |      |      |      |      |      |      |      |      |      |
-Cards Required     |    2 |    4 |      |      |      |      |      |      |      |      |      |
-Gold Required      |    5 |   20 |      |      |      |      |      |      |      |      |      |
-Experience Gained  |    4 |      |      |      |      |      |      |      |      |      |      |
+Hitpoints          |  600 |  660 |  726 |      |      |      |      |      | 1272 | 1398 |      | 1686
+Damage per Second  |   68 |   74 |   81 |      |      |      |      |      |  144 |  158 |      |  190
+Damage             |   75 |   82 |   90 |      |      |      |      |      |  159 |  174 |      |  210
+Cards Required     |    2 |    4 |   10 |      |      |      |      |      |      |      |      |
+Gold Required      |    5 |   20 |   50 |      |      |      |      |      |      |      |      |
+Experience Gained  |    4 |    5 |      |      |      |      |      |      |      |      |      |
 
 ### Mini P.E.K.K.A
 
@@ -112,12 +112,12 @@ Deploy Time | 1sec
 
 Attribute          | LV1  | LV2  | LV3  | LV4  | LV5  | LV6  | LV7  | LV8  | LV9  | LV10
 ------------------ | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ----
-Hitpoints          |  580 |      |      |      |      |      |      |      |      |
-Damage per Second  |  180 |      |      |      |      |      |      |      |      |
-Damage             |  325 |      |      |      |      |      |      |      |      |
+Hitpoints          |  580 |      |      |      |      |      | 1020 | 1119 |      |
+Damage per Second  |  180 |      |      |      |      |      |  317 |  348 |      |
+Damage             |  325 |      |      |      |      |      |  572 |  627 |      |
 Cards Required     |    2 |    4 |      |      |      |      |      |      |      |
-Gold Required      |   50 |      |      |      |      |      |      |      |      |
-Experience Gained  |      |      |      |      |      |      |      |      |      |
+Gold Required      |   50 |  150 |      |      |      |      |      |      |      |
+Experience Gained  |    6 |      |      |      |      |      |      |      |      |
 
 ### Musketeer
 
@@ -136,12 +136,12 @@ Deploy Time | 1sec
 
 Attribute          | LV1  | LV2  | LV3  | LV4  | LV5  | LV6  | LV7  | LV8  | LV9  | LV10
 ------------------ | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ----
-Hitpoints          |  340 |      |      |      |      |      |      |      |      |
-Damage per Second  |  109 |      |      |      |      |      |      |      |      |
-Damage             |  120 |      |      |      |      |      |      |      |      |
+Hitpoints          |  340 |  374 |      |      |      |      |      |      |      |
+Damage per Second  |  109 |  120 |      |      |      |      |      |      |      |
+Damage             |  120 |  132 |      |      |      |      |      |      |      |
 Cards Required     |    2 |    4 |      |      |      |      |      |      |      |
-Gold Required      |   50 |      |      |      |      |      |      |      |      |
-Experience Gained  |      |      |      |      |      |      |      |      |      |
+Gold Required      |   50 |  150 |      |      |      |      |      |      |      |
+Experience Gained  |    6 |      |      |      |      |      |      |      |      |
 
 ### Giant
 
@@ -160,11 +160,11 @@ Deploy Time | 1sec
 
 Attribute          | LV1  | LV2  | LV3  | LV4  | LV5  | LV6  | LV7  | LV8  | LV9  | LV10
 ------------------ | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ----
-Hitpoints          | 1900 | 2090 |      |      |      |      |      |      |      |
-Damage per Second  |   80 |   88 |      |      |      |      |      |      |      |
-Damage             |  120 |  132 |      |      |      |      |      |      |      |
+Hitpoints          | 1900 | 2090 |      |      |      |      |      | 3667 |      |
+Damage per Second  |   80 |   88 |      |      |      |      |      |  154 |      |
+Damage             |  120 |  132 |      |      |      |      |      |  231 |      |
 Cards Required     |    2 |    4 |      |      |      |      |      |      |      |
-Gold Required      |   50 |      |      |      |      |      |      |      |      |
+Gold Required      |   50 |  150 |      |      |      |      |      |      |      |
 Experience Gained  |    6 |      |      |      |      |      |      |      |      |
 
 
@@ -185,9 +185,9 @@ Deploy Time | 1sec
 
 Attribute          | LV1  | LV2  | LV3  | LV4  | LV5  | LV6  | LV7  | LV8
 ------------------ | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ----
-Hitpoints          | 1100 |      |      |      |      |      |      |
-Damage per Second  |  146 |      |      |      |      |      |      |
-Damage             |  220 |      |      |      |      |      |      |
+Hitpoints          | 1100 |      |      | 1463 | 1606 | 1760 |      |
+Damage per Second  |  146 |      |      |  194 |  214 |  234 |      |
+Damage             |  220 |      |      |  292 |  321 |  352 |      |
 Cards Required     |    2 |    4 |      |      |      |      |      |
 Gold Required      |  400 |      |      |      |      |      |      |
 Experience Gained  |      |      |      |      |      |      |      |
@@ -209,9 +209,9 @@ Deploy Time | 1sec
 
 Attribute          | LV1  | LV2  | LV3  | LV4  | LV5  | LV6  | LV7  | LV8
 ------------------ | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ----
-Hitpoints          |  800 |      |      |      |      |      |      |
-Damage per Second  |   55 |      |      |      |      |      |      |
-Area Damage        |  100 |      |      |      |      |      |      |
+Hitpoints          |  800 |      |      | 1064 |      |      | 1408 |
+Damage per Second  |   55 |      |      |   73 |      |      |   97 |
+Area Damage        |  100 |      |      |  133 |      |      |  176 |
 Cards Required     |    2 |    4 |      |      |      |      |      |
 Gold Required      |  400 |      |      |      |      |      |      |
 Experience Gained  |      |      |      |      |      |      |      |
@@ -283,11 +283,11 @@ Radius      | 4
 
 Attribute          | LV1  | LV2  | LV3  | LV4  | LV5  | LV6  | LV7  | LV8  | LV9  | LV10 | LV11 | LV12
 ------------------ | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ----
-Area Damage        |  115 |  126 |      |      |      |      |      |      |      |      |      |
-Crown Tower Damage |   58 |   63 |      |      |      |      |      |      |      |      |      |
+Area Damage        |  115 |  126 |  139 |      |      |      |      |      |  243 |  267 |      |
+Crown Tower Damage |   58 |   63 |   70 |      |      |      |      |      |  122 |  134 |      |
 Cards Required     |    2 |    4 |      |      |      |      |      |      |      |      |      |
-Gold Required      |    5 |      |      |      |      |      |      |      |      |      |      |
-Experience Gained  |    4 |      |      |      |      |      |      |      |      |      |      |
+Gold Required      |    5 |   20 |      |      |      |      |      |      |      |      |      |
+Experience Gained  |    4 |    5 |      |      |      |      |      |      |      |      |      |
 
 ### Fireball
 
@@ -302,8 +302,8 @@ Radius      | 2.5
 
 Attribute          | LV1  | LV2  | LV3  | LV4  | LV5  | LV6  | LV7  | LV8  | LV9  | LV10
 ------------------ | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ----
-Area Damage        |  325 |  126 |      |      |      |      |      |      |      |
-Crown Tower Damage |  163 |   63 |      |      |      |      |      |      |      |
+Area Damage        |  325 |  126 |      |      |      |      |  572 |      |      |
+Crown Tower Damage |  163 |   63 |      |      |      |      |  286 |      |      |
 Cards Required     |    2 |    4 |      |      |      |      |      |      |      |
 Gold Required      |   50 |      |      |      |      |      |      |      |      |
 Experience Gained  |      |      |      |      |      |      |      |      |      |
