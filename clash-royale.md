@@ -190,9 +190,9 @@ Deploy Time | 1sec
 
 Attribute          | LV1  | LV2  | LV3  | LV4  | LV5  | LV6  | LV7  | LV8  | LV9  | LV10
 ------------------ | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ----
-Hitpoints          |  340 |  374 |  411 |      |      |      |      |      |      |
-Damage per Second  |  109 |  120 |  131 |      |      |      |      |      |      |
-Damage             |  120 |  132 |  145 |      |      |      |      |      |      |
+Hitpoints          |  340 |  374 |  411 |      |      |      |      |  656 |      |
+Damage per Second  |  109 |  120 |  131 |      |      |      |      |  210 |      |
+Damage             |  120 |  132 |  145 |      |      |      |      |  231 |      |
 Cards Required     |    2 |    4 |      |      |      |      |      |      |      |
 Gold Required      |   50 |  150 |      |      |      |      |      |      |      |
 Experience Gained  |    6 |      |      |      |      |      |      |      |      |
@@ -289,9 +289,9 @@ Deploy Time | 1sec
 
 Attribute          | LV1  | LV2  | LV3  | LV4  | LV5  | LV6  | LV7  | LV8
 ------------------ | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ----
-Hitpoints          |  800 |      |      | 1064 | 1168 | 1280 | 1408 |
-Damage per Second  |   55 |      |      |   73 |   81 |   88 |   97 |
-Area Damage        |  100 |      |      |  133 |  146 |  160 |  176 |
+Hitpoints          |  800 |      |      | 1064 | 1168 | 1280 | 1408 | 1544
+Damage per Second  |   55 |      |      |   73 |   81 |   88 |   97 |  107
+Area Damage        |  100 |      |      |  133 |  146 |  160 |  176 |  193
 Cards Required     |    2 |    4 |      |      |      |      |      |
 Gold Required      |  400 |      |      |      |      |      |      |
 Experience Gained  |      |      |      |      |      |      |      |
@@ -313,9 +313,9 @@ Deploy Time | 1sec
 
 Attribute          | LV1  | LV2  | LV3  | LV4  | LV5  | LV6  | LV7  | LV8
 ------------------ | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ----
-Hitpoints          | 1100 |      |      | 1463 | 1606 | 1760 |      |
-Damage per Second  |  146 |      |      |  194 |  214 |  234 |      |
-Damage             |  220 |      |      |  292 |  321 |  352 |      |
+Hitpoints          | 1100 |      |      | 1463 | 1606 | 1760 | 1936 |
+Damage per Second  |  146 |      |      |  194 |  214 |  234 |  258 |
+Damage             |  220 |      |      |  292 |  321 |  352 |  387 |
 Cards Required     |    2 |    4 |      |      |      |      |      |
 Gold Required      |  400 |      |      |      |      |      |      |
 Experience Gained  |      |      |      |      |      |      |      |
@@ -352,8 +352,8 @@ Radius      | 2.5
 
 Attribute          | LV1  | LV2  | LV3  | LV4  | LV5  | LV6  | LV7  | LV8  | LV9  | LV10
 ------------------ | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ----
-Area Damage        |  325 |  357 |  393 |      |      |  520 |  572 |  627 |  689 |
-Crown Tower Damage |  163 |  179 |  197 |      |      |  260 |  286 |  314 |  345 |
+Area Damage        |  325 |  357 |  393 |      |      |  520 |  572 |  627 |  689 |  757
+Crown Tower Damage |  163 |  179 |  197 |      |      |  260 |  286 |  314 |  345 |  379
 Cards Required     |    2 |    4 |      |      |      |      |      |      |      |
 Gold Required      |   50 |  150 |      |      |      |      |      |      |      |
 Experience Gained  |    6 |      |      |      |      |      |      |      |      |
@@ -493,8 +493,8 @@ Radius      | 3.5
 
 Attribute          | LV1  | LV2  | LV3  | LV4  | LV5  | LV6  | LV7  | LV8
 ------------------ | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ----
-Damage             |  650 |      |      |  864 |  949 | 1040 | 1144 |
-Crown Tower Damage |  325 |      |      |  432 |  475 |  520 |  572 |
+Damage             |  650 |      |      |  864 |  949 | 1040 | 1144 | 1254
+Crown Tower Damage |  325 |      |      |  432 |  475 |  520 |  572 |  627
 Cards Required     |    2 |    4 |      |      |      |      |      |
 Gold Required      |  400 |      |      |      |      |      |      |
 Experience Gained  |      |      |      |      |      |      |      |
