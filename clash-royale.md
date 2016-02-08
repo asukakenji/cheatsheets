@@ -56,21 +56,21 @@
 
 ### King's Tower
 
-Attribute | LV1    | LV2    |
---------- | ------ | ------ |
-Hitpoints |   2400 |   2568 |
-Range     |    8.0 |    8.0 |
-Hit Speed | 1.0sec | 1.0sec |
-Damage    |     50 |     53 |
+Attribute | LV1    | LV2    | LV3    |
+--------- | ------ | ------ | ------ |
+Hitpoints |   2400 |   2568 |   2736 |
+Range     |    8.0 |    8.0 |    8.0 |
+Hit Speed | 1.0sec | 1.0sec | 1.0sec |
+Damage    |     50 |     53 |     57 |
 
 ### Arena Towers
 
-Attribute | LV1    | LV2    |
---------- | ------ | ------ |
-Hitpoints |   1400 |   1512 |
-Range     |    8.5 |    8.5 |
-Hit Speed | 0.8sec | 0.8sec |
-Damage    |     50 |     54 |
+Attribute | LV1    | LV2    | LV3    |
+--------- | ------ | ------ | ------ |
+Hitpoints |   1400 |   1512 |   1624 |
+Range     |    8.5 |    8.5 |    8.5 |
+Hit Speed | 0.8sec | 0.8sec | 0.8sec |
+Damage    |     50 |     54 |     58 |
 
 
 
@@ -93,12 +93,12 @@ Deploy Time | 1sec
 
 Attribute          | LV1  | LV2  | LV3  | LV4  | LV5  | LV6  | LV7  | LV8  | LV9  | LV10 | LV11 | LV12
 ------------------ | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ----
-Hitpoints          |  600 |  660 |  726 |      |      |      |      |      | 1272 | 1398 |      | 1686
-Damage per Second  |   68 |   74 |   81 |      |      |      |      |      |  144 |  158 |      |  190
-Damage             |   75 |   82 |   90 |      |      |      |      |      |  159 |  174 |      |  210
-Cards Required     |    2 |    4 |   10 |      |      |      |      |      |      |      |      |
-Gold Required      |    5 |   20 |   50 |      |      |      |      |      |      |      |      |
-Experience Gained  |    4 |    5 |      |      |      |      |      |      |      |      |      |
+Hitpoints          |  600 |  660 |  726 |  798 |      |      |      |      | 1272 | 1398 |      | 1686
+Damage per Second  |   68 |   74 |   81 |   90 |      |      |      |      |  144 |  158 |      |  190
+Damage             |   75 |   82 |   90 |   99 |      |      |      |      |  159 |  174 |      |  210
+Cards Required     |    2 |    4 |   10 |   20 |      |      |      |      |      |      |      |
+Gold Required      |    5 |   20 |   50 |  150 |      |      |      |      |      |      |      |
+Experience Gained  |    4 |    5 |    6 |      |      |      |      |      |      |      |      |
 
 ### Archers
 
@@ -118,12 +118,12 @@ Count       | x 2
 
 Attribute          | LV1  | LV2  | LV3  | LV4  | LV5  | LV6  | LV7  | LV8  | LV9  | LV10 | LV11 | LV12
 ------------------ | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ----
-Hitpoints          |  125 |  137 |  151 |      |      |      |      |      |  265 |  291 |  320 |  351
-Damage per Second  |   33 |   36 |   40 |      |      |      |      |      |   70 |   77 |   85 |   93
-Damage             |   40 |   44 |   48 |      |      |      |      |      |   84 |   93 |  102 |  112
-Cards Required     |    2 |    4 |   10 |      |      |      |      |      |      |      |      |
-Gold Required      |    5 |   20 |   50 |      |      |      |      |      |      |      |      |
-Experience Gained  |    4 |    5 |      |      |      |      |      |      |      |      |      |
+Hitpoints          |  125 |  137 |  151 |  166 |      |      |      |      |  265 |  291 |  320 |  351
+Damage per Second  |   33 |   36 |   40 |   44 |      |      |      |      |   70 |   77 |   85 |   93
+Damage             |   40 |   44 |   48 |   53 |      |      |      |      |   84 |   93 |  102 |  112
+Cards Required     |    2 |    4 |   10 |   20 |      |      |      |      |      |      |      |
+Gold Required      |    5 |   20 |   50 |  150 |      |      |      |      |      |      |      |
+Experience Gained  |    4 |    5 |    6 |      |      |      |      |      |      |      |      |
 
 ### Bomber
 
@@ -145,9 +145,9 @@ Attribute          | LV1  | LV2  | LV3  | LV4  | LV5  | LV6  | LV7  | LV8  | LV9
 Hitpoints          |  150 |  165 |  181 |  199 |      |      |      |      |  318 |  349 |  384 |  421
 Damage per Second  |   52 |   57 |   63 |   70 |      |      |      |      |  111 |  122 |  134 |  147
 Area Damage        |  100 |  110 |  121 |  133 |      |      |      |      |  212 |  233 |  256 |  281
-Cards Required     |    2 |    4 |   10 |      |      |      |      |      |      |      |      |
-Gold Required      |    5 |   20 |   50 |      |      |      |      |      |      |      |      |
-Experience Gained  |    4 |    5 |      |      |      |      |      |      |      |      |      |
+Cards Required     |    2 |    4 |   10 |   20 |      |      |      |      |      |      |      |
+Gold Required      |    5 |   20 |   50 |  150 |      |      |      |      |      |      |      |
+Experience Gained  |    4 |    5 |    6 |      |      |      |      |      |      |      |      |
 
 ### Giant
 
@@ -239,10 +239,10 @@ Deploy Time | 1sec
 
 Attribute          | LV1  | LV2  | LV3  | LV4  | LV5  | LV6  | LV7  | LV8
 ------------------ | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ----
-Hitpoints          |  500 |      |      |      |      |  800 |      |
-Damage per Second  |   50 |      |      |      |      |   80 |      |
-Area Damage        |   35 |      |      |      |      |   56 |      |
-Skeleton Level     |    6 |      |      |      |      |   11 |      |
+Hitpoints          |  500 |      |      |      |      |  800 |  880 |
+Damage per Second  |   50 |      |      |      |      |   80 |   87 |
+Area Damage        |   35 |      |      |      |      |   56 |   61 |
+Skeleton Level     |    6 |      |      |      |      |   11 |   12 |
 Cards Required     |    2 |    4 |      |      |      |      |      |
 Gold Required      |  400 |      |      |      |      |      |      |
 Experience Gained  |      |      |      |      |      |      |      |
@@ -335,9 +335,9 @@ Attribute          | LV1  | LV2  | LV3  | LV4  | LV5  | LV6  | LV7  | LV8  | LV9
 ------------------ | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ----
 Area Damage        |  115 |  126 |  139 |  152 |      |      |      |      |  243 |  267 |  294 |
 Crown Tower Damage |   58 |   63 |   70 |   76 |      |      |      |      |  122 |  134 |  147 |
-Cards Required     |    2 |    4 |      |      |      |      |      |      |      |      |      |
-Gold Required      |    5 |   20 |      |      |      |      |      |      |      |      |      |
-Experience Gained  |    4 |    5 |      |      |      |      |      |      |      |      |      |
+Cards Required     |    2 |    4 |   10 |   20 |      |      |      |      |      |      |      |
+Gold Required      |    5 |   20 |   50 |  150 |      |      |      |      |      |      |      |
+Experience Gained  |    4 |    5 |    6 |      |      |      |      |      |      |      |      |
 
 ### Fireball
 
@@ -364,11 +364,98 @@ Experience Gained  |    6 |      |      |      |      |      |      |      |    
 
 ### Goblins
 
+Attribute   | Value
+----------- | -----
+Name        | Goblins
+Rarity      | Common
+Type        | Troop
+Description | Three fast...
+Elixir Cost | 2
+Hit Speed   | 1.1sec
+Targets     | Ground
+Speed       | Very Fast
+Range       | Melee
+Deploy Time | 1sec
+Count       | x 3
+
+Attribute          | LV1  | LV2  | LV3  | LV4  | LV5  | LV6  | LV7  | LV8  | LV9  | LV10 | LV11 | LV12
+------------------ | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ----
+Hitpoints          |   88 |   96 |      |      |      |      |      |      |      |      |      |
+Damage per Second  |   50 |   54 |      |      |      |      |      |      |      |      |      |
+Damage             |   55 |   60 |      |      |      |      |      |      |      |      |      |
+Cards Required     |    2 |    4 |   10 |   20 |      |      |      |      |      |      |      |
+Gold Required      |    5 |   20 |   50 |  150 |      |      |      |      |      |      |      |
+Experience Gained  |    4 |    5 |    6 |      |      |      |      |      |      |      |      |
+
 ### Spear Goblins
+
+Attribute   | Value
+----------- | -----
+Name        | Spear Goblins
+Rarity      | Common
+Type        | Troop
+Description | Three unarmored...
+Elixir Cost | 2
+Hit Speed   | 1.3sec
+Targets     | Air & Ground
+Speed       | Very Fast
+Range       | 5.5
+Deploy Time | 1sec
+Count       | x 3
+
+Attribute          | LV1  | LV2  | LV3  | LV4  | LV5  | LV6  | LV7  | LV8  | LV9  | LV10 | LV11 | LV12
+------------------ | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ----
+Hitpoints          |   52 |   57 |   62 |   69 |      |      |      |      |      |      |      |
+Damage per Second  |   18 |   20 |   22 |   23 |      |      |      |      |      |      |      |
+Damage             |   24 |   26 |   29 |   31 |      |      |      |      |      |      |      |
+Cards Required     |    2 |    4 |   10 |   20 |      |      |      |      |      |      |      |
+Gold Required      |    5 |   20 |   50 |  150 |      |      |      |      |      |      |      |
+Experience Gained  |    4 |    5 |    6 |      |      |      |      |      |      |      |      |
 
 ### Valkyrie
 
+Attribute   | Value
+----------- | -----
+Name        | Valkyrie
+Rarity      | Rare
+Type        | Troop
+Description | Tough melee fighter...
+Elixir Cost | 4
+Hit Speed   | 1.6sec
+Targets     | Ground
+Speed       | Medium
+Range       | Melee
+Deploy Time | 1sec
+
+Attribute          | LV1  | LV2  | LV3  | LV4  | LV5  | LV6  | LV7  | LV8  | LV9  | LV10
+------------------ | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ----
+Hitpoints          |  800 |  880 |      |      |      |      |      |      |      |
+Damage per Second  |   68 |   75 |      |      |      |      |      |      |      |
+Damage             |  110 |  121 |      |      |      |      |      |      |      |
+Cards Required     |    2 |    4 |      |      |      |      |      |      |      |
+Gold Required      |   50 |  150 |      |      |      |      |      |      |      |
+Experience Gained  |    6 |      |      |      |      |      |      |      |      |
+
 ### Goblin Hut
+
+Attribute   | Value
+----------- | -----
+Name        | Goblin Hut
+Rarity      | Rare
+Type        | Building
+Description | Building that...
+Elixir Cost | 5
+Spawn Speed | 4.9sec
+Deploy Time | 1sec
+Lifetime    | 1min 0sec
+
+Attribute          | LV1  | LV2  | LV3  | LV4  | LV5  | LV6  | LV7  | LV8  | LV9  | LV10
+------------------ | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ----
+Hitpoints          |  700 |  770 |      |      |      |      |      |      |      |
+Spear Goblin Level |    3 |    4 |      |      |      |      |      |      |      |
+Cards Required     |    2 |    4 |      |      |      |      |      |      |      |
+Gold Required      |   50 |  150 |      |      |      |      |      |      |      |
+Experience Gained  |    6 |      |      |      |      |      |      |      |      |
 
 ### Goblin Barrel
 
