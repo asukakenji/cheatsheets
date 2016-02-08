@@ -1,5 +1,16 @@
 # Clash Royale
 
+## Index
+
+### Training Camp
+
+|           | Common                                                            | Rare                                     | Epic
+| --------- | ----------------------------------------------------------------- | ---------------------------------------- | ----------------------------------------------------- |
+| Troops    | [Bomber](#bomber) <br> [Archers](#archers) <br> [Knight](#knight) | Mini P.E.K.K.A <br> Musketeer <br> Giant | Prince <br> Baby Dragon <br> Skeleton Army <br> Witch |
+| Spells    | [Arrows](#arrows)                                                 | Fireball                                 |                                                       |
+| Buildings |                                                                   |                                          |                                                       |
+
+
 ## King Level (Player Level)
 
 ### King's Tower
@@ -20,7 +31,7 @@ Range     |    8.5 |    8.5 |
 Hit Speed | 0.8sec | 0.8sec |
 Damage    |     50 |     54 |
 
-## Troop - Training Camp
+## Training Camp - Troops
 
 ### Bomber
 
@@ -268,7 +279,7 @@ Gold Required      |  400 |      |      |      |      |      |      |
 Experience Gained  |      |      |      |      |      |      |      |
 
 
-## Spell - Training Camp
+## Training Camp - Spells
 
 ### Arrows
 
