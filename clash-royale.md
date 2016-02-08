@@ -369,7 +369,7 @@ Attribute   | Value
 Name        | Goblins
 Rarity      | Common
 Type        | Troop
-Description | Three fast...
+Description | Three fast, unarmored melee attackers. Small, fast, green and mean!
 Elixir Cost | 2
 Hit Speed   | 1.1sec
 Targets     | Ground
@@ -380,9 +380,9 @@ Count       | x 3
 
 Attribute          | LV1  | LV2  | LV3  | LV4  | LV5  | LV6  | LV7  | LV8  | LV9  | LV10 | LV11 | LV12
 ------------------ | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ----
-Hitpoints          |   88 |   96 |      |      |      |      |      |      |      |      |      |
-Damage per Second  |   50 |   54 |      |      |      |      |      |      |      |      |      |
-Damage             |   55 |   60 |      |      |      |      |      |      |      |      |      |
+Hitpoints          |   88 |   96 |      |      |      |      |      |      |  169 |  186 |  204 |
+Damage per Second  |   50 |   54 |      |      |      |      |      |      |   96 |  105 |  116 |
+Damage             |   55 |   60 |      |      |      |      |      |      |  106 |  116 |  128 |
 Cards Required     |    2 |    4 |   10 |   20 |      |      |      |      |      |      |      |
 Gold Required      |    5 |   20 |   50 |  150 |      |      |      |      |      |      |      |
 Experience Gained  |    4 |    5 |    6 |      |      |      |      |      |      |      |      |
@@ -394,7 +394,7 @@ Attribute   | Value
 Name        | Spear Goblins
 Rarity      | Common
 Type        | Troop
-Description | Three unarmored...
+Description | Three unarmored ranged attackers. Who the heck taught these guys to throw spears!?! Who thought that was a good idea?!
 Elixir Cost | 2
 Hit Speed   | 1.3sec
 Targets     | Air & Ground
@@ -405,9 +405,9 @@ Count       | x 3
 
 Attribute          | LV1  | LV2  | LV3  | LV4  | LV5  | LV6  | LV7  | LV8  | LV9  | LV10 | LV11 | LV12
 ------------------ | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ----
-Hitpoints          |   52 |   57 |   62 |   69 |      |      |      |      |      |      |      |
-Damage per Second  |   18 |   20 |   22 |   23 |      |      |      |      |      |      |      |
-Damage             |   24 |   26 |   29 |   31 |      |      |      |      |      |      |      |
+Hitpoints          |   52 |   57 |   62 |   69 |      |      |      |      |  110 |  121 |  133 |  146
+Damage per Second  |   18 |   20 |   22 |   23 |      |      |      |      |   38 |   42 |   46 |   51
+Damage             |   24 |   26 |   29 |   31 |      |      |      |      |   50 |   55 |   61 |   67
 Cards Required     |    2 |    4 |   10 |   20 |      |      |      |      |      |      |      |
 Gold Required      |    5 |   20 |   50 |  150 |      |      |      |      |      |      |      |
 Experience Gained  |    4 |    5 |    6 |      |      |      |      |      |      |      |      |
@@ -419,7 +419,7 @@ Attribute   | Value
 Name        | Valkyrie
 Rarity      | Rare
 Type        | Troop
-Description | Tough melee fighter...
+Description | Tough melee fighter, deals area damage around her. Swarm or horde, no problem! She can take them all out with a few spins.
 Elixir Cost | 4
 Hit Speed   | 1.6sec
 Targets     | Ground
@@ -429,9 +429,9 @@ Deploy Time | 1sec
 
 Attribute          | LV1  | LV2  | LV3  | LV4  | LV5  | LV6  | LV7  | LV8  | LV9  | LV10
 ------------------ | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ----
-Hitpoints          |  800 |  880 |      |      |      |      |      |      |      |
-Damage per Second  |   68 |   75 |      |      |      |      |      |      |      |
-Damage             |  110 |  121 |      |      |      |      |      |      |      |
+Hitpoints          |  800 |  880 |      |      |      |      |      | 1544 |      |
+Damage per Second  |   68 |   75 |      |      |      |      |      |  132 |      |
+Area Damage        |  110 |  121 |      |      |      |      |      |  212 |      |
 Cards Required     |    2 |    4 |      |      |      |      |      |      |      |
 Gold Required      |   50 |  150 |      |      |      |      |      |      |      |
 Experience Gained  |    6 |      |      |      |      |      |      |      |      |
@@ -443,7 +443,7 @@ Attribute   | Value
 Name        | Goblin Hut
 Rarity      | Rare
 Type        | Building
-Description | Building that...
+Description | Building that spawns Spear Goblins. But don't look inside. You don't want to see how they are made.
 Elixir Cost | 5
 Spawn Speed | 4.9sec
 Deploy Time | 1sec
@@ -451,12 +451,50 @@ Lifetime    | 1min 0sec
 
 Attribute          | LV1  | LV2  | LV3  | LV4  | LV5  | LV6  | LV7  | LV8  | LV9  | LV10
 ------------------ | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ----
-Hitpoints          |  700 |  770 |      |      |      |      |      |      |      |
-Spear Goblin Level |    3 |    4 |      |      |      |      |      |      |      |
+Hitpoints          |  700 |  770 |      |      |      |      | 1232 | 1351 | 1484 |
+Spear Goblin Level |    3 |    4 |      |      |      |      |    9 |   10 |   11 |
 Cards Required     |    2 |    4 |      |      |      |      |      |      |      |
 Gold Required      |   50 |  150 |      |      |      |      |      |      |      |
 Experience Gained  |    6 |      |      |      |      |      |      |      |      |
 
 ### Goblin Barrel
 
+Attribute   | Value
+----------- | -----
+Name        | Goblin Barrell
+Rarity      | Epic
+Type        | Spell
+Description | Spawns three Goblins anywhere on the Arena. It's going to be a thrilling ride, boys!
+Elixir Cost | 4
+Radius      | 1.5
+Goblin Count| x 3
+
+Attribute          | LV1  | LV2  | LV3  | LV4  | LV5  | LV6  | LV7  | LV8
+------------------ | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ----
+Area Damage        |   50 |      |      |      |   73 |   80 |   88 |
+Crown Tower Damage |   25 |      |      |      |   37 |   40 |   44 |
+Goblin Level       |    6 |      |      |      |   10 |   11 |   12 |
+Cards Required     |    2 |    4 |      |      |      |      |      |
+Gold Required      |  400 |      |      |      |      |      |      |
+Experience Gained  |      |      |      |      |      |      |      |
+
 ### Lightning
+
+Attribute   | Value
+----------- | -----
+Name        | Lightning
+Rarity      | Epic
+Type        | Spell
+Description | Bolts of lightning hit up to 3 enemy troops or buildings with the most hitpoints in the target area. Reduced damage to Crown Towers.
+Elixir Cost | 6
+Count       | x 3
+Duration    | 1.5sec
+Radius      | 3.5
+
+Attribute          | LV1  | LV2  | LV3  | LV4  | LV5  | LV6  | LV7  | LV8
+------------------ | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ----
+Damage             |  650 |      |      |  864 |  949 | 1040 | 1144 |
+Crown Tower Damage |  325 |      |      |  432 |  475 |  520 |  572 |
+Cards Required     |    2 |    4 |      |      |      |      |      |
+Gold Required      |  400 |      |      |      |      |      |      |
+Experience Gained  |      |      |      |      |      |      |      |
