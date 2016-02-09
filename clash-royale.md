@@ -56,26 +56,26 @@
 
 ### King's Tower
 
-Attribute | LV1    | LV2    | LV3    | LV4    |
---------- | ------ | ------ | ------ | ------ |
-Exp Req   |     20 |     50 |    100 |    200 |
+Attribute | LV1    | LV2    | LV3    | LV4    | LV5    |
+--------- | ------ | ------ | ------ | ------ | ------ |
+Exp Req   |      0 |     20 |     50 |    100 |    200 |
 
 
-Attribute | LV1    | LV2    | LV3    | LV4    |
---------- | ------ | ------ | ------ | ------ |
-Hitpoints |   2400 |   2568 |   2736 |   2904 |
-Range     |    8.0 |    8.0 |    8.0 |    8.0 |
-Hit Speed | 1.0sec | 1.0sec | 1.0sec | 1.0sec |
-Damage    |     50 |     53 |     57 |     60 |
+Attribute | LV1    | LV2    | LV3    | LV4    | LV5    |
+--------- | ------ | ------ | ------ | ------ | ------ |
+Hitpoints |   2400 |   2568 |   2736 |   2904 |        |
+Range     |    8.0 |    8.0 |    8.0 |    8.0 |        |
+Hit Speed | 1.0sec | 1.0sec | 1.0sec | 1.0sec |        |
+Damage    |     50 |     53 |     57 |     60 |        |
 
 ### Arena Towers
 
-Attribute | LV1    | LV2    | LV3    | LV4    |
---------- | ------ | ------ | ------ | ------ |
-Hitpoints |   1400 |   1512 |   1624 |   1750 |
-Range     |    8.5 |    8.5 |    8.5 |    8.5 |
-Hit Speed | 0.8sec | 0.8sec | 0.8sec | 0.8sec |
-Damage    |     50 |     54 |     58 |     62 |
+Attribute | LV1    | LV2    | LV3    | LV4    | LV5    |
+--------- | ------ | ------ | ------ | ------ | ------ |
+Hitpoints |   1400 |   1512 |   1624 |   1750 |        |
+Range     |    8.5 |    8.5 |    8.5 |    8.5 |        |
+Hit Speed | 0.8sec | 0.8sec | 0.8sec | 0.8sec |        |
+Damage    |     50 |     54 |     58 |     62 |        |
 
 
 
@@ -101,9 +101,9 @@ Attribute          | LV1  | LV2  | LV3  | LV4  | LV5  | LV6  | LV7  | LV8  | LV9
 Hitpoints          |  600 |  660 |  726 |  798 |  876 |      |      |      | 1272 | 1398 |      | 1686
 Damage per Second  |   68 |   74 |   81 |   90 |   99 |      |      |      |  144 |  158 |      |  190
 Damage             |   75 |   82 |   90 |   99 |  109 |      |      |      |  159 |  174 |      |  210
-Cards Required     |    2 |    4 |   10 |   20 |   50 |      |      |      |      |      |      |
-Gold Required      |    5 |   20 |   50 |  150 |  400 |      |      |      |      |      |      |
-Experience Gained  |    4 |    5 |    6 |   10 |      |      |      |      |      |      |      |
+Cards Required     |    0 |    2 |    4 |   10 |   20 |   50 |      |      |      |      |      |
+Gold Required      |    0 |    5 |   20 |   50 |  150 |  400 |      |      |      |      |      |
+Experience Gained  |    0 |    4 |    5 |    6 |   10 |      |      |      |      |      |      |
 
 ### Archers
 
@@ -126,9 +126,9 @@ Attribute          | LV1  | LV2  | LV3  | LV4  | LV5  | LV6  | LV7  | LV8  | LV9
 Hitpoints          |  125 |  137 |  151 |  166 |      |      |      |      |  265 |  291 |  320 |  351
 Damage per Second  |   33 |   36 |   40 |   44 |      |      |      |      |   70 |   77 |   85 |   93
 Damage             |   40 |   44 |   48 |   53 |      |      |      |      |   84 |   93 |  102 |  112
-Cards Required     |    2 |    4 |   10 |   20 |   50 |      |      |      |      |      |      |
-Gold Required      |    5 |   20 |   50 |  150 |  400 |      |      |      |      |      |      |
-Experience Gained  |    4 |    5 |    6 |   10 |      |      |      |      |      |      |      |
+Cards Required     |    0 |    2 |    4 |   10 |   20 |   50 |      |      |      |      |      |
+Gold Required      |    0 |    5 |   20 |   50 |  150 |  400 |      |      |      |      |      |
+Experience Gained  |    0 |    4 |    5 |    6 |   10 |      |      |      |      |      |      |
 
 ### Bomber
 
@@ -150,9 +150,9 @@ Attribute          | LV1  | LV2  | LV3  | LV4  | LV5  | LV6  | LV7  | LV8  | LV9
 Hitpoints          |  150 |  165 |  181 |  199 |      |      |      |      |  318 |  349 |  384 |  421
 Damage per Second  |   52 |   57 |   63 |   70 |      |      |      |      |  111 |  122 |  134 |  147
 Area Damage        |  100 |  110 |  121 |  133 |      |      |      |      |  212 |  233 |  256 |  281
-Cards Required     |    2 |    4 |   10 |   20 |   50 |      |      |      |      |      |      |
-Gold Required      |    5 |   20 |   50 |  150 |  400 |      |      |      |      |      |      |
-Experience Gained  |    4 |    5 |    6 |   10 |      |      |      |      |      |      |      |
+Cards Required     |    0 |    2 |    4 |   10 |   20 |   50 |      |      |      |      |      |
+Gold Required      |    0 |    5 |   20 |   50 |  150 |  400 |      |      |      |      |      |
+Experience Gained  |    0 |    4 |    5 |    6 |   10 |      |      |      |      |      |      |
 
 ### Giant
 
@@ -174,9 +174,9 @@ Attribute          | LV1  | LV2  | LV3  | LV4  | LV5  | LV6  | LV7  | LV8  | LV9
 Hitpoints          | 1900 | 2090 | 2299 |      |      |      |      | 3667 |      |
 Damage per Second  |   80 |   88 |   96 |      |      |      |      |  154 |      |
 Damage             |  120 |  132 |  145 |      |      |      |      |  231 |      |
-Cards Required     |    2 |    4 |   10 |   20 |   50 |      |      |      |      |
-Gold Required      |   50 |  150 |  400 | 1000 |      |      |      |      |      |
-Experience Gained  |    6 |   10 |   25 |      |      |      |      |      |      |
+Cards Required     |    0 |    2 |    4 |   10 |   20 |   50 |      |      |      |
+Gold Required      |    0 |   50 |  150 |  400 | 1000 |      |      |      |      |
+Experience Gained  |    0 |    6 |   10 |   25 |      |      |      |      |      |
 
 ### Musketeer
 
@@ -198,9 +198,9 @@ Attribute          | LV1  | LV2  | LV3  | LV4  | LV5  | LV6  | LV7  | LV8  | LV9
 Hitpoints          |  340 |  374 |  411 |  452 |      |      |      |  656 |      |
 Damage per Second  |  109 |  120 |  131 |  144 |      |      |      |  210 |      |
 Damage             |  120 |  132 |  145 |  159 |      |      |      |  231 |      |
-Cards Required     |    2 |    4 |   10 |   20 |   50 |      |      |      |      |
-Gold Required      |   50 |  150 |  400 | 1000 |      |      |      |      |      |
-Experience Gained  |    6 |   10 |   25 |      |      |      |      |      |      |
+Cards Required     |    0 |    2 |    4 |   10 |   20 |   50 |      |      |      |
+Gold Required      |    0 |   50 |  150 |  400 | 1000 |      |      |      |      |
+Experience Gained  |    0 |    6 |   10 |   25 |      |      |      |      |      |
 
 ### Mini P.E.K.K.A
 
@@ -222,9 +222,9 @@ Attribute          | LV1  | LV2  | LV3  | LV4  | LV5  | LV6  | LV7  | LV8  | LV9
 Hitpoints          |  580 |  638 |  701 |      |      |      | 1020 | 1119 |      |
 Damage per Second  |  180 |  198 |  218 |      |      |      |  317 |  348 |      |
 Damage             |  325 |  357 |  393 |      |      |      |  572 |  627 |      |
-Cards Required     |    2 |    4 |   10 |   20 |   50 |      |      |      |      |
-Gold Required      |   50 |  150 |  400 | 1000 |      |      |      |      |      |
-Experience Gained  |    6 |   10 |   25 |      |      |      |      |      |      |
+Cards Required     |    0 |    2 |    4 |   10 |   20 |   50 |      |      |      |
+Gold Required      |    0 |   50 |  150 |  400 | 1000 |      |      |      |      |
+Experience Gained  |    0 |    6 |   10 |   25 |      |      |      |      |      |
 
 ### Witch
 
@@ -248,9 +248,9 @@ Hitpoints          |  500 |      |      |      |      |  800 |  880 |
 Damage per Second  |   50 |      |      |      |      |   80 |   87 |
 Area Damage        |   35 |      |      |      |      |   56 |   61 |
 Skeleton Level     |    6 |      |      |      |      |   11 |   12 |
-Cards Required     |    2 |    4 |   10 |   20 |   50 |      |      |
-Gold Required      |  400 | 1000 |      |      |      |      |      |
-Experience Gained  |   25 |      |      |      |      |      |      |
+Cards Required     |    0 |    2 |    4 |   10 |   20 |   50 |      |
+Gold Required      |    0 |  400 | 1000 |      |      |      |      |
+Experience Gained  |    0 |   25 |      |      |      |      |      |
 
 ### Skeleton Army
 
@@ -273,9 +273,9 @@ Attribute          | LV1  | LV2  | LV3  | LV4  | LV5  | LV6  | LV7  | LV8
 Hitpoints          |   27 |   29 |      |      |      |      |      |
 Damage per Second  |   27 |   29 |      |      |      |      |      |
 Damage             |   27 |   29 |      |      |      |      |      |
-Cards Required     |    2 |    4 |   10 |   20 |   50 |      |      |
-Gold Required      |  400 | 1000 |      |      |      |      |      |
-Experience Gained  |   25 |      |      |      |      |      |      |
+Cards Required     |    0 |    2 |    4 |   10 |   20 |   50 |      |
+Gold Required      |    0 |  400 | 1000 |      |      |      |      |
+Experience Gained  |    0 |   25 |      |      |      |      |      |
 
 ### Baby Dragon
 
@@ -297,9 +297,9 @@ Attribute          | LV1  | LV2  | LV3  | LV4  | LV5  | LV6  | LV7  | LV8
 Hitpoints          |  800 |  880 |      | 1064 | 1168 | 1280 | 1408 | 1544
 Damage per Second  |   55 |   61 |      |   73 |   81 |   88 |   97 |  107
 Area Damage        |  100 |  110 |      |  133 |  146 |  160 |  176 |  193
-Cards Required     |    2 |    4 |   10 |   20 |   50 |      |      |
-Gold Required      |  400 | 1000 |      |      |      |      |      |
-Experience Gained  |   25 |      |      |      |      |      |      |
+Cards Required     |    0 |    2 |    4 |   10 |   20 |   50 |      |
+Gold Required      |    0 |  400 | 1000 |      |      |      |      |
+Experience Gained  |    0 |   25 |      |      |      |      |      |
 
 ### Prince
 
@@ -321,9 +321,9 @@ Attribute          | LV1  | LV2  | LV3  | LV4  | LV5  | LV6  | LV7  | LV8
 Hitpoints          | 1100 |      |      | 1463 | 1606 | 1760 | 1936 |
 Damage per Second  |  146 |      |      |  194 |  214 |  234 |  258 |
 Damage             |  220 |      |      |  292 |  321 |  352 |  387 |
-Cards Required     |    2 |    4 |   10 |   20 |   50 |      |      |
-Gold Required      |  400 | 1000 |      |      |      |      |      |
-Experience Gained  |   25 |      |      |      |      |      |      |
+Cards Required     |    0 |    2 |    4 |   10 |   20 |   50 |      |
+Gold Required      |    0 |  400 | 1000 |      |      |      |      |
+Experience Gained  |    0 |   25 |      |      |      |      |      |
 
 ### Arrows
 
@@ -340,9 +340,9 @@ Attribute          | LV1  | LV2  | LV3  | LV4  | LV5  | LV6  | LV7  | LV8  | LV9
 ------------------ | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ----
 Area Damage        |  115 |  126 |  139 |  152 |  167 |      |      |      |  243 |  267 |  294 |
 Crown Tower Damage |   58 |   63 |   70 |   76 |   84 |      |      |      |  122 |  134 |  147 |
-Cards Required     |    2 |    4 |   10 |   20 |   50 |      |      |      |      |      |      |
-Gold Required      |    5 |   20 |   50 |  150 |  400 |      |      |      |      |      |      |
-Experience Gained  |    4 |    5 |    6 |   10 |      |      |      |      |      |      |      |
+Cards Required     |    0 |    2 |    4 |   10 |   20 |   50 |      |      |      |      |      |
+Gold Required      |    0 |    5 |   20 |   50 |  150 |  400 |      |      |      |      |      |
+Experience Gained  |    0 |    4 |    5 |    6 |   10 |      |      |      |      |      |      |
 
 ### Fireball
 
@@ -359,9 +359,9 @@ Attribute          | LV1  | LV2  | LV3  | LV4  | LV5  | LV6  | LV7  | LV8  | LV9
 ------------------ | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ----
 Area Damage        |  325 |  357 |  393 |      |      |  520 |  572 |  627 |  689 |  757
 Crown Tower Damage |  163 |  179 |  197 |      |      |  260 |  286 |  314 |  345 |  379
-Cards Required     |    2 |    4 |   10 |   20 |   50 |      |      |      |      |
-Gold Required      |   50 |  150 |  400 | 1000 |      |      |      |      |      |
-Experience Gained  |    6 |   10 |   25 |      |      |      |      |      |      |
+Cards Required     |    0 |    2 |    4 |   10 |   20 |   50 |      |      |      |
+Gold Required      |    0 |   50 |  150 |  400 | 1000 |      |      |      |      |
+Experience Gained  |    0 |    6 |   10 |   25 |      |      |      |      |      |
 
 
 
@@ -388,9 +388,9 @@ Attribute          | LV1  | LV2  | LV3  | LV4  | LV5  | LV6  | LV7  | LV8  | LV9
 Hitpoints          |   80 |   88 |   96 |  106 |  116 |      |      |      |  169 |  186 |  204 |
 Damage per Second  |   45 |   50 |   54 |   60 |   66 |      |      |      |   96 |  105 |  116 |
 Damage             |   50 |   55 |   60 |   66 |   73 |      |      |      |  106 |  116 |  128 |
-Cards Required     |    2 |    4 |   10 |   20 |   50 |      |      |      |      |      |      |
-Gold Required      |    5 |   20 |   50 |  150 |  400 |      |      |      |      |      |      |
-Experience Gained  |    4 |    5 |    6 |   10 |      |      |      |      |      |      |      |
+Cards Required     |    0 |    2 |    4 |   10 |   20 |   50 |      |      |      |      |      |
+Gold Required      |    0 |    5 |   20 |   50 |  150 |  400 |      |      |      |      |      |
+Experience Gained  |    0 |    4 |    5 |    6 |   10 |      |      |      |      |      |      |
 
 ### Spear Goblins
 
@@ -413,9 +413,9 @@ Attribute          | LV1  | LV2  | LV3  | LV4  | LV5  | LV6  | LV7  | LV8  | LV9
 Hitpoints          |   52 |   57 |   62 |   69 |   75 |      |      |      |  110 |  121 |  133 |  146
 Damage per Second  |   18 |   20 |   22 |   23 |   26 |      |      |      |   38 |   42 |   46 |   51
 Damage             |   24 |   26 |   29 |   31 |   35 |      |      |      |   50 |   55 |   61 |   67
-Cards Required     |    2 |    4 |   10 |   20 |   50 |      |      |      |      |      |      |
-Gold Required      |    5 |   20 |   50 |  150 |  400 |      |      |      |      |      |      |
-Experience Gained  |    4 |    5 |    6 |   10 |      |      |      |      |      |      |      |
+Cards Required     |    0 |    2 |    4 |   10 |   20 |   50 |      |      |      |      |      |
+Gold Required      |    0 |    5 |   20 |   50 |  150 |  400 |      |      |      |      |      |
+Experience Gained  |    0 |    4 |    5 |    6 |   10 |      |      |      |      |      |      |
 
 ### Valkyrie
 
@@ -437,9 +437,9 @@ Attribute          | LV1  | LV2  | LV3  | LV4  | LV5  | LV6  | LV7  | LV8  | LV9
 Hitpoints          |  800 |  880 |  968 |      |      |      |      | 1544 |      |
 Damage per Second  |   68 |   75 |   83 |      |      |      |      |  132 |      |
 Area Damage        |  110 |  121 |  133 |      |      |      |      |  212 |      |
-Cards Required     |    2 |    4 |   10 |   20 |   50 |      |      |      |      |
-Gold Required      |   50 |  150 |  400 | 1000 |      |      |      |      |      |
-Experience Gained  |    6 |   10 |   25 |      |      |      |      |      |      |
+Cards Required     |    0 |    2 |    4 |   10 |   20 |   50 |      |      |      |
+Gold Required      |    0 |   50 |  150 |  400 | 1000 |      |      |      |      |
+Experience Gained  |    0 |    6 |   10 |   25 |      |      |      |      |      |
 
 ### Goblin Hut
 
@@ -458,9 +458,9 @@ Attribute          | LV1  | LV2  | LV3  | LV4  | LV5  | LV6  | LV7  | LV8  | LV9
 ------------------ | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ----
 Hitpoints          |  700 |  770 |  847 |  931 |      |      | 1232 | 1351 | 1484 |
 Spear Goblin Level |    3 |    4 |    5 |    6 |      |      |    9 |   10 |   11 |
-Cards Required     |    2 |    4 |   10 |   20 |   50 |      |      |      |      |
-Gold Required      |   50 |  150 |  400 | 1000 |      |      |      |      |      |
-Experience Gained  |    6 |   10 |   25 |      |      |      |      |      |      |
+Cards Required     |    0 |    2 |    4 |   10 |   20 |   50 |      |      |      |
+Gold Required      |    0 |   50 |  150 |  400 | 1000 |      |      |      |      |
+Experience Gained  |    0 |    6 |   10 |   25 |      |      |      |      |      |
 
 ### Goblin Barrel
 
@@ -479,9 +479,9 @@ Attribute          | LV1  | LV2  | LV3  | LV4  | LV5  | LV6  | LV7  | LV8
 Area Damage        |   50 |   55 |      |      |   73 |   80 |   88 |
 Crown Tower Damage |   25 |   28 |      |      |   37 |   40 |   44 |
 Goblin Level       |    6 |    7 |      |      |   10 |   11 |   12 |
-Cards Required     |    2 |    4 |   10 |   20 |   50 |      |      |
-Gold Required      |  400 | 1000 |      |      |      |      |      |
-Experience Gained  |   25 |      |      |      |      |      |      |
+Cards Required     |    0 |    2 |    4 |   10 |   20 |   50 |      |
+Gold Required      |    0 |  400 | 1000 |      |      |      |      |
+Experience Gained  |    0 |   25 |      |      |      |      |      |
 
 ### Lightning
 
@@ -500,9 +500,9 @@ Attribute          | LV1  | LV2  | LV3  | LV4  | LV5  | LV6  | LV7  | LV8
 ------------------ | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ----
 Damage             |  650 |      |      |  864 |  949 | 1040 | 1144 | 1254
 Crown Tower Damage |  325 |      |      |  432 |  475 |  520 |  572 |  627
-Cards Required     |    2 |    4 |   10 |   20 |   50 |      |      |
-Gold Required      |  400 | 1000 |      |      |      |      |      |
-Experience Gained  |   25 |      |      |      |      |      |      |
+Cards Required     |    0 |    2 |    4 |   10 |   20 |   50 |      |
+Gold Required      |    0 |  400 | 1000 |      |      |      |      |
+Experience Gained  |    0 |   25 |      |      |      |      |      |
 
 
 
