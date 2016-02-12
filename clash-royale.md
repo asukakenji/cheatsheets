@@ -17,28 +17,20 @@
 
 ## King Level (Player Level)
 
-### King's Tower
+Attribute              | Value
+---------------------- | ------
+King's Tower Range     |    8.0
+King's Tower Hit Speed | 1.0sec
+Arena Towers Range     |    8.5
+Arena Towers Hit Speed | 0.8sec
 
-Attribute | LV1    | LV2    | LV3    | LV4    | LV5    | LV6    |
---------- | ------ | ------ | ------ | ------ | ------ | ------ |
-Exp Req   |      0 |     20 |     50 |    100 |    200 |
-
-
-Attribute | LV1    | LV2    | LV3    | LV4    | LV5    | LV6    |
---------- | ------ | ------ | ------ | ------ | ------ | ------ |
-Hitpoints |   2400 |   2568 |   2736 |   2904 |   3096 |        |
-Range     |    8.0 |    8.0 |    8.0 |    8.0 |    8.0 |    8.0 |
-Hit Speed | 1.0sec | 1.0sec | 1.0sec | 1.0sec | 1.0sec | 1.0sec |
-Damage    |     50 |     53 |     57 |     60 |     64 |        |
-
-### Arena Towers
-
-Attribute | LV1    | LV2    | LV3    | LV4    | LV5    | LV6    |
---------- | ------ | ------ | ------ | ------ | ------ | ------ |
-Hitpoints |   1400 |   1512 |   1624 |   1750 |   1890 |        |
-Range     |    8.5 |    8.5 |    8.5 |    8.5 |    8.5 |    8.5 |
-Hit Speed | 0.8sec | 0.8sec | 0.8sec | 0.8sec | 0.8sec | 0.8sec |
-Damage    |     50 |     54 |     58 |     62 |     67 |        |
+Attribute              | LV1    | LV2    | LV3    | LV4    | LV5    | LV6    |
+---------------------- | ------ | ------ | ------ | ------ | ------ | ------ |
+King's Tower Hitpoints |   2400 |   2568 |   2736 |   2904 |   3096 |        |
+King's Tower Damage    |     50 |     53 |     57 |     60 |     64 |        |
+Arena Towers Hitpoints |   1400 |   1512 |   1624 |   1750 |   1890 |        |
+Arena Towers Damage    |     50 |     54 |     58 |     62 |     67 |        |
+Experience Required    |      0 |     20 |     50 |    100 |    200 |
 
 
 
