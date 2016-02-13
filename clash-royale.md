@@ -273,12 +273,12 @@ Deploy Time | 1sec
 
 Attribute          | LV1  | LV2  | LV3  | LV4  | LV5  | LV6  | LV7  | LV8
 ------------------ | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ----
-Hitpoints          | 1100 | 1210 |      | 1463 | 1606 | 1760 | 1936 |
-Damage per Second  |  146 |  161 |      |  194 |  214 |  234 |  258 |
-Damage             |  220 |  242 |      |  292 |  321 |  352 |  387 |
+Hitpoints          | 1100 | 1210 | 1331 | 1463 | 1606 | 1760 | 1936 |
+Damage per Second  |  146 |  161 |  177 |  194 |  214 |  234 |  258 |
+Damage             |  220 |  242 |  266 |  292 |  321 |  352 |  387 |
 Cards Required     |    0 |    2 |    4 |   10 |   20 |   50 |  100 |
-Gold Required      |    0 |  400 | 1000 |      |      |      |      |
-Experience Gained  |    0 |   25 |      |      |      |      |      |
+Gold Required      |    0 |  400 | 1000 | 2000 |      |      |      |
+Experience Gained  |    0 |   25 |   50 |      |      |      |      |
 
 ### Arrows
 
