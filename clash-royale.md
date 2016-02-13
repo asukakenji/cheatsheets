@@ -1,35 +1,5 @@
 # Clash Royale
 
-## Index (by Rarity)
-
-|                       | Common                                                                                                                   | Rare                                                                                                                                       | Epic
-| --------------------- | ------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------- |
-| Training Camp         | [Knight](#knight) (Troop) <br> [Archers](#archers) (Troop) <br> [Bomber](#bomber) (Troop) <br> [Arrows](#arrows) (Spell) | [Giant](#giant) (Troop) <br> [Musketeer](#musketeer) (Troop) <br> [Mini P.E.K.K.A](#mini-pekka) (Troop) <br> [Fireball](#fireball) (Spell) | [Witch](#witch) (Troop) <br> [Skeleton Army](#skeleton-army) (Troop) <br> [Baby Dragon](#baby-dragon) (Troop) <br> [Prince](#prince) (Troop) |
-| Goblin Stadium        | [Goblins](#goblins) (Troop) <br> [Spear Goblins](#spear-goblins) (Troop)                                                 | [Valkyrie](#valkyrie) (Troop) <br> [Goblin Hut](#goblin-hut) (Building)                                                                    | [Goblin Barrel](#goblin-barrel) (Spell) <br> [Lightning](#lightning) (Spell)                                                                 |
-| Bone Pit              | [Skeletons](#skeletons) (Troop) <br> [Minions](#minions) (Troop)                                                         | [Bomb Tower](#bomb-tower) (Building) <br> [Tombstone](#tombstone) (Building)                                                               | [Giant Skeleton](#giant-skeleton) (Troop) <br> [Balloon](#balloon) (Troop)                                                                   |
-| Barbarian Bowl        | [Barbarians](#barbarians) (Troop) <br> [Cannon](#cannon) (Building)                                                      | [Barbarian Hut](#barbarian-hut) (Building) <br> [Rocket](#rocket) (Spell)                                                                  | [X-Bow](#x-bow) (Building) <br> [Rage](#rage) (Spell)                                                                                        |
-| P.E.K.K.A's Playhouse |                                                                                                                          |                                                                                                                                            |                                                                                                                                              |
-| Spell Valley          |                                                                                                                          |                                                                                                                                            |                                                                                                                                              |
-| Royal Arena           |                                                                                                                          |                                                                                                                                            |                                                                                                                                              |
-| Legendary Arena       |                                                                                                                          |                                                                                                                                            |                                                                                                                                              |
-
-
-
-## Index (by Type)
-
-|                       | Troop                                                                                                                                                                                                                                                                                                                                                | Building                                                                                           | Spell                                                                      |
-| --------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------- |
-| Training Camp         | [Knight](#knight) (Common) <br> [Archers](#archers) (Common) <br> [Bomber](#bomber) (Common) <br> [Giant](#giant) (Rare) <br> [Musketeer](#musketeer) (Rare) <br> [Mini P.E.K.K.A](#mini-pekka) (Rare) <br> [Witch](#witch) (Epic) <br> [Skeleton Army](#skeleton-army) (Epic) <br> [Baby Dragon](#baby-dragon) (Epic) <br> [Prince](#prince) (Epic) |                                                                                                    | [Arrows](#arrows) (Common) <br> [Fireball](#fireball) (Rare)               |
-| Goblin Stadium        | [Goblins](#goblins) (Common) <br> [Spear Goblins](#spear-goblins) (Common) <br> [Valkyrie](#valkyrie) (Rare)                                                                                                                                                                                                                                         | [Goblin Hut](#goblin-hut) (Rare)                                                                   | [Goblin Barrel](#goblin-barrel) (Epic) <br> [Lightning](#lightning) (Epic) |
-| Bone Pit              | [Skeletons](#skeletons) (Common) <br> [Minions](#minions) (Common) <br> [Giant Skeleton](#giant-skeleton) (Epic) <br> [Balloon](#balloon) (Epic)                                                                                                                                                                                                     | [Bomb Tower](#bomb-tower) (Rare) <br> [Tombstone](#tombstone) (Rare)                               |                                                                            |
-| Barbarian Bowl        | [Barbarians](#barbarians) (Common)                                                                                                                                                                                                                                                                                                                   | [Cannon](#cannon) (Common) <br> [Barbarian Hut](#barbarian-hut) (Rare) <br> [X-Bow](#x-bow) (Epic) | [Rocket](#rocket) (Rare) <br> [Rage](#rage) (Epic)                         |
-| P.E.K.K.A's Playhouse |                                                                                                                                                                                                                                                                                                                                                      |                                                                                                    |                                                                            |
-| Spell Valley          |                                                                                                                                                                                                                                                                                                                                                      |                                                                                                    |                                                                            |
-| Royal Arena           |                                                                                                                                                                                                                                                                                                                                                      |                                                                                                    |                                                                            |
-| Legendary Arena       |                                                                                                                                                                                                                                                                                                                                                      |                                                                                                    |                                                                            |
-
-
-
 ## King Level (Player Level)
 
 Attribute              | Value
@@ -49,9 +19,43 @@ Experience Required    |      0 |     20 |     50 |    100 |    200 |    500 |  
 
 
 
-## Training Camp
+## Index (by Type)
 
-### Knight
+|                       | Troop                                                                                                                                                                                                                                                                                                                                                | Building                                                                                           | Spell                                                                      |
+| --------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------- |
+| Training Camp         | [Knight](#knight) (Common) <br> [Archers](#archers) (Common) <br> [Bomber](#bomber) (Common) <br> [Giant](#giant) (Rare) <br> [Musketeer](#musketeer) (Rare) <br> [Mini P.E.K.K.A](#mini-pekka) (Rare) <br> [Witch](#witch) (Epic) <br> [Skeleton Army](#skeleton-army) (Epic) <br> [Baby Dragon](#baby-dragon) (Epic) <br> [Prince](#prince) (Epic) |                                                                                                    | [Arrows](#arrows) (Common) <br> [Fireball](#fireball) (Rare)               |
+| Goblin Stadium        | [Goblins](#goblins) (Common) <br> [Spear Goblins](#spear-goblins) (Common) <br> [Valkyrie](#valkyrie) (Rare)                                                                                                                                                                                                                                         | [Goblin Hut](#goblin-hut) (Rare)                                                                   | [Goblin Barrel](#goblin-barrel) (Epic) <br> [Lightning](#lightning) (Epic) |
+| Bone Pit              | [Skeletons](#skeletons) (Common) <br> [Minions](#minions) (Common) <br> [Giant Skeleton](#giant-skeleton) (Epic) <br> [Balloon](#balloon) (Epic)                                                                                                                                                                                                     | [Bomb Tower](#bomb-tower) (Rare) <br> [Tombstone](#tombstone) (Rare)                               |                                                                            |
+| Barbarian Bowl        | [Barbarians](#barbarians) (Common)                                                                                                                                                                                                                                                                                                                   | [Cannon](#cannon) (Common) <br> [Barbarian Hut](#barbarian-hut) (Rare) <br> [X-Bow](#x-bow) (Epic) | [Rocket](#rocket) (Rare) <br> [Rage](#rage) (Epic)                         |
+| P.E.K.K.A's Playhouse |                                                                                                                                                                                                                                                                                                                                                      |                                                                                                    |                                                                            |
+| Spell Valley          |                                                                                                                                                                                                                                                                                                                                                      |                                                                                                    |                                                                            |
+| Royal Arena           |                                                                                                                                                                                                                                                                                                                                                      |                                                                                                    |                                                                            |
+| Legendary Arena       |                                                                                                                                                                                                                                                                                                                                                      |                                                                                                    |                                                                            |
+
+
+
+## Index (by Rarity)
+
+|                       | Common                                                                                                                   | Rare                                                                                                                                       | Epic
+| --------------------- | ------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------- |
+| Training Camp         | [Knight](#knight) (Troop) <br> [Archers](#archers) (Troop) <br> [Bomber](#bomber) (Troop) <br> [Arrows](#arrows) (Spell) | [Giant](#giant) (Troop) <br> [Musketeer](#musketeer) (Troop) <br> [Mini P.E.K.K.A](#mini-pekka) (Troop) <br> [Fireball](#fireball) (Spell) | [Witch](#witch) (Troop) <br> [Skeleton Army](#skeleton-army) (Troop) <br> [Baby Dragon](#baby-dragon) (Troop) <br> [Prince](#prince) (Troop) |
+| Goblin Stadium        | [Goblins](#goblins) (Troop) <br> [Spear Goblins](#spear-goblins) (Troop)                                                 | [Valkyrie](#valkyrie) (Troop) <br> [Goblin Hut](#goblin-hut) (Building)                                                                    | [Goblin Barrel](#goblin-barrel) (Spell) <br> [Lightning](#lightning) (Spell)                                                                 |
+| Bone Pit              | [Skeletons](#skeletons) (Troop) <br> [Minions](#minions) (Troop)                                                         | [Bomb Tower](#bomb-tower) (Building) <br> [Tombstone](#tombstone) (Building)                                                               | [Giant Skeleton](#giant-skeleton) (Troop) <br> [Balloon](#balloon) (Troop)                                                                   |
+| Barbarian Bowl        | [Barbarians](#barbarians) (Troop) <br> [Cannon](#cannon) (Building)                                                      | [Barbarian Hut](#barbarian-hut) (Building) <br> [Rocket](#rocket) (Spell)                                                                  | [X-Bow](#x-bow) (Building) <br> [Rage](#rage) (Spell)                                                                                        |
+| P.E.K.K.A's Playhouse |                                                                                                                          |                                                                                                                                            |                                                                                                                                              |
+| Spell Valley          |                                                                                                                          |                                                                                                                                            |                                                                                                                                              |
+| Royal Arena           |                                                                                                                          |                                                                                                                                            |                                                                                                                                              |
+| Legendary Arena       |                                                                                                                          |                                                                                                                                            |                                                                                                                                              |
+
+
+
+## Troop
+
+### Common
+
+#### Training Camp
+
+##### Knight
 
 Attribute   | Value
 ----------- | -----
@@ -75,7 +79,7 @@ Cards Required     |    0 |    2 |    4 |   10 |   20 |   50 |  100 |      |    
 Gold Required      |    0 |    5 |   20 |   50 |  150 |  400 | 1000 |      |      |      |      |
 Experience Gained  |    0 |    4 |    5 |    6 |   10 |   25 |      |      |      |      |      |
 
-### Archers
+##### Archers
 
 Attribute   | Value
 ----------- | -----
@@ -100,7 +104,7 @@ Cards Required     |    0 |    2 |    4 |   10 |   20 |   50 |  100 |      |    
 Gold Required      |    0 |    5 |   20 |   50 |  150 |  400 | 1000 |      |      |      |      |
 Experience Gained  |    0 |    4 |    5 |    6 |   10 |   25 |      |      |      |      |      |
 
-### Bomber
+##### Bomber
 
 Attribute   | Value
 ----------- | -----
@@ -124,7 +128,121 @@ Cards Required     |    0 |    2 |    4 |   10 |   20 |   50 |  100 |      |    
 Gold Required      |    0 |    5 |   20 |   50 |  150 |  400 | 1000 |      |      |      |      |
 Experience Gained  |    0 |    4 |    5 |    6 |   10 |   25 |      |      |      |      |      |
 
-### Giant
+#### Goblin Stadium
+
+##### Goblins
+
+Attribute   | Value
+----------- | -----
+Name        | Goblins
+Rarity      | Common
+Type        | Troop
+Description | Three fast, unarmored melee attackers. Small, fast, green and mean!
+Elixir Cost | 2
+Hit Speed   | 1.1sec
+Targets     | Ground
+Speed       | Very Fast
+Range       | Melee
+Deploy Time | 1sec
+Count       | x 3
+
+Attribute          | LV1  | LV2  | LV3  | LV4  | LV5  | LV6  | LV7  | LV8  | LV9  | LV10 | LV11 | LV12
+------------------ | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ----
+Hitpoints          |   80 |   88 |   96 |  106 |  116 |  128 |      |      |  169 |  186 |  204 |  224
+Damage per Second  |   45 |   50 |   54 |   60 |   66 |   72 |      |      |   96 |  105 |  116 |  127
+Damage             |   50 |   55 |   60 |   66 |   73 |   80 |      |      |  106 |  116 |  128 |  140
+Cards Required     |    0 |    2 |    4 |   10 |   20 |   50 |  100 |      |      |      |      |
+Gold Required      |    0 |    5 |   20 |   50 |  150 |  400 | 1000 |      |      |      |      |
+Experience Gained  |    0 |    4 |    5 |    6 |   10 |   25 |      |      |      |      |      |
+
+##### Spear Goblins
+
+Attribute   | Value
+----------- | -----
+Name        | Spear Goblins
+Rarity      | Common
+Type        | Troop
+Description | Three unarmored ranged attackers. Who the heck taught these guys to throw spears!?! Who thought that was a good idea?!
+Elixir Cost | 2
+Hit Speed   | 1.3sec
+Targets     | Air & Ground
+Speed       | Very Fast
+Range       | 5.5
+Deploy Time | 1sec
+Count       | x 3
+
+Attribute          | LV1  | LV2  | LV3  | LV4  | LV5  | LV6  | LV7  | LV8  | LV9  | LV10 | LV11 | LV12
+------------------ | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ----
+Hitpoints          |   52 |   57 |   62 |   69 |   75 |   83 |   91 |      |  110 |  121 |  133 |  146
+Damage per Second  |   18 |   20 |   22 |   23 |   26 |   29 |   32 |      |   38 |   42 |   46 |   51
+Damage             |   24 |   26 |   29 |   31 |   35 |   38 |   42 |      |   50 |   55 |   61 |   67
+Cards Required     |    0 |    2 |    4 |   10 |   20 |   50 |  100 |      |      |      |      |
+Gold Required      |    0 |    5 |   20 |   50 |  150 |  400 | 1000 |      |      |      |      |
+Experience Gained  |    0 |    4 |    5 |    6 |   10 |   25 |      |      |      |      |      |
+
+#### Bone Pit
+
+##### Skeletons
+
+Attribute   | Value
+----------- | -----
+Name        | Skeletons
+Rarity      | Common
+Type        | Troop
+Description | Four fast...
+Elixir Cost | 1
+Hit Speed   | 1sec
+Targets     | Ground
+Speed       | Fast
+Range       | Melee
+Deploy Time | 1sec
+Count       | x 4
+
+Attribute          | LV1  | LV2  | LV3  | LV4  | LV5  | LV6  | LV7  | LV8  | LV9  | LV10 | LV11 | LV12
+------------------ | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ----
+Hitpoints          |   27 |      |      |      |      |      |      |      |      |      |      |
+Damage per Second  |   27 |      |      |      |      |      |      |      |      |      |      |
+Damage             |   27 |      |      |      |      |      |      |      |      |      |      |
+Cards Required     |    0 |    2 |    4 |   10 |   20 |   50 |  100 |      |      |      |      |
+Gold Required      |    0 |    5 |   20 |   50 |  150 |  400 | 1000 |      |      |      |      |
+Experience Gained  |    0 |    4 |    5 |    6 |   10 |   25 |      |      |      |      |      |
+
+##### Minions
+
+Attribute   | Value
+----------- | -----
+Name        | Minions
+Rarity      | Common
+Type        | Troop
+Description | Three fast...
+Elixir Cost | 3
+Hit Speed   | 1sec
+Targets     | Air & Ground
+Speed       | Fast
+Range       | 2.5
+Deploy Time | 1sec
+Count       | x 3
+
+Attribute          | LV1  | LV2  | LV3  | LV4  | LV5  | LV6  | LV7  | LV8  | LV9  | LV10 | LV11 | LV12
+------------------ | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ----
+Hitpoints          |   90 |   99 |  108 |  119 |  131 |  144 |      |      |      |      |      |
+Damage per Second  |   40 |   44 |   48 |   53 |   58 |   64 |      |      |      |      |      |
+Damage             |   40 |   44 |   48 |   53 |   58 |   64 |      |      |      |      |      |
+Cards Required     |    0 |    2 |    4 |   10 |   20 |   50 |  100 |      |      |      |      |
+Gold Required      |    0 |    5 |   20 |   50 |  150 |  400 | 1000 |      |      |      |      |
+Experience Gained  |    0 |    4 |    5 |    6 |   10 |   25 |      |      |      |      |      |
+
+#### Barbarian Bowl
+
+##### Barbarians
+
+
+
+### Rare
+
+#### Training Camp
+
+##### Giant
 
 Attribute   | Value
 ----------- | -----
@@ -148,7 +266,7 @@ Cards Required     |    0 |    2 |    4 |   10 |   20 |   50 |  100 |      |    
 Gold Required      |    0 |   50 |  150 |  400 | 1000 |      |      |      |      |
 Experience Gained  |    0 |    6 |   10 |   25 |   50 |      |      |      |      |
 
-### Musketeer
+##### Musketeer
 
 Attribute   | Value
 ----------- | -----
@@ -172,7 +290,7 @@ Cards Required     |    0 |    2 |    4 |   10 |   20 |   50 |  100 |      |    
 Gold Required      |    0 |   50 |  150 |  400 | 1000 |      |      |      |      |
 Experience Gained  |    0 |    6 |   10 |   25 |   50 |      |      |      |      |
 
-### Mini P.E.K.K.A
+##### Mini P.E.K.K.A
 
 Attribute   | Value
 ----------- | -----
@@ -196,7 +314,39 @@ Cards Required     |    0 |    2 |    4 |   10 |   20 |   50 |  100 |      |    
 Gold Required      |    0 |   50 |  150 |  400 | 1000 |      |      |      |      |
 Experience Gained  |    0 |    6 |   10 |   25 |   50 |      |      |      |      |
 
-### Witch
+#### Goblin Stadium
+
+##### Valkyrie
+
+Attribute   | Value
+----------- | -----
+Name        | Valkyrie
+Rarity      | Rare
+Type        | Troop
+Description | Tough melee fighter, deals area damage around her. Swarm or horde, no problem! She can take them all out with a few spins.
+Elixir Cost | 4
+Hit Speed   | 1.5sec
+Targets     | Ground
+Speed       | Medium
+Range       | Melee
+Deploy Time | 1sec
+
+Attribute          | LV1  | LV2  | LV3  | LV4  | LV5  | LV6  | LV7  | LV8  | LV9  | LV10
+------------------ | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ----
+Hitpoints          |  800 |  880 |  968 |      |      |      |      | 1544 |      |
+Damage per Second  |   73 |   81?|   89?|      |      |      |      |  141 |      |
+Area Damage        |  110 |  121 |  133 |      |      |      |      |  212 |      |
+Cards Required     |    0 |    2 |    4 |   10 |   20 |   50 |  100 |      |      |
+Gold Required      |    0 |   50 |  150 |  400 | 1000 |      |      |      |      |
+Experience Gained  |    0 |    6 |   10 |   25 |   50 |      |      |      |      |
+
+
+
+### Epic
+
+#### Training Camp
+
+##### Witch
 
 Attribute   | Value
 ----------- | -----
@@ -222,7 +372,7 @@ Cards Required     |    0 |    2 |    4 |   10 |   20 |   50 |  100 |
 Gold Required      |    0 |  400 | 1000 | 2000 |      |      |      |
 Experience Gained  |    0 |   25 |   50 |      |      |      |      |
 
-### Skeleton Army
+##### Skeleton Army
 
 Attribute   | Value
 ----------- | -----
@@ -247,7 +397,7 @@ Cards Required     |    0 |    2 |    4 |   10 |   20 |   50 |  100 |
 Gold Required      |    0 |  400 | 1000 | 2000 |      |      |      |
 Experience Gained  |    0 |   25 |   50 |      |      |      |      |
 
-### Baby Dragon
+##### Baby Dragon
 
 Attribute   | Value
 ----------- | -----
@@ -271,7 +421,7 @@ Cards Required     |    0 |    2 |    4 |   10 |   20 |   50 |  100 |
 Gold Required      |    0 |  400 | 1000 | 2000 |      |      |      |
 Experience Gained  |    0 |   25 |   50 |      |      |      |      |
 
-### Prince
+##### Prince
 
 Attribute   | Value
 ----------- | -----
@@ -295,240 +445,9 @@ Cards Required     |    0 |    2 |    4 |   10 |   20 |   50 |  100 |
 Gold Required      |    0 |  400 | 1000 | 2000 |      |      |      |
 Experience Gained  |    0 |   25 |   50 |      |      |      |      |
 
-### Arrows
+#### Bone Pit
 
-Attribute   | Value
------------ | -----
-Name        | Arrows
-Rarity      | Common
-Type        | Spell
-Description | Arrows pepper a large area damaging everyone hit. Reduced damage to crown towers.
-Elixir Cost | 3
-Radius      | 4
-
-Attribute          | LV1  | LV2  | LV3  | LV4  | LV5  | LV6  | LV7  | LV8  | LV9  | LV10 | LV11 | LV12
------------------- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ----
-Area Damage        |  115 |  126 |  139 |  152 |  167 |  184 |      |      |  243 |  267 |  294 |  323
-Crown Tower Damage |   58 |   63 |   70 |   76 |   84 |   92 |      |      |  122 |  134 |  147 |  162
-Cards Required     |    0 |    2 |    4 |   10 |   20 |   50 |  100 |      |      |      |      |
-Gold Required      |    0 |    5 |   20 |   50 |  150 |  400 | 1000 |      |      |      |      |
-Experience Gained  |    0 |    4 |    5 |    6 |   10 |   25 |      |      |      |      |      |
-
-### Fireball
-
-Attribute   | Value
------------ | -----
-Name        | Fireball
-Rarity      | Rare
-Type        | Spell
-Description | Annnnnd... Fireball. Incinerates a small area, dealing high damage. Reduced damage to Crown Towers.
-Elixir Cost | 4
-Radius      | 2.5
-
-Attribute          | LV1  | LV2  | LV3  | LV4  | LV5  | LV6  | LV7  | LV8  | LV9  | LV10
------------------- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ----
-Area Damage        |  325 |  357 |  393 |  432 |      |  520 |  572 |  627 |  689 |  757
-Crown Tower Damage |  163 |  179 |  197 |  216 |      |  260 |  286 |  314 |  345 |  379
-Cards Required     |    0 |    2 |    4 |   10 |   20 |   50 |  100 |      |      |
-Gold Required      |    0 |   50 |  150 |  400 | 1000 |      |      |      |      |
-Experience Gained  |    0 |    6 |   10 |   25 |   50 |      |      |      |      |
-
-
-
-## Goblin Stadium
-
-### Goblins
-
-Attribute   | Value
------------ | -----
-Name        | Goblins
-Rarity      | Common
-Type        | Troop
-Description | Three fast, unarmored melee attackers. Small, fast, green and mean!
-Elixir Cost | 2
-Hit Speed   | 1.1sec
-Targets     | Ground
-Speed       | Very Fast
-Range       | Melee
-Deploy Time | 1sec
-Count       | x 3
-
-Attribute          | LV1  | LV2  | LV3  | LV4  | LV5  | LV6  | LV7  | LV8  | LV9  | LV10 | LV11 | LV12
------------------- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ----
-Hitpoints          |   80 |   88 |   96 |  106 |  116 |  128 |      |      |  169 |  186 |  204 |  224
-Damage per Second  |   45 |   50 |   54 |   60 |   66 |   72 |      |      |   96 |  105 |  116 |  127
-Damage             |   50 |   55 |   60 |   66 |   73 |   80 |      |      |  106 |  116 |  128 |  140
-Cards Required     |    0 |    2 |    4 |   10 |   20 |   50 |  100 |      |      |      |      |
-Gold Required      |    0 |    5 |   20 |   50 |  150 |  400 | 1000 |      |      |      |      |
-Experience Gained  |    0 |    4 |    5 |    6 |   10 |   25 |      |      |      |      |      |
-
-### Spear Goblins
-
-Attribute   | Value
------------ | -----
-Name        | Spear Goblins
-Rarity      | Common
-Type        | Troop
-Description | Three unarmored ranged attackers. Who the heck taught these guys to throw spears!?! Who thought that was a good idea?!
-Elixir Cost | 2
-Hit Speed   | 1.3sec
-Targets     | Air & Ground
-Speed       | Very Fast
-Range       | 5.5
-Deploy Time | 1sec
-Count       | x 3
-
-Attribute          | LV1  | LV2  | LV3  | LV4  | LV5  | LV6  | LV7  | LV8  | LV9  | LV10 | LV11 | LV12
------------------- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ----
-Hitpoints          |   52 |   57 |   62 |   69 |   75 |   83 |   91 |      |  110 |  121 |  133 |  146
-Damage per Second  |   18 |   20 |   22 |   23 |   26 |   29 |   32 |      |   38 |   42 |   46 |   51
-Damage             |   24 |   26 |   29 |   31 |   35 |   38 |   42 |      |   50 |   55 |   61 |   67
-Cards Required     |    0 |    2 |    4 |   10 |   20 |   50 |  100 |      |      |      |      |
-Gold Required      |    0 |    5 |   20 |   50 |  150 |  400 | 1000 |      |      |      |      |
-Experience Gained  |    0 |    4 |    5 |    6 |   10 |   25 |      |      |      |      |      |
-
-### Valkyrie
-
-Attribute   | Value
------------ | -----
-Name        | Valkyrie
-Rarity      | Rare
-Type        | Troop
-Description | Tough melee fighter, deals area damage around her. Swarm or horde, no problem! She can take them all out with a few spins.
-Elixir Cost | 4
-Hit Speed   | 1.5sec
-Targets     | Ground
-Speed       | Medium
-Range       | Melee
-Deploy Time | 1sec
-
-Attribute          | LV1  | LV2  | LV3  | LV4  | LV5  | LV6  | LV7  | LV8  | LV9  | LV10
------------------- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ----
-Hitpoints          |  800 |  880 |  968 |      |      |      |      | 1544 |      |
-Damage per Second  |   73 |   81?|   89?|      |      |      |      |  141 |      |
-Area Damage        |  110 |  121 |  133 |      |      |      |      |  212 |      |
-Cards Required     |    0 |    2 |    4 |   10 |   20 |   50 |  100 |      |      |
-Gold Required      |    0 |   50 |  150 |  400 | 1000 |      |      |      |      |
-Experience Gained  |    0 |    6 |   10 |   25 |   50 |      |      |      |      |
-
-### Goblin Hut
-
-Attribute   | Value
------------ | -----
-Name        | Goblin Hut
-Rarity      | Rare
-Type        | Building
-Description | Building that spawns Spear Goblins. But don't look inside. You don't want to see how they are made.
-Elixir Cost | 5
-Spawn Speed | 4.9sec
-Deploy Time | 1sec
-Lifetime    | 1min 0sec
-
-Attribute          | LV1  | LV2  | LV3  | LV4  | LV5  | LV6  | LV7  | LV8  | LV9  | LV10
------------------- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ----
-Hitpoints          |  700 |  770 |  847 |  931 | 1022 |      | 1232 | 1351 | 1484 |
-Spear Goblin Level |    3 |    4 |    5 |    6 |    7 |    8 |    9 |   10 |   11 |   12
-Cards Required     |    0 |    2 |    4 |   10 |   20 |   50 |  100 |      |      |
-Gold Required      |    0 |   50 |  150 |  400 | 1000 |      |      |      |      |
-Experience Gained  |    0 |    6 |   10 |   25 |   50 |      |      |      |      |
-
-### Goblin Barrel
-
-Attribute   | Value
------------ | -----
-Name        | Goblin Barrell
-Rarity      | Epic
-Type        | Spell
-Description | Spawns three Goblins anywhere on the Arena. It's going to be a thrilling ride, boys!
-Elixir Cost | 4
-Radius      | 1.5
-Goblin Count| x 3
-
-Attribute          | LV1  | LV2  | LV3  | LV4  | LV5  | LV6  | LV7  | LV8
------------------- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ----
-Area Damage        |   50 |   55 |      |      |   73 |   80 |   88 |
-Crown Tower Damage |   25 |   28 |      |      |   37 |   40 |   44 |
-Goblin Level       |    6 |    7 |      |      |   10 |   11 |   12 |
-Cards Required     |    0 |    2 |    4 |   10 |   20 |   50 |  100 |
-Gold Required      |    0 |  400 | 1000 | 2000 |      |      |      |
-Experience Gained  |    0 |   25 |   50 |      |      |      |      |
-
-### Lightning
-
-Attribute   | Value
------------ | -----
-Name        | Lightning
-Rarity      | Epic
-Type        | Spell
-Description | Bolts of lightning hit up to 3 enemy troops or buildings with the most hitpoints in the target area. Reduced damage to Crown Towers.
-Elixir Cost | 6
-Count       | x 3
-Duration    | 1.5sec
-Radius      | 3.5
-
-Attribute          | LV1  | LV2  | LV3  | LV4  | LV5  | LV6  | LV7  | LV8
------------------- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ----
-Damage             |  650 |      |      |  864 |  949 | 1040 | 1144 | 1254
-Crown Tower Damage |  325 |      |      |  432 |  475 |  520 |  572 |  627
-Cards Required     |    0 |    2 |    4 |   10 |   20 |   50 |  100 |
-Gold Required      |    0 |  400 | 1000 | 2000 |      |      |      |
-Experience Gained  |    0 |   25 |   50 |      |      |      |      |
-
-
-
-## Bone Pit
-
-### Skeletons
-
-Attribute   | Value
------------ | -----
-Name        | Skeletons
-Rarity      | Common
-Type        | Troop
-Description | Four fast...
-Elixir Cost | 1
-Hit Speed   | 1sec
-Targets     | Ground
-Speed       | Fast
-Range       | Melee
-Deploy Time | 1sec
-Count       | x 4
-
-Attribute          | LV1  | LV2  | LV3  | LV4  | LV5  | LV6  | LV7  | LV8  | LV9  | LV10 | LV11 | LV12
------------------- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ----
-Hitpoints          |   27 |      |      |      |      |      |      |      |      |      |      |
-Damage per Second  |   27 |      |      |      |      |      |      |      |      |      |      |
-Damage             |   27 |      |      |      |      |      |      |      |      |      |      |
-Cards Required     |    0 |    2 |    4 |   10 |   20 |   50 |  100 |      |      |      |      |
-Gold Required      |    0 |    5 |   20 |   50 |  150 |  400 | 1000 |      |      |      |      |
-Experience Gained  |    0 |    4 |    5 |    6 |   10 |   25 |      |      |      |      |      |
-
-### Minions
-
-Attribute   | Value
------------ | -----
-Name        | Minions
-Rarity      | Common
-Type        | Troop
-Description | Three fast...
-Elixir Cost | 3
-Hit Speed   | 1sec
-Targets     | Air & Ground
-Speed       | Fast
-Range       | 2.5
-Deploy Time | 1sec
-Count       | x 3
-
-Attribute          | LV1  | LV2  | LV3  | LV4  | LV5  | LV6  | LV7  | LV8  | LV9  | LV10 | LV11 | LV12
------------------- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ----
-Hitpoints          |   90 |   99 |  108 |  119 |  131 |  144 |      |      |      |      |      |
-Damage per Second  |   40 |   44 |   48 |   53 |   58 |   64 |      |      |      |      |      |
-Damage             |   40 |   44 |   48 |   53 |   58 |   64 |      |      |      |      |      |
-Cards Required     |    0 |    2 |    4 |   10 |   20 |   50 |  100 |      |      |      |      |
-Gold Required      |    0 |    5 |   20 |   50 |  150 |  400 | 1000 |      |      |      |      |
-Experience Gained  |    0 |    4 |    5 |    6 |   10 |   25 |      |      |      |      |      |
-
-### Giant Skeleton
+##### Giant Skeleton
 
 Attribute   | Value
 ----------- | -----
@@ -553,7 +472,7 @@ Cards Required     |    0 |    2 |    4 |   10 |   20 |   50 |  100 |
 Gold Required      |    0 |  400 | 1000 | 2000 |      |      |      |
 Experience Gained  |    0 |   25 |   50 |      |      |      |      |
 
-### Balloon
+##### Balloon
 
 Attribute   | Value
 ----------- | -----
@@ -578,7 +497,48 @@ Cards Required     |    0 |    2 |    4 |   10 |   20 |   50 |  100 |
 Gold Required      |    0 |  400 | 1000 | 2000 |      |      |      |
 Experience Gained  |    0 |   25 |   50 |      |      |      |      |
 
-### Tombstone
+
+
+
+
+## Building
+
+### Common
+
+#### Barbarian Bowl
+
+##### Cannon
+
+
+
+### Rare
+
+#### Goblin Stadium
+
+##### Goblin Hut
+
+Attribute   | Value
+----------- | -----
+Name        | Goblin Hut
+Rarity      | Rare
+Type        | Building
+Description | Building that spawns Spear Goblins. But don't look inside. You don't want to see how they are made.
+Elixir Cost | 5
+Spawn Speed | 4.9sec
+Deploy Time | 1sec
+Lifetime    | 1min 0sec
+
+Attribute          | LV1  | LV2  | LV3  | LV4  | LV5  | LV6  | LV7  | LV8  | LV9  | LV10
+------------------ | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ----
+Hitpoints          |  700 |  770 |  847 |  931 | 1022 |      | 1232 | 1351 | 1484 |
+Spear Goblin Level |    3 |    4 |    5 |    6 |    7 |    8 |    9 |   10 |   11 |   12
+Cards Required     |    0 |    2 |    4 |   10 |   20 |   50 |  100 |      |      |
+Gold Required      |    0 |   50 |  150 |  400 | 1000 |      |      |      |      |
+Experience Gained  |    0 |    6 |   10 |   25 |   50 |      |      |      |      |
+
+#### Bone Pit
+
+##### Tombstone
 
 Attribute   | Value
 ----------- | -----
@@ -599,7 +559,9 @@ Cards Required     |    0 |    2 |    4 |   10 |   20 |   50 |  100 |      |    
 Gold Required      |    0 |   50 |  150 |  400 | 1000 |      |      |      |      |
 Experience Gained  |    0 |    6 |   10 |   25 |   50 |      |      |      |      |
 
-### Bomb Tower
+#### Bone Pit
+
+##### Bomb Tower
 
 Attribute   | Value
 ----------- | -----
@@ -623,18 +585,124 @@ Cards Required     |    0 |    2 |    4 |   10 |   20 |   50 |  100 |      |    
 Gold Required      |    0 |   50 |  150 |  400 | 1000 |      |      |      |      |
 Experience Gained  |    0 |    6 |   10 |   25 |   50 |      |      |      |      |
 
+#### Barbarian Bowl
+
+##### Barbarian Hut
 
 
-## Barbarian Bowl
 
-### Barbarians
+### Epic
 
-### Cannon
+#### Barbarian Bowl
 
-### Barbarian Hut
+##### X-Bow
 
-### Rocket
 
-### X-Bow
 
-### Rage
+
+
+## Spell
+
+### Common
+
+#### Training Camp
+
+##### Arrows
+
+Attribute   | Value
+----------- | -----
+Name        | Arrows
+Rarity      | Common
+Type        | Spell
+Description | Arrows pepper a large area damaging everyone hit. Reduced damage to crown towers.
+Elixir Cost | 3
+Radius      | 4
+
+Attribute          | LV1  | LV2  | LV3  | LV4  | LV5  | LV6  | LV7  | LV8  | LV9  | LV10 | LV11 | LV12
+------------------ | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ----
+Area Damage        |  115 |  126 |  139 |  152 |  167 |  184 |      |      |  243 |  267 |  294 |  323
+Crown Tower Damage |   58 |   63 |   70 |   76 |   84 |   92 |      |      |  122 |  134 |  147 |  162
+Cards Required     |    0 |    2 |    4 |   10 |   20 |   50 |  100 |      |      |      |      |
+Gold Required      |    0 |    5 |   20 |   50 |  150 |  400 | 1000 |      |      |      |      |
+Experience Gained  |    0 |    4 |    5 |    6 |   10 |   25 |      |      |      |      |      |
+
+
+
+### Rare
+
+#### Training Camp
+
+##### Fireball
+
+Attribute   | Value
+----------- | -----
+Name        | Fireball
+Rarity      | Rare
+Type        | Spell
+Description | Annnnnd... Fireball. Incinerates a small area, dealing high damage. Reduced damage to Crown Towers.
+Elixir Cost | 4
+Radius      | 2.5
+
+Attribute          | LV1  | LV2  | LV3  | LV4  | LV5  | LV6  | LV7  | LV8  | LV9  | LV10
+------------------ | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ----
+Area Damage        |  325 |  357 |  393 |  432 |      |  520 |  572 |  627 |  689 |  757
+Crown Tower Damage |  163 |  179 |  197 |  216 |      |  260 |  286 |  314 |  345 |  379
+Cards Required     |    0 |    2 |    4 |   10 |   20 |   50 |  100 |      |      |
+Gold Required      |    0 |   50 |  150 |  400 | 1000 |      |      |      |      |
+Experience Gained  |    0 |    6 |   10 |   25 |   50 |      |      |      |      |
+
+#### Barbarian Bowl
+
+##### Rocket
+
+
+
+### Epic
+
+#### Goblin Stadium
+
+##### Goblin Barrel
+
+Attribute   | Value
+----------- | -----
+Name        | Goblin Barrell
+Rarity      | Epic
+Type        | Spell
+Description | Spawns three Goblins anywhere on the Arena. It's going to be a thrilling ride, boys!
+Elixir Cost | 4
+Radius      | 1.5
+Goblin Count| x 3
+
+Attribute          | LV1  | LV2  | LV3  | LV4  | LV5  | LV6  | LV7  | LV8
+------------------ | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ----
+Area Damage        |   50 |   55 |      |      |   73 |   80 |   88 |
+Crown Tower Damage |   25 |   28 |      |      |   37 |   40 |   44 |
+Goblin Level       |    6 |    7 |      |      |   10 |   11 |   12 |
+Cards Required     |    0 |    2 |    4 |   10 |   20 |   50 |  100 |
+Gold Required      |    0 |  400 | 1000 | 2000 |      |      |      |
+Experience Gained  |    0 |   25 |   50 |      |      |      |      |
+
+##### Lightning
+
+Attribute   | Value
+----------- | -----
+Name        | Lightning
+Rarity      | Epic
+Type        | Spell
+Description | Bolts of lightning hit up to 3 enemy troops or buildings with the most hitpoints in the target area. Reduced damage to Crown Towers.
+Elixir Cost | 6
+Count       | x 3
+Duration    | 1.5sec
+Radius      | 3.5
+
+Attribute          | LV1  | LV2  | LV3  | LV4  | LV5  | LV6  | LV7  | LV8
+------------------ | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ----
+Damage             |  650 |      |      |  864 |  949 | 1040 | 1144 | 1254
+Crown Tower Damage |  325 |      |      |  432 |  475 |  520 |  572 |  627
+Cards Required     |    0 |    2 |    4 |   10 |   20 |   50 |  100 |
+Gold Required      |    0 |  400 | 1000 | 2000 |      |      |      |
+Experience Gained  |    0 |   25 |   50 |      |      |      |      |
+
+#### Barbarian Bowl
+
+##### Rage
