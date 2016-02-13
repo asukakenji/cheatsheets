@@ -204,8 +204,8 @@ Damage per Second  |   50 |   54 |      |      |      |   80 |   87 |
 Area Damage        |   35 |   38 |      |      |      |   56 |   61 |
 Skeleton Level     |    6 |    7 |      |      |      |   11 |   12 |
 Cards Required     |    0 |    2 |    4 |   10 |   20 |   50 |  100 |
-Gold Required      |    0 |  400 | 1000 |      |      |      |      |
-Experience Gained  |    0 |   25 |      |      |      |      |      |
+Gold Required      |    0 |  400 | 1000 | 2000 |      |      |      |
+Experience Gained  |    0 |   25 |   50 |      |      |      |      |
 
 ### Skeleton Army
 
@@ -229,8 +229,8 @@ Hitpoints          |   27 |   29 |      |      |      |      |   47 |
 Damage per Second  |   27 |   29 |      |      |      |      |   47 |
 Damage             |   27 |   29 |      |      |      |      |   47 |
 Cards Required     |    0 |    2 |    4 |   10 |   20 |   50 |  100 |
-Gold Required      |    0 |  400 | 1000 |      |      |      |      |
-Experience Gained  |    0 |   25 |      |      |      |      |      |
+Gold Required      |    0 |  400 | 1000 | 2000 |      |      |      |
+Experience Gained  |    0 |   25 |   50 |      |      |      |      |
 
 ### Baby Dragon
 
@@ -253,8 +253,8 @@ Hitpoints          |  800 |  880 |      | 1064 | 1168 | 1280 | 1408 | 1544
 Damage per Second  |   55 |   61 |      |   73 |   81 |   88 |   97 |  107
 Area Damage        |  100 |  110 |      |  133 |  146 |  160 |  176 |  193
 Cards Required     |    0 |    2 |    4 |   10 |   20 |   50 |  100 |
-Gold Required      |    0 |  400 | 1000 |      |      |      |      |
-Experience Gained  |    0 |   25 |      |      |      |      |      |
+Gold Required      |    0 |  400 | 1000 | 2000 |      |      |      |
+Experience Gained  |    0 |   25 |   50 |      |      |      |      |
 
 ### Prince
 
@@ -316,7 +316,7 @@ Area Damage        |  325 |  357 |  393 |  432 |      |  520 |  572 |  627 |  68
 Crown Tower Damage |  163 |  179 |  197 |  216 |      |  260 |  286 |  314 |  345 |  379
 Cards Required     |    0 |    2 |    4 |   10 |   20 |   50 |  100 |      |      |
 Gold Required      |    0 |   50 |  150 |  400 | 1000 |      |      |      |      |
-Experience Gained  |    0 |    6 |   10 |   25 |      |      |      |      |      |
+Experience Gained  |    0 |    6 |   10 |   25 |   50 |      |      |      |      |
 
 
 
@@ -394,7 +394,7 @@ Damage per Second  |   73 |   81?|   89?|      |      |      |      |  141 |    
 Area Damage        |  110 |  121 |  133 |      |      |      |      |  212 |      |
 Cards Required     |    0 |    2 |    4 |   10 |   20 |   50 |  100 |      |      |
 Gold Required      |    0 |   50 |  150 |  400 | 1000 |      |      |      |      |
-Experience Gained  |    0 |    6 |   10 |   25 |      |      |      |      |      |
+Experience Gained  |    0 |    6 |   10 |   25 |   50 |      |      |      |      |
 
 ### Goblin Hut
 
@@ -412,10 +412,10 @@ Lifetime    | 1min 0sec
 Attribute          | LV1  | LV2  | LV3  | LV4  | LV5  | LV6  | LV7  | LV8  | LV9  | LV10
 ------------------ | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ----
 Hitpoints          |  700 |  770 |  847 |  931 | 1022 |      | 1232 | 1351 | 1484 |
-Spear Goblin Level |    3 |    4 |    5 |    6 |    7 |      |    9 |   10 |   11 |
+Spear Goblin Level |    3 |    4 |    5 |    6 |    7 |    8 |    9 |   10 |   11 |   12
 Cards Required     |    0 |    2 |    4 |   10 |   20 |   50 |  100 |      |      |
 Gold Required      |    0 |   50 |  150 |  400 | 1000 |      |      |      |      |
-Experience Gained  |    0 |    6 |   10 |   25 |      |      |      |      |      |
+Experience Gained  |    0 |    6 |   10 |   25 |   50 |      |      |      |      |
 
 ### Goblin Barrel
 
@@ -435,8 +435,8 @@ Area Damage        |   50 |   55 |      |      |   73 |   80 |   88 |
 Crown Tower Damage |   25 |   28 |      |      |   37 |   40 |   44 |
 Goblin Level       |    6 |    7 |      |      |   10 |   11 |   12 |
 Cards Required     |    0 |    2 |    4 |   10 |   20 |   50 |  100 |
-Gold Required      |    0 |  400 | 1000 |      |      |      |      |
-Experience Gained  |    0 |   25 |      |      |      |      |      |
+Gold Required      |    0 |  400 | 1000 | 2000 |      |      |      |
+Experience Gained  |    0 |   25 |   50 |      |      |      |      |
 
 ### Lightning
 
@@ -456,8 +456,8 @@ Attribute          | LV1  | LV2  | LV3  | LV4  | LV5  | LV6  | LV7  | LV8
 Damage             |  650 |      |      |  864 |  949 | 1040 | 1144 | 1254
 Crown Tower Damage |  325 |      |      |  432 |  475 |  520 |  572 |  627
 Cards Required     |    0 |    2 |    4 |   10 |   20 |   50 |  100 |
-Gold Required      |    0 |  400 | 1000 |      |      |      |      |
-Experience Gained  |    0 |   25 |      |      |      |      |      |
+Gold Required      |    0 |  400 | 1000 | 2000 |      |      |      |
+Experience Gained  |    0 |   25 |   50 |      |      |      |      |
 
 
 
@@ -465,30 +465,145 @@ Experience Gained  |    0 |   25 |      |      |      |      |      |
 
 ### Skeletons
 
+Attribute   | Value
+----------- | -----
+Name        | Skeletons
+Rarity      | Common
+Type        | Troop
+Description | Four fast...
+Elixir Cost | 1
+Hit Speed   | 1sec
+Targets     | Ground
+Speed       | Fast
+Range       | Melee
+Deploy Time | 1sec
+Count       | x 4
+
 Attribute          | LV1  | LV2  | LV3  | LV4  | LV5  | LV6  | LV7  | LV8  | LV9  | LV10 | LV11 | LV12
 ------------------ | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ----
+Hitpoints          |   27 |      |      |      |      |      |      |      |      |      |      |
+Damage per Second  |   27 |      |      |      |      |      |      |      |      |      |      |
+Damage             |   27 |      |      |      |      |      |      |      |      |      |      |
+Cards Required     |    0 |    2 |    4 |   10 |   20 |   50 |  100 |      |      |      |      |
+Gold Required      |    0 |    5 |   20 |   50 |  150 |  400 | 1000 |      |      |      |      |
+Experience Gained  |    0 |    4 |    5 |    6 |   10 |   25 |      |      |      |      |      |
 
 ### Minions
 
+Attribute   | Value
+----------- | -----
+Name        | Minions
+Rarity      | Common
+Type        | Troop
+Description | Three fast...
+Elixir Cost | 3
+Hit Speed   | 1sec
+Targets     | Air & Ground
+Speed       | Fast
+Range       | 2.5
+Deploy Time | 1sec
+Count       | x 3
+
 Attribute          | LV1  | LV2  | LV3  | LV4  | LV5  | LV6  | LV7  | LV8  | LV9  | LV10 | LV11 | LV12
 ------------------ | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ----
+Hitpoints          |   90 |   99 |  108 |  119 |  131 |  144 |      |      |      |      |      |
+Damage per Second  |   40 |   44 |   48 |   53 |   58 |   64 |      |      |      |      |      |
+Damage             |   40 |   44 |   48 |   53 |   58 |   64 |      |      |      |      |      |
+Cards Required     |    0 |    2 |    4 |   10 |   20 |   50 |  100 |      |      |      |      |
+Gold Required      |    0 |    5 |   20 |   50 |  150 |  400 | 1000 |      |      |      |      |
+Experience Gained  |    0 |    4 |    5 |    6 |   10 |   25 |      |      |      |      |      |
 
 ### Giant Skeleton
 
-Attribute          | LV1  | LV2  | LV3  | LV4  | LV5  | LV6  | LV7  | LV8  | LV9  | LV10
------------------- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ----
+Attribute   | Value
+----------- | -----
+Name        | Giant Skeleton
+Rarity      | Epic
+Type        | Troop
+Description | The bigger...
+Elixir Cost | 6
+Hit Speed   | 1.5sec
+Targets     | Ground
+Speed       | Medium
+Range       | Melee
+Deploy Time | 1sec
+
+Attribute          | LV1  | LV2  | LV3  | LV4  | LV5  | LV6  | LV7  | LV8
+------------------ | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ----
+Hitpoints          | 1800 | 1980 |      |      |      |      |      |
+Damage per Second  |   66 |   73 |      |      |      |      |      |
+Damage             |  100 |  110 |      |      |      |      |      |
+Death Damage       |  720 |  792 |      |      |      |      |      |
+Cards Required     |    0 |    2 |    4 |   10 |   20 |   50 |  100 |
+Gold Required      |    0 |  400 | 1000 | 2000 |      |      |      |
+Experience Gained  |    0 |   25 |   50 |      |      |      |      |
 
 ### Balloon
 
-Attribute          | LV1  | LV2  | LV3  | LV4  | LV5  | LV6  | LV7  | LV8  | LV9  | LV10
------------------- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ----
+Attribute   | Value
+----------- | -----
+Name        | Balloon
+Rarity      | Epic
+Type        | Troop
+Description | As pretty...
+Elixir Cost | 5
+Hit Speed   | 3sec
+Targets     | Buildings
+Speed       | Medium
+Range       | Melee
+Deploy Time | 1sec
+
+Attribute          | LV1  | LV2  | LV3  | LV4  | LV5  | LV6  | LV7  | LV8
+------------------ | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ----
+Hitpoints          | 1000 | 1100 |      |      |      |      |      |
+Damage per Second  |  200 |  220 |      |      |      |      |      |
+Damage             |  600 |  660 |      |      |      |      |      |
+Death Damage       |  100 |  110 |      |      |      |      |      |
+Cards Required     |    0 |    2 |    4 |   10 |   20 |   50 |  100 |
+Gold Required      |    0 |  400 | 1000 | 2000 |      |      |      |
+Experience Gained  |    0 |   25 |   50 |      |      |      |      |
 
 ### Tombstone
 
+Attribute   | Value
+----------- | -----
+Name        | Tombstone
+Rarity      | Rare
+Type        | Building
+Description | Troop building...
+Elixir Cost | 3
+Spawn Speed | 2.9sec
+Deploy Time | 1sec
+Lifetime    | 1min 0sec
+
 Attribute          | LV1  | LV2  | LV3  | LV4  | LV5  | LV6  | LV7  | LV8  | LV9  | LV10
 ------------------ | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ----
+Hitpoints          |  200 |  220 |  242 |  266 |      |      |      |      |      |
+Skeleton Level     |    3 |    4 |    5 |    6 |    7 |    8 |    9 |   10 |   11 |   12
+Cards Required     |    0 |    2 |    4 |   10 |   20 |   50 |  100 |      |      |
+Gold Required      |    0 |   50 |  150 |  400 | 1000 |      |      |      |      |
+Experience Gained  |    0 |    6 |   10 |   25 |   50 |      |      |      |      |
 
 ### Bomb Tower
 
+Attribute   | Value
+----------- | -----
+Name        | Bomb Tower
+Rarity      | Rare
+Type        | Building
+Description | Defensive building...
+Elixir Cost | 5
+Hit Speed   | 1.6sec
+Targets     | Ground
+Range       | 6.5
+Deploy Time | 1sec
+Lifetime    | 1min 0sec
+
 Attribute          | LV1  | LV2  | LV3  | LV4  | LV5  | LV6  | LV7  | LV8  | LV9  | LV10
 ------------------ | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ----
+Hitpoints          |  900 |  990 | 1089 | 1197 |      |      |      |      |      |
+Damage per Second  |   62 |   68 |   75 |   83 |      |      |      |      |      |
+Area Damage        |  100 |  110 |  121 |  133 |      |      |      |      |      |
+Cards Required     |    0 |    2 |    4 |   10 |   20 |   50 |  100 |      |      |
+Gold Required      |    0 |   50 |  150 |  400 | 1000 |      |      |      |      |
+Experience Gained  |    0 |    6 |   10 |   25 |   50 |      |      |      |      |
