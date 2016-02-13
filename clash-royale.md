@@ -2,16 +2,16 @@
 
 ## Index
 
-|                       | Common                                                                                                                   | Rare                                                                                                                                                         | Epic
-| --------------------- | ------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------- |
-| Training Camp         | [Knight](#knight) (Troop) <br> [Archers](#archers) (Troop) <br> [Bomber](#bomber) (Troop) <br> [Arrows](#arrows) (Spell) | [Giant](#giant) (Troop) <br> [Musketeer](#musketeer) (Troop) <br> [Mini P.E.K.K.A](#mini-pekka) (Troop) <br> [Fireball](#fireball) (Spell)                   | [Witch](#witch) (Troop) <br> [Skeleton Army](#skeleton-army) (Troop) <br> [Baby Dragon](#baby-dragon) (Troop) <br> [Prince](#prince) (Troop) |
-| Goblin Stadium        | [Goblins](#goblins) (Troop) <br> [Spear Goblins](#spear-goblins) (Troop)                                                 | [Valkyrie](#valkyrie) (Troop) <br> [Goblin Hut](#goblin-hut) (Building)                                                                                      | [Goblin Barrel](#goblin-barrel) (Spell) <br> [Lightning](#lightning) (Spell)                                                                 |
-| Bone Pit              | [Skeletons](#skeletons) (Troop) <br> [Minions](#minions) (Troop)                                                         | [Giant Skeleton](#giant-skeleton) (Troop) <br> [Balloon](#balloon) (Troop) <br> [Tombstone](#tombstone) (Building) <br> [Bomb Tower](#bomb-tower) (Building) |                                                                                                                                              |
-| Barbarian Bowl        |                                                                                                                          |                                                                                                                                                              |                                                                                                                                              |
-| P.E.K.K.A's Playhouse |                                                                                                                          |                                                                                                                                                              |                                                                                                                                              |
-| Spell Valley          |                                                                                                                          |                                                                                                                                                              |                                                                                                                                              |
-| Royal Arena           |                                                                                                                          |                                                                                                                                                              |                                                                                                                                              |
-| Legendary Arena       |                                                                                                                          |                                                                                                                                                              |                                                                                                                                              |
+|                       | Common                                                                                                                   | Rare                                                                                                                                       | Epic
+| --------------------- | ------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------- |
+| Training Camp         | [Knight](#knight) (Troop) <br> [Archers](#archers) (Troop) <br> [Bomber](#bomber) (Troop) <br> [Arrows](#arrows) (Spell) | [Giant](#giant) (Troop) <br> [Musketeer](#musketeer) (Troop) <br> [Mini P.E.K.K.A](#mini-pekka) (Troop) <br> [Fireball](#fireball) (Spell) | [Witch](#witch) (Troop) <br> [Skeleton Army](#skeleton-army) (Troop) <br> [Baby Dragon](#baby-dragon) (Troop) <br> [Prince](#prince) (Troop) |
+| Goblin Stadium        | [Goblins](#goblins) (Troop) <br> [Spear Goblins](#spear-goblins) (Troop)                                                 | [Valkyrie](#valkyrie) (Troop) <br> [Goblin Hut](#goblin-hut) (Building)                                                                    | [Goblin Barrel](#goblin-barrel) (Spell) <br> [Lightning](#lightning) (Spell)                                                                 |
+| Bone Pit              | [Skeletons](#skeletons) (Troop) <br> [Minions](#minions) (Troop)                                                         | [Bomb Tower](#bomb-tower) (Building) <br> [Tombstone](#tombstone) (Building)                                                               | [Giant Skeleton](#giant-skeleton) (Troop) <br> [Balloon](#balloon) (Troop)                                                                   |
+| Barbarian Bowl        | [Barbarians](#barbarians) (Troop) <br> [Cannon](#cannon) (Building)                                                      | [Barbarian Hut](#barbarian-hut) (Building) <br> [Rocket](#rocket) (Spell)                                                                  | [X-Bow](#x-bow) (Building) <br> [Rage](#rage) (Spell)                                                                                        |
+| P.E.K.K.A's Playhouse |                                                                                                                          |                                                                                                                                            |                                                                                                                                              |
+| Spell Valley          |                                                                                                                          |                                                                                                                                            |                                                                                                                                              |
+| Royal Arena           |                                                                                                                          |                                                                                                                                            |                                                                                                                                              |
+| Legendary Arena       |                                                                                                                          |                                                                                                                                            |                                                                                                                                              |
 
 
 
@@ -24,13 +24,13 @@ King's Tower Hit Speed | 1.0sec
 Arena Towers Range     |    8.5
 Arena Towers Hit Speed | 0.8sec
 
-Attribute              | LV1    | LV2    | LV3    | LV4    | LV5    | LV6    |
----------------------- | ------ | ------ | ------ | ------ | ------ | ------ |
-King's Tower Hitpoints |   2400 |   2568 |   2736 |   2904 |   3096 |        |
-King's Tower Damage    |     50 |     53 |     57 |     60 |     64 |        |
-Arena Towers Hitpoints |   1400 |   1512 |   1624 |   1750 |   1890 |        |
-Arena Towers Damage    |     50 |     54 |     58 |     62 |     67 |        |
-Experience Required    |      0 |     20 |     50 |    100 |    200 |
+Attribute              | LV1    | LV2    | LV3    | LV4    | LV5    | LV6    | LV7    |
+---------------------- | ------ | ------ | ------ | ------ | ------ | ------ | ------ |
+King's Tower Hitpoints |   2400 |   2568 |   2736 |   2904 |   3096 |   3312 |        |
+King's Tower Damage    |     50 |     53 |     57 |     60 |     64 |     69 |        |
+Arena Towers Hitpoints |   1400 |   1512 |   1624 |   1750 |   1890 |   2030 |        |
+Arena Towers Damage    |     50 |     54 |     58 |     62 |     67 |     72 |        |
+Experience Required    |      0 |     20 |     50 |    100 |    200 |    500 |   1000 |
 
 
 
@@ -607,3 +607,19 @@ Area Damage        |  100 |  110 |  121 |  133 |      |      |      |      |    
 Cards Required     |    0 |    2 |    4 |   10 |   20 |   50 |  100 |      |      |
 Gold Required      |    0 |   50 |  150 |  400 | 1000 |      |      |      |      |
 Experience Gained  |    0 |    6 |   10 |   25 |   50 |      |      |      |      |
+
+
+
+## Barbarian Bowl
+
+### Barbarians
+
+### Cannon
+
+### Barbarian Hut
+
+### Rocket
+
+### X-Bow
+
+### Rage
