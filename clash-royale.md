@@ -23,13 +23,13 @@ Experience Required    |      0 |     20 |     50 |    100 |    200 |    500 |  
 
 |                                 | Troop                                                                                                                                                                                                                                                                                                                                                | Building                                                                                           | Spell                                                                      |
 | ------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------- |
-| Training Camp (Arena 0)         | [Knight](#knight) (Common) <br> [Archers](#archers) (Common) <br> [Bomber](#bomber) (Common) <br> [Giant](#giant) (Rare) <br> [Musketeer](#musketeer) (Rare) <br> [Mini P.E.K.K.A](#mini-pekka) (Rare) <br> [Witch](#witch) (Epic) <br> [Skeleton Army](#skeleton-army) (Epic) <br> [Baby Dragon](#baby-dragon) (Epic) <br> [Prince](#prince) (Epic) |                                                                                                    | [Arrows](#arrows) (Common) <br> [Fireball](#fireball) (Rare)               |
-| Goblin Stadium (Arena 1)        | [Goblins](#goblins) (Common) <br> [Spear Goblins](#spear-goblins) (Common) <br> [Valkyrie](#valkyrie) (Rare)                                                                                                                                                                                                                                         | [Goblin Hut](#goblin-hut) (Rare)                                                                   | [Goblin Barrel](#goblin-barrel) (Epic) <br> [Lightning](#lightning) (Epic) |
-| Bone Pit (Arena 2)              | [Skeletons](#skeletons) (Common) <br> [Minions](#minions) (Common) <br> [Giant Skeleton](#giant-skeleton) (Epic) <br> [Balloon](#balloon) (Epic)                                                                                                                                                                                                     | [Bomb Tower](#bomb-tower) (Rare) <br> [Tombstone](#tombstone) (Rare)                               |                                                                            |
-| Barbarian Bowl (Arena 3)        | [Barbarians](#barbarians) (Common)                                                                                                                                                                                                                                                                                                                   | [Cannon](#cannon) (Common) <br> [Barbarian Hut](#barbarian-hut) (Rare) <br> [X-Bow](#x-bow) (Epic) | [Rocket](#rocket) (Rare) <br> [Rage](#rage) (Epic)                         |
-| P.E.K.K.A's Playhouse (Arena 4) | [Minion Horde](#minion-horde) (Common) <br> [Hog Rider](#hog-rider) (Rare) <br> [P.E.K.K.A](#pekka) (Epic)                                                                                                                                                                                                                                           | [Tesla](#tesla) (Common) <br> [Inferno Tower](#inferno-tower) (Rare)                               | [Freeze](#freeze) (Epic)                                                   |
-| Spell Valley  (Arena 5)         | [Wizard](#wizard) (Rare)                                                                                                                                                                                                                                                                                                                             |                                                                                                    | [Zap](#zap) (Common) <br> [Mirror](#mirror) (Epic)                         |
-| Royal Arena  (Arena 6)          | [Golem](#golem) (Epic)                                                                                                                                                                                                                                                                                                                               | [Mortar](#mortar) (Common) <br> [Elixir Collector](#elixir-collector) (Rare)                       |                                                                            |
+| Arena 0: Training Camp          | [Knight](#knight) (Common) <br> [Archers](#archers) (Common) <br> [Bomber](#bomber) (Common) <br> [Giant](#giant) (Rare) <br> [Musketeer](#musketeer) (Rare) <br> [Mini P.E.K.K.A](#mini-pekka) (Rare) <br> [Witch](#witch) (Epic) <br> [Skeleton Army](#skeleton-army) (Epic) <br> [Baby Dragon](#baby-dragon) (Epic) <br> [Prince](#prince) (Epic) |                                                                                                    | [Arrows](#arrows) (Common) <br> [Fireball](#fireball) (Rare)               |
+| Arena 1: Goblin Stadium         | [Goblins](#goblins) (Common) <br> [Spear Goblins](#spear-goblins) (Common) <br> [Valkyrie](#valkyrie) (Rare)                                                                                                                                                                                                                                         | [Goblin Hut](#goblin-hut) (Rare)                                                                   | [Goblin Barrel](#goblin-barrel) (Epic) <br> [Lightning](#lightning) (Epic) |
+| Arena 2: Bone Pit               | [Skeletons](#skeletons) (Common) <br> [Minions](#minions) (Common) <br> [Giant Skeleton](#giant-skeleton) (Epic) <br> [Balloon](#balloon) (Epic)                                                                                                                                                                                                     | [Bomb Tower](#bomb-tower) (Rare) <br> [Tombstone](#tombstone) (Rare)                               |                                                                            |
+| Arena 3: Barbarian Bowl         | [Barbarians](#barbarians) (Common)                                                                                                                                                                                                                                                                                                                   | [Cannon](#cannon) (Common) <br> [Barbarian Hut](#barbarian-hut) (Rare) <br> [X-Bow](#x-bow) (Epic) | [Rocket](#rocket) (Rare) <br> [Rage](#rage) (Epic)                         |
+| Arena 4: P.E.K.K.A's Playhouse  | [Minion Horde](#minion-horde) (Common) <br> [Hog Rider](#hog-rider) (Rare) <br> [P.E.K.K.A](#pekka) (Epic)                                                                                                                                                                                                                                           | [Tesla](#tesla) (Common) <br> [Inferno Tower](#inferno-tower) (Rare)                               | [Freeze](#freeze) (Epic)                                                   |
+| Arena 5: Spell Valley           | [Wizard](#wizard) (Rare)                                                                                                                                                                                                                                                                                                                             |                                                                                                    | [Zap](#zap) (Common) <br> [Mirror](#mirror) (Epic)                         |
+| Arena 6: Royal Arena            | [Golem](#golem) (Epic)                                                                                                                                                                                                                                                                                                                               | [Mortar](#mortar) (Common) <br> [Elixir Collector](#elixir-collector) (Rare)                       |                                                                            |
 
 
 
@@ -37,13 +37,13 @@ Experience Required    |      0 |     20 |     50 |    100 |    200 |    500 |  
 
 |                                 | Common                                                                                                                   | Rare                                                                                                                                       | Epic
 | ------------------------------- | ------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------- |
-| Training Camp (Arena 0)         | [Knight](#knight) (Troop) <br> [Archers](#archers) (Troop) <br> [Bomber](#bomber) (Troop) <br> [Arrows](#arrows) (Spell) | [Giant](#giant) (Troop) <br> [Musketeer](#musketeer) (Troop) <br> [Mini P.E.K.K.A](#mini-pekka) (Troop) <br> [Fireball](#fireball) (Spell) | [Witch](#witch) (Troop) <br> [Skeleton Army](#skeleton-army) (Troop) <br> [Baby Dragon](#baby-dragon) (Troop) <br> [Prince](#prince) (Troop) |
-| Goblin Stadium (Arena 1)        | [Goblins](#goblins) (Troop) <br> [Spear Goblins](#spear-goblins) (Troop)                                                 | [Valkyrie](#valkyrie) (Troop) <br> [Goblin Hut](#goblin-hut) (Building)                                                                    | [Goblin Barrel](#goblin-barrel) (Spell) <br> [Lightning](#lightning) (Spell)                                                                 |
-| Bone Pit (Arena 2)              | [Skeletons](#skeletons) (Troop) <br> [Minions](#minions) (Troop)                                                         | [Bomb Tower](#bomb-tower) (Building) <br> [Tombstone](#tombstone) (Building)                                                               | [Giant Skeleton](#giant-skeleton) (Troop) <br> [Balloon](#balloon) (Troop)                                                                   |
-| Barbarian Bowl (Arena 3)        | [Barbarians](#barbarians) (Troop) <br> [Cannon](#cannon) (Building)                                                      | [Barbarian Hut](#barbarian-hut) (Building) <br> [Rocket](#rocket) (Spell)                                                                  | [X-Bow](#x-bow) (Building) <br> [Rage](#rage) (Spell)                                                                                        |
-| P.E.K.K.A's Playhouse (Arena 4) | [Minion Horde](#minion-horde) (Troop) <br> [Tesla](#tesla) (Building)                                                    | [Hog Rider](#hog-rider) (Troop) <br> [Inferno Tower](#inferno-tower) (Building)                                                            | [P.E.K.K.A](#pekka) (Troop) <br> [Freeze](#freeze) (Spell)                                                                                   |
-| Spell Valley (Arena 5)          | [Zap](#zap) (Spell)                                                                                                      | [Wizard](#wizard) (Troop)                                                                                                                  | [Mirror](#mirror) (Spell)                                                                                                                    |
-| Royal Arena (Arena 6)           | [Mortar](#mortar) (Building)                                                                                             | [Elixir Collector](#elixir-collector) (Building)                                                                                           | [Golem](#golem) (Troop)                                                                                                                      |
+| Arena 0: Training Camp          | [Knight](#knight) (Troop) <br> [Archers](#archers) (Troop) <br> [Bomber](#bomber) (Troop) <br> [Arrows](#arrows) (Spell) | [Giant](#giant) (Troop) <br> [Musketeer](#musketeer) (Troop) <br> [Mini P.E.K.K.A](#mini-pekka) (Troop) <br> [Fireball](#fireball) (Spell) | [Witch](#witch) (Troop) <br> [Skeleton Army](#skeleton-army) (Troop) <br> [Baby Dragon](#baby-dragon) (Troop) <br> [Prince](#prince) (Troop) |
+| Arena 1: Goblin Stadium         | [Goblins](#goblins) (Troop) <br> [Spear Goblins](#spear-goblins) (Troop)                                                 | [Valkyrie](#valkyrie) (Troop) <br> [Goblin Hut](#goblin-hut) (Building)                                                                    | [Goblin Barrel](#goblin-barrel) (Spell) <br> [Lightning](#lightning) (Spell)                                                                 |
+| Arena 2: Bone Pit               | [Skeletons](#skeletons) (Troop) <br> [Minions](#minions) (Troop)                                                         | [Bomb Tower](#bomb-tower) (Building) <br> [Tombstone](#tombstone) (Building)                                                               | [Giant Skeleton](#giant-skeleton) (Troop) <br> [Balloon](#balloon) (Troop)                                                                   |
+| Arena 3: Barbarian Bowl         | [Barbarians](#barbarians) (Troop) <br> [Cannon](#cannon) (Building)                                                      | [Barbarian Hut](#barbarian-hut) (Building) <br> [Rocket](#rocket) (Spell)                                                                  | [X-Bow](#x-bow) (Building) <br> [Rage](#rage) (Spell)                                                                                        |
+| Arena 4: P.E.K.K.A's Playhouse  | [Minion Horde](#minion-horde) (Troop) <br> [Tesla](#tesla) (Building)                                                    | [Hog Rider](#hog-rider) (Troop) <br> [Inferno Tower](#inferno-tower) (Building)                                                            | [P.E.K.K.A](#pekka) (Troop) <br> [Freeze](#freeze) (Spell)                                                                                   |
+| Arena 5: Spell Valley           | [Zap](#zap) (Spell)                                                                                                      | [Wizard](#wizard) (Troop)                                                                                                                  | [Mirror](#mirror) (Spell)                                                                                                                    |
+| Arena 6: Royal Arena            | [Mortar](#mortar) (Building)                                                                                             | [Elixir Collector](#elixir-collector) (Building)                                                                                           | [Golem](#golem) (Troop)                                                                                                                      |
 
 
 
@@ -54,7 +54,7 @@ Experience Required    |      0 |     20 |     50 |    100 |    200 |    500 |  
 Attribute   | Value
 ----------- | -----
 Name        | Knight
-Arena       | Training Camp (Arena 0)
+Arena       | Arena 0: Training Camp
 Rarity      | Common
 Type        | Troop
 Description | A tough melee fighter. The Barbarian's handsome, cultured cousin. Rumor has it that he was knighted based on the sheer awesomeness of his mustache alone.
@@ -79,7 +79,7 @@ Experience Gained  |    0 |    4 |    5 |    6 |   10 |   25 |      |      |    
 Attribute   | Value
 ----------- | -----
 Name        | Archers
-Arena       | Training Camp (Arena 0)
+Arena       | Arena 0: Training Camp
 Rarity      | Common
 Type        | Troop
 Description | A pair of unarmored ranged attackers. They'll help you with ground and air unit attacks, but you're on your own with coloring your hair.
@@ -105,7 +105,7 @@ Experience Gained  |    0 |    4 |    5 |    6 |   10 |   25 |      |      |    
 Attribute   | Value
 ----------- | -----
 Name        | Bomber
-Arena       | Training Camp (Arena 0)
+Arena       | Arena 0: Training Camp
 Rarity      | Common
 Type        | Troop
 Description | Small, lightly protected skeleton that throws bombs. Deals damage that can wipe out a swarm of enemies.
@@ -130,7 +130,7 @@ Experience Gained  |    0 |    4 |    5 |    6 |   10 |   25 |      |      |    
 Attribute   | Value
 ----------- | -----
 Name        | Goblins
-Arena       | Goblin Stadium (Arena 1)
+Arena       | Arena 1: Goblin Stadium
 Rarity      | Common
 Type        | Troop
 Description | Three fast, unarmored melee attackers. Small, fast, green and mean!
@@ -156,7 +156,7 @@ Experience Gained  |    0 |    4 |    5 |    6 |   10 |   25 |      |      |    
 Attribute   | Value
 ----------- | -----
 Name        | Spear Goblins
-Arena       | Goblin Stadium (Arena 1)
+Arena       | Arena 1: Goblin Stadium
 Rarity      | Common
 Type        | Troop
 Description | Three unarmored ranged attackers. Who the heck taught these guys to throw spears!?! Who thought that was a good idea?!
@@ -182,7 +182,7 @@ Experience Gained  |    0 |    4 |    5 |    6 |   10 |   25 |      |      |    
 Attribute   | Value
 ----------- | -----
 Name        | Skeletons
-Arena       | Bone Pit (Arena 2)
+Arena       | Arena 2: Bone Pit
 Rarity      | Common
 Type        | Troop
 Description | Four fast...
@@ -208,7 +208,7 @@ Experience Gained  |    0 |    4 |    5 |    6 |   10 |   25 |      |      |    
 Attribute   | Value
 ----------- | -----
 Name        | Minions
-Arena       | Bone Pit (Arena 2)
+Arena       | Arena 2: Bone Pit
 Rarity      | Common
 Type        | Troop
 Description | Three fast...
@@ -230,10 +230,10 @@ Gold Required      |    0 |    5 |   20 |   50 |  150 |  400 | 1000 |      |    
 Experience Gained  |    0 |    4 |    5 |    6 |   10 |   25 |      |      |      |      |      |
 
 ### Barbarians
-- Barbarian Bowl (Arena 3)
+- Arena 3: Barbarian Bowl
 
 ### Minion Horde
-- P.E.K.K.A's Playhouse (Arena 4)
+- Arena 4: P.E.K.K.A's Playhouse
 
 
 
@@ -242,7 +242,7 @@ Experience Gained  |    0 |    4 |    5 |    6 |   10 |   25 |      |      |    
 Attribute   | Value
 ----------- | -----
 Name        | Giant
-Arena       | Training Camp (Arena 0)
+Arena       | Arena 0: Training Camp
 Rarity      | Rare
 Type        | Troop
 Description | Slow but durable, only attacks buildings. A real one-man wrecking crew!
@@ -267,7 +267,7 @@ Experience Gained  |    0 |    6 |   10 |   25 |   50 |      |      |      |    
 Attribute   | Value
 ----------- | -----
 Name        | Musketeer
-Arena       | Training Camp (Arena 0)
+Arena       | Arena 0: Training Camp
 Rarity      | Rare
 Type        | Troop
 Description | Don't be fooled by her delicately coiffed hair, the musketeer is a mean shot with her trusty boomstick.
@@ -292,7 +292,7 @@ Experience Gained  |    0 |    6 |   10 |   25 |   50 |      |      |      |    
 Attribute   | Value
 ----------- | -----
 Name        | Mini P.E.K.K.A
-Arena       | Training Camp (Arena 0)
+Arena       | Arena 0: Training Camp
 Rarity      | Rare
 Type        | Troop
 Description | The arena is a certified butterfly-free zone. No distractions for P.E.K.K.A, only destruction.
@@ -317,7 +317,7 @@ Experience Gained  |    0 |    6 |   10 |   25 |   50 |      |      |      |    
 Attribute   | Value
 ----------- | -----
 Name        | Valkyrie
-Arena       | Goblin Stadium (Arena 1)
+Arena       | Arena 1: Goblin Stadium
 Rarity      | Rare
 Type        | Troop
 Description | Tough melee fighter, deals area damage around her. Swarm or horde, no problem! She can take them all out with a few spins.
@@ -338,10 +338,10 @@ Gold Required      |    0 |   50 |  150 |  400 | 1000 |      |      |      |    
 Experience Gained  |    0 |    6 |   10 |   25 |   50 |      |      |      |      |
 
 ### Hog Rider
-- P.E.K.K.A's Playhouse (Arena 4)
+- Arena 4: P.E.K.K.A's Playhouse
 
 ### Wizard
-- Spell Valley (Arena 5)
+- Arena 5: Spell Valley
 
 
 
@@ -350,7 +350,7 @@ Experience Gained  |    0 |    6 |   10 |   25 |   50 |      |      |      |    
 Attribute   | Value
 ----------- | -----
 Name        | Witch
-Arena       | Training Camp (Arena 0)
+Arena       | Arena 0: Training Camp
 Rarity      | Epic
 Type        | Troop
 Description | Summons skeletons, shoots destructo beams, has glowing pink eyes that unfortunately don't shoot lasers.
@@ -377,7 +377,7 @@ Experience Gained  |    0 |   25 |   50 |      |      |      |      |
 Attribute   | Value
 ----------- | -----
 Name        | Skeleton Army
-Arena       | Training Camp (Arena 0)
+Arena       | Arena 0: Training Camp
 Rarity      | Epic
 Type        | Troop
 Description | Summons an army of skeletons. Meet Larry and his friends Harry, Gerry, Terry, Mary, etc.
@@ -403,7 +403,7 @@ Experience Gained  |    0 |   25 |   50 |      |      |      |      |
 Attribute   | Value
 ----------- | -----
 Name        | Baby Dragon
-Arena       | Training Camp (Arena 0)
+Arena       | Arena 0: Training Camp
 Rarity      | Epic
 Type        | Troop
 Description | Flying troop that deals area damage. Baby dragons hatch cute, hungry, and ready for a barbeque.
@@ -428,7 +428,7 @@ Experience Gained  |    0 |   25 |   50 |      |      |      |      |
 Attribute   | Value
 ----------- | -----
 Name        | Prince
-Arena       | Training Camp (Arena 0)
+Arena       | Arena 0: Training Camp
 Rarity      | Epic
 Type        | Troop
 Description | Don't let the little pony fool you. Once the Prince gets a running start, you WILL be trampled. Does 2x damage once he gets charging.
@@ -453,7 +453,7 @@ Experience Gained  |    0 |   25 |   50 |      |      |      |      |
 Attribute   | Value
 ----------- | -----
 Name        | Giant Skeleton
-Arena       | Bone Pit (Arena 2)
+Arena       | Arena 2: Bone Pit
 Rarity      | Epic
 Type        | Troop
 Description | The bigger...
@@ -479,7 +479,7 @@ Experience Gained  |    0 |   25 |   50 |      |      |      |      |
 Attribute   | Value
 ----------- | -----
 Name        | Balloon
-Arena       | Bone Pit (Arena 2)
+Arena       | Arena 2: Bone Pit
 Rarity      | Epic
 Type        | Troop
 Description | As pretty...
@@ -501,23 +501,23 @@ Gold Required      |    0 |  400 | 1000 | 2000 |      |      |      |
 Experience Gained  |    0 |   25 |   50 |      |      |      |      |
 
 ### P.E.K.K.A
-- P.E.K.K.A's Playhouse (Arena 4)
+- Arena 4: P.E.K.K.A's Playhouse
 
 ### Golem
-- Royal Arena (Arena 6)
+- Arena 6: Royal Arena
 
 
 
 ## Building
 
 ### Cannon
-- Barbarian Bowl (Arena 3)
+- Arena 3: Barbarian Bowl
 
 ### Tesla
-- P.E.K.K.A's Playhouse (Arena 4)
+- Arena 4: P.E.K.K.A's Playhouse
 
 ### Mortar
-- Royal Arena (Arena 6)
+- Arena 6: Royal Arena
 
 
 
@@ -526,7 +526,7 @@ Experience Gained  |    0 |   25 |   50 |      |      |      |      |
 Attribute   | Value
 ----------- | -----
 Name        | Goblin Hut
-Arena       | Goblin Stadium (Arena 1)
+Arena       | Arena 1: Goblin Stadium
 Rarity      | Rare
 Type        | Building
 Description | Building that spawns Spear Goblins. But don't look inside. You don't want to see how they are made.
@@ -548,7 +548,7 @@ Experience Gained  |    0 |    6 |   10 |   25 |   50 |      |      |      |    
 Attribute   | Value
 ----------- | -----
 Name        | Bomb Tower
-Arena       | Bone Pit (Arena 2)
+Arena       | Arena 2: Bone Pit
 Rarity      | Rare
 Type        | Building
 Description | Defensive building...
@@ -573,7 +573,7 @@ Experience Gained  |    0 |    6 |   10 |   25 |   50 |      |      |      |    
 Attribute   | Value
 ----------- | -----
 Name        | Tombstone
-Arena       | Bone Pit (Arena 2)
+Arena       | Arena 2: Bone Pit
 Rarity      | Rare
 Type        | Building
 Description | Troop building...
@@ -591,18 +591,18 @@ Gold Required      |    0 |   50 |  150 |  400 | 1000 |      |      |      |    
 Experience Gained  |    0 |    6 |   10 |   25 |   50 |      |      |      |      |
 
 ### Barbarian Hut
-- Barbarian Bowl (Arena 3)
+- Arena 3: Barbarian Bowl
 
 ### Inferno Tower
-- Royal Arena (Arena 6)
+- Arena 4: P.E.K.K.A's Playhouse
 
 ### Elixir Collector
-- Royal Arena (Arena 6)
+- Arena 6: Royal Arena
 
 
 
 ### X-Bow
-- Barbarian Bowl (Arena 3)
+- Arena 3: Barbarian Bowl
 
 
 
@@ -615,7 +615,7 @@ Experience Gained  |    0 |    6 |   10 |   25 |   50 |      |      |      |    
 Attribute   | Value
 ----------- | -----
 Name        | Arrows
-Arena       | Training Camp (Arena 0)
+Arena       | Arena 0: Training Camp
 Rarity      | Common
 Type        | Spell
 Description | Arrows pepper a large area damaging everyone hit. Reduced damage to crown towers.
@@ -631,7 +631,7 @@ Gold Required      |    0 |    5 |   20 |   50 |  150 |  400 | 1000 |      |    
 Experience Gained  |    0 |    4 |    5 |    6 |   10 |   25 |      |      |      |      |      |
 
 ### Zap
-- Spell Valley (Arena 5)
+- Arena 5: Spell Valley
 
 
 
@@ -640,7 +640,7 @@ Experience Gained  |    0 |    4 |    5 |    6 |   10 |   25 |      |      |    
 Attribute   | Value
 ----------- | -----
 Name        | Fireball
-Arena       | Training Camp (Arena 0)
+Arena       | Arena 0: Training Camp
 Rarity      | Rare
 Type        | Spell
 Description | Annnnnd... Fireball. Incinerates a small area, dealing high damage. Reduced damage to Crown Towers.
@@ -656,7 +656,7 @@ Gold Required      |    0 |   50 |  150 |  400 | 1000 |      |      |      |    
 Experience Gained  |    0 |    6 |   10 |   25 |   50 |      |      |      |      |
 
 ### Rocket
-- Barbarian Bowl (Arena 3)
+- Arena 3: Barbarian Bowl
 
 
 
@@ -665,7 +665,7 @@ Experience Gained  |    0 |    6 |   10 |   25 |   50 |      |      |      |    
 Attribute   | Value
 ----------- | -----
 Name        | Goblin Barrell
-Arena       | Goblin Stadium (Arena 1)
+Arena       | Arena 1: Goblin Stadium
 Rarity      | Epic
 Type        | Spell
 Description | Spawns three Goblins anywhere on the Arena. It's going to be a thrilling ride, boys!
@@ -687,7 +687,7 @@ Experience Gained  |    0 |   25 |   50 |      |      |      |      |
 Attribute   | Value
 ----------- | -----
 Name        | Lightning
-Arena       | Goblin Stadium (Arena 1)
+Arena       | Arena 1: Goblin Stadium
 Rarity      | Epic
 Type        | Spell
 Description | Bolts of lightning hit up to 3 enemy troops or buildings with the most hitpoints in the target area. Reduced damage to Crown Towers.
@@ -705,10 +705,10 @@ Gold Required      |    0 |  400 | 1000 | 2000 |      |      |      |
 Experience Gained  |    0 |   25 |   50 |      |      |      |      |
 
 ### Rage
-- Barbarian Bowl (Arena 3)
+- Arena 3: Barbarian Bowl
 
 ### Freeze
-- P.E.K.K.A's Playhouse (Arena 4)
+- Arena 4: P.E.K.K.A's Playhouse
 
 ### Mirror
-- Spell Valley (Arena 5)
+- Arena 5: Spell Valley
