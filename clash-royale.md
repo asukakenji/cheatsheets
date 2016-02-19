@@ -81,8 +81,8 @@ Hitpoints          |  600 |  660 |  726 |  798 |  876 |      | 1056 |      | 127
 Damage per Second  |   68 |   74 |   81 |   90 |   99 |      |  120 |      |  144 |  158 |      |  190
 Damage             |   75 |   82 |   90 |   99 |  109 |      |  132 |      |  159 |  174 |      |  210
 Cards Required     |    0 |    2 |    4 |   10 |   20 |   50 |  100 |      |      |      |      |
-Gold Required      |    0 |    5 |   20 |   50 |  150 |  400 | 1000 |      |      |      |      |
-Experience Gained  |    0 |    4 |    5 |    6 |   10 |   25 |      |      |      |      |      |
+Gold Required      |    0 |    5 |   20 |   50 |  150 |  400 | 1000 | 2000 |      |      |      |
+Experience Gained  |    0 |    4 |    5 |    6 |   10 |   25 |   50 |      |      |      |      |
 
 ### Archers
 
@@ -107,8 +107,8 @@ Hitpoints          |  125 |  137 |  151 |  166 |      |  200 |  220 |      |  26
 Damage per Second  |   33 |   36 |   40 |   44 |      |   53 |   58 |      |   70 |   77 |   85 |   93
 Damage             |   40 |   44 |   48 |   53 |      |   64 |   70 |      |   84 |   93 |  102 |  112
 Cards Required     |    0 |    2 |    4 |   10 |   20 |   50 |  100 |      |      |      |      |
-Gold Required      |    0 |    5 |   20 |   50 |  150 |  400 | 1000 |      |      |      |      |
-Experience Gained  |    0 |    4 |    5 |    6 |   10 |   25 |      |      |      |      |      |
+Gold Required      |    0 |    5 |   20 |   50 |  150 |  400 | 1000 | 2000 |      |      |      |
+Experience Gained  |    0 |    4 |    5 |    6 |   10 |   25 |   50 |      |      |      |      |
 
 ### Bomber
 
@@ -132,8 +132,8 @@ Hitpoints          |  150 |  165 |  181 |  199 |  219 |  240 |  264 |      |  31
 Damage per Second  |   52 |   57 |   63 |   70 |   76 |   84 |   92 |      |  111 |  122 |  134 |  147
 Area Damage        |  100 |  110 |  121 |  133 |  146 |  160 |  176 |      |  212 |  233 |  256 |  281
 Cards Required     |    0 |    2 |    4 |   10 |   20 |   50 |  100 |      |      |      |      |
-Gold Required      |    0 |    5 |   20 |   50 |  150 |  400 | 1000 |      |      |      |      |
-Experience Gained  |    0 |    4 |    5 |    6 |   10 |   25 |      |      |      |      |      |
+Gold Required      |    0 |    5 |   20 |   50 |  150 |  400 | 1000 | 2000 |      |      |      |
+Experience Gained  |    0 |    4 |    5 |    6 |   10 |   25 |   50 |      |      |      |      |
 
 ### Goblins
 
@@ -158,8 +158,8 @@ Hitpoints          |   80 |   88 |   96 |  106 |  116 |  128 |      |      |  16
 Damage per Second  |   45 |   50 |   54 |   60 |   66 |   72 |      |      |   96 |  105 |  116 |  127
 Damage             |   50 |   55 |   60 |   66 |   73 |   80 |      |      |  106 |  116 |  128 |  140
 Cards Required     |    0 |    2 |    4 |   10 |   20 |   50 |  100 |      |      |      |      |
-Gold Required      |    0 |    5 |   20 |   50 |  150 |  400 | 1000 |      |      |      |      |
-Experience Gained  |    0 |    4 |    5 |    6 |   10 |   25 |      |      |      |      |      |
+Gold Required      |    0 |    5 |   20 |   50 |  150 |  400 | 1000 | 2000 |      |      |      |
+Experience Gained  |    0 |    4 |    5 |    6 |   10 |   25 |   50 |      |      |      |      |
 
 ### Spear Goblins
 
@@ -184,8 +184,8 @@ Hitpoints          |   52 |   57 |   62 |   69 |   75 |   83 |   91 |      |  11
 Damage per Second  |   18 |   20 |   22 |   23 |   26 |   29 |   32 |      |   38 |   42 |   46 |   51
 Damage             |   24 |   26 |   29 |   31 |   35 |   38 |   42 |      |   50 |   55 |   61 |   67
 Cards Required     |    0 |    2 |    4 |   10 |   20 |   50 |  100 |      |      |      |      |
-Gold Required      |    0 |    5 |   20 |   50 |  150 |  400 | 1000 |      |      |      |      |
-Experience Gained  |    0 |    4 |    5 |    6 |   10 |   25 |      |      |      |      |      |
+Gold Required      |    0 |    5 |   20 |   50 |  150 |  400 | 1000 | 2000 |      |      |      |
+Experience Gained  |    0 |    4 |    5 |    6 |   10 |   25 |   50 |      |      |      |      |
 
 ### Skeletons
 
@@ -210,8 +210,8 @@ Hitpoints          |   27 |      |      |      |      |      |      |      |    
 Damage per Second  |   27 |      |      |      |      |      |      |      |      |      |      |
 Damage             |   27 |      |      |      |      |      |      |      |      |      |      |
 Cards Required     |    0 |    2 |    4 |   10 |   20 |   50 |  100 |      |      |      |      |
-Gold Required      |    0 |    5 |   20 |   50 |  150 |  400 | 1000 |      |      |      |      |
-Experience Gained  |    0 |    4 |    5 |    6 |   10 |   25 |      |      |      |      |      |
+Gold Required      |    0 |    5 |   20 |   50 |  150 |  400 | 1000 | 2000 |      |      |      |
+Experience Gained  |    0 |    4 |    5 |    6 |   10 |   25 |   50 |      |      |      |      |
 
 ### Minions
 
@@ -236,8 +236,8 @@ Hitpoints          |   90 |   99 |  108 |  119 |  131 |  144 |      |      |    
 Damage per Second  |   40 |   44 |   48 |   53 |   58 |   64 |      |      |      |      |      |
 Damage             |   40 |   44 |   48 |   53 |   58 |   64 |      |      |      |      |      |
 Cards Required     |    0 |    2 |    4 |   10 |   20 |   50 |  100 |      |      |      |      |
-Gold Required      |    0 |    5 |   20 |   50 |  150 |  400 | 1000 |      |      |      |      |
-Experience Gained  |    0 |    4 |    5 |    6 |   10 |   25 |      |      |      |      |      |
+Gold Required      |    0 |    5 |   20 |   50 |  150 |  400 | 1000 | 2000 |      |      |      |
+Experience Gained  |    0 |    4 |    5 |    6 |   10 |   25 |   50 |      |      |      |      |
 
 ### Barbarians
 - Arena 3: Barbarian Bowl
