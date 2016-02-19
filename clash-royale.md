@@ -377,7 +377,7 @@ Attribute          | LV1  | LV2  | LV3  | LV4  | LV5  | LV6  | LV7  | LV8
 Hitpoints          |  500 |  550 |      |      |      |  800 |  880 |
 Damage per Second  |   50 |   54 |      |      |      |   80 |   87 |
 Area Damage        |   35 |   38 |      |      |      |   56 |   61 |
-Skeleton Level     |    6 |    7 |      |      |      |   11 |   12 |
+Skeleton Level     |    6 |    7 |    8 |    9 |   10 |   11 |   12 |
 Cards Required     |    0 |    2 |    4 |   10 |   20 |   50 |  100 |
 Gold Required      |    0 |  400 | 1000 | 2000 |      |      |      |
 Experience Gained  |    0 |   25 |   50 |      |      |      |      |
