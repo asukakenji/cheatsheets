@@ -9,13 +9,13 @@ King's Tower Hit Speed | 1.0sec
 Arena Towers Range     |    8.5
 Arena Towers Hit Speed | 0.8sec
 
-Attribute              | LV1    | LV2    | LV3    | LV4    | LV5    | LV6    | LV7    |
----------------------- | ------ | ------ | ------ | ------ | ------ | ------ | ------ |
-King's Tower Hitpoints |   2400 |   2568 |   2736 |   2904 |   3096 |   3312 |        |
-King's Tower Damage    |     50 |     53 |     57 |     60 |     64 |     69 |        |
-Arena Towers Hitpoints |   1400 |   1512 |   1624 |   1750 |   1890 |   2030 |        |
-Arena Towers Damage    |     50 |     54 |     58 |     62 |     67 |     72 |        |
-Experience Required    |      0 |     20 |     50 |    100 |    200 |    500 |   1000 |
+Attribute              | LV1    | LV2    | LV3    | LV4    | LV5    | LV6    | LV7    | LV8    |
+---------------------- | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ |
+King's Tower Hitpoints |   2400 |   2568 |   2736 |   2904 |   3096 |   3312 |   3528 |        |
+King's Tower Damage    |     50 |     53 |     57 |     60 |     64 |     69 |     73 |        |
+Arena Towers Hitpoints |   1400 |   1512 |   1624 |   1750 |   1890 |   2030 |   2184 |        |
+Arena Towers Damage    |     50 |     54 |     58 |     62 |     67 |     72 |     78 |        |
+Experience Required    |      0 |     20 |     50 |    100 |    200 |    500 |   1000 |   2000 |
 
 
 
@@ -426,9 +426,9 @@ Deploy Time | 1sec
 
 Attribute          | LV1  | LV2  | LV3  | LV4  | LV5  | LV6  | LV7  | LV8
 ------------------ | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ----
-Hitpoints          |  800 |  880 |      | 1064 | 1168 | 1280 | 1408 | 1544
-Damage per Second  |   55 |   61 |      |   73 |   81 |   88 |   97 |  107
-Area Damage        |  100 |  110 |      |  133 |  146 |  160 |  176 |  193
+Hitpoints          |  800 |  880 |  968 | 1064 | 1168 | 1280 | 1408 | 1544
+Damage per Second  |   55 |   61 |   67 |   73 |   81 |   88 |   97 |  107
+Area Damage        |  100 |  110 |  121 |  133 |  146 |  160 |  176 |  193
 Cards Required     |    0 |    2 |    4 |   10 |   20 |   50 |  100 |
 Gold Required      |    0 |  400 | 1000 | 2000 |      |      |      |
 Experience Gained  |    0 |   25 |   50 |      |      |      |      |
