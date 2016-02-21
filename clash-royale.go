@@ -119,22 +119,27 @@ const MELEE = 0
 type CardAttribute string
 
 const (
-	NAME   CardAttribute = "Name"
-	ARENA                = "Arena"
-	RARITY               = "Rarity"
-	TYPE                 = "Type"
-	DESC                 = "Description"
-	COST                 = "Elixir Cost"
-	HP                   = "Hitpoints"
-	DPS                  = "Damage per Second"
-	DAM                  = "Damage"
-	ADAM                 = "Area Damage"
-	HSPD                 = "Hit Speed"
-	TGTS                 = "Targets"
-	SPD                  = "Speed"
-	RNG                  = "Range"
-	DTIME                = "Deploy Time"
-	COUNT                = "Count"
+	NAME   = CardAttribute("Name")
+	ARENA  = CardAttribute("Arena")
+	RARITY = CardAttribute("Rarity")
+	TYPE   = CardAttribute("Type")
+	DESC   = CardAttribute("Description")
+	COST   = CardAttribute("Elixir Cost")
+
+	HP     = CardAttribute("Hitpoints")
+	DPS    = CardAttribute("Damage per Second")
+	DAM    = CardAttribute("Damage")
+	ADAM   = CardAttribute("Area Damage")
+	DDAM   = CardAttribute("Death Damage")
+	SKE_LV = CardAttribute("Skeleton Level")
+	SGO_LV = CardAttribute("Spear Goblin Level")
+
+	HSPD  = CardAttribute("Hit Speed")
+	TGTS  = CardAttribute("Targets")
+	SPD   = CardAttribute("Speed")
+	RNG   = CardAttribute("Range")
+	DTIME = CardAttribute("Deploy Time")
+	COUNT = CardAttribute("Count")
 )
 
 var FIXED_ATTRIBUTES = [...]CardAttribute{
@@ -157,6 +162,9 @@ var MUTABLE_ATTRIBUTES = [...]CardAttribute{
 	DPS,
 	DAM,
 	ADAM,
+	DDAM,
+	SKE_LV,
+	SGO_LV,
 }
 
 type Card map[CardAttribute]interface{}
