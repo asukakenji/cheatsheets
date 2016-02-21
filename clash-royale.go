@@ -71,21 +71,21 @@ func (r *Rarity) String() string {
 var (
 	COMMON = &Rarity{
 		name:  "Common",
-		cards: []int{0, 2, 4, 10, 20, 50, 100, X, X, X, X, X},
+		cards: []int{0, 2, 4, 10, 20, 50, 100, 200, X, X, X, X},
 		gold:  []int{0, 5, 20, 50, 150, 400, 1000, 2000, X, X, X, X},
 		exp:   []int{0, 4, 5, 6, 10, 25, 50, X, X, X, X, X},
 	}
 	RARE = &Rarity{
 		name:  "Rare",
-		cards: []int{0, 2, 4, 10, 20, 50, 100, X, X, X},
+		cards: []int{0, 2, 4, 10, 20, 50, 100, 200, X, X},
 		gold:  []int{0, 50, 150, 400, 1000, 2000, X, X, X, X},
 		exp:   []int{0, 6, 10, 25, 50, X, X, X, X, X},
 	}
 	EPIC = &Rarity{
 		name:  "Epic",
-		cards: []int{0, 2, 4, 10, 20, 50, 100, X},
+		cards: []int{0, 2, 4, 10, 20, 50, 100, 200},
 		gold:  []int{0, 400, 1000, 2000, X, X, X, X},
-		exp:   []int{0, 6, 10, 25, 50, X, X, X},
+		exp:   []int{0, 25, 50, X, X, X, X, X},
 	}
 )
 
@@ -154,169 +154,155 @@ const MELEE = 0
 type CardAttribute struct {
 	name      string
 	isMutable bool
-	format    func(x interface{}) string
+	format    func(value interface{}) string
 }
 
 func (attr *CardAttribute) String() string {
 	return attr.name
 }
 
+// --- Format Functions ---
+
+func formatString(value interface{}) string {
+	return value.(string)
+}
+
+func formatInt(value interface{}) string {
+	if X == value.(int) {
+		return ""
+	}
+	return fmt.Sprintf("%d", value.(int))
+}
+
+func formatTime(value interface{}) string {
+	switch value.(type) {
+	case int:
+		return fmt.Sprintf("%dsec", value)
+	case float64:
+		return fmt.Sprintf("%.1fsec", value)
+	default:
+		panic("Unknown value type")
+	}
+}
+
 var (
 	NAME = &CardAttribute{
 		"Name",
 		false,
-		func(x interface{}) string {
-			return x.(string)
-		},
+		formatString,
 	}
 	ARENA = &CardAttribute{
 		"Arena",
 		false,
-		func(x interface{}) string {
-			return x.(*Arena).String()
+		func(value interface{}) string {
+			return value.(*Arena).String()
 		},
 	}
 	RARITY = &CardAttribute{
 		"Rarity",
 		false,
-		func(x interface{}) string {
-			return x.(*Rarity).String()
+		func(value interface{}) string {
+			return value.(*Rarity).String()
 		},
 	}
 	TYPE = &CardAttribute{
 		"Type",
 		false,
-		func(x interface{}) string {
-			return string(x.(Type))
+		func(value interface{}) string {
+			return string(value.(Type))
 		},
 	}
 	DESC = &CardAttribute{
 		"Description",
 		false,
-		func(x interface{}) string {
-			return x.(string)
-		},
+		formatString,
 	}
 	COST = &CardAttribute{
 		"Elixir Cost",
 		false,
-		func(x interface{}) string {
-			return fmt.Sprintf("%d", x.(int))
-		},
+		formatInt,
 	}
 	HP = &CardAttribute{
 		"Hitpoints",
 		true,
-		func(x interface{}) string {
-			return fmt.Sprintf("%d", x.(int))
-		},
+		formatInt,
 	}
 	DPS = &CardAttribute{
 		"Damage per Second",
 		true,
-		func(x interface{}) string {
-			return fmt.Sprintf("%d", x.(int))
-		},
+		formatInt,
 	}
 	DAM = &CardAttribute{
 		"Damage",
 		true,
-		func(x interface{}) string {
-			return fmt.Sprintf("%d", x.(int))
-		},
+		formatInt,
 	}
 	ADAM = &CardAttribute{
 		"Area Damage",
 		true,
-		func(x interface{}) string {
-			return fmt.Sprintf("%d", x.(int))
-		},
+		formatInt,
 	}
 	DDAM = &CardAttribute{
 		"Death Damage",
 		true,
-		func(x interface{}) string {
-			return fmt.Sprintf("%d", x.(int))
-		},
+		formatInt,
 	}
 	SKE_LV = &CardAttribute{
 		"Skeleton Level",
 		true,
-		func(x interface{}) string {
-			return fmt.Sprintf("%d", x.(int))
-		},
+		formatInt,
 	}
 	SGO_LV = &CardAttribute{
 		"Spear Goblin Level",
 		true,
-		func(x interface{}) string {
-			return fmt.Sprintf("%d", x.(int))
-		},
+		formatInt,
 	}
 	HSPD = &CardAttribute{
 		"Hit Speed",
 		false,
-		func(x interface{}) string {
-			switch x.(type) {
-			case int:
-				return fmt.Sprintf("%dsec", x)
-			case float64:
-				return fmt.Sprintf("%.1fsec", x)
-			default:
-				return "???"
-			}
-		},
+		formatTime,
 	}
 	TGTS = &CardAttribute{
 		"Targets",
 		false,
-		func(x interface{}) string {
-			return string(x.(Targets))
+		func(value interface{}) string {
+			return string(value.(Targets))
 		},
 	}
 	SPD = &CardAttribute{
 		"Speed",
 		false,
-		func(x interface{}) string {
-			return string(x.(Speed))
+		func(value interface{}) string {
+			return string(value.(Speed))
 		},
 	}
 	RNG = &CardAttribute{
 		"Range",
 		false,
-		func(x interface{}) string {
-			switch x.(type) {
+		func(value interface{}) string {
+			switch value.(type) {
 			case int:
-				if x.(int) == MELEE {
+				if value.(int) == MELEE {
 					return "Melee"
 				}
-				return fmt.Sprintf("%d", x)
+				return fmt.Sprintf("%d", value)
 			case float64:
-				return fmt.Sprintf("%.1f", x)
+				return fmt.Sprintf("%.1f", value)
 			default:
-				return "???"
+				panic("Unknown value type")
 			}
 		},
 	}
 	DTIME = &CardAttribute{
 		"Deploy Time",
 		false,
-		func(x interface{}) string {
-			switch x.(type) {
-			case int:
-				return fmt.Sprintf("%dsec", x)
-			case float64:
-				return fmt.Sprintf("%.1fsec", x)
-			default:
-				return "???"
-			}
-		},
+		formatTime,
 	}
 	COUNT = &CardAttribute{
 		"Count",
 		false,
-		func(x interface{}) string {
-			return fmt.Sprintf("%d", x.(int))
+		func(value interface{}) string {
+			return fmt.Sprintf("x %d", value.(int))
 		},
 	}
 )
@@ -369,9 +355,9 @@ var (
 		TYPE:   TROOP,
 		DESC:   "A pair of unarmored ranged attackers. They'll help you with ground and air unit attacks, but you're on your own with coloring your hair.",
 		COST:   3,
-		HP:     []int{125, 137, 151, 166, X, 200, 220, X, 265, 291, 320, 351},
-		DPS:    []int{33, 36, 40, 44, X, 53, 58, X, 70, 77, 85, 93},
-		DAM:    []int{40, 44, 48, 53, X, 64, 70, X, 84, 93, 102, 112},
+		HP:     []int{125, 137, 151, 166, 182, 200, 220, X, 265, 291, 320, 351},
+		DPS:    []int{33, 36, 40, 44, 48, 53, 58, X, 70, 77, 85, 93},
+		DAM:    []int{40, 44, 48, 53, 58, 64, 70, X, 84, 93, 102, 112},
 		HSPD:   1.2,
 		TGTS:   AIR_AND_GROUND,
 		SPD:    MEDIUM,
@@ -395,6 +381,108 @@ var (
 		RNG:    5,
 		DTIME:  1,
 	}
+	GOBLINS = Card{
+		NAME:   "Goblins",
+		ARENA:  ARENA_1,
+		RARITY: COMMON,
+		TYPE:   TROOP,
+		DESC:   "Three fast, unarmored melee attackers. Small, fast, green and mean!",
+		COST:   2,
+		HP:     []int{80, 88, 96, 106, 116, 128, X, X, 169, 186, 204, 224},
+		DPS:    []int{45, 50, 54, 60, 66, 72, X, X, 96, 105, 116, 127},
+		DAM:    []int{50, 55, 60, 66, 73, 80, X, X, 106, 116, 128, 140},
+		HSPD:   1.1,
+		TGTS:   GROUND,
+		SPD:    VERY_FAST,
+		RNG:    MELEE,
+		DTIME:  1,
+		COUNT:  3,
+	}
+	SPEAR_GOBLINS = Card{
+		NAME:   "Spear Goblins",
+		ARENA:  ARENA_1,
+		RARITY: COMMON,
+		TYPE:   TROOP,
+		DESC:   "Three unarmored ranged attackers. Who the heck taught these guys to throw spears!?! Who thought that was a good idea?!",
+		COST:   2,
+		HP:     []int{52, 57, 62, 69, 75, 83, 91, X, 110, 121, 133, 146},
+		DPS:    []int{18, 20, 22, 23, 26, 29, 32, X, 38, 42, 46, 51},
+		DAM:    []int{24, 26, 29, 31, 35, 38, 42, X, 50, 55, 61, 67},
+		HSPD:   1.3,
+		TGTS:   AIR_AND_GROUND,
+		SPD:    VERY_FAST,
+		RNG:    5.5,
+		DTIME:  1,
+		COUNT:  3,
+	}
+	SKELETONS = Card{
+		NAME:   "Skeletons",
+		ARENA:  ARENA_2,
+		RARITY: COMMON,
+		TYPE:   TROOP,
+		DESC:   "Four fast, very weak melee fighters. Swarm your enemies with this pile of bones!",
+		COST:   1,
+		HP:     []int{30, 33, 36, 39, 43, 48, 52, X, X, X, X, X},
+		DPS:    []int{30, 33, 36, 39, 43, 48, 52, X, X, X, X, X},
+		DAM:    []int{30, 33, 36, 39, 43, 48, 52, X, X, X, X, X},
+		HSPD:   1,
+		TGTS:   GROUND,
+		SPD:    FAST,
+		RNG:    MELEE,
+		DTIME:  1,
+		COUNT:  4,
+	}
+	MINIONS = Card{
+		NAME:   "Minions",
+		ARENA:  ARENA_2,
+		RARITY: COMMON,
+		TYPE:   TROOP,
+		DESC:   "Three fast, unarmored flying attackers. Roses are red, minions are blue, they can fly, and will crush you!",
+		COST:   3,
+		HP:     []int{90, 99, 108, 119, 131, 144, X, X, 190, 209, 230, 252},
+		DPS:    []int{40, 44, 48, 53, 58, 64, X, X, 84, 93, 102, 112},
+		DAM:    []int{40, 44, 48, 53, 58, 64, X, X, 84, 93, 102, 112},
+		HSPD:   1,
+		TGTS:   AIR_AND_GROUND,
+		SPD:    FAST,
+		RNG:    2.5,
+		DTIME:  1,
+		COUNT:  3,
+	}
+	BARBARIANS = Card{
+		NAME:   "Barbarians",
+		ARENA:  ARENA_3,
+		RARITY: COMMON,
+		TYPE:   TROOP,
+		DESC:   "A horde of melee attackers with mean mustaches and even meaner tempers.",
+		COST:   5,
+		HP:     []int{300, X, X, X, X, 480, 528, X, X, 699, 768, 843},
+		DPS:    []int{50, X, X, X, X, 80, 88, X, X, 116, 128, 140},
+		DAM:    []int{75, X, X, X, X, 120, 132, X, X, 174, 192, 210},
+		HSPD:   1.5,
+		TGTS:   GROUND,
+		SPD:    MEDIUM,
+		RNG:    MELEE,
+		DTIME:  1,
+		COUNT:  4,
+	}
+	MINION_HORDE = Card{
+		NAME:   "Minion Horde",
+		ARENA:  ARENA_4,
+		RARITY: COMMON,
+		TYPE:   TROOP,
+		DESC:   "Six fast, unarmored flying attackers. Three's a crowd, six is a horde!",
+		COST:   5,
+		HP:     []int{90, 99, 108, 119, 131, 144, X, X, 190, 209, 230, 252},
+		DPS:    []int{40, 44, 48, 53, 58, 64, X, X, 84, 93, 102, 112},
+		DAM:    []int{40, 44, 48, 53, 58, 64, X, X, 84, 93, 102, 112},
+		HSPD:   1,
+		TGTS:   AIR_AND_GROUND,
+		SPD:    FAST,
+		RNG:    2.5,
+		DTIME:  1,
+		COUNT:  6,
+	}
 	GIANT = Card{
 		NAME:   "Giant",
 		ARENA:  ARENA_0,
@@ -402,9 +490,9 @@ var (
 		TYPE:   TROOP,
 		DESC:   "Slow but durable, only attacks buildings. A real one-man wrecking crew!",
 		COST:   5,
-		HP:     []int{2000, 2200, 2420, 2660, X, X, X, X, X, X},
-		DPS:    []int{80, 88, 96, 106, X, X, X, 154, X, X},
-		DAM:    []int{120, 132, 145, 159, X, X, X, 231, X, X},
+		HP:     []int{2000, 2200, 2420, 2660, X, X, X, 3860, X, 4660},
+		DPS:    []int{80, 88, 96, 106, X, X, X, 154, X, 186},
+		DAM:    []int{120, 132, 145, 159, X, X, X, 231, X, 279},
 		HSPD:   1.5,
 		TGTS:   BUILDINGS,
 		SPD:    SLOW,
@@ -418,9 +506,9 @@ var (
 		TYPE:   TROOP,
 		DESC:   "Don't be fooled by her delicately coiffed hair, the musketeer is a mean shot with her trusty boomstick.",
 		COST:   4,
-		HP:     []int{340, 374, 411, 452, 496, X, X, 656, X, X},
-		DPS:    []int{81, 90, 98, 108, 119, X, X, X, X, X},
-		DAM:    []int{90, 99, 108, 119, 131, X, X, X, X, X, X},
+		HP:     []int{340, 374, 411, 452, 496, X, X, 656, 720, 792},
+		DPS:    []int{81, 90, 98, 108, 119, X, X, 175, 192, 211},
+		DAM:    []int{90, 99, 108, 119, 131, X, X, 193, 212, 233},
 		HSPD:   1.1,
 		TGTS:   AIR_AND_GROUND,
 		SPD:    MEDIUM,
@@ -433,6 +521,12 @@ var CARDS = [...]Card{
 	KNIGHT,
 	ARCHERS,
 	BOMBER,
+	GOBLINS,
+	SPEAR_GOBLINS,
+	SKELETONS,
+	MINIONS,
+	BARBARIANS,
+	MINION_HORDE,
 	GIANT,
 	MUSKETEER,
 }
@@ -488,44 +582,59 @@ func main() {
 		fmt.Println()
 
 		// Mutable Attribute Table
-		fmt.Printf("%*s ", -mutableAttrNameLen, attrTitle)
+		// Header 1
+		fmt.Printf("%*s", -mutableAttrNameLen, attrTitle)
 		// Any field will do, not just "cards".
 		for level := range card[RARITY].(*Rarity).cards {
-			fmt.Printf("| %*s ", -attrValueLen, fmt.Sprintf("LV%d", level+1))
+			fmt.Printf(" | %*s", -attrValueLen, fmt.Sprintf("LV%d", level+1))
 		}
 		fmt.Println()
 
-		fmt.Printf("%*s ", mutableAttrNameLen, strings.Repeat("-", mutableAttrNameLen))
+		// Header 2
+		fmt.Printf("%*s", mutableAttrNameLen, strings.Repeat("-", mutableAttrNameLen))
 		// Any field will do, not just "cards".
 		for range card[RARITY].(*Rarity).cards {
-			fmt.Printf("| %*s ", attrValueLen, strings.Repeat("-", attrValueLen))
+			fmt.Printf(" | %*s", attrValueLen, strings.Repeat("-", attrValueLen))
 		}
 		fmt.Println()
 
+		// Content
 		for _, attr := range CARD_ATTRIBUTES {
 			if !attr.isMutable {
 				continue
 			}
-			if _, ok := card[attr]; ok {
-				fmt.Printf("%*s |\n", -mutableAttrNameLen, attr)
+			if values, ok := card[attr]; ok {
+				fmt.Printf("%*s", -mutableAttrNameLen, attr)
+				switch values.(type) {
+				case []int:
+					for _, value := range values.([]int) {
+						fmt.Printf(" | %*s", attrValueLen, attr.format(value))
+					}
+				default:
+					panic("Unknown values type")
+				}
+				fmt.Println()
 			}
 		}
 
-		fmt.Printf("%*s ", -mutableAttrNameLen, CARDS_REQ)
+		// Footer 1
+		fmt.Printf("%*s", -mutableAttrNameLen, CARDS_REQ)
 		for _, cardsReq := range card[RARITY].(*Rarity).cards {
-			fmt.Printf("| %*d ", attrValueLen, cardsReq)
+			fmt.Printf(" | %*s", attrValueLen, formatInt(cardsReq))
 		}
 		fmt.Println()
 
-		fmt.Printf("%*s ", -mutableAttrNameLen, GOLD_REQ)
+		// Footer 2
+		fmt.Printf("%*s", -mutableAttrNameLen, GOLD_REQ)
 		for _, goldReq := range card[RARITY].(*Rarity).gold {
-			fmt.Printf("| %*d ", attrValueLen, goldReq)
+			fmt.Printf(" | %*s", attrValueLen, formatInt(goldReq))
 		}
 		fmt.Println()
 
-		fmt.Printf("%*s ", -mutableAttrNameLen, EXP_GAIN)
+		// Footer 3
+		fmt.Printf("%*s", -mutableAttrNameLen, EXP_GAIN)
 		for _, expGain := range card[RARITY].(*Rarity).exp {
-			fmt.Printf("| %*d ", attrValueLen, expGain)
+			fmt.Printf(" | %*s", attrValueLen, formatInt(expGain))
 		}
 		fmt.Println()
 
