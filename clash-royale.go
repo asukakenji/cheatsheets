@@ -7,6 +7,8 @@ import (
 
 const X = -1
 
+// --- Arena ---
+
 type Arena struct {
 	id       int
 	name     string
@@ -17,38 +19,45 @@ func (a *Arena) String() string {
 	return fmt.Sprintf("Arena %d: %s", a.id, a.name)
 }
 
-var ARENAS = [...]Arena{
-	Arena{id: 0, name: "Training Camp", trophies: 0},
-	Arena{id: 1, name: "Goblin Stadium", trophies: 0},
-	Arena{id: 2, name: "Bone Pit", trophies: 400},
-	Arena{id: 3, name: "Barbarian Bowl", trophies: 800},
-	Arena{id: 4, name: "P.E.K.K.A's Playhouse", trophies: 1100},
-	Arena{id: 5, name: "Spell Valley", trophies: 1400},
-	Arena{id: 6, name: "Royal Arena", trophies: 1700},
-	Arena{id: 7, name: "Legendary Arena", trophies: 3000},
-}
-
 var (
-	ARENA_0 = &ARENAS[0]
-	ARENA_1 = &ARENAS[1]
-	ARENA_2 = &ARENAS[2]
-	ARENA_3 = &ARENAS[3]
-	ARENA_4 = &ARENAS[4]
-	ARENA_5 = &ARENAS[5]
-	ARENA_6 = &ARENAS[6]
-	ARENA_7 = &ARENAS[7]
+	ARENA_0 = &Arena{0, "Training Camp", 0}
+	ARENA_1 = &Arena{1, "Goblin Stadium", 0}
+	ARENA_2 = &Arena{2, "Bone Pit", 400}
+	ARENA_3 = &Arena{3, "Barbarian Bowl", 800}
+	ARENA_4 = &Arena{4, "P.E.K.K.A's Playhouse", 1100}
+	ARENA_5 = &Arena{5, "Spell Valley", 1400}
+	ARENA_6 = &Arena{6, "Royal Arena", 1700}
+	ARENA_7 = &Arena{7, "Legendary Arena", 3000}
 )
 
-//type RarityAttribute string
-//
-//const (
-//	CARDS RarityAttribute = "Cards Required"
-//	GOLD                  = "Gold Required"
-//	EXP                   = "Experience Gained"
-//)
+var ARENAS = [...]*Arena{
+	ARENA_0,
+	ARENA_1,
+	ARENA_2,
+	ARENA_3,
+	ARENA_4,
+	ARENA_5,
+	ARENA_6,
+	ARENA_7,
+}
+
+// --- Rarity ---
+
+type RarityAttribute string
+
+const (
+	CARDS_REQ = RarityAttribute("Cards Required")
+	GOLD_REQ  = RarityAttribute("Gold Required")
+	EXP_GAIN  = RarityAttribute("Experience Gained")
+)
+
+var RARITY_ATTRIBUTES = [...]RarityAttribute{
+	CARDS_REQ,
+	GOLD_REQ,
+	EXP_GAIN,
+}
 
 type Rarity struct {
-	id    int
 	name  string
 	cards []int
 	gold  []int
@@ -59,35 +68,34 @@ func (r *Rarity) String() string {
 	return r.name
 }
 
-var RARITIES = [...]Rarity{
-	Rarity{
-		id:    0,
+var (
+	COMMON = &Rarity{
 		name:  "Common",
 		cards: []int{0, 2, 4, 10, 20, 50, 100, X, X, X, X, X},
 		gold:  []int{0, 5, 20, 50, 150, 400, 1000, 2000, X, X, X, X},
 		exp:   []int{0, 4, 5, 6, 10, 25, 50, X, X, X, X, X},
-	},
-	Rarity{
-		id:    1,
+	}
+	RARE = &Rarity{
 		name:  "Rare",
 		cards: []int{0, 2, 4, 10, 20, 50, 100, X, X, X},
 		gold:  []int{0, 50, 150, 400, 1000, 2000, X, X, X, X},
 		exp:   []int{0, 6, 10, 25, 50, X, X, X, X, X},
-	},
-	Rarity{
-		id:    2,
+	}
+	EPIC = &Rarity{
 		name:  "Epic",
 		cards: []int{0, 2, 4, 10, 20, 50, 100, X},
 		gold:  []int{0, 400, 1000, 2000, X, X, X, X},
 		exp:   []int{0, 6, 10, 25, 50, X, X, X},
-	},
+	}
+)
+
+var RARITIES = [...]*Rarity{
+	COMMON,
+	RARE,
+	EPIC,
 }
 
-var (
-	COMMON = &RARITIES[0]
-	RARE   = &RARITIES[1]
-	EPIC   = &RARITIES[2]
-)
+// --- Type ---
 
 type Type string
 
@@ -97,6 +105,14 @@ const (
 	SPELL    = Type("Spell")
 )
 
+var TYPES = [...]Type{
+	TROOP,
+	BUILDING,
+	SPELL,
+}
+
+// --- Targets ---
+
 type Targets string
 
 const (
@@ -104,6 +120,14 @@ const (
 	AIR_AND_GROUND = Targets("Air & Ground")
 	BUILDINGS      = Targets("Buildings")
 )
+
+var TARGETSES = [...]Targets{
+	GROUND,
+	AIR_AND_GROUND,
+	BUILDINGS,
+}
+
+// --- Speed ---
 
 type Speed string
 
@@ -114,8 +138,18 @@ const (
 	VERY_FAST = Speed("Very Fast")
 )
 
-// Range:
+var SPEEDS = [...]Speed{
+	SLOW,
+	MEDIUM,
+	FAST,
+	VERY_FAST,
+}
+
+// --- Range ---
+
 const MELEE = 0
+
+// --- Card ---
 
 type CardAttribute struct {
 	name      string
@@ -311,8 +345,8 @@ var CARD_ATTRIBUTES = [...]*CardAttribute{
 
 type Card map[*CardAttribute]interface{}
 
-var CARDS_MAP = map[string]Card{
-	"KNIGHT": Card{
+var (
+	KNIGHT = Card{
 		NAME:   "Knight",
 		ARENA:  ARENA_0,
 		RARITY: COMMON,
@@ -327,8 +361,8 @@ var CARDS_MAP = map[string]Card{
 		SPD:    MEDIUM,
 		RNG:    MELEE,
 		DTIME:  1,
-	},
-	"ARCHERS": Card{
+	}
+	ARCHERS = Card{
 		NAME:   "Archers",
 		ARENA:  ARENA_0,
 		RARITY: COMMON,
@@ -344,8 +378,8 @@ var CARDS_MAP = map[string]Card{
 		RNG:    5.5,
 		DTIME:  1,
 		COUNT:  2,
-	},
-	"BOMBER": Card{
+	}
+	BOMBER = Card{
 		NAME:   "Bomber",
 		ARENA:  ARENA_0,
 		RARITY: COMMON,
@@ -360,8 +394,8 @@ var CARDS_MAP = map[string]Card{
 		SPD:    MEDIUM,
 		RNG:    5,
 		DTIME:  1,
-	},
-	"GIANT": Card{
+	}
+	GIANT = Card{
 		NAME:   "Giant",
 		ARENA:  ARENA_0,
 		RARITY: RARE,
@@ -376,8 +410,8 @@ var CARDS_MAP = map[string]Card{
 		SPD:    SLOW,
 		RNG:    MELEE,
 		DTIME:  1,
-	},
-	"MUSKETEER": Card{
+	}
+	MUSKETEER = Card{
 		NAME:   "Musketeer",
 		ARENA:  ARENA_0,
 		RARITY: RARE,
@@ -392,15 +426,7 @@ var CARDS_MAP = map[string]Card{
 		SPD:    MEDIUM,
 		RNG:    6.5,
 		DTIME:  1,
-	},
-}
-
-var (
-	KNIGHT    = CARDS_MAP["KNIGHT"]
-	ARCHERS   = CARDS_MAP["ARCHERS"]
-	BOMBER    = CARDS_MAP["BOMBER"]
-	GIANT     = CARDS_MAP["GIANT"]
-	MUSKETEER = CARDS_MAP["MUSKETEER"]
+	}
 )
 
 var CARDS = [...]Card{
@@ -411,37 +437,98 @@ var CARDS = [...]Card{
 	MUSKETEER,
 }
 
+// --- Main ---
+
+const (
+	attrTitle     = "Attribute"
+	valueTitle    = "Value"
+	attrTitleLen  = len(attrTitle)
+	valueTitleLen = len(valueTitle)
+	attrValueLen  = 4
+)
+
 func main() {
-	attrTitle := "Attribute"
-	valueTitle := "Value"
-	attrTitleLen := len(attrTitle)
-	valueTitleLen := len(valueTitle)
-	fixedAttrNameMaxLen := attrTitleLen
-	mutableAttrNameMaxLen := attrTitleLen
+	fixedAttrNameLen := attrTitleLen
+	mutableAttrNameLen := attrTitleLen
 	for _, attr := range CARD_ATTRIBUTES {
-		attrNameLen := len(attr.name);
+		attrNameLen := len(attr.name)
 		if attr.isMutable {
-			if attrNameLen > mutableAttrNameMaxLen {
-				mutableAttrNameMaxLen = attrNameLen
+			if attrNameLen > mutableAttrNameLen {
+				mutableAttrNameLen = attrNameLen
 			}
 		} else {
-			if attrNameLen > fixedAttrNameMaxLen {
-				fixedAttrNameMaxLen = attrNameLen
+			if attrNameLen > fixedAttrNameLen {
+				fixedAttrNameLen = attrNameLen
 			}
+		}
+	}
+	for _, attr := range RARITY_ATTRIBUTES {
+		attrNameLen := len(attr)
+		if attrNameLen > mutableAttrNameLen {
+			mutableAttrNameLen = attrNameLen
 		}
 	}
 
 	for _, card := range CARDS {
-		fmt.Printf("%*s | %s\n", -fixedAttrNameMaxLen, attrTitle, valueTitle)
-		fmt.Printf("%s | %s\n", strings.Repeat("-", fixedAttrNameMaxLen), strings.Repeat("-", valueTitleLen))
+		// Header
+		fmt.Printf("### %s\n", card[NAME])
+		fmt.Println()
+
+		// Fixed Attribute Table
+		fmt.Printf("%*s | %s\n", -fixedAttrNameLen, attrTitle, valueTitle)
+		fmt.Printf("%*s | %s\n", fixedAttrNameLen, strings.Repeat("-", fixedAttrNameLen), strings.Repeat("-", valueTitleLen))
 		for _, attr := range CARD_ATTRIBUTES {
 			if attr.isMutable {
 				continue
 			}
 			if value, ok := card[attr]; ok {
-				fmt.Printf("%*s | %s\n", -fixedAttrNameMaxLen, attr, attr.format(value))
+				fmt.Printf("%*s | %s\n", -fixedAttrNameLen, attr, attr.format(value))
 			}
 		}
+		fmt.Println()
+
+		// Mutable Attribute Table
+		fmt.Printf("%*s ", -mutableAttrNameLen, attrTitle)
+		// Any field will do, not just "cards".
+		for level := range card[RARITY].(*Rarity).cards {
+			fmt.Printf("| %*s ", -attrValueLen, fmt.Sprintf("LV%d", level+1))
+		}
+		fmt.Println()
+
+		fmt.Printf("%*s ", mutableAttrNameLen, strings.Repeat("-", mutableAttrNameLen))
+		// Any field will do, not just "cards".
+		for range card[RARITY].(*Rarity).cards {
+			fmt.Printf("| %*s ", attrValueLen, strings.Repeat("-", attrValueLen))
+		}
+		fmt.Println()
+
+		for _, attr := range CARD_ATTRIBUTES {
+			if !attr.isMutable {
+				continue
+			}
+			if _, ok := card[attr]; ok {
+				fmt.Printf("%*s |\n", -mutableAttrNameLen, attr)
+			}
+		}
+
+		fmt.Printf("%*s ", -mutableAttrNameLen, CARDS_REQ)
+		for _, cardsReq := range card[RARITY].(*Rarity).cards {
+			fmt.Printf("| %*d ", attrValueLen, cardsReq)
+		}
+		fmt.Println()
+
+		fmt.Printf("%*s ", -mutableAttrNameLen, GOLD_REQ)
+		for _, goldReq := range card[RARITY].(*Rarity).gold {
+			fmt.Printf("| %*d ", attrValueLen, goldReq)
+		}
+		fmt.Println()
+
+		fmt.Printf("%*s ", -mutableAttrNameLen, EXP_GAIN)
+		for _, expGain := range card[RARITY].(*Rarity).exp {
+			fmt.Printf("| %*d ", attrValueLen, expGain)
+		}
+		fmt.Println()
+
 		fmt.Println()
 	}
 }
