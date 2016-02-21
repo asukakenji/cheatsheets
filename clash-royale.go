@@ -114,41 +114,193 @@ const (
 	VERY_FAST = Speed("Very Fast")
 )
 
+// Range:
 const MELEE = 0
 
-type CardAttribute string
+type CardAttribute struct {
+	name      string
+	isMutable bool
+	format    func(x interface{}) string
+}
 
-const (
-	NAME   = CardAttribute("Name")
-	ARENA  = CardAttribute("Arena")
-	RARITY = CardAttribute("Rarity")
-	TYPE   = CardAttribute("Type")
-	DESC   = CardAttribute("Description")
-	COST   = CardAttribute("Elixir Cost")
+func (attr *CardAttribute) String() string {
+	return attr.name
+}
 
-	HP     = CardAttribute("Hitpoints")
-	DPS    = CardAttribute("Damage per Second")
-	DAM    = CardAttribute("Damage")
-	ADAM   = CardAttribute("Area Damage")
-	DDAM   = CardAttribute("Death Damage")
-	SKE_LV = CardAttribute("Skeleton Level")
-	SGO_LV = CardAttribute("Spear Goblin Level")
-
-	HSPD  = CardAttribute("Hit Speed")
-	TGTS  = CardAttribute("Targets")
-	SPD   = CardAttribute("Speed")
-	RNG   = CardAttribute("Range")
-	DTIME = CardAttribute("Deploy Time")
-	COUNT = CardAttribute("Count")
+var (
+	NAME = &CardAttribute{
+		"Name",
+		false,
+		func(x interface{}) string {
+			return x.(string)
+		},
+	}
+	ARENA = &CardAttribute{
+		"Arena",
+		false,
+		func(x interface{}) string {
+			return x.(*Arena).String()
+		},
+	}
+	RARITY = &CardAttribute{
+		"Rarity",
+		false,
+		func(x interface{}) string {
+			return x.(*Rarity).String()
+		},
+	}
+	TYPE = &CardAttribute{
+		"Type",
+		false,
+		func(x interface{}) string {
+			return string(x.(Type))
+		},
+	}
+	DESC = &CardAttribute{
+		"Description",
+		false,
+		func(x interface{}) string {
+			return x.(string)
+		},
+	}
+	COST = &CardAttribute{
+		"Elixir Cost",
+		false,
+		func(x interface{}) string {
+			return fmt.Sprintf("%d", x.(int))
+		},
+	}
+	HP = &CardAttribute{
+		"Hitpoints",
+		true,
+		func(x interface{}) string {
+			return fmt.Sprintf("%d", x.(int))
+		},
+	}
+	DPS = &CardAttribute{
+		"Damage per Second",
+		true,
+		func(x interface{}) string {
+			return fmt.Sprintf("%d", x.(int))
+		},
+	}
+	DAM = &CardAttribute{
+		"Damage",
+		true,
+		func(x interface{}) string {
+			return fmt.Sprintf("%d", x.(int))
+		},
+	}
+	ADAM = &CardAttribute{
+		"Area Damage",
+		true,
+		func(x interface{}) string {
+			return fmt.Sprintf("%d", x.(int))
+		},
+	}
+	DDAM = &CardAttribute{
+		"Death Damage",
+		true,
+		func(x interface{}) string {
+			return fmt.Sprintf("%d", x.(int))
+		},
+	}
+	SKE_LV = &CardAttribute{
+		"Skeleton Level",
+		true,
+		func(x interface{}) string {
+			return fmt.Sprintf("%d", x.(int))
+		},
+	}
+	SGO_LV = &CardAttribute{
+		"Spear Goblin Level",
+		true,
+		func(x interface{}) string {
+			return fmt.Sprintf("%d", x.(int))
+		},
+	}
+	HSPD = &CardAttribute{
+		"Hit Speed",
+		false,
+		func(x interface{}) string {
+			switch x.(type) {
+			case int:
+				return fmt.Sprintf("%dsec", x)
+			case float64:
+				return fmt.Sprintf("%.1fsec", x)
+			default:
+				return "???"
+			}
+		},
+	}
+	TGTS = &CardAttribute{
+		"Targets",
+		false,
+		func(x interface{}) string {
+			return string(x.(Targets))
+		},
+	}
+	SPD = &CardAttribute{
+		"Speed",
+		false,
+		func(x interface{}) string {
+			return string(x.(Speed))
+		},
+	}
+	RNG = &CardAttribute{
+		"Range",
+		false,
+		func(x interface{}) string {
+			switch x.(type) {
+			case int:
+				if x.(int) == MELEE {
+					return "Melee"
+				}
+				return fmt.Sprintf("%d", x)
+			case float64:
+				return fmt.Sprintf("%.1f", x)
+			default:
+				return "???"
+			}
+		},
+	}
+	DTIME = &CardAttribute{
+		"Deploy Time",
+		false,
+		func(x interface{}) string {
+			switch x.(type) {
+			case int:
+				return fmt.Sprintf("%dsec", x)
+			case float64:
+				return fmt.Sprintf("%.1fsec", x)
+			default:
+				return "???"
+			}
+		},
+	}
+	COUNT = &CardAttribute{
+		"Count",
+		false,
+		func(x interface{}) string {
+			return fmt.Sprintf("%d", x.(int))
+		},
+	}
 )
 
-var FIXED_ATTRIBUTES = [...]CardAttribute{
+var CARD_ATTRIBUTES = [...]*CardAttribute{
 	NAME,
 	ARENA,
 	RARITY,
 	TYPE,
 	DESC,
 	COST,
+	HP,
+	DPS,
+	DAM,
+	ADAM,
+	DDAM,
+	SKE_LV,
+	SGO_LV,
 	HSPD,
 	TGTS,
 	SPD,
@@ -157,17 +309,7 @@ var FIXED_ATTRIBUTES = [...]CardAttribute{
 	COUNT,
 }
 
-var MUTABLE_ATTRIBUTES = [...]CardAttribute{
-	HP,
-	DPS,
-	DAM,
-	ADAM,
-	DDAM,
-	SKE_LV,
-	SGO_LV,
-}
-
-type Card map[CardAttribute]interface{}
+type Card map[*CardAttribute]interface{}
 
 var CARDS_MAP = map[string]Card{
 	"KNIGHT": Card{
@@ -272,70 +414,32 @@ var CARDS = [...]Card{
 func main() {
 	attrTitle := "Attribute"
 	valueTitle := "Value"
-	fixedAttrMaxLen := len(attrTitle)
-	for _, attr := range FIXED_ATTRIBUTES {
-		if attrLen := len(attr); attrLen > fixedAttrMaxLen {
-			fixedAttrMaxLen = attrLen
+	attrTitleLen := len(attrTitle)
+	valueTitleLen := len(valueTitle)
+	fixedAttrNameMaxLen := attrTitleLen
+	mutableAttrNameMaxLen := attrTitleLen
+	for _, attr := range CARD_ATTRIBUTES {
+		attrNameLen := len(attr.name);
+		if attr.isMutable {
+			if attrNameLen > mutableAttrNameMaxLen {
+				mutableAttrNameMaxLen = attrNameLen
+			}
+		} else {
+			if attrNameLen > fixedAttrNameMaxLen {
+				fixedAttrNameMaxLen = attrNameLen
+			}
 		}
 	}
 
 	for _, card := range CARDS {
-		fmt.Printf("%*s | %s\n", -fixedAttrMaxLen, attrTitle, valueTitle)
-		fmt.Printf("%s | %s\n", strings.Repeat("-", fixedAttrMaxLen), strings.Repeat("-", len(valueTitle)))
-		for _, attr := range FIXED_ATTRIBUTES {
+		fmt.Printf("%*s | %s\n", -fixedAttrNameMaxLen, attrTitle, valueTitle)
+		fmt.Printf("%s | %s\n", strings.Repeat("-", fixedAttrNameMaxLen), strings.Repeat("-", valueTitleLen))
+		for _, attr := range CARD_ATTRIBUTES {
+			if attr.isMutable {
+				continue
+			}
 			if value, ok := card[attr]; ok {
-				fmt.Printf("%*s | ", -fixedAttrMaxLen, attr)
-				switch attr {
-				case NAME, DESC:
-					fmt.Printf("%s\n", value.(string))
-				case ARENA:
-					fmt.Printf("%s\n", value.(*Arena))
-				case RARITY:
-					fmt.Printf("%s\n", value.(*Rarity))
-				case TYPE:
-					fmt.Printf("%s\n", value.(Type))
-				case COST:
-					fmt.Printf("%d\n", value.(int))
-				case HSPD:
-					switch value.(type) {
-					case int:
-						fmt.Printf("%d\n", value)
-					case float64:
-						fmt.Printf("%.1f\n", value)
-					default:
-						fmt.Printf("???\n")
-					}
-				case TGTS:
-					fmt.Printf("%s\n", value.(Targets))
-				case SPD:
-					fmt.Printf("%s\n", value.(Speed))
-				case RNG:
-					switch value.(type) {
-					case int:
-						if value.(int) == MELEE {
-							fmt.Println("Melee")
-						} else {
-							fmt.Printf("%d\n", value)
-						}
-					case float64:
-						fmt.Printf("%.1f\n", value)
-					default:
-						fmt.Printf("???\n")
-					}
-				case DTIME:
-					switch value.(type) {
-					case int:
-						fmt.Printf("%dsec\n", value)
-					case float64:
-						fmt.Printf("%.1fsec\n", value)
-					default:
-						fmt.Printf("???\n")
-					}
-				case COUNT:
-					fmt.Printf("x %d\n", value)
-				default:
-					fmt.Printf("???\n")
-				}
+				fmt.Printf("%*s | %s\n", -fixedAttrNameMaxLen, attr, attr.format(value))
 			}
 		}
 		fmt.Println()
