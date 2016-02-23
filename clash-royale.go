@@ -151,13 +151,32 @@ const MELEE = 0
 
 // --- Card ---
 
-type CardAttribute struct {
-	name      string
-	isMutable bool
-	format    func(value interface{}) string
+type CardAttribute interface {
+	CardAttribute() // Tag
+	String() string
 }
 
-func (attr *CardAttribute) String() string {
+type FixedCardAttribute struct {
+	name        string
+	formatValue func(value interface{}) string
+}
+
+func (attr *FixedCardAttribute) CardAttribute() {
+}
+
+func (attr *FixedCardAttribute) String() string {
+	return attr.name
+}
+
+type UpgradableCardAttribute struct {
+	name         string
+	formatValues func(values interface{}) []string
+}
+
+func (attr *UpgradableCardAttribute) CardAttribute() {
+}
+
+func (attr *UpgradableCardAttribute) String() string {
 	return attr.name
 }
 
@@ -185,100 +204,101 @@ func formatTime(value interface{}) string {
 	}
 }
 
+func formatInts(values interface{}) []string {
+	ints := values.([]int)
+	strings := make([]string, len(ints))
+	for i, v := range ints {
+		strings[i] = formatInt(v)
+	}
+	return strings
+}
+
+func formatTimes(values interface{}) []string {
+	ints := values.([]int)
+	strings := make([]string, len(ints))
+	for i, v := range ints {
+		strings[i] = formatTime(v)
+	}
+	return strings
+}
+
 var (
-	NAME = &CardAttribute{
+	NAME = &FixedCardAttribute{
 		"Name",
-		false,
 		formatString,
 	}
-	ARENA = &CardAttribute{
+	ARENA = &FixedCardAttribute{
 		"Arena",
-		false,
 		func(value interface{}) string {
 			return value.(*Arena).String()
 		},
 	}
-	RARITY = &CardAttribute{
+	RARITY = &FixedCardAttribute{
 		"Rarity",
-		false,
 		func(value interface{}) string {
 			return value.(*Rarity).String()
 		},
 	}
-	TYPE = &CardAttribute{
+	TYPE = &FixedCardAttribute{
 		"Type",
-		false,
 		func(value interface{}) string {
 			return string(value.(Type))
 		},
 	}
-	DESC = &CardAttribute{
+	DESC = &FixedCardAttribute{
 		"Description",
-		false,
 		formatString,
 	}
-	COST = &CardAttribute{
+	COST = &FixedCardAttribute{
 		"Elixir Cost",
-		false,
 		formatInt,
 	}
-	HP = &CardAttribute{
+	HP = &UpgradableCardAttribute{
 		"Hitpoints",
-		true,
-		formatInt,
+		formatInts,
 	}
-	DPS = &CardAttribute{
+	DPS = &UpgradableCardAttribute{
 		"Damage per Second",
-		true,
-		formatInt,
+		formatInts,
 	}
-	DAM = &CardAttribute{
+	DAM = &UpgradableCardAttribute{
 		"Damage",
-		true,
-		formatInt,
+		formatInts,
 	}
-	ADAM = &CardAttribute{
+	ADAM = &UpgradableCardAttribute{
 		"Area Damage",
-		true,
-		formatInt,
+		formatInts,
 	}
-	DDAM = &CardAttribute{
+	DDAM = &UpgradableCardAttribute{
 		"Death Damage",
-		true,
-		formatInt,
+		formatInts,
 	}
-	SKE_LV = &CardAttribute{
+	SKE_LV = &UpgradableCardAttribute{
 		"Skeleton Level",
-		true,
-		formatInt,
+		formatInts,
 	}
-	SGO_LV = &CardAttribute{
+	SGO_LV = &UpgradableCardAttribute{
 		"Spear Goblin Level",
-		true,
-		formatInt,
+		formatInts,
 	}
-	HSPD = &CardAttribute{
+	HSPD = &FixedCardAttribute{
 		"Hit Speed",
-		false,
 		formatTime,
 	}
-	TGTS = &CardAttribute{
+	TGTS = &FixedCardAttribute{
 		"Targets",
-		false,
 		func(value interface{}) string {
 			return string(value.(Targets))
 		},
 	}
-	SPD = &CardAttribute{
+	SPD = &FixedCardAttribute{
 		"Speed",
-		false,
 		func(value interface{}) string {
 			return string(value.(Speed))
 		},
 	}
-	RNG = &CardAttribute{
+	RNG = &FixedCardAttribute{
 		"Range",
-		false,
 		func(value interface{}) string {
 			switch value.(type) {
 			case int:
@@ -293,21 +313,19 @@ var (
 			}
 		},
 	}
-	DTIME = &CardAttribute{
+	DTIME = &FixedCardAttribute{
 		"Deploy Time",
-		false,
 		formatTime,
 	}
-	COUNT = &CardAttribute{
+	COUNT = &FixedCardAttribute{
 		"Count",
-		false,
 		func(value interface{}) string {
 			return fmt.Sprintf("x %d", value.(int))
 		},
 	}
 )
 
-var CARD_ATTRIBUTES = [...]*CardAttribute{
+var CARD_ATTRIBUTES = [...]CardAttribute{
 	NAME,
 	ARENA,
 	RARITY,
@@ -329,7 +347,7 @@ var CARD_ATTRIBUTES = [...]*CardAttribute{
 	COUNT,
 }
 
-type Card map[*CardAttribute]interface{}
+type Card map[CardAttribute]interface{}
 
 var (
 	KNIGHT = Card{
@@ -543,23 +561,24 @@ const (
 
 func main() {
 	fixedAttrNameLen := attrTitleLen
-	mutableAttrNameLen := attrTitleLen
+	upgradableAttrNameLen := attrTitleLen
 	for _, attr := range CARD_ATTRIBUTES {
-		attrNameLen := len(attr.name)
-		if attr.isMutable {
-			if attrNameLen > mutableAttrNameLen {
-				mutableAttrNameLen = attrNameLen
-			}
-		} else {
+		attrNameLen := len(attr.String())
+		switch attr.(type) {
+		case *FixedCardAttribute:
 			if attrNameLen > fixedAttrNameLen {
 				fixedAttrNameLen = attrNameLen
+			}
+		case *UpgradableCardAttribute:
+			if attrNameLen > upgradableAttrNameLen {
+				upgradableAttrNameLen = attrNameLen
 			}
 		}
 	}
 	for _, attr := range RARITY_ATTRIBUTES {
 		attrNameLen := len(attr)
-		if attrNameLen > mutableAttrNameLen {
-			mutableAttrNameLen = attrNameLen
+		if attrNameLen > upgradableAttrNameLen {
+			upgradableAttrNameLen = attrNameLen
 		}
 	}
 
@@ -572,18 +591,19 @@ func main() {
 		fmt.Printf("%*s | %s\n", -fixedAttrNameLen, attrTitle, valueTitle)
 		fmt.Printf("%*s | %s\n", fixedAttrNameLen, strings.Repeat("-", fixedAttrNameLen), strings.Repeat("-", valueTitleLen))
 		for _, attr := range CARD_ATTRIBUTES {
-			if attr.isMutable {
+			fattr, ok := attr.(*FixedCardAttribute)
+			if !ok {
 				continue
 			}
-			if value, ok := card[attr]; ok {
-				fmt.Printf("%*s | %s\n", -fixedAttrNameLen, attr, attr.format(value))
+			if value, ok := card[fattr]; ok {
+				fmt.Printf("%*s | %s\n", -fixedAttrNameLen, fattr, fattr.formatValue(value))
 			}
 		}
 		fmt.Println()
 
-		// Mutable Attribute Table
+		// Upgradable Attribute Table
 		// Header 1
-		fmt.Printf("%*s", -mutableAttrNameLen, attrTitle)
+		fmt.Printf("%*s", -upgradableAttrNameLen, attrTitle)
 		// Any field will do, not just "cards".
 		for level := range card[RARITY].(*Rarity).cards {
 			fmt.Printf(" | %*s", -attrValueLen, fmt.Sprintf("LV%d", level+1))
@@ -591,7 +611,7 @@ func main() {
 		fmt.Println()
 
 		// Header 2
-		fmt.Printf("%*s", mutableAttrNameLen, strings.Repeat("-", mutableAttrNameLen))
+		fmt.Printf("%*s", upgradableAttrNameLen, strings.Repeat("-", upgradableAttrNameLen))
 		// Any field will do, not just "cards".
 		for range card[RARITY].(*Rarity).cards {
 			fmt.Printf(" | %*s", attrValueLen, strings.Repeat("-", attrValueLen))
@@ -600,39 +620,35 @@ func main() {
 
 		// Content
 		for _, attr := range CARD_ATTRIBUTES {
-			if !attr.isMutable {
+			uattr, ok := attr.(*UpgradableCardAttribute)
+			if !ok {
 				continue
 			}
 			if values, ok := card[attr]; ok {
-				fmt.Printf("%*s", -mutableAttrNameLen, attr)
-				switch values.(type) {
-				case []int:
-					for _, value := range values.([]int) {
-						fmt.Printf(" | %*s", attrValueLen, attr.format(value))
-					}
-				default:
-					panic("Unknown values type")
+				fmt.Printf("%*s", -upgradableAttrNameLen, uattr)
+				for _, fvalue := range uattr.formatValues(values) {
+					fmt.Printf(" | %*s", attrValueLen, fvalue)
 				}
 				fmt.Println()
 			}
 		}
 
 		// Footer 1
-		fmt.Printf("%*s", -mutableAttrNameLen, CARDS_REQ)
+		fmt.Printf("%*s", -upgradableAttrNameLen, CARDS_REQ)
 		for _, cardsReq := range card[RARITY].(*Rarity).cards {
 			fmt.Printf(" | %*s", attrValueLen, formatInt(cardsReq))
 		}
 		fmt.Println()
 
 		// Footer 2
-		fmt.Printf("%*s", -mutableAttrNameLen, GOLD_REQ)
+		fmt.Printf("%*s", -upgradableAttrNameLen, GOLD_REQ)
 		for _, goldReq := range card[RARITY].(*Rarity).gold {
 			fmt.Printf(" | %*s", attrValueLen, formatInt(goldReq))
 		}
 		fmt.Println()
 
 		// Footer 3
-		fmt.Printf("%*s", -mutableAttrNameLen, EXP_GAIN)
+		fmt.Printf("%*s", -upgradableAttrNameLen, EXP_GAIN)
 		for _, expGain := range card[RARITY].(*Rarity).exp {
 			fmt.Printf(" | %*s", attrValueLen, formatInt(expGain))
 		}
