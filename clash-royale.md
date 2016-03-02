@@ -77,12 +77,12 @@ Deploy Time | 1sec
 
 Attribute          | LV1  | LV2  | LV3  | LV4  | LV5  | LV6  | LV7  | LV8  | LV9  | LV10 | LV11 | LV12
 ------------------ | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ----
-Hitpoints          |  600 |  660 |  726 |  798 |  876 |  960 | 1056 | 1158 | 1272 | 1398 |      | 1686
-Damage per Second  |   68 |   74 |   81 |   90 |   99 |  109 |  120 |  130 |  144 |  158 |      |  190
-Damage             |   75 |   82 |   90 |   99 |  109 |  120 |  132 |  144 |  159 |  174 |      |  210
-Cards Required     |    0 |    2 |    4 |   10 |   20 |   50 |  100 |  200 |      |      |      |     
-Gold Required      |    0 |    5 |   20 |   50 |  150 |  400 | 1000 | 2000 |      |      |      |     
-Experience Gained  |    0 |    4 |    5 |    6 |   10 |   25 |   50 |      |      |      |      |     
+Hitpoints          |  600 |  660 |  726 |  798 |  876 |  960 | 1056 | 1158 | 1272 | 1398 | 1536 | 1686
+Damage per Second  |   68 |   74 |   81 |   90 |   99 |  109 |  120 |  130 |  144 |  158 |  174 |  190
+Damage             |   75 |   82 |   90 |   99 |  109 |  120 |  132 |  144 |  159 |  174 |  192 |  210
+Cards Required     |    0 |    2 |    4 |   10 |   20 |   50 |  100 |  200 |      |      |      |
+Gold Required      |    0 |    5 |   20 |   50 |  150 |  400 | 1000 | 2000 |      |      |      |
+Experience Gained  |    0 |    4 |    5 |    6 |   10 |   25 |   50 |  100 |      |      |      |
 
 ### Archers
 
@@ -106,9 +106,9 @@ Attribute          | LV1  | LV2  | LV3  | LV4  | LV5  | LV6  | LV7  | LV8  | LV9
 Hitpoints          |  125 |  137 |  151 |  166 |  182 |  200 |  220 |  241 |  265 |  291 |  320 |  351
 Damage per Second  |   33 |   36 |   40 |   44 |   48 |   53 |   58 |   64 |   70 |   77 |   85 |   93
 Damage             |   40 |   44 |   48 |   53 |   58 |   64 |   70 |   77 |   84 |   93 |  102 |  112
-Cards Required     |    0 |    2 |    4 |   10 |   20 |   50 |  100 |  200 |      |      |      |     
-Gold Required      |    0 |    5 |   20 |   50 |  150 |  400 | 1000 | 2000 |      |      |      |     
-Experience Gained  |    0 |    4 |    5 |    6 |   10 |   25 |   50 |      |      |      |      |     
+Cards Required     |    0 |    2 |    4 |   10 |   20 |   50 |  100 |  200 |      |      |      |
+Gold Required      |    0 |    5 |   20 |   50 |  150 |  400 | 1000 | 2000 |      |      |      |
+Experience Gained  |    0 |    4 |    5 |    6 |   10 |   25 |   50 |  100 |      |      |      |
 
 ### Bomber
 
@@ -118,7 +118,7 @@ Name        | Bomber
 Arena       | Arena 0: Training Camp
 Rarity      | Common
 Type        | Troop
-Description | Small, lightly protected skeleton that throws bombs. Deals damage that can wipe out a swarm of enemies.
+Description | Small, lightly protected skeleton that throws bombs. Deals area damage that can wipe out a swarm of enemies.
 Elixir Cost | 3
 Hit Speed   | 1.9sec
 Targets     | Ground
@@ -128,12 +128,12 @@ Deploy Time | 1sec
 
 Attribute          | LV1  | LV2  | LV3  | LV4  | LV5  | LV6  | LV7  | LV8  | LV9  | LV10 | LV11 | LV12
 ------------------ | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ----
-Hitpoints          |  150 |  165 |  181 |  199 |  219 |  240 |  264 |      |  318 |  349 |  384 |  421
-Damage per Second  |   52 |   57 |   63 |   70 |   76 |   84 |   92 |      |  111 |  122 |  134 |  147
-Area Damage        |  100 |  110 |  121 |  133 |  146 |  160 |  176 |      |  212 |  233 |  256 |  281
-Cards Required     |    0 |    2 |    4 |   10 |   20 |   50 |  100 |  200 |      |      |      |     
-Gold Required      |    0 |    5 |   20 |   50 |  150 |  400 | 1000 | 2000 |      |      |      |     
-Experience Gained  |    0 |    4 |    5 |    6 |   10 |   25 |   50 |      |      |      |      |     
+Hitpoints          |  150 |  165 |  181 |  199 |  219 |  240 |  264 |  289 |  318 |  349 |  384 |  421
+Damage per Second  |   52 |   57 |   63 |   70 |   76 |   84 |   92 |  101 |  111 |  122 |  134 |  147
+Area Damage        |  100 |  110 |  121 |  133 |  146 |  160 |  176 |  193 |  212 |  233 |  256 |  281
+Cards Required     |    0 |    2 |    4 |   10 |   20 |   50 |  100 |  200 |      |      |      |
+Gold Required      |    0 |    5 |   20 |   50 |  150 |  400 | 1000 | 2000 |      |      |      |
+Experience Gained  |    0 |    4 |    5 |    6 |   10 |   25 |   50 |  100 |      |      |      |
 
 ### Goblins
 
@@ -157,9 +157,9 @@ Attribute          | LV1  | LV2  | LV3  | LV4  | LV5  | LV6  | LV7  | LV8  | LV9
 Hitpoints          |   80 |   88 |   96 |  106 |  116 |  128 |  140 |      |  169 |  186 |  204 |  224
 Damage per Second  |   45 |   50 |   54 |   60 |   66 |   72 |   80 |      |   96 |  105 |  116 |  127
 Damage             |   50 |   55 |   60 |   66 |   73 |   80 |   88 |      |  106 |  116 |  128 |  140
-Cards Required     |    0 |    2 |    4 |   10 |   20 |   50 |  100 |  200 |      |      |      |     
-Gold Required      |    0 |    5 |   20 |   50 |  150 |  400 | 1000 | 2000 |      |      |      |     
-Experience Gained  |    0 |    4 |    5 |    6 |   10 |   25 |   50 |      |      |      |      |     
+Cards Required     |    0 |    2 |    4 |   10 |   20 |   50 |  100 |  200 |      |      |      |
+Gold Required      |    0 |    5 |   20 |   50 |  150 |  400 | 1000 | 2000 |      |      |      |
+Experience Gained  |    0 |    4 |    5 |    6 |   10 |   25 |   50 |  100 |      |      |      |
 
 ### Spear Goblins
 
@@ -183,9 +183,9 @@ Attribute          | LV1  | LV2  | LV3  | LV4  | LV5  | LV6  | LV7  | LV8  | LV9
 Hitpoints          |   52 |   57 |   62 |   69 |   75 |   83 |   91 |  100 |  110 |  121 |  133 |  146
 Damage per Second  |   18 |   20 |   22 |   23 |   26 |   29 |   32 |   35 |   38 |   42 |   46 |   51
 Damage             |   24 |   26 |   29 |   31 |   35 |   38 |   42 |   46 |   50 |   55 |   61 |   67
-Cards Required     |    0 |    2 |    4 |   10 |   20 |   50 |  100 |  200 |      |      |      |     
-Gold Required      |    0 |    5 |   20 |   50 |  150 |  400 | 1000 | 2000 |      |      |      |     
-Experience Gained  |    0 |    4 |    5 |    6 |   10 |   25 |   50 |      |      |      |      |     
+Cards Required     |    0 |    2 |    4 |   10 |   20 |   50 |  100 |  200 |      |      |      |
+Gold Required      |    0 |    5 |   20 |   50 |  150 |  400 | 1000 | 2000 |      |      |      |
+Experience Gained  |    0 |    4 |    5 |    6 |   10 |   25 |   50 |  100 |      |      |      |
 
 ### Skeletons
 
@@ -206,12 +206,12 @@ Count       | x 4
 
 Attribute          | LV1  | LV2  | LV3  | LV4  | LV5  | LV6  | LV7  | LV8  | LV9  | LV10 | LV11 | LV12
 ------------------ | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ----
-Hitpoints          |   30 |   33 |   36 |   39 |   43 |   48 |   52 |   57 |      |   69 |   76 |     
-Damage per Second  |   30 |   33 |   36 |   39 |   43 |   48 |   52 |   57 |      |   69 |   76 |     
-Damage             |   30 |   33 |   36 |   39 |   43 |   48 |   52 |   57 |      |   69 |   76 |     
-Cards Required     |    0 |    2 |    4 |   10 |   20 |   50 |  100 |  200 |      |      |      |     
-Gold Required      |    0 |    5 |   20 |   50 |  150 |  400 | 1000 | 2000 |      |      |      |     
-Experience Gained  |    0 |    4 |    5 |    6 |   10 |   25 |   50 |      |      |      |      |     
+Hitpoints          |   30 |   33 |   36 |   39 |   43 |   48 |   52 |   57 |   63 |   69 |   76 |   84
+Damage per Second  |   30 |   33 |   36 |   39 |   43 |   48 |   52 |   57 |   63 |   69 |   76 |   84
+Damage             |   30 |   33 |   36 |   39 |   43 |   48 |   52 |   57 |   63 |   69 |   76 |   84
+Cards Required     |    0 |    2 |    4 |   10 |   20 |   50 |  100 |  200 |      |      |      |
+Gold Required      |    0 |    5 |   20 |   50 |  150 |  400 | 1000 | 2000 |      |      |      |
+Experience Gained  |    0 |    4 |    5 |    6 |   10 |   25 |   50 |  100 |      |      |      |
 
 ### Minions
 
@@ -232,12 +232,12 @@ Count       | x 3
 
 Attribute          | LV1  | LV2  | LV3  | LV4  | LV5  | LV6  | LV7  | LV8  | LV9  | LV10 | LV11 | LV12
 ------------------ | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ----
-Hitpoints          |   90 |   99 |  108 |  119 |  131 |  144 |  158 |      |  190 |  209 |  230 |  252
-Damage per Second  |   40 |   44 |   48 |   53 |   58 |   64 |   70 |      |   84 |   93 |  102 |  112
-Damage             |   40 |   44 |   48 |   53 |   58 |   64 |   70 |      |   84 |   93 |  102 |  112
-Cards Required     |    0 |    2 |    4 |   10 |   20 |   50 |  100 |  200 |      |      |      |     
-Gold Required      |    0 |    5 |   20 |   50 |  150 |  400 | 1000 | 2000 |      |      |      |     
-Experience Gained  |    0 |    4 |    5 |    6 |   10 |   25 |   50 |      |      |      |      |     
+Hitpoints          |   90 |   99 |  108 |  119 |  131 |  144 |  158 |  173 |  190 |  209 |  230 |  252
+Damage per Second  |   40 |   44 |   48 |   53 |   58 |   64 |   70 |   77 |   84 |   93 |  102 |  112
+Damage             |   40 |   44 |   48 |   53 |   58 |   64 |   70 |   77 |   84 |   93 |  102 |  112
+Cards Required     |    0 |    2 |    4 |   10 |   20 |   50 |  100 |  200 |      |      |      |
+Gold Required      |    0 |    5 |   20 |   50 |  150 |  400 | 1000 | 2000 |      |      |      |
+Experience Gained  |    0 |    4 |    5 |    6 |   10 |   25 |   50 |  100 |      |      |      |
 
 ### Barbarians
 
@@ -261,9 +261,9 @@ Attribute          | LV1  | LV2  | LV3  | LV4  | LV5  | LV6  | LV7  | LV8  | LV9
 Hitpoints          |  300 |      |      |  399 |  438 |  480 |  528 |  579 |      |  699 |  768 |  843
 Damage per Second  |   50 |      |      |   66 |   72 |   80 |   88 |   96 |      |  116 |  128 |  140
 Damage             |   75 |      |      |   99 |  109 |  120 |  132 |  144 |      |  174 |  192 |  210
-Cards Required     |    0 |    2 |    4 |   10 |   20 |   50 |  100 |  200 |      |      |      |     
-Gold Required      |    0 |    5 |   20 |   50 |  150 |  400 | 1000 | 2000 |      |      |      |     
-Experience Gained  |    0 |    4 |    5 |    6 |   10 |   25 |   50 |      |      |      |      |     
+Cards Required     |    0 |    2 |    4 |   10 |   20 |   50 |  100 |  200 |      |      |      |
+Gold Required      |    0 |    5 |   20 |   50 |  150 |  400 | 1000 | 2000 |      |      |      |
+Experience Gained  |    0 |    4 |    5 |    6 |   10 |   25 |   50 |  100 |      |      |      |
 
 ### Minion Horde
 
@@ -284,12 +284,12 @@ Count       | x 6
 
 Attribute          | LV1  | LV2  | LV3  | LV4  | LV5  | LV6  | LV7  | LV8  | LV9  | LV10 | LV11 | LV12
 ------------------ | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ----
-Hitpoints          |   90 |   99 |  108 |  119 |  131 |  144 |      |      |  190 |  209 |  230 |  252
-Damage per Second  |   40 |   44 |   48 |   53 |   58 |   64 |      |      |   84 |   93 |  102 |  112
-Damage             |   40 |   44 |   48 |   53 |   58 |   64 |      |      |   84 |   93 |  102 |  112
-Cards Required     |    0 |    2 |    4 |   10 |   20 |   50 |  100 |  200 |      |      |      |     
-Gold Required      |    0 |    5 |   20 |   50 |  150 |  400 | 1000 | 2000 |      |      |      |     
-Experience Gained  |    0 |    4 |    5 |    6 |   10 |   25 |   50 |      |      |      |      |     
+Hitpoints          |   90 |   99 |  108 |  119 |  131 |  144 |  158 |  173 |  190 |  209 |  230 |  252
+Damage per Second  |   40 |   44 |   48 |   53 |   58 |   64 |   70 |   77 |   84 |   93 |  102 |  112
+Damage             |   40 |   44 |   48 |   53 |   58 |   64 |   70 |   77 |   84 |   93 |  102 |  112
+Cards Required     |    0 |    2 |    4 |   10 |   20 |   50 |  100 |  200 |      |      |      |
+Gold Required      |    0 |    5 |   20 |   50 |  150 |  400 | 1000 | 2000 |      |      |      |
+Experience Gained  |    0 |    4 |    5 |    6 |   10 |   25 |   50 |  100 |      |      |      |
 
 ### Giant
 
@@ -309,12 +309,12 @@ Deploy Time | 1sec
 
 Attribute          | LV1  | LV2  | LV3  | LV4  | LV5  | LV6  | LV7  | LV8  | LV9  | LV10
 ------------------ | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ----
-Hitpoints          | 2000 | 2200 | 2420 | 2660 | 2920 |      |      | 3860 |      | 4660
-Damage per Second  |   80 |   88 |   96 |  106 |  116 |      |      |  154 |      |  186
-Damage             |  120 |  132 |  145 |  159 |  175 |      |      |  231 |      |  279
-Cards Required     |    0 |    2 |    4 |   10 |   20 |   50 |  100 |  200 |      |     
-Gold Required      |    0 |   50 |  150 |  400 | 1000 | 2000 |      |      |      |     
-Experience Gained  |    0 |    6 |   10 |   25 |   50 |      |      |      |      |     
+Hitpoints          | 2000 | 2200 | 2420 | 2660 | 2920 |      | 3520 | 3860 |      | 4660
+Damage per Second  |   80 |   88 |   96 |  106 |  116 |      |  140 |  154 |      |  186
+Damage             |  120 |  132 |  145 |  159 |  175 |      |  221 |  231 |      |  279
+Cards Required     |    0 |    2 |    4 |   10 |   20 |   50 |  100 |  200 |      |
+Gold Required      |    0 |   50 |  150 |  400 | 1000 | 2000 |      |      |      |
+Experience Gained  |    0 |    6 |   10 |   25 |   50 |  100 |      |      |      |
 
 ### Musketeer
 
@@ -324,7 +324,7 @@ Name        | Musketeer
 Arena       | Arena 0: Training Camp
 Rarity      | Rare
 Type        | Troop
-Description | Don't be fooled by her delicately coiffed hair, the musketeer is a mean shot with her trusty boomstick.
+Description | Don't be fooled by her delicately coiffed hair, the Musketeer is a mean shot with her trusty boomstick.
 Elixir Cost | 4
 Hit Speed   | 1.1sec
 Targets     | Air & Ground
@@ -336,10 +336,10 @@ Attribute          | LV1  | LV2  | LV3  | LV4  | LV5  | LV6  | LV7  | LV8  | LV9
 ------------------ | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ----
 Hitpoints          |  340 |  374 |  411 |  452 |  496 |      |      |  656 |  720 |  792
 Damage per Second  |   90 |      |  110 |  120 |  132 |      |      |  175 |  192 |  211
-Damage             |  100 |      |  121 |  133 |  146 |      |      |  193 |  212 |  233
-Cards Required     |    0 |    2 |    4 |   10 |   20 |   50 |  100 |  200 |      |     
-Gold Required      |    0 |   50 |  150 |  400 | 1000 | 2000 |      |      |      |     
-Experience Gained  |    0 |    6 |   10 |   25 |   50 |      |      |      |      |     
+Damage             |  100 |  110 |  121 |  133 |  146 |  160 |  176 |  193 |  212 |  233
+Cards Required     |    0 |    2 |    4 |   10 |   20 |   50 |  100 |  200 |      |
+Gold Required      |    0 |   50 |  150 |  400 | 1000 | 2000 |      |      |      |
+Experience Gained  |    0 |    6 |   10 |   25 |   50 |  100 |      |      |      |
 
 ### Mini P.E.K.K.A
 
@@ -359,12 +359,12 @@ Deploy Time | 1sec
 
 Attribute          | LV1  | LV2  | LV3  | LV4  | LV5  | LV6  | LV7  | LV8  | LV9  | LV10
 ------------------ | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ----
-Hitpoints          |  600 |  660 |  726 |  798 |      |      |      |      |      |
-Damage per Second  |  180 |  198 |  218 |  240 |      |      |  317 |  348 |      |
-Damage             |  325 |  357 |  393 |  432 |      |      |  572 |  627 |      |
-Cards Required     |    0 |    2 |    4 |   10 |   20 |   50 |  100 |      |      |
-Gold Required      |    0 |   50 |  150 |  400 | 1000 |      |      |      |      |
-Experience Gained  |    0 |    6 |   10 |   25 |   50 |      |      |      |      |
+Hitpoints          |  600 |  660 |  726 |  798 |  876 |      |      |      |      |
+Damage per Second  |  180 |  198 |  218 |  240 |  263 |      |  317 |  348 |      |
+Damage             |  325 |  357 |  393 |  432 |  474 |      |  572 |  627 |      |
+Cards Required     |    0 |    2 |    4 |   10 |   20 |   50 |  100 |  200 |      |
+Gold Required      |    0 |   50 |  150 |  400 | 1000 | 2000 |      |      |      |
+Experience Gained  |    0 |    6 |   10 |   25 |   50 |  100 |      |      |      |
 
 ### Valkyrie
 
@@ -384,20 +384,62 @@ Deploy Time | 1sec
 
 Attribute          | LV1  | LV2  | LV3  | LV4  | LV5  | LV6  | LV7  | LV8  | LV9  | LV10
 ------------------ | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ----
-Hitpoints          |  800 |  880 |  968 |      |      |      |      | 1544 |      |
-Damage per Second  |   73 |   81?|   89?|      |      |      |      |  141 |      |
-Area Damage        |  110 |  121 |  133 |      |      |      |      |  212 |      |
-Cards Required     |    0 |    2 |    4 |   10 |   20 |   50 |  100 |      |      |
-Gold Required      |    0 |   50 |  150 |  400 | 1000 |      |      |      |      |
-Experience Gained  |    0 |    6 |   10 |   25 |   50 |      |      |      |      |
+Hitpoints          |  800 |  880 |  968 | 1064 | 1168 | 1280 | 1408 | 1544 | 1696 | 1864
+Damage per Second  |   73 |      |      |      |      |      |      |  141 |      |
+Damage             |  110 |  121 |  133 |  146 |  160 |  176 |  193 |  212 |  233 |  256
+Cards Required     |    0 |    2 |    4 |   10 |   20 |   50 |  100 |  200 |      |
+Gold Required      |    0 |   50 |  150 |  400 | 1000 | 2000 |      |      |      |
+Experience Gained  |    0 |    6 |   10 |   25 |   50 |  100 |      |      |      |
 
 ### Hog Rider
-- Arena 4: P.E.K.K.A's Playhouse
+
+Attribute   | Value
+----------- | -----
+Name        | Hog Rider
+Arena       | Arena 4: P.E.K.K.A's Playhouse
+Rarity      | Rare
+Type        | Troop
+Description | Fast melee troop that targets buildings and can jump over the river. He followed the echoing call of "Hog Riderrrrr" all the way through the arena doors.
+Elixir Cost | 4
+Hit Speed   | 1.5sec
+Targets     | Buildings
+Speed       | Very Fast
+Range       | Melee
+Deploy Time | 1sec
+
+Attribute          | LV1  | LV2  | LV3  | LV4  | LV5  | LV6  | LV7  | LV8  | LV9  | LV10
+------------------ | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ----
+Hitpoints          |  800 |  880 |  968 | 1064 | 1168 | 1280 | 1408 | 1544 | 1696 | 1864
+Damage per Second  |  106 |  116 |  128 |  141 |  155 |      |      |  205 |  226 |  248
+Damage             |  160 |  176 |  193 |  212 |  233 |      |      |  308 |  339 |  372
+Cards Required     |    0 |    2 |    4 |   10 |   20 |   50 |  100 |  200 |      |
+Gold Required      |    0 |   50 |  150 |  400 | 1000 | 2000 |      |      |      |
+Experience Gained  |    0 |    6 |   10 |   25 |   50 |  100 |      |      |      |
 
 ### Wizard
-- Arena 5: Spell Valley
 
+Attribute   | Value
+----------- | -----
+Name        | Wizard
+Arena       | Arena 5: Spell Valley
+Rarity      | Rare
+Type        | Troop
+Description | The most awesome man to ever set foot in the arena, the Wizard will blow you away with his handsomeness... and/or fireballs.
+Elixir Cost | 5
+Hit Speed   | 1.7sec
+Targets     | Air & Ground
+Speed       | Medium
+Range       | 5.5
+Deploy Time | 1sec
 
+Attribute          | LV1  | LV2  | LV3  | LV4  | LV5  | LV6  | LV7  | LV8  | LV9  | LV10
+------------------ | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ----
+Hitpoints          |  340 |      |  411 |  452 |  496 |      |      |      |      |
+Damage per Second  |   76 |      |   92 |  101 |  111 |      |      |      |      |
+Area Damage        |  130 |      |  157 |  172 |  189 |      |      |      |      |
+Cards Required     |    0 |    2 |    4 |   10 |   20 |   50 |  100 |  200 |      |
+Gold Required      |    0 |   50 |  150 |  400 | 1000 | 2000 |      |      |      |
+Experience Gained  |    0 |    6 |   10 |   25 |   50 |  100 |      |      |      |
 
 ### Witch
 
@@ -418,13 +460,13 @@ Deploy Time | 1sec
 
 Attribute          | LV1  | LV2  | LV3  | LV4  | LV5  | LV6  | LV7  | LV8
 ------------------ | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ----
-Hitpoints          |  500 |  550 |  605 |      |      |  800 |  880 |
-Damage per Second  |   51 |   56?|   61 |      |      |   80 |   87 |
-Area Damage        |   36 |   39?|   43 |      |      |   56 |   61 |
-Skeleton Level     |    6 |    7 |    8 |    9 |   10 |   11 |   12 |   13?
-Cards Required     |    0 |    2 |    4 |   10 |   20 |   50 |  100 |
+Hitpoints          |  500 |  550 |  605 |      |  730 |  800 |  880 |  968
+Damage per Second  |   51 |   55 |   61 |      |   74 |   81 |   90 |
+Area Damage        |   36 |   39 |   43 |   48 |   52 |   57 |   63 |   69
+Skeleton Level     |    6 |    7 |    8 |    9 |   10 |   11 |   12 |
+Cards Required     |    0 |    2 |    4 |   10 |   20 |   50 |  100 |  200
 Gold Required      |    0 |  400 | 1000 | 2000 |      |      |      |
-Experience Gained  |    0 |   25 |   50 |      |      |      |      |
+Experience Gained  |    0 |   25 |   50 |  100 |      |      |      |
 
 ### Skeleton Army
 
@@ -445,12 +487,12 @@ Count       | x 20
 
 Attribute          | LV1  | LV2  | LV3  | LV4  | LV5  | LV6  | LV7  | LV8
 ------------------ | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ----
-Hitpoints          |   30 |   33 |   36 |   39 |   43 |   48 |   52 |
-Damage per Second  |   30 |   33 |   36 |   39 |   43 |   48 |   52 |
-Damage             |   30 |   33 |   36 |   39 |   43 |   48 |   52 |
-Cards Required     |    0 |    2 |    4 |   10 |   20 |   50 |  100 |
+Hitpoints          |   30 |   33 |   36 |   39 |   43 |   48 |   52 |   57
+Damage per Second  |   30 |   33 |   36 |   39 |   43 |   48 |   52 |   57
+Damage             |   30 |   33 |   36 |   39 |   43 |   48 |   52 |   57
+Cards Required     |    0 |    2 |    4 |   10 |   20 |   50 |  100 |  200
 Gold Required      |    0 |  400 | 1000 | 2000 |      |      |      |
-Experience Gained  |    0 |   25 |   50 |      |      |      |      |
+Experience Gained  |    0 |   25 |   50 |  100 |      |      |      |
 
 ### Baby Dragon
 
@@ -473,9 +515,9 @@ Attribute          | LV1  | LV2  | LV3  | LV4  | LV5  | LV6  | LV7  | LV8
 Hitpoints          |  800 |  880 |  968 | 1064 | 1168 | 1280 | 1408 | 1544
 Damage per Second  |   55 |   61 |   67 |   73 |   81 |   88 |   97 |  107
 Area Damage        |  100 |  110 |  121 |  133 |  146 |  160 |  176 |  193
-Cards Required     |    0 |    2 |    4 |   10 |   20 |   50 |  100 |
+Cards Required     |    0 |    2 |    4 |   10 |   20 |   50 |  100 |  200
 Gold Required      |    0 |  400 | 1000 | 2000 |      |      |      |
-Experience Gained  |    0 |   25 |   50 |      |      |      |      |
+Experience Gained  |    0 |   25 |   50 |  100 |      |      |      |
 
 ### Prince
 
@@ -498,9 +540,9 @@ Attribute          | LV1  | LV2  | LV3  | LV4  | LV5  | LV6  | LV7  | LV8
 Hitpoints          | 1100 | 1210 | 1331 | 1463 | 1606 | 1760 | 1936 |
 Damage per Second  |  146 |  161 |  177 |  194 |  214 |  234 |  258 |
 Damage             |  220 |  242 |  266 |  292 |  321 |  352 |  387 |
-Cards Required     |    0 |    2 |    4 |   10 |   20 |   50 |  100 |
+Cards Required     |    0 |    2 |    4 |   10 |   20 |   50 |  100 |  200
 Gold Required      |    0 |  400 | 1000 | 2000 |      |      |      |
-Experience Gained  |    0 |   25 |   50 |      |      |      |      |
+Experience Gained  |    0 |   25 |   50 |  100 |      |      |      |
 
 ### Giant Skeleton
 
