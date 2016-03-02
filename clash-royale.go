@@ -20,14 +20,15 @@ func (a *Arena) String() string {
 }
 
 var (
-	ARENA_0 = &Arena{0, "Training Camp", 0}
+	ARENA_0 = &Arena{0, "Training Camp", -1}
 	ARENA_1 = &Arena{1, "Goblin Stadium", 0}
 	ARENA_2 = &Arena{2, "Bone Pit", 400}
 	ARENA_3 = &Arena{3, "Barbarian Bowl", 800}
 	ARENA_4 = &Arena{4, "P.E.K.K.A's Playhouse", 1100}
 	ARENA_5 = &Arena{5, "Spell Valley", 1400}
-	ARENA_6 = &Arena{6, "Royal Arena", 1700}
-	ARENA_7 = &Arena{7, "Legendary Arena", 3000}
+	ARENA_6 = &Arena{6, "Builder's Workshop", 1700}
+	ARENA_7 = &Arena{7, "Royal Arena", 2000}
+	ARENA_8 = &Arena{8, "Legendary Arena", 3000}
 )
 
 var ARENAS = [...]*Arena{
@@ -39,6 +40,7 @@ var ARENAS = [...]*Arena{
 	ARENA_5,
 	ARENA_6,
 	ARENA_7,
+	ARENA_8,
 }
 
 // --- Rarity ---
@@ -87,12 +89,19 @@ var (
 		gold:  []int{0, 400, 1000, 2000, X, X, X, X},
 		exp:   []int{0, 25, 50, 100, X, X, X, X},
 	}
+	LEGENDARY = &Rarity{
+		name:  "Legendary",
+		cards: []int{0, 2, 4, 10, 20, 50},
+		gold:  []int{0, 2000, X, X, X, X},
+		exp:   []int{0, 100, X, X, X, X},
+	}
 )
 
 var RARITIES = [...]*Rarity{
 	COMMON,
 	RARE,
 	EPIC,
+	LEGENDARY,
 }
 
 // --- Type ---
@@ -360,7 +369,7 @@ var (
 		ARENA:  ARENA_0,
 		RARITY: COMMON,
 		TYPE:   TROOP,
-		DESC:   "A tough melee fighter. The Barbarian's handsome, cultured cousin. Rumor has it that he was knighted based on the sheer awesomeness of his mustache alone.",
+		DESC:   `A tough melee fighter. The Barbarian's handsome, cultured cousin. Rumor has it that he was knighted based on the sheer awesomeness of his mustache alone.`,
 		COST:   3,
 		HP:     []int{600, 660, 726, 798, 876, 960, 1056, 1158, 1272, 1398, 1536, 1686},
 		DPS:    []int{68, 74, 81, 90, 99, 109, 120, 130, 144, 158, 174, 190},
@@ -376,7 +385,7 @@ var (
 		ARENA:  ARENA_0,
 		RARITY: COMMON,
 		TYPE:   TROOP,
-		DESC:   "A pair of unarmored ranged attackers. They'll help you with ground and air unit attacks, but you're on your own with coloring your hair.",
+		DESC:   `A pair of unarmored ranged attackers. They'll help you with ground and air unit attacks, but you're on your own with coloring your hair.`,
 		COST:   3,
 		HP:     []int{125, 137, 151, 166, 182, 200, 220, 241, 265, 291, 320, 351},
 		DPS:    []int{33, 36, 40, 44, 48, 53, 58, 64, 70, 77, 85, 93},
@@ -393,7 +402,7 @@ var (
 		ARENA:  ARENA_0,
 		RARITY: COMMON,
 		TYPE:   TROOP,
-		DESC:   "Small, lightly protected skeleton that throws bombs. Deals area damage that can wipe out a swarm of enemies.",
+		DESC:   `Small, lightly protected skeleton that throws bombs. Deals area damage that can wipe out a swarm of enemies.`,
 		COST:   3,
 		HP:     []int{150, 165, 181, 199, 219, 240, 264, 289, 318, 349, 384, 421},
 		DPS:    []int{52, 57, 63, 70, 76, 84, 92, 101, 111, 122, 134, 147},
@@ -409,7 +418,7 @@ var (
 		ARENA:  ARENA_1,
 		RARITY: COMMON,
 		TYPE:   TROOP,
-		DESC:   "Three fast, unarmored melee attackers. Small, fast, green and mean!",
+		DESC:   `Three fast, unarmored melee attackers. Small, fast, green and mean!`,
 		COST:   2,
 		HP:     []int{80, 88, 96, 106, 116, 128, 140, X, 169, 186, 204, 224},
 		DPS:    []int{45, 50, 54, 60, 66, 72, 80, X, 96, 105, 116, 127},
@@ -426,7 +435,7 @@ var (
 		ARENA:  ARENA_1,
 		RARITY: COMMON,
 		TYPE:   TROOP,
-		DESC:   "Three unarmored ranged attackers. Who the heck taught these guys to throw spears!?! Who thought that was a good idea?!",
+		DESC:   `Three unarmored ranged attackers. Who the heck taught these guys to throw spears!?! Who thought that was a good idea?!`,
 		COST:   2,
 		HP:     []int{52, 57, 62, 69, 75, 83, 91, 100, 110, 121, 133, 146},
 		DPS:    []int{18, 20, 22, 23, 26, 29, 32, 35, 38, 42, 46, 51},
@@ -443,7 +452,7 @@ var (
 		ARENA:  ARENA_2,
 		RARITY: COMMON,
 		TYPE:   TROOP,
-		DESC:   "Four fast, very weak melee fighters. Swarm your enemies with this pile of bones!",
+		DESC:   `Four fast, very weak melee fighters. Swarm your enemies with this pile of bones!`,
 		COST:   1,
 		HP:     []int{30, 33, 36, 39, 43, 48, 52, 57, 63, 69, 76, 84},
 		DPS:    []int{30, 33, 36, 39, 43, 48, 52, 57, 63, 69, 76, 84},
@@ -460,7 +469,7 @@ var (
 		ARENA:  ARENA_2,
 		RARITY: COMMON,
 		TYPE:   TROOP,
-		DESC:   "Three fast, unarmored flying attackers. Roses are red, minions are blue, they can fly, and will crush you!",
+		DESC:   `Three fast, unarmored flying attackers. Roses are red, minions are blue, they can fly, and will crush you!`,
 		COST:   3,
 		HP:     []int{90, 99, 108, 119, 131, 144, 158, 173, 190, 209, 230, 252},
 		DPS:    []int{40, 44, 48, 53, 58, 64, 70, 77, 84, 93, 102, 112},
@@ -477,7 +486,7 @@ var (
 		ARENA:  ARENA_3,
 		RARITY: COMMON,
 		TYPE:   TROOP,
-		DESC:   "A horde of melee attackers with mean mustaches and even meaner tempers.",
+		DESC:   `A horde of melee attackers with mean mustaches and even meaner tempers.`,
 		COST:   5,
 		HP:     []int{300, X, X, 399, 438, 480, 528, 579, X, 699, 768, 843},
 		DPS:    []int{50, X, X, 66, 72, 80, 88, 96, X, 116, 128, 140},
@@ -494,7 +503,7 @@ var (
 		ARENA:  ARENA_4,
 		RARITY: COMMON,
 		TYPE:   TROOP,
-		DESC:   "Six fast, unarmored flying attackers. Three's a crowd, six is a horde!",
+		DESC:   `Six fast, unarmored flying attackers. Three's a crowd, six is a horde!`,
 		COST:   5,
 		HP:     []int{90, 99, 108, 119, 131, 144, 158, 173, 190, 209, 230, 252},
 		DPS:    []int{40, 44, 48, 53, 58, 64, 70, 77, 84, 93, 102, 112},
@@ -511,7 +520,7 @@ var (
 		ARENA:  ARENA_0,
 		RARITY: RARE,
 		TYPE:   TROOP,
-		DESC:   "Slow but durable, only attacks buildings. A real one-man wrecking crew!",
+		DESC:   `Slow but durable, only attacks buildings. A real one-man wrecking crew!`,
 		COST:   5,
 		HP:     []int{2000, 2200, 2420, 2660, 2920, X, 3520, 3860, X, 4660},
 		DPS:    []int{80, 88, 96, 106, 116, X, 140, 154, X, 186},
@@ -527,7 +536,7 @@ var (
 		ARENA:  ARENA_0,
 		RARITY: RARE,
 		TYPE:   TROOP,
-		DESC:   "Don't be fooled by her delicately coiffed hair, the Musketeer is a mean shot with her trusty boomstick.",
+		DESC:   `Don't be fooled by her delicately coiffed hair, the Musketeer is a mean shot with her trusty boomstick.`,
 		COST:   4,
 		HP:     []int{340, 374, 411, 452, 496, X, X, 656, 720, 792},
 		DPS:    []int{90, X, 110, 120, 132, X, X, 175, 192, 211},
@@ -543,7 +552,7 @@ var (
 		ARENA:  ARENA_0,
 		RARITY: RARE,
 		TYPE:   TROOP,
-		DESC:   "The arena is a certified butterfly-free zone. No distractions for P.E.K.K.A, only destruction.",
+		DESC:   `The arena is a certified butterfly-free zone. No distractions for P.E.K.K.A, only destruction.`,
 		COST:   4,
 		HP:     []int{600, 660, 726, 798, 876, X, X, X, X, X},
 		DPS:    []int{180, 198, 218, 240, 263, X, 317, 348, X, X},
@@ -559,7 +568,7 @@ var (
 		ARENA:  ARENA_1,
 		RARITY: RARE,
 		TYPE:   TROOP,
-		DESC:   "Tough melee fighter, deals area damage around her. Swarm or horde, no problem! She can take them all out with a few spins.",
+		DESC:   `Tough melee fighter, deals area damage around her. Swarm or horde, no problem! She can take them all out with a few spins.`,
 		COST:   4,
 		HP:     []int{800, 880, 968, 1064, 1168, 1280, 1408, 1544, 1696, 1864},
 		DPS:    []int{73, X, X, X, X, X, X, 141, X, X},
@@ -591,11 +600,11 @@ var (
 		ARENA:  ARENA_5,
 		RARITY: RARE,
 		TYPE:   TROOP,
-		DESC:   "The most awesome man to ever set foot in the arena, the Wizard will blow you away with his handsomeness... and/or fireballs.",
+		DESC:   `The most awesome man to ever set foot in the arena, the Wizard will blow you away with his handsomeness... and/or fireballs.`,
 		COST:   5,
-		HP:     []int{340, X, 411, 452, 496, X, X, X, X, X},
-		DPS:    []int{76, X, 92, 101, 111, X, X, X, X, X},
-		ADAM:   []int{130, X, 157, 172, 189, X, X, X, X, X},
+		HP:     []int{340, X, 411, 452, 496, X, X, 656, 720, 792},
+		DPS:    []int{76, X, 92, 101, 111, X, X, 147, 161, 177},
+		ADAM:   []int{130, X, 157, 172, 189, X, X, 250, 275, 302},
 		HSPD:   1.7,
 		TGTS:   AIR_AND_GROUND,
 		SPD:    MEDIUM,
@@ -607,7 +616,7 @@ var (
 		ARENA:  ARENA_0,
 		RARITY: EPIC,
 		TYPE:   TROOP,
-		DESC:   "Summons skeletons, shoots destructo beams, has glowing pink eyes that unfortunately don't shoot lasers.",
+		DESC:   `Summons skeletons, shoots destructo beams, has glowing pink eyes that unfortunately don't shoot lasers.`,
 		COST:   5,
 		HP:     []int{500, 550, 605, X, 730, 800, 880, 968},
 		DPS:    []int{51, 55, 61, X, 74, 81, 90, X},
@@ -625,7 +634,7 @@ var (
 		ARENA:  ARENA_0,
 		RARITY: EPIC,
 		TYPE:   TROOP,
-		DESC:   "Summons an army of skeletons. Meet Larry and his friends Harry, Gerry, Terry, Mary, etc.",
+		DESC:   `Summons an army of skeletons. Meet Larry and his friends Harry, Gerry, Terry, Mary, etc.`,
 		COST:   4,
 		HP:     []int{30, 33, 36, 39, 43, 48, 52, 57},
 		DPS:    []int{30, 33, 36, 39, 43, 48, 52, 57},
@@ -642,7 +651,7 @@ var (
 		ARENA:  ARENA_0,
 		RARITY: EPIC,
 		TYPE:   TROOP,
-		DESC:   "Flying troop that deals area damage. Baby dragons hatch cute, hungry, and ready for a barbeque.",
+		DESC:   `Flying troop that deals area damage. Baby dragons hatch cute, hungry, and ready for a barbeque.`,
 		COST:   4,
 		HP:     []int{800, 880, 968, 1064, 1168, 1280, 1408, 1544},
 		DPS:    []int{55, 61, 67, 73, 81, 88, 97, 107},
@@ -658,21 +667,40 @@ var (
 		ARENA:  ARENA_0,
 		RARITY: EPIC,
 		TYPE:   TROOP,
-		DESC:   "Don't let the little pony fool you. Once the Prince gets a running start, you WILL be trampled. Does 2x damage once he gets charging.",
+		DESC:   `Don't let the little pony fool you. Once the Prince gets a running start, you WILL be trampled. Does 2x damage once he gets charging.`,
 		COST:   5,
-		HP:     []int{1100, 1210, 1331, 1463, 1606, 1760, 1936, X},
-		DPS:    []int{146, 161, 177, 194, 214, 234, 258, X},
-		DAM:    []int{220, 242, 266, 292, 321, 352, 387, X},
+		HP:     []int{1100, 1210, 1331, 1463, 1606, 1760, 1936, 2123},
+		DPS:    []int{146, 161, 177, 194, 214, 234, 258, 282},
+		DAM:    []int{220, 242, 266, 292, 321, 352, 387, 424},
 		HSPD:   1.5,
 		TGTS:   GROUND,
 		SPD:    MEDIUM,
 		RNG:    2.5,
 		DTIME:  1,
 	}
-	GIANT_SKELETON = Card{}
-	BALLOON        = Card{}
-	PEKKA          = Card{}
-	GOLEM          = Card{}
+	GIANT_SKELETON = Card{
+		HP:   []int{2000, 2200, 2420, X, X, 3200, 3520, X},
+		DPS:  []int{66, X, 80, X, X, 106, 117, X},
+		DAM:  []int{100, 110, 121, X, 160, 176, X},
+		DDAM: []int{720, 792, 871, X, 1152, 1267, X},
+	}
+	BALLOON = Card{
+		HP:   []int{1000, 1100, X, X, 1460, X, 1760, X},
+		DPS:  []int{200, 220, X, X, 292, X, 352, X},
+		DAM:  []int{600, 660, X, X, 876, X, 1056, X},
+		DDAM: []int{100, 110, X, X, 146, X, 176, X},
+	}
+	PEKKA = Card{
+		HP:  []int{2600, 2860, X, X, X, X, 4576, X},
+		DPS: []int{250, 275, X, X, X, X, 440, X},
+		DAM: []int{450, 495, X, X, X, X, 792, X},
+	}
+	GOLEM = Card{
+		HP:   []int{X, X, X, X, 4380, 4800, 5280, 5790},
+		DPS:  []int{X, X, X, X, 108, 118, 130, 143},
+		DAM:  []int{X, X, X, X, 271, 297, 327, 358},
+		DDAM: []int{X, X, X, X, 271, 297, 327, 358},
+	}
 )
 
 var CARDS = [...]Card{
