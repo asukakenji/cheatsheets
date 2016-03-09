@@ -11,4 +11,3 @@
 
 ### Gaming
 - [Dash Quest](dash-quest.md)
-- [Clash Royale](clash-royale.md)
