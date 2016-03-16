@@ -9,5 +9,8 @@
 ### Mathematics
 - [Points on a Unit Sphere](points-on-a-unit-sphere.md)
 
+### Configurations
+- [QNAP NAS: Samba (SMB): Enable Windows ACL Support (Fixed Bug on NAS)](qnap-enable-windows-acl-support.md)
+
 ### Gaming
 - [Dash Quest](dash-quest.md)

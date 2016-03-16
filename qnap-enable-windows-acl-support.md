@@ -1,4 +1,4 @@
-# QNAP NAS: Samba (SMB): Enable Windows ACL support
+# QNAP NAS: Samba (SMB): Enable Windows ACL Support (Fixed Bug on NAS)
 
 ### Note
 
