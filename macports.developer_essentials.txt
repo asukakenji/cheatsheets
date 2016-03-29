@@ -1,0 +1,8 @@
+coreutils
+diffutils
+findutils
+grep
+gsed
+gawk
+gnutar
+binutils
