@@ -5,6 +5,11 @@
 - [Build Tools, Build Systems, Package Managers, Dependency Managers](build-tools.md)
 - [A collection of interfaces in Go's standard library](go-interfaces.md)
 - [Ruby Cheatsheet](ruby.md)
+- [MacPorts Packages](macports.md)
+
+##### Git
+- [Handling modes (permissions) with Git commands](git-mode-permission.md)
+- [Moving files from a Git repository to a new one](git-move-repository.md)
 
 ### Mathematics
 - [Points on a Unit Sphere](points-on-a-unit-sphere.md)
