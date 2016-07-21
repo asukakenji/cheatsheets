@@ -5,6 +5,7 @@
 - [Build Tools, Build Systems, Package Managers, Dependency Managers](build-tools.md)
 - [A collection of interfaces in Go's standard library](go-interfaces.md)
 - [Go (Golang) Naming Conventions Cheatsheet](go-conventions.md)
+- [Go (Golang) Channels](go-channels.md)
 - [Ruby Cheatsheet](ruby.md)
 - [MacPorts Packages](macports.md)
 
