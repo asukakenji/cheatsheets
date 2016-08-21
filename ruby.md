@@ -46,8 +46,8 @@ Example:
 ```ruby
 # The FullName class
 class FullName
-  # initialize() is the constructor
-  # It is like init() in Objective-C
+  # #initialize (instance method initialize) acts as the constructor.
+  # It is like init() in Objective-C.
   def initialize(given_name, family_name)
     @gn = given_name
     @fn = family_name
@@ -58,9 +58,9 @@ class FullName
   end
 end
 
-# Create a new object
-# new() is like new() in Objective-C,
-# which does both alloc() and init()
+# Create a new object.
+# .new (class method new) is like new() in Objective-C,
+# which does both alloc() and init().
 name = FullName.new("Kenji", "Asuka")
 
 # Output "Hello, Kenji Asuka!"
