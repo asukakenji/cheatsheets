@@ -72,7 +72,7 @@ just define the same class again with additional methods to re-open it.
 ```ruby
 class Animal
   def initialize(name)
-    @ame = name
+    @name = name
   end
 end
 
