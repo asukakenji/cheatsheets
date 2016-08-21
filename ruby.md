@@ -30,16 +30,6 @@ Example:
 require 'name_of_library'
 ```
 
-### Method Definition
-
-Example:
-```ruby
-def method_name(param1, param2)
-  # Implementation here (indent with 2 spaces)
-  # The value of the last statement is the return value
-end
-```
-
 ### Class Definition
 
 Example:
@@ -70,6 +60,37 @@ name.salute
 Note:
 Classes could be "re-opened" after definition,
 just define the same class again with additional methods to re-open it.
+
+### Method Definition
+
+Example:
+```ruby
+def method_name(param1, param2)
+  # Implementation here (indent with 2 spaces)
+  # The value of the last statement is the return value
+end
+```
+
+Unlike Java, trying to call a class method on an instance in Ruby is an error.
+
+Example:
+```ruby
+class Foo
+  def self.bar
+    puts 'class method'
+  end
+  
+  def baz
+    puts 'instance method'
+  end
+end
+
+Foo.bar # => "class method"
+Foo.baz # => NoMethodError: undefined method `baz' for Foo:Class
+
+Foo.new.baz # => "instance method"
+Foo.new.bar # => NoMethodError: undefined method `bar' for #<Foo:0x007fc95305f4c8>
+```
 
 ### Inheritance
 
