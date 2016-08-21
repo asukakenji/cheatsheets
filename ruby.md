@@ -69,6 +69,8 @@ just define the same class again with additional methods to re-open it.
 
 ### Inheritance
 
+Example:
+
 ```ruby
 class Animal
   def initialize(name)
@@ -102,7 +104,7 @@ answer = 42
 
 #### `===` (Case Equality)
 
-> For class `Object`, effectively the same as calling `#==`,
+> For class `Object`, effectively the same as calling `==`,
 > but typically overridden by descendants to provide meaningful semantics in `case` statements.
 
 Example:
