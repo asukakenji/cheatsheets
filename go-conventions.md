@@ -2,7 +2,7 @@
 
 ## Variables
 
-#### Example 1: `$GOROOT/src/os/error.go`
+#### Example 1: [`$GOROOT/src/os/error.go`](https://golang.org/src/os/error.go)
 
 ```go
 // Portable analogs of some common system call errors.
@@ -14,7 +14,7 @@ var (
 )
 ```
 
-#### Example 2: `$GOROOT/src/os/file.go`
+#### Example 2: [`$GOROOT/src/os/file.go`](https://golang.org/src/os/file.go)
 
 ```go
 // Stdin, Stdout, and Stderr are open Files pointing to the standard input,
@@ -28,7 +28,7 @@ var (
 
 ## Constants
 
-#### Example 1: `$GOROOT/src/os/file.go`
+#### Example 1: [`$GOROOT/src/os/file.go`](https://golang.org/src/os/file.go)
 
 ```go
 // Flags to OpenFile wrapping those of the underlying system. Not all
@@ -52,7 +52,7 @@ const (
 )
 ```
 
-#### Example 2: `$GOROOT/src/os/types.go`
+#### Example 2: [`$GOROOT/src/os/types.go`](https://golang.org/src/os/types.go)
 
 ```go
 // The defined file mode bits are the most significant bits of the FileMode.
@@ -83,7 +83,7 @@ const (
 )
 ```
 
-#### Example 3: `$GOROOT/src/math/const.go`
+#### Example 3: [`$GOROOT/src/math/const.go`](https://golang.org/src/math/const.go)
 
 ```go
 // Mathematical constants.
@@ -145,7 +145,7 @@ Filename:
 - `$src/cmd/$executable/*.go`
 
 Filename Examples:
-- `$GOROOT/src/cmd/go/*.go`
+- [`$GOROOT/src/cmd/go/*.go`](https://golang.org/src/cmd/go/)
 
 Code:
 ```go
@@ -159,10 +159,10 @@ Filename:
 - `$executable.go`
 
 Filename Examples:
-- `$GOROOT/src/cmd/go/main.go`
-- `$GOROOT/src/cmd/gofmt/gofmt.go`
-- `$GOROOT/src/cmd/nm/nm.go`
-- `$GOROOT/src/cmd/objdump/main.go`
+- [`$GOROOT/src/cmd/go/main.go`](https://golang.org/src/cmd/go/main.go)
+- [`$GOROOT/src/cmd/gofmt/gofmt.go`](https://golang.org/src/cmd/gofmt/gofmt.go)
+- [`$GOROOT/src/cmd/nm/nm.go`](https://golang.org/src/cmd/nm/nm.go)
+- [`$GOROOT/src/cmd/objdump/main.go`](https://golang.org/src/cmd/objdump/main.go)
 
 Code:
 ```go
@@ -248,7 +248,8 @@ Filename (Not enforced by the toolchain):
 - `export_test.go`
 
 Filename Examples:
-- TODO: Write this!
+- [`$GOROOT/src/flag/export_test.go`](https://golang.org/src/flag/export_test.go)
+- [`$GOROOT/src/net/http/export_test.go`](https://golang.org/src/net/http/export_test.go)
 
 Note:
 - The backdoor file exposes internals that are needed by the test package;
