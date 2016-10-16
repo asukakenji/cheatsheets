@@ -7,6 +7,8 @@
   - [Go (Golang) Channels](go-channels.md)
 - Ruby
   - [Ruby Cheatsheet](ruby.md)
+- C
+  - [C Keywords](keywords-c.md)
 - C++
   - [C++ Keywords](keywords-cpp.md)
 
