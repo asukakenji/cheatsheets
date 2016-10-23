@@ -2,6 +2,7 @@
 
 ### Programming
 - Go (Golang)
+  - [Go Keywords](keywords-go.md)
   - [A collection of interfaces in Go's standard library](go-interfaces.md)
   - [Go (Golang) Naming Conventions Cheatsheet](go-conventions.md)
   - [Go (Golang) Channels](go-channels.md)
