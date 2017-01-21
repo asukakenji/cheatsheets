@@ -12,6 +12,8 @@
   - [C Keywords](keywords-c.md)
 - C++
   - [C++ Keywords](keywords-cpp.md)
+- HTML
+  - [HTML5 Tags](keywords-html5.md)
 
 ### Servers
 - [beanstalkd Commands](beanstalkd.md)
