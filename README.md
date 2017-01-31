@@ -29,6 +29,7 @@
 ### Mathematics
 - [Points on a Unit Sphere](points-on-a-unit-sphere.md)
 - [Calculating the exact coordinates of a regular tetrahedron circumscribed by the unit sphere at the origin](tetrahedron.md)
+- [Deriving trigonometry formulae](trigonometry.md)
 
 ### Configurations
 - [QNAP NAS: Samba (SMB): Enable Windows ACL Support (Fixed Bug on NAS)](qnap-enable-windows-acl-support.md)
