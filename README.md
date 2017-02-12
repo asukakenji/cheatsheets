@@ -1,4 +1,4 @@
-# A collection of cheatsheets
+# A Collection of Cheatsheets
 
 ### Programming
 - Go (Golang)
@@ -14,6 +14,9 @@
   - [C++ Keywords](keywords-cpp.md)
 - HTML
   - [HTML5 Tags](keywords-html5.md)
+
+### AWS
+- [Amazon DynamoDB Cheatsheet](dynamodb.md)
 
 ### Servers
 - [beanstalkd Commands](beanstalkd.md)
