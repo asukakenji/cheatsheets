@@ -1,5 +1,24 @@
 # Amazon DynamoDB Cheatsheet
 
+- Download:
+  - http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DynamoDBLocal.html
+
+- Start:
+  - Simple (Write to Disk, One Database File, Write to Current Directory, Listen to Port 8000):
+    - `java -Djava.library.path=./DynamoDBLocal_lib -jar DynamoDBLocal.jar -sharedDb`
+  - Write to Specific Directory:
+    - `java -Djava.library.path=./DynamoDBLocal_lib -jar DynamoDBLocal.jar -dbPath <dbPath>`
+  - Write to Memory (Not Persistent):
+    - `java -Djava.library.path=./DynamoDBLocal_lib -jar DynamoDBLocal.jar -inMemory`
+  - Listen to Specific Port:
+    - `java -Djava.library.path=./DynamoDBLocal_lib -jar DynamoDBLocal.jar -port <port>`
+
+- Connect:
+  - When using the AWS CLI:
+    - Add `--endpoint-url <URL>` to the command:
+      - Example:
+        - `aws dynamodb list-tables --endpoint-url http://localhost:8000`
+
 - DynamoDB Core Components:
   - Tables (a collection of items)
   - Items (a collection of attributes)
@@ -40,6 +59,14 @@
 - The DynamoDB API
   - Control Plane
     - CreateTable
+
+          aws dynamodb create-table
+              --table-name <table-name> \
+              --attribute-definitions <attribute-definitions> \
+              --key-schema <key-schema> \
+              --provisioned-throughput <provisioned-throughput>
+
+      - The `--key-schema` must cover all attributes defined in `--attribute-definitions`
     - DescribeTable
     - ListTables
     - UpdateTable
