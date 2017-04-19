@@ -171,13 +171,23 @@ func main() {
 }
 ```
 
-## Test Files
+## Testing
+
+### White Box Testing
 
 Filename:
 - `*_test.go`
 
 Filename Examples:
-- TODO: Write this!
+- [`$GOROOT/src/math/big/arith_test.go`](https://golang.org/src/math/big/arith_test.go)
+- [`$GOROOT/src/math/big/decimal_test.go`](https://golang.org/src/math/big/decimal_test.go)
+- [`$GOROOT/src/math/big/floatconv_test.go`](https://golang.org/src/math/big/floatconv_test.go)
+- [`$GOROOT/src/math/big/hilbert_test.go`](https://golang.org/src/math/big/hilbert_test.go)
+- [`$GOROOT/src/math/big/int_test.go`](https://golang.org/src/math/big/int_test.go)
+- [`$GOROOT/src/math/big/nat_test.go`](https://golang.org/src/math/big/nat_test.go)
+- [`$GOROOT/src/math/big/natconv_test.go`](https://golang.org/src/math/big/natconv_test.go)
+- [`$GOROOT/src/math/cmplx/cmath_test.go`](https://golang.org/src/math/cmplx/cmath_test.go)
+- [`$GOROOT/src/math/rand/rand_test.go`](https://golang.org/src/math/rand/rand_test.go)
 
 Note:
 - The test files are located in the same directory as the source files being tested;
@@ -189,43 +199,14 @@ References:
 
 [cmdgo-testing]: https://golang.org/cmd/go/#hdr-Description_of_testing_functions
 
-### Test Functions
-
-```go
-import "testing"
-
-func TestXxx(t *testing.T) {
-	/* ... */
-}
-```
-
-### Benchmark Functions
-
-```go
-import "testing"
-
-func BenchmarkXxx(b *testing.B) {
-	/* ... */
-}
-```
-
-### Example Functions
-
-```go
-func ExamplePrintln() {
-	Println("The output of\nthis example.")
-	// Output: The output of
-	// this example.
-}
-```
-
-## Test Packages
+### Black Box Testing
 
 Filename:
 - `*_test.go`
 
 Filename Examples:
-- TODO: Write this!
+- [`$GOROOT/src/math/all_test.go`](https://golang.org/src/math/all_test.go)
+- [`$GOROOT/src/math/rand/regress_test.go`](https://golang.org/src/math/rand/regress_test.go)
 
 Note:
 - The test files are located in the same directory as the source files being tested;
@@ -242,19 +223,103 @@ Code:
 package xxx_test
 ```
 
-### Backdoors
+### Gray Box Testing (Backdoors)
 
 Filename (Not enforced by the toolchain):
 - `export_test.go`
 
 Filename Examples:
 - [`$GOROOT/src/flag/export_test.go`](https://golang.org/src/flag/export_test.go)
+- [`$GOROOT/src/math/export_test.go`](https://golang.org/src/math/export_test.go)
 - [`$GOROOT/src/net/http/export_test.go`](https://golang.org/src/net/http/export_test.go)
 
 Note:
 - The backdoor file exposes internals that are needed by the test package;
 - The package declaration in the backdoor file is the same as that in the source files being tested;
 - The backdoor file does not contain any tests.
+
+### Test Functions
+
+```go
+import "testing"
+
+func TestXxx(t *testing.T) {
+	/* ... */
+}
+```
+
+Filename:
+- `*_test.go`
+
+Filename Examples:
+- [`$GOROOT/src/math/big/bits_test.go`](https://golang.org/src/math/big/bits_test.go)
+- [`$GOROOT/src/math/big/calibrate_test.go`](https://golang.org/src/math/big/calibrate_test.go)
+- [`$GOROOT/src/math/big/float_test.go`](https://golang.org/src/math/big/float_test.go)
+- [`$GOROOT/src/math/big/floatmarsh_test.go`](https://golang.org/src/math/big/floatmarsh_test.go)
+- [`$GOROOT/src/math/big/intconv_test.go`](https://golang.org/src/math/big/intconv_test.go)
+- [`$GOROOT/src/math/big/intmarsh_test.go`](https://golang.org/src/math/big/intmarsh_test.go)
+- [`$GOROOT/src/math/big/rat_test.go`](https://golang.org/src/math/big/rat_test.go)
+- [`$GOROOT/src/math/big/ratconv_test.go`](https://golang.org/src/math/big/ratconv_test.go)
+- [`$GOROOT/src/math/big/ratmarsh_test.go`](https://golang.org/src/math/big/ratmarsh_test.go)
+- [`$GOROOT/src/math/rand/race_test.go`](https://golang.org/src/math/rand/race_test.go)
+- [`$GOROOT/src/time/format_test.go`](https://golang.org/src/time/format_test.go)
+- [`$GOROOT/src/time/zoneinfo_test.go`](https://golang.org/src/time/zoneinfo_test.go)
+- [`$GOROOT/src/time/zoneinfo_windows_test.go`](https://golang.org/src/time/zoneinfo_windows_test.go)
+- [`$GOROOT/src/unicode/digit_test.go`](https://golang.org/src/unicode/digit_test.go)
+- [`$GOROOT/src/unicode/graphic_test.go`](https://golang.org/src/unicode/graphic_test.go)
+- [`$GOROOT/src/unicode/letter_test.go`](https://golang.org/src/unicode/letter_test.go)
+- [`$GOROOT/src/unicode/script_test.go`](https://golang.org/src/unicode/script_test.go)
+
+### Benchmark Functions
+
+```go
+import "testing"
+
+func BenchmarkXxx(b *testing.B) {
+	/* ... */
+}
+```
+
+Filename (Not enforced by the toolchain):
+- `bench_test.go`; OR
+- `performance_test.go`; OR
+- `benchmark_test.go`
+
+Preferred Package:
+- `xxx` (`xxx` is the package of the source files)
+
+Filename Examples:
+- [`$GOROOT/src/crypto/cipher/benchmark_test.go`](https://golang.org/src/crypto/cipher/benchmark_test.go)
+- [`$GOROOT/src/encoding/json/bench_test.go`](https://golang.org/src/encoding/json/bench_test.go)
+- [`$GOROOT/src/go/parser/performance_test.go`](https://golang.org/src/go/parser/performance_test.go)
+- [`$GOROOT/src/go/printer/performance_test.go`](https://golang.org/src/go/printer/performance_test.go)
+- [`$GOROOT/src/image/draw/bench_test.go`](https://golang.org/src/image/draw/bench_test.go)
+- [`$GOROOT/src/math/big/gcd_test.go`](https://golang.org/src/math/big/gcd_test.go)
+
+### Example Functions
+
+```go
+func ExamplePrintln() {
+	Println("The output of\nthis example.")
+	// Output: The output of
+	// this example.
+}
+```
+
+Filename (Not enforced by the toolchain):
+- `example_test.go`
+
+Preferred Package:
+- `xxx_test` (`xxx` is the package of the source files)
+
+Filename Examples:
+- [`$GOROOT/src/math/big/example_rat_test.go`](https://golang.org/src/math/big/example_rat_test.go)
+- [`$GOROOT/src/math/big/example_test.go`](https://golang.org/src/math/big/example_test.go)
+- [`$GOROOT/src/math/big/floatexample_test.go`](https://golang.org/src/math/big/floatexample_test.go)
+- [`$GOROOT/src/math/rand/example_test.go`](https://golang.org/src/math/rand/example_test.go)
+- [`$GOROOT/src/time/example_test.go`](https://golang.org/src/time/example_test.go)
+- [`$GOROOT/src/unicode/example_test.go`](https://golang.org/src/unicode/example_test.go)
+- [`$GOROOT/src/unicode/utf8/example_test.go`](https://golang.org/src/unicode/utf8/example_test.go)
 
 ## Internal Packages
 
