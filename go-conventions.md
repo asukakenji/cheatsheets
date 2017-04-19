@@ -175,6 +175,16 @@ func main() {
 
 ### White Box Testing
 
+```go
+package xxx
+
+import "testing"
+
+func TestXxx(t *testing.T) {
+	/* ... */
+}
+```
+
 Filename:
 - `*_test.go`
 
@@ -201,6 +211,16 @@ References:
 
 ### Black Box Testing
 
+```go
+package xxx_test
+
+import "testing"
+
+func TestXxx(t *testing.T) {
+	/* ... */
+}
+```
+
 Filename:
 - `*_test.go`
 
@@ -218,20 +238,34 @@ References:
 
 [cmdgo-test-packages]: https://golang.org/cmd/go/#hdr-Test_packages
 
-Code:
-```go
-package xxx_test
-```
-
 ### Gray Box Testing (Backdoors)
+
+```go
+package xxx
+
+var (
+	Vvv1 = vvv1
+	Vvv2 = vvv2
+)
+```
 
 Filename (Not enforced by the toolchain):
 - `export_test.go`
 
 Filename Examples:
-- [`$GOROOT/src/flag/export_test.go`](https://golang.org/src/flag/export_test.go)
+
+- [`$GOROOT/src/bufio/export_test.go`](https://golang.org/src/bufio/export_test.go)
+- [`$GOROOT/src/bytes/export_test.go`](https://golang.org/src/bytes/export_test.go)
 - [`$GOROOT/src/math/export_test.go`](https://golang.org/src/math/export_test.go)
 - [`$GOROOT/src/net/http/export_test.go`](https://golang.org/src/net/http/export_test.go)
+- [`$GOROOT/src/os/export_test.go`](https://golang.org/src/os/export_test.go)
+- [`$GOROOT/src/reflect/export_test.go`](https://golang.org/src/reflect/export_test.go)
+- [`$GOROOT/src/runtime/export_arm_test.go`](https://golang.org/src/runtime/export_arm_test.go)
+- [`$GOROOT/src/runtime/export_linux_test.go`](https://golang.org/src/runtime/export_linux_test.go)
+- [`$GOROOT/src/runtime/export_mmap_test.go`](https://golang.org/src/runtime/export_mmap_test.go)
+- [`$GOROOT/src/runtime/export_test.go`](https://golang.org/src/runtime/export_test.go)
+- [`$GOROOT/src/runtime/export_windows_test.go`](https://golang.org/src/runtime/export_windows_test.go)
+- [`$GOROOT/src/sync/export_test.go`](https://golang.org/src/sync/export_test.go)
 
 Note:
 - The backdoor file exposes internals that are needed by the test package;
@@ -241,8 +275,6 @@ Note:
 ### Test Functions
 
 ```go
-import "testing"
-
 func TestXxx(t *testing.T) {
 	/* ... */
 }
@@ -254,13 +286,8 @@ Filename:
 Filename Examples:
 - [`$GOROOT/src/math/big/bits_test.go`](https://golang.org/src/math/big/bits_test.go)
 - [`$GOROOT/src/math/big/calibrate_test.go`](https://golang.org/src/math/big/calibrate_test.go)
-- [`$GOROOT/src/math/big/float_test.go`](https://golang.org/src/math/big/float_test.go)
-- [`$GOROOT/src/math/big/floatmarsh_test.go`](https://golang.org/src/math/big/floatmarsh_test.go)
 - [`$GOROOT/src/math/big/intconv_test.go`](https://golang.org/src/math/big/intconv_test.go)
 - [`$GOROOT/src/math/big/intmarsh_test.go`](https://golang.org/src/math/big/intmarsh_test.go)
-- [`$GOROOT/src/math/big/rat_test.go`](https://golang.org/src/math/big/rat_test.go)
-- [`$GOROOT/src/math/big/ratconv_test.go`](https://golang.org/src/math/big/ratconv_test.go)
-- [`$GOROOT/src/math/big/ratmarsh_test.go`](https://golang.org/src/math/big/ratmarsh_test.go)
 - [`$GOROOT/src/math/rand/race_test.go`](https://golang.org/src/math/rand/race_test.go)
 - [`$GOROOT/src/time/format_test.go`](https://golang.org/src/time/format_test.go)
 - [`$GOROOT/src/time/zoneinfo_test.go`](https://golang.org/src/time/zoneinfo_test.go)
@@ -273,8 +300,6 @@ Filename Examples:
 ### Benchmark Functions
 
 ```go
-import "testing"
-
 func BenchmarkXxx(b *testing.B) {
 	/* ... */
 }
