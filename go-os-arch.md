@@ -44,6 +44,36 @@ All of the following results are taken from a `darwin/amd64` environment.
 - `sparc`
 - `sparc64`
 
+## A list of valid 32-bit GOARCH values
+
+(Bold = supported by `go` out of the box, ie. without the help of a C compiler, etc.)
+
+- **`386`**
+- **`amd64p32`**
+- **`arm`**
+- `armbe`
+- **`mips`**
+- **`mipsle`**
+- `mips64p32`
+- `mips64p32le`
+- `ppc`
+- `s390`
+- `sparc`
+
+## A list of valid 64-bit GOARCH values
+
+(Bold = supported by `go` out of the box, ie. without the help of a C compiler, etc.)
+
+- **`amd64`**
+- **`arm64`**
+- `arm64be`
+- **`ppc64`**
+- **`ppc64le`**
+- **`mips64`**
+- **`mips64le`**
+- **`s390x`**
+- `sparc64`
+
 ## A list of GOOS/GOARCH supported by `go` out of the box
 
 - `darwin/386`
@@ -77,6 +107,44 @@ All of the following results are taken from a `darwin/amd64` environment.
 - `plan9/arm`
 - `solaris/amd64`
 - `windows/386`
+- `windows/amd64`
+
+## A list of 32-bit GOOS/GOARCH supported by `go` out of the box
+
+- `darwin/386`
+- `freebsd/386`
+- `freebsd/arm`
+- `linux/386`
+- `linux/arm`
+- `linux/mips`
+- `linux/mipsle`
+- `nacl/386`
+- `nacl/amd64p32`
+- `nacl/arm`
+- `netbsd/386`
+- `netbsd/arm`
+- `openbsd/386`
+- `openbsd/arm`
+- `plan9/386`
+- `plan9/arm`
+- `windows/386`
+
+## A list of 64-bit GOOS/GOARCH supported by `go` out of the box
+
+- `darwin/amd64`
+- `dragonfly/amd64`
+- `freebsd/amd64`
+- `linux/amd64`
+- `linux/arm64`
+- `linux/ppc64`
+- `linux/ppc64le`
+- `linux/mips64`
+- `linux/mips64le`
+- `linux/s390x`
+- `netbsd/amd64`
+- `openbsd/amd64`
+- `plan9/amd64`
+- `solaris/amd64`
 - `windows/amd64`
 
 ## Support Grid
