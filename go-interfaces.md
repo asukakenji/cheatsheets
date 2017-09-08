@@ -355,6 +355,159 @@ type TextUnmarshaler interface {
 
 
 
+### package `net`
+
+#### Addr [[doc](https://golang.org/pkg/net/#Addr)] [[src1](https://golang.org/src/net/net.go#L109)] [[src2](https://github.com/golang/go/blob/release-branch.go1.8/src/net/net.go#L109-L112)]
+
+```go
+type Addr interface {
+	Network() string
+	String() string
+}
+```
+
+#### Conn [[doc](https://golang.org/pkg/net/#Conn)] [[src1](https://golang.org/src/net/net.go#L117)] [[src2](https://github.com/golang/go/blob/release-branch.go1.8/src/net/net.go#L117-L166)]
+
+```go
+type Conn interface {
+	Read(b []byte) (n int, err error)
+	Write(b []byte) (n int, err error)
+	Close() error
+	LocalAddr() Addr
+	RemoteAddr() Addr
+	SetDeadline(t time.Time) error
+	SetReadDeadline(t time.Time) error
+	SetWriteDeadline(t time.Time) error
+}
+```
+
+#### PacketConn [[doc](https://golang.org/pkg/net/#PacketConn)] [[src1](https://golang.org/src/net/net.go#L307)] [[src2](https://github.com/golang/go/blob/release-branch.go1.8/src/net/net.go#L307-L359)]
+
+```go
+type PacketConn interface {
+	ReadFrom(b []byte) (n int, addr Addr, err error)
+	WriteTo(b []byte, addr Addr) (n int, err error)
+	Close() error
+	LocalAddr() Addr
+	SetDeadline(t time.Time) error
+	SetReadDeadline(t time.Time) error
+	SetWriteDeadline(t time.Time) error
+}
+```
+
+#### Listener [[doc](https://golang.org/pkg/net/#Listener)] [[src1](https://golang.org/src/net/net.go#L366)] [[src2](https://github.com/golang/go/blob/release-branch.go1.8/src/net/net.go#L366-L376)]
+
+```go
+type Listener interface {
+	Accept() (Conn, error)
+	Close() error
+	Addr() Addr
+}
+```
+
+#### Error [[doc](https://golang.org/pkg/net/#Error)] [[src1](https://golang.org/src/net/net.go#L379)] [[src2](https://github.com/golang/go/blob/release-branch.go1.8/src/net/net.go#L379-L383)]
+
+```go
+type Error interface {
+	error
+	Timeout() bool
+	Temporary() bool
+}
+```
+
+
+
+### package `net/http`
+
+#### RoundTripper [[doc](https://golang.org/pkg/net/http/#RoundTripper)] [[src1](https://golang.org/src/net/http/client.go#L117)] [[src2](https://github.com/golang/go/blob/release-branch.go1.8/src/net/http/client.go#L117-L140)]
+
+```go
+type RoundTripper interface {
+	RoundTrip(*Request) (*Response, error)
+}
+```
+
+#### FileSystem [[doc](https://golang.org/pkg/net/http/#FileSystem)] [[src1](https://golang.org/src/net/http/fs.go#L55)] [[src2](https://github.com/golang/go/blob/release-branch.go1.8/src/net/http/fs.go#L55-L57)]
+
+```go
+type FileSystem interface {
+	Open(name string) (File, error)
+}
+```
+
+#### File [[doc](https://golang.org/pkg/net/http/#File)] [[src1](https://golang.org/src/net/http/fs.go#L63)] [[src2](https://github.com/golang/go/blob/release-branch.go1.8/src/net/http/fs.go#L63-L69)]
+
+```go
+type File interface {
+	io.Closer
+	io.Reader
+	io.Seeker
+	Readdir(count int) ([]os.FileInfo, error)
+	Stat() (os.FileInfo, error)
+}
+```
+
+#### Pusher [[doc](https://golang.org/pkg/net/http/#Pusher)] [[src1](https://golang.org/src/net/http/http.go#L119)] [[src2](https://github.com/golang/go/blob/release-branch.go1.8/src/net/http/http.go#L119-L141)]
+
+```go
+type Pusher interface {
+	Push(target string, opts *PushOptions) error
+}
+```
+
+#### CookieJar [[doc](https://golang.org/pkg/net/http/#CookieJar)] [[src1](https://golang.org/src/net/http/jar.go#L17)] [[src2](https://github.com/golang/go/blob/release-branch.go1.8/src/net/http/jar.go#L17-L27)]
+
+```go
+type CookieJar interface {
+	SetCookies(u *url.URL, cookies []*Cookie)
+	Cookies(u *url.URL) []*Cookie
+}
+```
+
+#### Handler [[doc](https://golang.org/pkg/net/http/#Handler)] [[src1](https://golang.org/src/net/http/server.go#L81)] [[src2](https://github.com/golang/go/blob/release-branch.go1.8/src/net/http/server.go#L81-L83)]
+
+```go
+type Handler interface {
+	ServeHTTP(ResponseWriter, *Request)
+}
+```
+
+#### ResponseWriter [[doc](https://golang.org/pkg/net/http/#ResponseWriter)] [[src1](https://golang.org/src/net/http/server.go#L90)] [[src2](https://github.com/golang/go/blob/release-branch.go1.8/src/net/http/server.go#L90-L140)]
+
+```go
+type ResponseWriter interface {
+	Header() Header
+	Write([]byte) (int, error)
+	WriteHeader(int)
+}
+```
+
+#### Flusher [[doc](https://golang.org/pkg/net/http/#Flusher)] [[src1](https://golang.org/src/net/http/server.go#L153)] [[src2](https://github.com/golang/go/blob/release-branch.go1.8/src/net/http/server.go#L153-L156)]
+
+```go
+type Flusher interface {
+	Flush()
+}
+```
+
+#### Hijacker [[doc](https://golang.org/pkg/net/http/#Hijacker)] [[src1](https://golang.org/src/net/http/server.go#L165)] [[src2](https://github.com/golang/go/blob/release-branch.go1.8/src/net/http/server.go#L165-L181)]
+
+```go
+type Hijacker interface {
+	Hijack() (net.Conn, *bufio.ReadWriter, error)
+}
+```
+
+#### CloseNotifier [[doc](https://golang.org/pkg/net/http/#CloseNotifier)] [[src1](https://golang.org/src/net/http/server.go#L188)] [[src2](https://github.com/golang/go/blob/release-branch.go1.8/src/net/http/server.go#L188-L208)]
+
+```go
+type CloseNotifier interface {
+	CloseNotify() <-chan bool
+}
+```
+
+
+
 ### package `image`
 
 #### Image [[doc](https://golang.org/pkg/image/#Image)] [[src1](https://golang.org/src/image/image.go#L36)] [[src2](https://github.com/golang/go/blob/release-branch.go1.8/src/image/image.go#L36-L46)]
@@ -599,18 +752,35 @@ BEGIN {
 # Start of type
 /type ([A-Z][^ ]*|error) interface {/ {
     if (state == 0) {
-        state = 1
-
         indent0 = index($0, "type ")
-        s = substr($0, indent0 + 5) # length("type ") == 5
-        len = index(s, " ") - 1
-        type = substr(s, 0, len)
+        if (indent0 == 1) {
+            state = 1
 
-        filename = FILENAME
-        sub(/.*\//, "", filename)
+            s = substr($0, indent0 + 5) # length("type ") == 5
+            len = index(s, " ") - 1
+            type = substr(s, 0, len)
 
-        from_line = FNR
-        code = ""
+            filename = FILENAME
+            sub(/.*\//, "", filename)
+
+            from_line = FNR
+            code = ""
+        } else {
+            # >>> Uncomment this block to write an alert instead of skipping the code <<<
+            # state = 1
+            #
+            # s = substr($0, indent0 + 5) # length("type ") == 5
+            # len = index(s, " ") - 1
+            # type = substr(s, 0, len)
+            #
+            # filename = FILENAME
+            # sub(/.*\//, "", filename)
+            #
+            # from_line = FNR
+            # code = ""
+            #
+            # printf "\n# type is not the first character: filename: %s line: %d\n\n", FILENAME, FNR
+        }
     }
 }
 
@@ -668,6 +838,8 @@ packages=(
     'io'
     'fmt'
     'encoding'
+    'net'
+    'net/http'
     'image'
     'image/color'
     'image/draw'
@@ -700,6 +872,7 @@ go[0-9].[0-9].[0-9])
     ;;
 *)
     printf 'Unexpected go version: %s\n' ${go_version}
+    exit 2
     ;;
 esac
 
