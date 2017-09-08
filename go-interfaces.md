@@ -5,11 +5,14 @@ I only list those I think are important.
 Interfaces defined in frequently used packages (like `io`, `fmt`) are included.
 Interfaces that have significant importance are also included.
 
+All of the following information is based on `go version go1.8.3 darwin/amd64`.
+
 
 
 ### (builtin)
 
 #### [error](https://golang.org/pkg/builtin/#error)
+
 ```go
 type error interface {
 	Error() string
@@ -39,6 +42,15 @@ type Error interface {
 type Source interface {
 	Int63() int64
 	Seed(seed int64)
+}
+```
+
+#### [Source64](https://golang.org/pkg/math/rand/#Source64)
+
+```go
+type Source64 interface {
+	Source
+	Uint64() uint64
 }
 ```
 
@@ -207,7 +219,7 @@ type WriterAt interface {
 
 ```go
 type ByteReader interface {
-	ReadByte() (c byte, err error)
+	ReadByte() (byte, error)
 }
 ```
 
@@ -253,7 +265,7 @@ type RuneScanner interface {
 
 ```go
 type State interface {
-	Write(b []byte) (ret int, err error)
+	Write(b []byte) (n int, err error)
 	Width() (wid int, ok bool)
 	Precision() (prec int, ok bool)
 	Flag(c int) bool
@@ -456,7 +468,7 @@ type Hash64 interface {
 ```go
 type Signer interface {
 	Public() PublicKey
-	Sign(rand io.Reader, msg []byte, opts SignerOpts) (signature []byte, err error)
+	Sign(rand io.Reader, digest []byte, opts SignerOpts) (signature []byte, err error)
 }
 ```
 
@@ -514,71 +526,23 @@ type Type interface {
 	NumIn() int
 	NumOut() int
 	Out(i int) Type
-}
-```
-
-
-
-### package `go/types`
-
-#### [Type](https://golang.org/pkg/go/types/#Type)
-
-```go
-type Type interface {
-	Underlying() Type
-	String() string
-}
-```
-
-#### [Object](https://golang.org/pkg/go/types/#Object)
-
-```go
-type Object interface {
-	Parent() *Scope
-	Pos() token.Pos
-	Pkg() *Package
-	Name() string
-	Type() Type
-	Exported() bool
-	Id() string
-	String() string
-}
-```
-
-#### [Sizes](https://golang.org/pkg/go/types/#Sizes)
-
-```go
-type Sizes interface {
-	Alignof(T Type) int64
-	Offsetsof(fields []*Var) []int64
-	Sizeof(T Type) int64
-}
-```
-
-#### [Importer](https://golang.org/pkg/go/types/#Importer)
-
-```go
-type Importer interface {
-	Import(path string) (*Package, error)
-}
-```
-
-
-
-### package `go/constant`
-
-#### [Value](https://golang.org/pkg/go/constant/#Value)
-
-```go
-type Value interface {
-	Kind() Kind
-	String() string
+	common() *rtype
+	uncommon() *uncommonType
 }
 ```
 
 
 
 ### package `os`
+
+#### [Signal](https://golang.org/pkg/os/#Signal)
+
+```go
+type Signal interface {
+	String() string
+	Signal()
+}
+```
 
 #### [FileInfo](https://golang.org/pkg/os/#FileInfo)
 
@@ -593,11 +557,140 @@ type FileInfo interface {
 }
 ```
 
-#### [Signal](https://golang.org/pkg/os/#Signal)
 
-```go
-type Signal interface {
-	String() string
-	Signal()
+
+
+
+## Source
+
+### iface.awk
+
+```awk
+BEGIN {
+    state = 0
+    indent0 = 0
+    indent1 = 0
+    type = ""
+    if (package == "") {
+        print "error: package is not defined"
+        exit 1
+    }
+    printf "\n"
+    printf "\n"
+    printf "\n"
+    if (package == "builtin") {
+        print "### (builtin)"
+    } else {
+        printf "### package `%s`\n", package
+    }
 }
+
+# Start of type
+/type ([A-Z][^ ]*|error) interface {/ {
+    if (state == 0) {
+        state = 1
+        indent0 = index($0, "type ")
+        s = substr($0, indent0 + 5) # length("type ") == 5
+        len = index(s, " ") - 1
+        type = substr(s, 0, len)
+        printf "\n"
+        printf "#### [%s](https://golang.org/pkg/%s/#%s)\n", type, package, type
+        printf "\n"
+        printf "```go\n"
+    }
+}
+
+# Inside type
+{
+    if (state == 1) {
+        line = $0
+        # Remove comments
+        sub(/[\t ]*\/\/.*/, "", line)
+        # Remove trailing whitespaces
+        sub(/[\t ]*$/, "", line)
+        # Only print non-blank lines
+        if (line != "") {
+            print line
+        }
+    }
+}
+
+# End of type
+/}/ {
+    if (state == 1) {
+        indent1 = index($0, "}")
+        if (indent0 == indent1) {
+            state = 0
+            printf "```\n"
+        }
+    }
+}
+```
+
+### make.sh
+
+```sh
+#!/bin/sh
+
+packages=(
+    'builtin'
+    'runtime'
+    'math/rand'
+    'sort'
+    'container/heap'
+    'io'
+    'fmt'
+    'encoding'
+    'image'
+    'image/color'
+    'image/draw'
+    'hash'
+    'crypto'
+    'reflect'
+    'os'
+)
+
+if [ -z "${GOROOT}" ]
+then
+    GOROOT='/usr/local/go'
+fi
+
+echo "# A collection of interfaces in Go's standard library"
+echo
+echo "This is not an exhaustive list of all interfaces in Go's standard library."
+echo 'I only list those I think are important.'
+echo 'Interfaces defined in frequently used packages (like `io`, `fmt`) are included.'
+echo 'Interfaces that have significant importance are also included.'
+echo
+printf 'All of the following information is based on `%s`.\n' "$(go version)"
+
+for package in ${packages[@]}
+do
+    find ${GOROOT}/src/${package} -maxdepth 1 \
+        -type f '(' \
+            -name '*_test.go' -prune -o \
+            -name '*.go' -exec awk -f iface.awk -v package="${package}" '{}' '+' \
+        ')'
+done
+
+printf '\n'
+printf '\n'
+printf '\n'
+printf '\n'
+printf '\n'
+printf '## Source\n'
+printf '\n'
+
+printf '### iface.awk\n'
+printf '\n'
+printf '```awk\n'
+cat iface.awk
+printf '```\n'
+printf '\n'
+
+printf '### make.sh\n'
+printf '\n'
+printf '```sh\n'
+cat make.sh
+printf '```\n'
 ```
