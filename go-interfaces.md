@@ -11,7 +11,7 @@ All of the following information is based on `go version go1.8.3 darwin/amd64`.
 
 ### (builtin)
 
-#### [error](https://golang.org/pkg/builtin/#error)
+#### error [[doc](https://golang.org/pkg/builtin/#error)] [[src1](https://golang.org/src/builtin/builtin.go#L254)] [[src2](https://github.com/golang/go/blob/release-branch.go1.8/src/builtin/builtin.go#L254-L256)]
 
 ```go
 type error interface {
@@ -23,7 +23,7 @@ type error interface {
 
 ### package `runtime`
 
-#### [Error](https://golang.org/pkg/runtime/#Error)
+#### Error [[doc](https://golang.org/pkg/runtime/#Error)] [[src1](https://golang.org/src/runtime/error.go#L8)] [[src2](https://github.com/golang/go/blob/release-branch.go1.8/src/runtime/error.go#L8-L16)]
 
 ```go
 type Error interface {
@@ -36,7 +36,7 @@ type Error interface {
 
 ### package `math/rand`
 
-#### [Source](https://golang.org/pkg/math/rand/#Source)
+#### Source [[doc](https://golang.org/pkg/math/rand/#Source)] [[src1](https://golang.org/src/math/rand/rand.go#L21)] [[src2](https://github.com/golang/go/blob/release-branch.go1.8/src/math/rand/rand.go#L21-L24)]
 
 ```go
 type Source interface {
@@ -45,7 +45,7 @@ type Source interface {
 }
 ```
 
-#### [Source64](https://golang.org/pkg/math/rand/#Source64)
+#### Source64 [[doc](https://golang.org/pkg/math/rand/#Source64)] [[src1](https://golang.org/src/math/rand/rand.go#L32)] [[src2](https://github.com/golang/go/blob/release-branch.go1.8/src/math/rand/rand.go#L32-L35)]
 
 ```go
 type Source64 interface {
@@ -58,7 +58,7 @@ type Source64 interface {
 
 ### package `sort`
 
-#### [Interface](https://golang.org/pkg/sort/#Interface)
+#### Interface [[doc](https://golang.org/pkg/sort/#Interface)] [[src1](https://golang.org/src/sort/sort.go#L16)] [[src2](https://github.com/golang/go/blob/release-branch.go1.8/src/sort/sort.go#L16-L24)]
 
 ```go
 type Interface interface {
@@ -72,7 +72,7 @@ type Interface interface {
 
 ### package `container/heap`
 
-#### [Interface](https://golang.org/pkg/container/heap/#Interface)
+#### Interface [[doc](https://golang.org/pkg/container/heap/#Interface)] [[src1](https://golang.org/src/container/heap/heap.go#L30)] [[src2](https://github.com/golang/go/blob/release-branch.go1.8/src/container/heap/heap.go#L30-L34)]
 
 ```go
 type Interface interface {
@@ -86,7 +86,7 @@ type Interface interface {
 
 ### package `io`
 
-#### [Reader](https://golang.org/pkg/io/#Reader)
+#### Reader [[doc](https://golang.org/pkg/io/#Reader)] [[src1](https://golang.org/src/io/io.go#L77)] [[src2](https://github.com/golang/go/blob/release-branch.go1.8/src/io/io.go#L77-L79)]
 
 ```go
 type Reader interface {
@@ -94,7 +94,7 @@ type Reader interface {
 }
 ```
 
-#### [Writer](https://golang.org/pkg/io/#Writer)
+#### Writer [[doc](https://golang.org/pkg/io/#Writer)] [[src1](https://golang.org/src/io/io.go#L90)] [[src2](https://github.com/golang/go/blob/release-branch.go1.8/src/io/io.go#L90-L92)]
 
 ```go
 type Writer interface {
@@ -102,7 +102,7 @@ type Writer interface {
 }
 ```
 
-#### [Closer](https://golang.org/pkg/io/#Closer)
+#### Closer [[doc](https://golang.org/pkg/io/#Closer)] [[src1](https://golang.org/src/io/io.go#L98)] [[src2](https://github.com/golang/go/blob/release-branch.go1.8/src/io/io.go#L98-L100)]
 
 ```go
 type Closer interface {
@@ -110,7 +110,7 @@ type Closer interface {
 }
 ```
 
-#### [Seeker](https://golang.org/pkg/io/#Seeker)
+#### Seeker [[doc](https://golang.org/pkg/io/#Seeker)] [[src1](https://golang.org/src/io/io.go#L115)] [[src2](https://github.com/golang/go/blob/release-branch.go1.8/src/io/io.go#L115-L117)]
 
 ```go
 type Seeker interface {
@@ -118,7 +118,7 @@ type Seeker interface {
 }
 ```
 
-#### [ReadWriter](https://golang.org/pkg/io/#ReadWriter)
+#### ReadWriter [[doc](https://golang.org/pkg/io/#ReadWriter)] [[src1](https://golang.org/src/io/io.go#L120)] [[src2](https://github.com/golang/go/blob/release-branch.go1.8/src/io/io.go#L120-L123)]
 
 ```go
 type ReadWriter interface {
@@ -127,7 +127,7 @@ type ReadWriter interface {
 }
 ```
 
-#### [ReadCloser](https://golang.org/pkg/io/#ReadCloser)
+#### ReadCloser [[doc](https://golang.org/pkg/io/#ReadCloser)] [[src1](https://golang.org/src/io/io.go#L126)] [[src2](https://github.com/golang/go/blob/release-branch.go1.8/src/io/io.go#L126-L129)]
 
 ```go
 type ReadCloser interface {
@@ -136,7 +136,7 @@ type ReadCloser interface {
 }
 ```
 
-#### [WriteCloser](https://golang.org/pkg/io/#WriteCloser)
+#### WriteCloser [[doc](https://golang.org/pkg/io/#WriteCloser)] [[src1](https://golang.org/src/io/io.go#L132)] [[src2](https://github.com/golang/go/blob/release-branch.go1.8/src/io/io.go#L132-L135)]
 
 ```go
 type WriteCloser interface {
@@ -145,7 +145,7 @@ type WriteCloser interface {
 }
 ```
 
-#### [ReadWriteCloser](https://golang.org/pkg/io/#ReadWriteCloser)
+#### ReadWriteCloser [[doc](https://golang.org/pkg/io/#ReadWriteCloser)] [[src1](https://golang.org/src/io/io.go#L138)] [[src2](https://github.com/golang/go/blob/release-branch.go1.8/src/io/io.go#L138-L142)]
 
 ```go
 type ReadWriteCloser interface {
@@ -155,7 +155,7 @@ type ReadWriteCloser interface {
 }
 ```
 
-#### [ReadSeeker](https://golang.org/pkg/io/#ReadSeeker)
+#### ReadSeeker [[doc](https://golang.org/pkg/io/#ReadSeeker)] [[src1](https://golang.org/src/io/io.go#L145)] [[src2](https://github.com/golang/go/blob/release-branch.go1.8/src/io/io.go#L145-L148)]
 
 ```go
 type ReadSeeker interface {
@@ -164,7 +164,7 @@ type ReadSeeker interface {
 }
 ```
 
-#### [WriteSeeker](https://golang.org/pkg/io/#WriteSeeker)
+#### WriteSeeker [[doc](https://golang.org/pkg/io/#WriteSeeker)] [[src1](https://golang.org/src/io/io.go#L151)] [[src2](https://github.com/golang/go/blob/release-branch.go1.8/src/io/io.go#L151-L154)]
 
 ```go
 type WriteSeeker interface {
@@ -173,7 +173,7 @@ type WriteSeeker interface {
 }
 ```
 
-#### [ReadWriteSeeker](https://golang.org/pkg/io/#ReadWriteSeeker)
+#### ReadWriteSeeker [[doc](https://golang.org/pkg/io/#ReadWriteSeeker)] [[src1](https://golang.org/src/io/io.go#L157)] [[src2](https://github.com/golang/go/blob/release-branch.go1.8/src/io/io.go#L157-L161)]
 
 ```go
 type ReadWriteSeeker interface {
@@ -183,7 +183,7 @@ type ReadWriteSeeker interface {
 }
 ```
 
-#### [ReaderFrom](https://golang.org/pkg/io/#ReaderFrom)
+#### ReaderFrom [[doc](https://golang.org/pkg/io/#ReaderFrom)] [[src1](https://golang.org/src/io/io.go#L170)] [[src2](https://github.com/golang/go/blob/release-branch.go1.8/src/io/io.go#L170-L172)]
 
 ```go
 type ReaderFrom interface {
@@ -191,7 +191,7 @@ type ReaderFrom interface {
 }
 ```
 
-#### [WriterTo](https://golang.org/pkg/io/#WriterTo)
+#### WriterTo [[doc](https://golang.org/pkg/io/#WriterTo)] [[src1](https://golang.org/src/io/io.go#L181)] [[src2](https://github.com/golang/go/blob/release-branch.go1.8/src/io/io.go#L181-L183)]
 
 ```go
 type WriterTo interface {
@@ -199,7 +199,7 @@ type WriterTo interface {
 }
 ```
 
-#### [ReaderAt](https://golang.org/pkg/io/#ReaderAt)
+#### ReaderAt [[doc](https://golang.org/pkg/io/#ReaderAt)] [[src1](https://golang.org/src/io/io.go#L211)] [[src2](https://github.com/golang/go/blob/release-branch.go1.8/src/io/io.go#L211-L213)]
 
 ```go
 type ReaderAt interface {
@@ -207,7 +207,7 @@ type ReaderAt interface {
 }
 ```
 
-#### [WriterAt](https://golang.org/pkg/io/#WriterAt)
+#### WriterAt [[doc](https://golang.org/pkg/io/#WriterAt)] [[src1](https://golang.org/src/io/io.go#L230)] [[src2](https://github.com/golang/go/blob/release-branch.go1.8/src/io/io.go#L230-L232)]
 
 ```go
 type WriterAt interface {
@@ -215,7 +215,7 @@ type WriterAt interface {
 }
 ```
 
-#### [ByteReader](https://golang.org/pkg/io/#ByteReader)
+#### ByteReader [[doc](https://golang.org/pkg/io/#ByteReader)] [[src1](https://golang.org/src/io/io.go#L237)] [[src2](https://github.com/golang/go/blob/release-branch.go1.8/src/io/io.go#L237-L239)]
 
 ```go
 type ByteReader interface {
@@ -223,7 +223,7 @@ type ByteReader interface {
 }
 ```
 
-#### [ByteScanner](https://golang.org/pkg/io/#ByteScanner)
+#### ByteScanner [[doc](https://golang.org/pkg/io/#ByteScanner)] [[src1](https://golang.org/src/io/io.go#L248)] [[src2](https://github.com/golang/go/blob/release-branch.go1.8/src/io/io.go#L248-L251)]
 
 ```go
 type ByteScanner interface {
@@ -232,7 +232,7 @@ type ByteScanner interface {
 }
 ```
 
-#### [ByteWriter](https://golang.org/pkg/io/#ByteWriter)
+#### ByteWriter [[doc](https://golang.org/pkg/io/#ByteWriter)] [[src1](https://golang.org/src/io/io.go#L254)] [[src2](https://github.com/golang/go/blob/release-branch.go1.8/src/io/io.go#L254-L256)]
 
 ```go
 type ByteWriter interface {
@@ -240,7 +240,7 @@ type ByteWriter interface {
 }
 ```
 
-#### [RuneReader](https://golang.org/pkg/io/#RuneReader)
+#### RuneReader [[doc](https://golang.org/pkg/io/#RuneReader)] [[src1](https://golang.org/src/io/io.go#L263)] [[src2](https://github.com/golang/go/blob/release-branch.go1.8/src/io/io.go#L263-L265)]
 
 ```go
 type RuneReader interface {
@@ -248,7 +248,7 @@ type RuneReader interface {
 }
 ```
 
-#### [RuneScanner](https://golang.org/pkg/io/#RuneScanner)
+#### RuneScanner [[doc](https://golang.org/pkg/io/#RuneScanner)] [[src1](https://golang.org/src/io/io.go#L274)] [[src2](https://github.com/golang/go/blob/release-branch.go1.8/src/io/io.go#L274-L277)]
 
 ```go
 type RuneScanner interface {
@@ -261,7 +261,7 @@ type RuneScanner interface {
 
 ### package `fmt`
 
-#### [State](https://golang.org/pkg/fmt/#State)
+#### State [[doc](https://golang.org/pkg/fmt/#State)] [[src1](https://golang.org/src/fmt/print.go#L38)] [[src2](https://github.com/golang/go/blob/release-branch.go1.8/src/fmt/print.go#L38-L48)]
 
 ```go
 type State interface {
@@ -272,7 +272,7 @@ type State interface {
 }
 ```
 
-#### [Formatter](https://golang.org/pkg/fmt/#Formatter)
+#### Formatter [[doc](https://golang.org/pkg/fmt/#Formatter)] [[src1](https://golang.org/src/fmt/print.go#L53)] [[src2](https://github.com/golang/go/blob/release-branch.go1.8/src/fmt/print.go#L53-L55)]
 
 ```go
 type Formatter interface {
@@ -280,7 +280,7 @@ type Formatter interface {
 }
 ```
 
-#### [Stringer](https://golang.org/pkg/fmt/#Stringer)
+#### Stringer [[doc](https://golang.org/pkg/fmt/#Stringer)] [[src1](https://golang.org/src/fmt/print.go#L62)] [[src2](https://github.com/golang/go/blob/release-branch.go1.8/src/fmt/print.go#L62-L64)]
 
 ```go
 type Stringer interface {
@@ -288,7 +288,7 @@ type Stringer interface {
 }
 ```
 
-#### [GoStringer](https://golang.org/pkg/fmt/#GoStringer)
+#### GoStringer [[doc](https://golang.org/pkg/fmt/#GoStringer)] [[src1](https://golang.org/src/fmt/print.go#L70)] [[src2](https://github.com/golang/go/blob/release-branch.go1.8/src/fmt/print.go#L70-L72)]
 
 ```go
 type GoStringer interface {
@@ -296,7 +296,7 @@ type GoStringer interface {
 }
 ```
 
-#### [ScanState](https://golang.org/pkg/fmt/#ScanState)
+#### ScanState [[doc](https://golang.org/pkg/fmt/#ScanState)] [[src1](https://golang.org/src/fmt/scan.go#L21)] [[src2](https://github.com/golang/go/blob/release-branch.go1.8/src/fmt/scan.go#L21-L49)]
 
 ```go
 type ScanState interface {
@@ -309,7 +309,7 @@ type ScanState interface {
 }
 ```
 
-#### [Scanner](https://golang.org/pkg/fmt/#Scanner)
+#### Scanner [[doc](https://golang.org/pkg/fmt/#Scanner)] [[src1](https://golang.org/src/fmt/scan.go#L55)] [[src2](https://github.com/golang/go/blob/release-branch.go1.8/src/fmt/scan.go#L55-L57)]
 
 ```go
 type Scanner interface {
@@ -321,7 +321,7 @@ type Scanner interface {
 
 ### package `encoding`
 
-#### [BinaryMarshaler](https://golang.org/pkg/encoding/#BinaryMarshaler)
+#### BinaryMarshaler [[doc](https://golang.org/pkg/encoding/#BinaryMarshaler)] [[src1](https://golang.org/src/encoding/encoding.go#L18)] [[src2](https://github.com/golang/go/blob/release-branch.go1.8/src/encoding/encoding.go#L18-L20)]
 
 ```go
 type BinaryMarshaler interface {
@@ -329,7 +329,7 @@ type BinaryMarshaler interface {
 }
 ```
 
-#### [BinaryUnmarshaler](https://golang.org/pkg/encoding/#BinaryUnmarshaler)
+#### BinaryUnmarshaler [[doc](https://golang.org/pkg/encoding/#BinaryUnmarshaler)] [[src1](https://golang.org/src/encoding/encoding.go#L28)] [[src2](https://github.com/golang/go/blob/release-branch.go1.8/src/encoding/encoding.go#L28-L30)]
 
 ```go
 type BinaryUnmarshaler interface {
@@ -337,7 +337,7 @@ type BinaryUnmarshaler interface {
 }
 ```
 
-#### [TextMarshaler](https://golang.org/pkg/encoding/#TextMarshaler)
+#### TextMarshaler [[doc](https://golang.org/pkg/encoding/#TextMarshaler)] [[src1](https://golang.org/src/encoding/encoding.go#L36)] [[src2](https://github.com/golang/go/blob/release-branch.go1.8/src/encoding/encoding.go#L36-L38)]
 
 ```go
 type TextMarshaler interface {
@@ -345,7 +345,7 @@ type TextMarshaler interface {
 }
 ```
 
-#### [TextUnmarshaler](https://golang.org/pkg/encoding/#TextUnmarshaler)
+#### TextUnmarshaler [[doc](https://golang.org/pkg/encoding/#TextUnmarshaler)] [[src1](https://golang.org/src/encoding/encoding.go#L46)] [[src2](https://github.com/golang/go/blob/release-branch.go1.8/src/encoding/encoding.go#L46-L48)]
 
 ```go
 type TextUnmarshaler interface {
@@ -357,7 +357,7 @@ type TextUnmarshaler interface {
 
 ### package `image`
 
-#### [Image](https://golang.org/pkg/image/#Image)
+#### Image [[doc](https://golang.org/pkg/image/#Image)] [[src1](https://golang.org/src/image/image.go#L36)] [[src2](https://github.com/golang/go/blob/release-branch.go1.8/src/image/image.go#L36-L46)]
 
 ```go
 type Image interface {
@@ -367,7 +367,7 @@ type Image interface {
 }
 ```
 
-#### [PalettedImage](https://golang.org/pkg/image/#PalettedImage)
+#### PalettedImage [[doc](https://golang.org/pkg/image/#PalettedImage)] [[src1](https://golang.org/src/image/image.go#L53)] [[src2](https://github.com/golang/go/blob/release-branch.go1.8/src/image/image.go#L53-L57)]
 
 ```go
 type PalettedImage interface {
@@ -380,7 +380,7 @@ type PalettedImage interface {
 
 ### package `image/color`
 
-#### [Color](https://golang.org/pkg/image/color/#Color)
+#### Color [[doc](https://golang.org/pkg/image/color/#Color)] [[src1](https://golang.org/src/image/color/color.go#L10)] [[src2](https://github.com/golang/go/blob/release-branch.go1.8/src/image/color/color.go#L10-L19)]
 
 ```go
 type Color interface {
@@ -388,7 +388,7 @@ type Color interface {
 }
 ```
 
-#### [Model](https://golang.org/pkg/image/color/#Model)
+#### Model [[doc](https://golang.org/pkg/image/color/#Model)] [[src1](https://golang.org/src/image/color/color.go#L142)] [[src2](https://github.com/golang/go/blob/release-branch.go1.8/src/image/color/color.go#L142-L144)]
 
 ```go
 type Model interface {
@@ -400,7 +400,7 @@ type Model interface {
 
 ### package `image/draw`
 
-#### [Image](https://golang.org/pkg/image/draw/#Image)
+#### Image [[doc](https://golang.org/pkg/image/draw/#Image)] [[src1](https://golang.org/src/image/draw/draw.go#L21)] [[src2](https://github.com/golang/go/blob/release-branch.go1.8/src/image/draw/draw.go#L21-L24)]
 
 ```go
 type Image interface {
@@ -409,7 +409,7 @@ type Image interface {
 }
 ```
 
-#### [Quantizer](https://golang.org/pkg/image/draw/#Quantizer)
+#### Quantizer [[doc](https://golang.org/pkg/image/draw/#Quantizer)] [[src1](https://golang.org/src/image/draw/draw.go#L27)] [[src2](https://github.com/golang/go/blob/release-branch.go1.8/src/image/draw/draw.go#L27-L31)]
 
 ```go
 type Quantizer interface {
@@ -417,7 +417,7 @@ type Quantizer interface {
 }
 ```
 
-#### [Drawer](https://golang.org/pkg/image/draw/#Drawer)
+#### Drawer [[doc](https://golang.org/pkg/image/draw/#Drawer)] [[src1](https://golang.org/src/image/draw/draw.go#L50)] [[src2](https://github.com/golang/go/blob/release-branch.go1.8/src/image/draw/draw.go#L50-L54)]
 
 ```go
 type Drawer interface {
@@ -429,7 +429,7 @@ type Drawer interface {
 
 ### package `hash`
 
-#### [Hash](https://golang.org/pkg/hash/#Hash)
+#### Hash [[doc](https://golang.org/pkg/hash/#Hash)] [[src1](https://golang.org/src/hash/hash.go#L11)] [[src2](https://github.com/golang/go/blob/release-branch.go1.8/src/hash/hash.go#L11-L31)]
 
 ```go
 type Hash interface {
@@ -441,7 +441,7 @@ type Hash interface {
 }
 ```
 
-#### [Hash32](https://golang.org/pkg/hash/#Hash32)
+#### Hash32 [[doc](https://golang.org/pkg/hash/#Hash32)] [[src1](https://golang.org/src/hash/hash.go#L34)] [[src2](https://github.com/golang/go/blob/release-branch.go1.8/src/hash/hash.go#L34-L37)]
 
 ```go
 type Hash32 interface {
@@ -450,7 +450,7 @@ type Hash32 interface {
 }
 ```
 
-#### [Hash64](https://golang.org/pkg/hash/#Hash64)
+#### Hash64 [[doc](https://golang.org/pkg/hash/#Hash64)] [[src1](https://golang.org/src/hash/hash.go#L40)] [[src2](https://github.com/golang/go/blob/release-branch.go1.8/src/hash/hash.go#L40-L43)]
 
 ```go
 type Hash64 interface {
@@ -463,7 +463,7 @@ type Hash64 interface {
 
 ### package `crypto`
 
-#### [Signer](https://golang.org/pkg/crypto/#Signer)
+#### Signer [[doc](https://golang.org/pkg/crypto/#Signer)] [[src1](https://golang.org/src/crypto/crypto.go#L107)] [[src2](https://github.com/golang/go/blob/release-branch.go1.8/src/crypto/crypto.go#L107-L126)]
 
 ```go
 type Signer interface {
@@ -472,7 +472,7 @@ type Signer interface {
 }
 ```
 
-#### [SignerOpts](https://golang.org/pkg/crypto/#SignerOpts)
+#### SignerOpts [[doc](https://golang.org/pkg/crypto/#SignerOpts)] [[src1](https://golang.org/src/crypto/crypto.go#L129)] [[src2](https://github.com/golang/go/blob/release-branch.go1.8/src/crypto/crypto.go#L129-L134)]
 
 ```go
 type SignerOpts interface {
@@ -480,7 +480,7 @@ type SignerOpts interface {
 }
 ```
 
-#### [Decrypter](https://golang.org/pkg/crypto/#Decrypter)
+#### Decrypter [[doc](https://golang.org/pkg/crypto/#Decrypter)] [[src1](https://golang.org/src/crypto/crypto.go#L139)] [[src2](https://github.com/golang/go/blob/release-branch.go1.8/src/crypto/crypto.go#L139-L148)]
 
 ```go
 type Decrypter interface {
@@ -493,7 +493,7 @@ type Decrypter interface {
 
 ### package `reflect`
 
-#### [Type](https://golang.org/pkg/reflect/#Type)
+#### Type [[doc](https://golang.org/pkg/reflect/#Type)] [[src1](https://golang.org/src/reflect/type.go#L35)] [[src2](https://github.com/golang/go/blob/release-branch.go1.8/src/reflect/type.go#L35-L205)]
 
 ```go
 type Type interface {
@@ -535,7 +535,7 @@ type Type interface {
 
 ### package `os`
 
-#### [Signal](https://golang.org/pkg/os/#Signal)
+#### Signal [[doc](https://golang.org/pkg/os/#Signal)] [[src1](https://golang.org/src/os/exec.go#L64)] [[src2](https://github.com/golang/go/blob/release-branch.go1.8/src/os/exec.go#L64-L67)]
 
 ```go
 type Signal interface {
@@ -544,7 +544,7 @@ type Signal interface {
 }
 ```
 
-#### [FileInfo](https://golang.org/pkg/os/#FileInfo)
+#### FileInfo [[doc](https://golang.org/pkg/os/#FileInfo)] [[src1](https://golang.org/src/os/types.go#L21)] [[src2](https://github.com/golang/go/blob/release-branch.go1.8/src/os/types.go#L21-L28)]
 
 ```go
 type FileInfo interface {
@@ -567,19 +567,30 @@ type FileInfo interface {
 
 ```awk
 BEGIN {
-    state = 0
-    indent0 = 0
-    indent1 = 0
-    type = ""
     if (package == "") {
         print "error: package is not defined"
         exit 1
     }
+
+    if (branch == "") {
+        print "error: branch is not defined"
+        exit 1
+    }
+
+    state = 0
+    indent0 = 0
+    indent1 = 0
+    from_line = 0
+    to_line = 0
+    filename = ""
+    type = ""
+    code = ""
+
     printf "\n"
     printf "\n"
     printf "\n"
     if (package == "builtin") {
-        print "### (builtin)"
+        printf "### (builtin)\n"
     } else {
         printf "### package `%s`\n", package
     }
@@ -589,14 +600,17 @@ BEGIN {
 /type ([A-Z][^ ]*|error) interface {/ {
     if (state == 0) {
         state = 1
+
         indent0 = index($0, "type ")
         s = substr($0, indent0 + 5) # length("type ") == 5
         len = index(s, " ") - 1
         type = substr(s, 0, len)
-        printf "\n"
-        printf "#### [%s](https://golang.org/pkg/%s/#%s)\n", type, package, type
-        printf "\n"
-        printf "```go\n"
+
+        filename = FILENAME
+        sub(/.*\//, "", filename)
+
+        from_line = FNR
+        code = ""
     }
 }
 
@@ -610,7 +624,7 @@ BEGIN {
         sub(/[\t ]*$/, "", line)
         # Only print non-blank lines
         if (line != "") {
-            print line
+            code = code line "\n"
         }
     }
 }
@@ -621,6 +635,19 @@ BEGIN {
         indent1 = index($0, "}")
         if (indent0 == indent1) {
             state = 0
+            to_line = FNR
+            printf "\n"
+            printf "#### %s " \
+                "[[doc](https://golang.org/pkg/%s/#%s)] " \
+                "[[src1](https://golang.org/src/%s/%s#L%d)] " \
+                "[[src2](https://github.com/golang/go/blob/release-branch.%s/src/%s/%s#L%d-L%d)]\n",
+                type,
+                package, type,
+                package, filename, from_line,
+                branch, package, filename, from_line, to_line
+            printf "\n"
+            printf "```go\n"
+            printf "%s", code
             printf "```\n"
         }
     }
@@ -652,8 +679,29 @@ packages=(
 
 if [ -z "${GOROOT}" ]
 then
-    GOROOT='/usr/local/go'
+    eval $(go env | grep -e '^GOROOT=')
 fi
+
+if [ -z "${GOROOT}" ]
+then
+    echo 'Cannot find GOROOT'
+    exit 1
+fi
+
+go_version=$(go version)
+go_branch=${go_version#go version }
+go_branch=${go_branch% *}
+
+case ${go_branch} in
+go[0-9].[0-9])
+    ;;
+go[0-9].[0-9].[0-9])
+    go_branch=${go_branch%.[0-9]}
+    ;;
+*)
+    printf 'Unexpected go version: %s\n' ${go_version}
+    ;;
+esac
 
 echo "# A collection of interfaces in Go's standard library"
 echo
@@ -669,7 +717,8 @@ do
     find ${GOROOT}/src/${package} -maxdepth 1 \
         -type f '(' \
             -name '*_test.go' -prune -o \
-            -name '*.go' -exec awk -f iface.awk -v package="${package}" '{}' '+' \
+            -name '*.go' -exec \
+                awk -f iface.awk -v package="${package}" -v branch="${go_branch}" '{}' '+' \
         ')'
 done
 
