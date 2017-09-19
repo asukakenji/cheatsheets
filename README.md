@@ -15,6 +15,8 @@
   - [C++ Keywords](keywords-cpp.md)
 - HTML
   - [HTML5 Tags](keywords-html5.md)
+- Assembly
+  - [x86_64 Instructions](x86_64_instructions.md)
 
 ### AWS
 - [Amazon DynamoDB Cheatsheet](dynamodb.md)
