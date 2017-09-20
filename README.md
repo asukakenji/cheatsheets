@@ -17,6 +17,7 @@
   - [HTML5 Tags](keywords-html5.md)
 - Assembly
   - [x86_64 Instructions](x86_64_instructions.md)
+  - [x86_64 Instructions (ADD)](x86_64_instructions_add.md)
 
 ### AWS
 - [Amazon DynamoDB Cheatsheet](dynamodb.md)
