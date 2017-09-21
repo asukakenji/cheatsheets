@@ -40,6 +40,8 @@
 
 ### Assemble
 
+#### `AL`/`AX`/`EAX`/`RAX` Shortcut (rN ← immN)
+
 | Opcode          | Instruction      | Assembly              | Arch.  | Encoding            | Remarks |
 | --------------- | ---------------- | --------------------- | ------ | ------------------- | ------- |
 | `04 ib`         | `ADD AL, imm8`   | `ADD AL, 0x12`        | -      | `04 12`             |         |
@@ -47,195 +49,270 @@
 | `05 id`         | `ADD EAX, imm32` | `ADD EAX, 0x01020304` | -      | `05 04 03 02 01`    |         |
 | `REX.W + 05 id` | `ADD RAX, imm32` | `ADD RAX, 0x01020304` | 64-bit | `48 05 04 03 02 01` |         |
 
-| Opcode     | Instruction      | Assembly       | Arch. | Encoding   |
-| ---------- | ---------------- | -------------- | ----- | ---------- |
-| `80 /0 ib` | `ADD r/m8, imm8` | `ADD CL, 0x12` | -     | `80 c1 12` |
-| (same)     | (same)           | `ADD DL, 0x12` | -     | `80 c2 12` |
-| (same)     | (same)           | `ADD BL, 0x12` | -     | `80 c3 12` |
-| (same)     | (same)           | `ADD AH, 0x12` | -     | `80 c4 12` |
-| (same)     | (same)           | `ADD CH, 0x12` | -     | `80 c5 12` |
-| (same)     | (same)           | `ADD DH, 0x12` | -     | `80 c6 12` |
-| (same)     | (same)           | `ADD BH, 0x12` | -     | `80 c7 12` |
+Remarks:
+- Is there no "r64 ← imm64" ???
 
-| Opcode     | Instruction      | Assembly                   | Arch.  | Encoding      | Remarks |
-| ---------- | ---------------- | -------------------------- | ------ | ------------- | ------- |
-| `80 /0 ib` | `ADD r/m8, imm8` | `ADD BYTE PTR [EAX], 0x12` | 32-bit | `80 00 12`    |         |
-| (same)     | (same)           | `ADD BYTE PTR [ECX], 0x12` | (same) | `80 01 12`    |         |
-| (same)     | (same)           | `ADD BYTE PTR [EDX], 0x12` | (same) | `80 02 12`    |         |
-| (same)     | (same)           | `ADD BYTE PTR [EBX], 0x12` | (same) | `80 03 12`    |         |
-| (same)     | (same)           | `ADD BYTE PTR [ESP], 0x12` | (same) | `80 04 24 12` | *       |
-| (same)     | (same)           | `ADD BYTE PTR [EBP], 0x12` | (same) | `80 45 00 12` | *       |
-| (same)     | (same)           | `ADD BYTE PTR [ESI], 0x12` | (same) | `80 06 12`    |         |
-| (same)     | (same)           | `ADD BYTE PTR [EDI], 0x12` | (same) | `80 07 12`    |         |
+#### Opcode `80 /0 ib` Instruction `ADD r/m8, imm8` (r8 ← imm8)
 
-| Opcode     | Instruction      | Assembly                   | Arch.  | Encoding         | Remarks |
-| ---------- | ---------------- | -------------------------- | ------ | ---------------- | ------- |
-| `80 /0 ib` | `ADD r/m8, imm8` | `ADD BYTE PTR [EAX], 0x12` | 64-bit | `67 80 00 12`    |         |
-| (same)     | (same)           | `ADD BYTE PTR [ECX], 0x12` | (same) | `67 80 01 12`    |         |
-| (same)     | (same)           | `ADD BYTE PTR [EDX], 0x12` | (same) | `67 80 02 12`    |         |
-| (same)     | (same)           | `ADD BYTE PTR [EBX], 0x12` | (same) | `67 80 03 12`    |         |
-| (same)     | (same)           | `ADD BYTE PTR [ESP], 0x12` | (same) | `67 80 04 24 12` | *       |
-| (same)     | (same)           | `ADD BYTE PTR [EBP], 0x12` | (same) | `67 80 45 00 12` | *       |
-| (same)     | (same)           | `ADD BYTE PTR [ESI], 0x12` | (same) | `67 80 06 12`    |         |
-| (same)     | (same)           | `ADD BYTE PTR [EDI], 0x12` | (same) | `67 80 07 12`    |         |
+| Assembly       | Encoding   |
+| -------------- | ---------- |
+| `ADD CL, 0x12` | `80 c1 12` |
+| `ADD DL, 0x12` | `80 c2 12` |
+| `ADD BL, 0x12` | `80 c3 12` |
+| `ADD AH, 0x12` | `80 c4 12` |
+| `ADD CH, 0x12` | `80 c5 12` |
+| `ADD DH, 0x12` | `80 c6 12` |
+| `ADD BH, 0x12` | `80 c7 12` |
 
-| Opcode     | Instruction      | Assembly                   | Arch.  | Encoding      | Remarks |
-| ---------- | ---------------- | -------------------------- | ------ | ------------- | ------- |
-| `80 /0 ib` | `ADD r/m8, imm8` | `ADD BYTE PTR [RAX], 0x12` | 64-bit | `80 00 12`    |         |
-| (same)     | (same)           | `ADD BYTE PTR [RCX], 0x12` | (same) | `80 01 12`    |         |
-| (same)     | (same)           | `ADD BYTE PTR [RDX], 0x12` | (same) | `80 02 12`    |         |
-| (same)     | (same)           | `ADD BYTE PTR [RBX], 0x12` | (same) | `80 03 12`    |         |
-| (same)     | (same)           | `ADD BYTE PTR [RSP], 0x12` | (same) | `80 04 24 12` | *       |
-| (same)     | (same)           | `ADD BYTE PTR [RBP], 0x12` | (same) | `80 45 00 12` | *       |
-| (same)     | (same)           | `ADD BYTE PTR [RSI], 0x12` | (same) | `80 06 12`    |         |
-| (same)     | (same)           | `ADD BYTE PTR [RDI], 0x12` | (same) | `80 07 12`    |         |
+    ┌───────────┐ ┌────────────────────┐ ┌───────────┐
+    │  Opcode   │ │       ModR/M       │ │ Immediate │
+    ├───────────┤ ├─────┬────────┬─────┤ ├───────────┤
+    │  Opcode   │ │ Mod │ Opcode │ R/M │ │ Immediate │
+    ├───────────┤ ├─────┼────────┼─────┤ ├───────────┤
+    │ 1000 0000 │ │ 11  │ 00 0   │ bbb │ │ 0001 0010 │
+    ├───────────┤ ├─────┴────────┴─────┤ ├───────────┤
+    │    8    0 │ │        c         ? │ │    1    2 │
+    └───────────┘ └────────────────────┘ └───────────┘
 
-| Opcode           | Instruction      | Assembly         | Arch.  | Encoding      |
-| ---------------- | ---------------- | ---------------- | ------ | ------------- |
-| `REX + 80 /0 ib` | `ADD r/m8, imm8` | `ADD R8B, 0x12`  | 64-bit | `41 80 c0 12` |
-| (same)           | (same)           | `ADD R9B, 0x12`  | (same) | `41 80 c1 12` |
-| (same)           | (same)           | `ADD R10B, 0x12` | (same) | `41 80 c2 12` |
-| (same)           | (same)           | `ADD R11B, 0x12` | (same) | `41 80 c3 12` |
-| (same)           | (same)           | `ADD R12B, 0x12` | (same) | `41 80 c4 12` |
-| (same)           | (same)           | `ADD R13B, 0x12` | (same) | `41 80 c5 12` |
-| (same)           | (same)           | `ADD R14B, 0x12` | (same) | `41 80 c6 12` |
-| (same)           | (same)           | `ADD R15B, 0x12` | (same) | `41 80 c7 12` |
+#### Opcode `80 /0 ib` Instruction `ADD r/m8, imm8` ([r32] ← imm8, 32-bit)
 
-| Opcode           | Instruction      | Assembly                   | Arch.  | Encoding         | Remarks |
-| ---------------- | ---------------- | -------------------------- | ------ | ---------------- | ------- |
-| `REX + 80 /0 ib` | `ADD r/m8, imm8` | `ADD BYTE PTR [R8], 0x12`  | 64-bit | `41 80 00 12`    |         |
-| (same)           | (same)           | `ADD BYTE PTR [R9], 0x12`  | (same) | `41 80 01 12`    |         |
-| (same)           | (same)           | `ADD BYTE PTR [R10], 0x12` | (same) | `41 80 02 12`    |         |
-| (same)           | (same)           | `ADD BYTE PTR [R11], 0x12` | (same) | `41 80 03 12`    |         |
-| (same)           | (same)           | `ADD BYTE PTR [R12], 0x12` | (same) | `41 80 04 24 12` | *       |
-| (same)           | (same)           | `ADD BYTE PTR [R13], 0x12` | (same) | `41 80 45 00 12` | *       |
-| (same)           | (same)           | `ADD BYTE PTR [R14], 0x12` | (same) | `41 80 06 12`    |         |
-| (same)           | (same)           | `ADD BYTE PTR [R15], 0x12` | (same) | `41 80 07 12`    |         |
+| Assembly                   | Encoding      | Remarks |
+| -------------------------- | ------------- | ------- |
+| `ADD BYTE PTR [EAX], 0x12` | `80 00 12`    |         |
+| `ADD BYTE PTR [ECX], 0x12` | `80 01 12`    |         |
+| `ADD BYTE PTR [EDX], 0x12` | `80 02 12`    |         |
+| `ADD BYTE PTR [EBX], 0x12` | `80 03 12`    |         |
+| `ADD BYTE PTR [ESP], 0x12` | `80 04 24 12` | *       |
+| `ADD BYTE PTR [EBP], 0x12` | `80 45 00 12` | *       |
+| `ADD BYTE PTR [ESI], 0x12` | `80 06 12`    |         |
+| `ADD BYTE PTR [EDI], 0x12` | `80 07 12`    |         |
 
-| Opcode     | Instruction        | Assembly         | Arch. | Encoding         |
-| ---------- | ------------------ | ---------------- | ----- | ---------------- |
-| `81 /0 iw` | `ADD r/m16, imm16` | `ADD CX, 0x0102` | -     | `66 81 c1 02 01` |
-| (same)     | (same)             | `ADD DX, 0x0102` | -     | `66 81 c2 02 01` |
-| (same)     | (same)             | `ADD BX, 0x0102` | -     | `66 81 c3 02 01` |
-| (same)     | (same)             | `ADD SP, 0x0102` | -     | `66 81 c4 02 01` |
-| (same)     | (same)             | `ADD BP, 0x0102` | -     | `66 81 c5 02 01` |
-| (same)     | (same)             | `ADD SI, 0x0102` | -     | `66 81 c6 02 01` |
-| (same)     | (same)             | `ADD DI, 0x0102` | -     | `66 81 c7 02 01` |
+#### Opcode `80 /0 ib` Instruction `ADD r/m8, imm8` ([r32] ← imm8, 64-bit)
 
-| Opcode     | Instruction        | Assembly              | Arch. | Encoding            |
-| ---------- | ------------------ | --------------------- | ----- | ------------------- |
-| `81 /0 id` | `ADD r/m32, imm32` | `ADD ECX, 0x01020304` | -     | `81 c1 04 03 02 01` |
-| (same)     | (same)             | `ADD EDX, 0x01020304` | -     | `81 c2 04 03 02 01` |
-| (same)     | (same)             | `ADD EBX, 0x01020304` | -     | `81 c3 04 03 02 01` |
-| (same)     | (same)             | `ADD ESP, 0x01020304` | -     | `81 c4 04 03 02 01` |
-| (same)     | (same)             | `ADD EBP, 0x01020304` | -     | `81 c5 04 03 02 01` |
-| (same)     | (same)             | `ADD ESI, 0x01020304` | -     | `81 c6 04 03 02 01` |
-| (same)     | (same)             | `ADD EDI, 0x01020304` | -     | `81 c7 04 03 02 01` |
+| Assembly                   | Encoding         | Remarks |
+| -------------------------- | ---------------- | ------- |
+| `ADD BYTE PTR [EAX], 0x12` | `67 80 00 12`    |         |
+| `ADD BYTE PTR [ECX], 0x12` | `67 80 01 12`    |         |
+| `ADD BYTE PTR [EDX], 0x12` | `67 80 02 12`    |         |
+| `ADD BYTE PTR [EBX], 0x12` | `67 80 03 12`    |         |
+| `ADD BYTE PTR [ESP], 0x12` | `67 80 04 24 12` | *       |
+| `ADD BYTE PTR [EBP], 0x12` | `67 80 45 00 12` | *       |
+| `ADD BYTE PTR [ESI], 0x12` | `67 80 06 12`    |         |
+| `ADD BYTE PTR [EDI], 0x12` | `67 80 07 12`    |         |
 
-| Opcode             | Instruction        | Assembly              | Arch.  | Encoding               |
-| ------------------ | ------------------ | --------------------- | ------ | ---------------------- |
-| `REX.W + 81 /0 id` | `ADD r/m64, imm32` | `ADD RCX, 0x01020304` | 64-bit | `48 81 c1 04 03 02 01` |
-| (same)             | (same)             | `ADD RDX, 0x01020304` | (same) | `48 81 c2 04 03 02 01` |
-| (same)             | (same)             | `ADD RBX, 0x01020304` | (same) | `48 81 c3 04 03 02 01` |
-| (same)             | (same)             | `ADD RSP, 0x01020304` | (same) | `48 81 c4 04 03 02 01` |
-| (same)             | (same)             | `ADD RBP, 0x01020304` | (same) | `48 81 c5 04 03 02 01` |
-| (same)             | (same)             | `ADD RSI, 0x01020304` | (same) | `48 81 c6 04 03 02 01` |
-| (same)             | (same)             | `ADD RDI, 0x01020304` | (same) | `48 81 c7 04 03 02 01` |
+#### Opcode `80 /0 ib` Instruction `ADD r/m8, imm8` ([r64] ← imm8, 64-bit)
 
-| Opcode     | Instruction       | Assembly       | Arch. | Encoding      |
-| ---------- | ----------------- | -------------- | ----- | ------------- |
-| `83 /0 ib` | `ADD r/m16, imm8` | `ADD AX, 0x12` | -     | `66 83 c0 12` |
-| (same)     | (same)            | `ADD CX, 0x12` | -     | `66 83 c1 12` |
-| (same)     | (same)            | `ADD DX, 0x12` | -     | `66 83 c2 12` |
-| (same)     | (same)            | `ADD BX, 0x12` | -     | `66 83 c3 12` |
-| (same)     | (same)            | `ADD SP, 0x12` | -     | `66 83 c4 12` |
-| (same)     | (same)            | `ADD BP, 0x12` | -     | `66 83 c5 12` |
-| (same)     | (same)            | `ADD SI, 0x12` | -     | `66 83 c6 12` |
-| (same)     | (same)            | `ADD DI, 0x12` | -     | `66 83 c7 12` |
+| Assembly                   | Encoding      | Remarks |
+| -------------------------- | ------------- | ------- |
+| `ADD BYTE PTR [RAX], 0x12` | `80 00 12`    |         |
+| `ADD BYTE PTR [RCX], 0x12` | `80 01 12`    |         |
+| `ADD BYTE PTR [RDX], 0x12` | `80 02 12`    |         |
+| `ADD BYTE PTR [RBX], 0x12` | `80 03 12`    |         |
+| `ADD BYTE PTR [RSP], 0x12` | `80 04 24 12` | *       |
+| `ADD BYTE PTR [RBP], 0x12` | `80 45 00 12` | *       |
+| `ADD BYTE PTR [RSI], 0x12` | `80 06 12`    |         |
+| `ADD BYTE PTR [RDI], 0x12` | `80 07 12`    |         |
 
-| Opcode     | Instruction       | Assembly        | Arch. | Encoding   |
-| ---------- | ----------------- | --------------- | ----- | ---------- |
-| `83 /0 ib` | `ADD r/m32, imm8` | `ADD EAX, 0x12` | -     | `83 c0 12` |
-| (same)     | (same)            | `ADD ECX, 0x12` | -     | `83 c1 12` |
-| (same)     | (same)            | `ADD EDX, 0x12` | -     | `83 c2 12` |
-| (same)     | (same)            | `ADD EBX, 0x12` | -     | `83 c3 12` |
-| (same)     | (same)            | `ADD ESP, 0x12` | -     | `83 c4 12` |
-| (same)     | (same)            | `ADD EBP, 0x12` | -     | `83 c5 12` |
-| (same)     | (same)            | `ADD ESI, 0x12` | -     | `83 c6 12` |
-| (same)     | (same)            | `ADD EDI, 0x12` | -     | `83 c7 12` |
+#### Opcode `REX + 80 /0 ib` Instruction `ADD r/m8, imm8` (r64 ← imm8, 64-bit)
 
-| Opcode             | Instruction       | Assembly        | Arch.  | Encoding      |
-| ------------------ | ----------------- | --------------- | ------ | ------------- |
-| `REX.W + 83 /0 ib` | `ADD r/m64, imm8` | `ADD RAX, 0x12` | 64-bit | `48 83 c0 12` |
-| (same)             | (same)            | `ADD RCX, 0x12` | (same) | `48 83 c1 12` |
-| (same)             | (same)            | `ADD RDX, 0x12` | (same) | `48 83 c2 12` |
-| (same)             | (same)            | `ADD RBX, 0x12` | (same) | `48 83 c3 12` |
-| (same)             | (same)            | `ADD RSP, 0x12` | (same) | `48 83 c4 12` |
-| (same)             | (same)            | `ADD RBP, 0x12` | (same) | `48 83 c5 12` |
-| (same)             | (same)            | `ADD RSI, 0x12` | (same) | `48 83 c6 12` |
-| (same)             | (same)            | `ADD RDI, 0x12` | (same) | `48 83 c7 12` |
+| Assembly         | Encoding      |
+| ---------------- | ------------- |
 
-| Opcode  | Instruction    | Assembly     | Arch. | Encoding |
-| ------- | -------------- | ------------ | ----- | -------- |
-| `00 /r` | `ADD r/m8, r8` | `ADD AL, AL` | -     | `00 c0`  |
-| (same)  | (same)         | `ADD AL, CL` | -     | `00 c8`  |
-| (same)  | (same)         | `ADD AL, DL` | -     | `00 d0`  |
-| (same)  | (same)         | `ADD AL, BL` | -     | `00 d8`  |
-| (same)  | (same)         | `ADD AL, AH` | -     | `00 e0`  |
-| (same)  | (same)         | `ADD AL, CH` | -     | `00 e8`  |
-| (same)  | (same)         | `ADD AL, DH` | -     | `00 f0`  |
-| (same)  | (same)         | `ADD AL, BH` | -     | `00 f8`  |
+| `ADD SPL, 0x12`  | `40 80 c4 12` |
+| `ADD BPL, 0x12`  | `40 80 c5 12` |
+| `ADD SIL, 0x12`  | `40 80 c6 12` |
+| `ADD DIL, 0x12`  | `40 80 c7 12` |
+| `ADD R8B, 0x12`  | `41 80 c0 12` |
+| `ADD R9B, 0x12`  | `41 80 c1 12` |
+| `ADD R10B, 0x12` | `41 80 c2 12` |
+| `ADD R11B, 0x12` | `41 80 c3 12` |
+| `ADD R12B, 0x12` | `41 80 c4 12` |
+| `ADD R13B, 0x12` | `41 80 c5 12` |
+| `ADD R14B, 0x12` | `41 80 c6 12` |
+| `ADD R15B, 0x12` | `41 80 c7 12` |
 
-| Opcode        | Instruction    | Assembly        | Arch.  | Encoding   |
-| ------------- | -------------- | --------------- | ------ | ---------- |
-| `REX + 00 /r` | `ADD r/m8, r8` | `ADD R8B, AL`   | 64-bit | `41 00 c0` |
-| (same)        | (same)         | `ADD R8B, CL`   | (same) | `41 00 c8` |
-| (same)        | (same)         | `ADD R8B, DL`   | (same) | `41 00 d0` |
-| (same)        | (same)         | `ADD R8B, BL`   | (same) | `41 00 d8` |
-| (same)        | (same)         | `ADD R8B, SPL`  | (same) | `41 00 e0` |
-| (same)        | (same)         | `ADD R8B, BPL`  | (same) | `41 00 e8` |
-| (same)        | (same)         | `ADD R8B, SIL`  | (same) | `41 00 f0` |
-| (same)        | (same)         | `ADD R8B, DIL`  | (same) | `41 00 f8` |
-| (same)        | (same)         | `ADD R8B, R8B`  | (same) | `45 00 c0` |
-| (same)        | (same)         | `ADD R8B, R9B`  | (same) | `45 00 c8` |
-| (same)        | (same)         | `ADD R8B, R10B` | (same) | `45 00 d0` |
-| (same)        | (same)         | `ADD R8B, R11B` | (same) | `45 00 d8` |
-| (same)        | (same)         | `ADD R8B, R12B` | (same) | `45 00 e0` |
-| (same)        | (same)         | `ADD R8B, R13B` | (same) | `45 00 e8` |
-| (same)        | (same)         | `ADD R8B, R14B` | (same) | `45 00 f0` |
-| (same)        | (same)         | `ADD R8B, R15B` | (same) | `45 00 f8` |
+    ┌──────────────────────┐ ┌───────────┐ ┌────────────────────┐ ┌───────────┐
+    │      REX Prefix      │ │  Opcode   │ │       ModR/M       │ │ Immediate │
+    ├──────┬───┬───┬───┬───┤ ├───────────┤ ├─────┬────────┬─────┤ ├───────────┤
+    │  -   │ W │ R │ X │ B │ │  Opcode   │ │ Mod │ Opcode │ R/M │ │ Immediate │
+    ├──────┼───┼───┼───┼───┤ ├───────────┤ ├─────┼────────┼─────┤ ├───────────┤
+    │ 0100 │ 0 │ 0 │ 0 │ b │ │ 1000 0000 │ │ 11  │ 00 0   │ bbb │ │ 0001 0010 │
+    ├──────┴───┴───┴───┴───┤ ├───────────┤ ├─────┴────────┴─────┤ ├───────────┤
+    │    4               ? │ │    8    0 │ │        c         ? │ │    1    2 │
+    └──────────────────────┘ └───────────┘ └────────────────────┘ └───────────┘
 
-| Opcode  | Instruction      | Assembly              | Arch. | Encoding            |
-| ------- | ---------------- | --------------------- | ----- | ------------------- |
-| `01 /r` | `ADD r/m16, r16` |
+References:
+- Figure 2-5. Register-Register Addressing (No Memory Operand); REX.X Not Used
 
-| Opcode  | Instruction      | Assembly              | Arch. | Encoding            |
-| ------- | ---------------- | --------------------- | ----- | ------------------- |
-| `01 /r` | `ADD r/m32, r32` |
+#### Opcode `REX + 80 /0 ib` Instruction `ADD r/m8, imm8` ([r64] ← imm8, 64-bit)
 
-| Opcode          | Instruction      | Assembly              | Arch. | Encoding            |
-| --------------- | ---------------- | --------------------- | ----- | ------------------- |
-| `REX.W + 01 /r` | `ADD r/m64, r64` |
+| Assembly                   | Encoding         | Remarks |
+| -------------------------- | ---------------- | ------- |
+| `ADD BYTE PTR [R8], 0x12`  | `41 80 00 12`    |         |
+| `ADD BYTE PTR [R9], 0x12`  | `41 80 01 12`    |         |
+| `ADD BYTE PTR [R10], 0x12` | `41 80 02 12`    |         |
+| `ADD BYTE PTR [R11], 0x12` | `41 80 03 12`    |         |
+| `ADD BYTE PTR [R12], 0x12` | `41 80 04 24 12` | *       |
+| `ADD BYTE PTR [R13], 0x12` | `41 80 45 00 12` | *       |
+| `ADD BYTE PTR [R14], 0x12` | `41 80 06 12`    |         |
+| `ADD BYTE PTR [R15], 0x12` | `41 80 07 12`    |         |
 
-| Opcode  | Instruction    | Assembly              | Arch. | Encoding            |
-| ------- | -------------- | --------------------- | ----- | ------------------- |
-| `02 /r` | `ADD r8, r/m8` |
+#### Opcode `81 /0 iw` Instruction `ADD r/m16, imm16` (r16 ← imm16)
 
-| Opcode        | Instruction    | Assembly              | Arch. | Encoding            |
-| ------------- | -------------- | --------------------- | ----- | ------------------- |
-| `REX + 02 /r` | `ADD r8, r/m8` |
+| Assembly         | Encoding         |
+| ---------------- | ---------------- |
+| `ADD CX, 0x0102` | `66 81 c1 02 01` |
+| `ADD DX, 0x0102` | `66 81 c2 02 01` |
+| `ADD BX, 0x0102` | `66 81 c3 02 01` |
+| `ADD SP, 0x0102` | `66 81 c4 02 01` |
+| `ADD BP, 0x0102` | `66 81 c5 02 01` |
+| `ADD SI, 0x0102` | `66 81 c6 02 01` |
+| `ADD DI, 0x0102` | `66 81 c7 02 01` |
 
-| Opcode  | Instruction      | Assembly              | Arch. | Encoding            |
-| ------- | ---------------- | --------------------- | ----- | ------------------- |
-| `03 /r` | `ADD r16, r/m16` |
+#### Opcode `81 /0 id` Instruction `ADD r/m32, imm32` (r32 ← imm32)
 
-| Opcode  | Instruction      | Assembly              | Arch. | Encoding            |
-| ------- | ---------------- | --------------------- | ----- | ------------------- |
-| `03 /r` | `ADD r32, r/m32` |
+| Assembly              | Encoding            |
+| --------------------- | ------------------- |
+| `ADD ECX, 0x01020304` | `81 c1 04 03 02 01` |
+| `ADD EDX, 0x01020304` | `81 c2 04 03 02 01` |
+| `ADD EBX, 0x01020304` | `81 c3 04 03 02 01` |
+| `ADD ESP, 0x01020304` | `81 c4 04 03 02 01` |
+| `ADD EBP, 0x01020304` | `81 c5 04 03 02 01` |
+| `ADD ESI, 0x01020304` | `81 c6 04 03 02 01` |
+| `ADD EDI, 0x01020304` | `81 c7 04 03 02 01` |
 
-| Opcode          | Instruction      | Assembly              | Arch. | Encoding            |
-| --------------- | ---------------- | --------------------- | ----- | ------------------- |
-| `REX.W + 03 /r` | `ADD r64, r/m64` |
+#### Opcode `REX.W + 81 /0 id` Instruction `ADD r/m64, imm32` (r64 ← imm32, 64-bit)
+
+| Assembly              | Encoding               |
+| --------------------- | ---------------------- |
+| `ADD RCX, 0x01020304` | `48 81 c1 04 03 02 01` |
+| `ADD RDX, 0x01020304` | `48 81 c2 04 03 02 01` |
+| `ADD RBX, 0x01020304` | `48 81 c3 04 03 02 01` |
+| `ADD RSP, 0x01020304` | `48 81 c4 04 03 02 01` |
+| `ADD RBP, 0x01020304` | `48 81 c5 04 03 02 01` |
+| `ADD RSI, 0x01020304` | `48 81 c6 04 03 02 01` |
+| `ADD RDI, 0x01020304` | `48 81 c7 04 03 02 01` |
+
+#### Opcode `83 /0 ib` Instruction `ADD r/m16, imm8` (r16 ← imm8)
+
+| Assembly       | Encoding      |
+| -------------- | ------------- |
+| `ADD AX, 0x12` | `66 83 c0 12` |
+| `ADD CX, 0x12` | `66 83 c1 12` |
+| `ADD DX, 0x12` | `66 83 c2 12` |
+| `ADD BX, 0x12` | `66 83 c3 12` |
+| `ADD SP, 0x12` | `66 83 c4 12` |
+| `ADD BP, 0x12` | `66 83 c5 12` |
+| `ADD SI, 0x12` | `66 83 c6 12` |
+| `ADD DI, 0x12` | `66 83 c7 12` |
+
+#### Opcode `83 /0 ib` Instruction `ADD r/m32, imm8` (r32 ← imm8)
+
+| Assembly        | Encoding   |
+| --------------- | ---------- |
+| `ADD EAX, 0x12` | `83 c0 12` |
+| `ADD ECX, 0x12` | `83 c1 12` |
+| `ADD EDX, 0x12` | `83 c2 12` |
+| `ADD EBX, 0x12` | `83 c3 12` |
+| `ADD ESP, 0x12` | `83 c4 12` |
+| `ADD EBP, 0x12` | `83 c5 12` |
+| `ADD ESI, 0x12` | `83 c6 12` |
+| `ADD EDI, 0x12` | `83 c7 12` |
+
+#### Opcode `REX.W + 83 /0 ib` Instruction `ADD r/m64, imm8` (r64 ← imm8, 64-bit)
+
+| Assembly        | Encoding      |
+| --------------- | ------------- |
+| `ADD RAX, 0x12` | `48 83 c0 12` |
+| `ADD RCX, 0x12` | `48 83 c1 12` |
+| `ADD RDX, 0x12` | `48 83 c2 12` |
+| `ADD RBX, 0x12` | `48 83 c3 12` |
+| `ADD RSP, 0x12` | `48 83 c4 12` |
+| `ADD RBP, 0x12` | `48 83 c5 12` |
+| `ADD RSI, 0x12` | `48 83 c6 12` |
+| `ADD RDI, 0x12` | `48 83 c7 12` |
+
+#### Opcode `00 /r` Instruction `ADD r/m8, r8` (r8 ← r8)
+
+| Assembly     | Encoding |
+| ------------ | -------- |
+| `ADD AL, AL` | `00 c0`  |
+| `ADD AL, CL` | `00 c8`  |
+| `ADD AL, DL` | `00 d0`  |
+| `ADD AL, BL` | `00 d8`  |
+| `ADD AL, AH` | `00 e0`  |
+| `ADD AL, CH` | `00 e8`  |
+| `ADD AL, DH` | `00 f0`  |
+| `ADD AL, BH` | `00 f8`  |
+
+#### Opcode `REX + 00 /r` Instruction `ADD r/m8, r8` (r8 ← r8, 64-bit)
+
+| Assembly        | Encoding   |
+| --------------- | ---------- |
+| `ADD R8B, AL`   | `41 00 c0` |
+| `ADD R8B, CL`   | `41 00 c8` |
+| `ADD R8B, DL`   | `41 00 d0` |
+| `ADD R8B, BL`   | `41 00 d8` |
+| `ADD R8B, SPL`  | `41 00 e0` |
+| `ADD R8B, BPL`  | `41 00 e8` |
+| `ADD R8B, SIL`  | `41 00 f0` |
+| `ADD R8B, DIL`  | `41 00 f8` |
+| `ADD R8B, R8B`  | `45 00 c0` |
+| `ADD R8B, R9B`  | `45 00 c8` |
+| `ADD R8B, R10B` | `45 00 d0` |
+| `ADD R8B, R11B` | `45 00 d8` |
+| `ADD R8B, R12B` | `45 00 e0` |
+| `ADD R8B, R13B` | `45 00 e8` |
+| `ADD R8B, R14B` | `45 00 f0` |
+| `ADD R8B, R15B` | `45 00 f8` |
+
+#### Opcode `01 /r` Instruction `ADD r/m16, r16` (r16 ← r16)
+
+| Assembly     | Encoding   |
+| ------------ | ---------- |
+| `ADD AX, AX` | `66 01 c0` |
+
+#### Opcode `01 /r` Instruction `ADD r/m32, r32` (r32 ← r32)
+
+| Assembly       | Encoding |
+| -------------- | -------- |
+| `ADD EAX, EAX` | `01 c0`  |
+
+#### Opcode `REX.W + 01 /r` Instruction `ADD r/m64, r64` (r64 ← r64, 64-bit)
+
+| Assembly       | Encoding   |
+| -------------- | ---------- |
+| `ADD RAX, RAX` | `48 01 c0` |
+
+#### Opcode `02 /r` Instruction `ADD r8, r/m8` (r8 ← [r64], 64-bit)
+
+| Assembly        | Encoding |
+| --------------- | -------- |
+| `ADD AL, [RAX]` | `02 00`  |
+
+#### Opcode `REX + 02 /r` Instruction `ADD r8, r/m8` (r8 ← [r64], 64-bit)
+
+| Assembly         | Encoding   |
+| ---------------- | ---------- |
+| `ADD R8B, [RAX]` | `44 02 00` |
+
+#### Opcode `03 /r` Instruction `ADD r16, r/m16` (r16 ← [r64], 64-bit)
+
+| Assembly        | Encoding   |
+| --------------- | ---------- |
+| `ADD AX, [RAX]` | `66 03 00` |
+
+#### Opcode `03 /r` Instruction `ADD r32, r/m32` (r32 ← [r64], 64-bit)
+
+| Assembly         | Encoding |
+| ---------------- | -------- |
+| `ADD EAX, [RAX]` | `03 00`  |
+
+#### Opcode `REX.W + 03 /r` Instruction `ADD r64, r/m64` (r64 ← [r64], 64-bit)
+
+| Assembly         | Encoding   |
+| ---------------- | ---------- |
+| `ADD RAX, [RAX]` | `48 03 00` |
 
 0:  67 80 00 12             add    BYTE PTR [eax],0x12
 4:  67 80 40 01 12          add    BYTE PTR [eax+0x1],0x12
