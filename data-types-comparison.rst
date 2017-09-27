@@ -5,8 +5,8 @@ Data Types Comparison
 +-------------------+------------------+-------------+-------------+----------------+-------------+
 |                   | C                | Java        | C#          | Go             | Swift       |
 +===================+==================+=============+=============+================+=============+
-| Boolean           | ``bool``         | ``boolean`` | ``bool``    | ``bool``       | ``Bool``    |
-|                   |                  |             |             |                |             |
+| Boolean           | ``_Bool``        | ``boolean`` | ``bool``    | ``bool``       | ``Bool``    |
+|                   | ``bool``         |             |             |                |             |
 |                   |                  |             | ``Boolean`` | ``Bool``       |             |
 +-------------------+------------------+-------------+-------------+----------------+-------------+
 | Signed            | ``int8_t``       | ``byte``    | ``sbyte``   | ``int8``       | ``Int8``    |
@@ -83,11 +83,28 @@ Data Types Comparison
 
 - C:
 
+  - The ``bool`` type is a ``typedef`` for ``_Bool`` from ``<stdbool.h>``.
+
   - The ``intN_t`` and ``uintN_t`` types are ``typedef``\s from ``<stdint.h>``.
+
+  - The sizes of ``char``, ``short``, ``int``, ``long``, and ``long long``
+    (not appeared in the table above) are implementation-defined.
+
+  - The sizes of ``float``, ``double``, and ``long double``
+    (not appeared in the table above) are implementation-defined.
+
+  - The types ``float_t`` and ``double_t``
+    (not appeared in the table above) are ``typedef``\s from ``<math.h>``.
+    Their sizes are implementation-defined.
+
+  - The sizes of ``float _Complex``, ``double _Complex``, and ``long double _Complex``
+    (not appeared in the table above) are implementation-defined.
 
   - Reference: http://www.cplusplus.com/reference/cstdint/
 
   - Reference: http://en.cppreference.com/w/cpp/types/integer
+
+  - Reference: http://www.open-std.org/jtc1/sc22/wg14/www/docs/n1256.pdf
 
 - Java:
 
