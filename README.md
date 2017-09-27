@@ -18,6 +18,8 @@
 - Assembly
   - [x86_64 Instructions](x86_64_instructions.md)
   - [x86_64 Instructions (ADD)](x86_64_instructions_add.md)
+- Comparison
+  - [Data Types Comparison](data-type-comparison.rst)
 
 ### AWS
 - [Amazon DynamoDB Cheatsheet](dynamodb.md)
