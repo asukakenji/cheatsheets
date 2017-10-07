@@ -33,6 +33,7 @@
     - [Moving files from a Git repository to a new one](git-move-repository.md)
     - [Handling tags with Git commands](git-tag.md)
   - Docker
+    - [Docker Basics](docker-basics.md)
     - [Linux in Docker](docker-linux.md)
   - [Build Tools, Build Systems, Package Managers, Dependency Managers](build-tools.md)
   - MacPorts
