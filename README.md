@@ -29,18 +29,18 @@
 
 ### DevOps
   - Git
-    - [Handling modes (permissions) with Git commands](git-mode-permission.md)
-    - [Moving files from a Git repository to a new one](git-move-repository.md)
-    - [Handling tags with Git commands](git-tag.md)
+    - [Handling modes (permissions) with Git commands](devops/git-mode-permission.md)
+    - [Moving files from a Git repository to a new one](devops/git-move-repository.md)
+    - [Handling tags with Git commands](devops/git-tag.md)
   - Docker
-    - [Docker Basics](docker-basics.md)
-    - [Linux in Docker](docker-linux.md)
-  - [Build Tools, Build Systems, Package Managers, Dependency Managers](build-tools.md)
+    - [Docker Basics](devops/docker-basics.md)
+    - [Linux in Docker](devops/docker-linux.md)
+  - [Build Tools, Build Systems, Package Managers, Dependency Managers](devops/build-tools.md)
   - MacPorts
-    - [MacPorts Packages](macports.md)
-    - [macports.sh](macports.sh)
-    - [macports.developer_essentials.txt](macports.developer_essentials.txt)
-    - [macports.developer_extras.txt](macports.developer_extras.txt)
+    - [MacPorts Packages](devops/macports.md)
+    - [macports.sh](devops/macports.sh)
+    - [macports.developer_essentials.txt](devops/macports.developer_essentials.txt)
+    - [macports.developer_extras.txt](devops/macports.developer_extras.txt)
 
 ### Mathematics
 - [Points on a Unit Sphere](points-on-a-unit-sphere.md)
