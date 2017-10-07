@@ -27,18 +27,19 @@
 ### Servers
 - [beanstalkd Commands](beanstalkd.md)
 
-### Package Managers
-- [Build Tools, Build Systems, Package Managers, Dependency Managers](build-tools.md)
-- MacPorts
-  - [MacPorts Packages](macports.md)
-  - [macports.sh](macports.sh)
-  - [macports.developer_essentials.txt](macports.developer_essentials.txt)
-  - [macports.developer_extras.txt](macports.developer_extras.txt)
-
-### Git
-- [Handling modes (permissions) with Git commands](git-mode-permission.md)
-- [Moving files from a Git repository to a new one](git-move-repository.md)
-- [Handling tags with Git commands](git-tag.md)
+### DevOps
+  - Git
+    - [Handling modes (permissions) with Git commands](git-mode-permission.md)
+    - [Moving files from a Git repository to a new one](git-move-repository.md)
+    - [Handling tags with Git commands](git-tag.md)
+  - Docker
+    - [Linux in Docker](docker-linux.md)
+  - [Build Tools, Build Systems, Package Managers, Dependency Managers](build-tools.md)
+  - MacPorts
+    - [MacPorts Packages](macports.md)
+    - [macports.sh](macports.sh)
+    - [macports.developer_essentials.txt](macports.developer_essentials.txt)
+    - [macports.developer_extras.txt](macports.developer_extras.txt)
 
 ### Mathematics
 - [Points on a Unit Sphere](points-on-a-unit-sphere.md)
