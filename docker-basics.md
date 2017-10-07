@@ -17,17 +17,17 @@ Table of Contents
 
 ### Run a container (the image will be downloaded if not yet so)
 
-Start a container using the image `nginx` with host port `8080` mapped to container port `80`, name it `try_nginx`:
+Start a container using the image `nginx` with host port `8080` mapped to container port `80` and name it `try_nginx`:
 
     docker run --name try_nginx -p 8080:80 nginx
 
-Start a container using the image `ubuntu`, and name it `try_ubuntu` (nothing happens since no command is given):
+Start a container using the image `ubuntu` and name it `try_ubuntu` (nothing happens since no command is given):
 
     docker run --name try_ubuntu ubuntu
 
 ### Run a container in background
 
-Start a container in the background using the image `nginx` with host port `8080` mapped to container port `80`, and name it `try_nginx`:
+Start a container in the background using the image `nginx` with host port `8080` mapped to container port `80` and name it `try_nginx`:
 
     docker run -d --name try_nginx -p 8080:80 nginx
 

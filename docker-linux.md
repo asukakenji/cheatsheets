@@ -2,9 +2,9 @@
 
 ## Start an interactive shell using the `ubuntu` image
 
-`<containerName>` is the name of the container:
+Start a container using the image `ubuntu` and name it `try_ubuntu`, start an interactive shell in it:
 
-    docker run -it --name <containerName> ubuntu /bin/bash
+    docker run -it --name try_ubuntu ubuntu /bin/bash
 
 `-i`, `--interactive`: Keep STDIN open even if not attached
 `-t`, `--tty`: Allocate a pseudo-TTY
