@@ -4,6 +4,7 @@
 - Go (Golang)
   - [Go Keywords](keywords-go.md)
   - [Go (Golang) Naming Conventions Cheatsheet](go-conventions.md)
+  - [Go (Golang) Testing, Benchmark, and Example Facilities](go-testing-benchmark-example.md)
   - [Go (Golang) Channels](go-channels.md)
   - [Go (Golang) Standard Library Interfaces (Selected)](https://gist.github.com/asukakenji/ac8a05644a2e98f1d5ea8c299541fce9)
   - [Go (Golang) GOOS and GOARCH](https://gist.github.com/asukakenji/f15ba7e588ac42795f421b48b8aede63)
