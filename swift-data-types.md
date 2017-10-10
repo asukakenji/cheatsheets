@@ -1,26 +1,26 @@
 # Swift 4 Data Types
 
-- Type
-  - Named Type
-    - Class
-    - Structure
-    - Enumeration
-    - Protocol
-  - Compound Type
-    - Function Type
-    - Tuple Type
+- Types
+  - Named Types
+    - Classes
+    - Structures
+    - Enumerations
+    - Protocols
+  - Compound Types
+    - Function Types
+    - Tuple Types
 
 ## Structures
 
 - Examples:
-  - Structure:
+  - Structures:
     - [`Bool`](https://developer.apple.com/documentation/swift/bool)
     - [`Int`](https://developer.apple.com/documentation/swift/int)
     - [`Double`](https://developer.apple.com/documentation/swift/double)
     - [`Float`](https://developer.apple.com/documentation/swift/float)
     - [`String`](https://developer.apple.com/documentation/swift/string)
     - [`Character`](https://developer.apple.com/documentation/swift/character)
-  - Generic Structure:
+  - Generic Structures:
     - [`Range`](https://developer.apple.com/documentation/swift/range)
     - [`ClosedRange`](https://developer.apple.com/documentation/swift/closedrange)
     - [`Array`](https://developer.apple.com/documentation/swift/array)
@@ -30,15 +30,15 @@
 ## Enumerations
 
 - Examples:
-  - Enumeration:
+  - Enumerations:
     - [`Unicode`](https://developer.apple.com/documentation/swift/unicode)
-  - Generic Enumeration:
+  - Generic Enumerations:
     - [`Optional`](https://developer.apple.com/documentation/swift/optional)
 
 ## Protocols
 
 - Examples:
-  - Protocol:
+  - Protocols:
     - [`Error`](https://developer.apple.com/documentation/swift/error)
     - [`OptionSet`](https://developer.apple.com/documentation/swift/optionset)
 
