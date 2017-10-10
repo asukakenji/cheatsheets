@@ -18,6 +18,8 @@
   - [C Keywords](keywords-c.md)
 - C++
   - [C++ Keywords](keywords-cpp.md)
+- C#
+  - [C# Data Types](csharp-data-types.md)
 - HTML
   - [HTML5 Tags](keywords-html5.md)
 - Assembly
