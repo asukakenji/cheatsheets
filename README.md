@@ -14,6 +14,7 @@
   - [Swift 4 Data Types](dev/swift-data-types.md)
 - Ruby
   - [Ruby Cheatsheet](dev/ruby.md)
+  - [Ruby 2.4 Data Types](dev/ruby-data-types.md)
 - Perl
   - [Perl 5 Data Types](dev/perl-data-types.md)
 - C
@@ -31,19 +32,19 @@
   - [Data Types Comparison](dev/data-types-comparison.rst)
 
 ### DevOps
-  - Git
-    - [Handling modes (permissions) with Git commands](devops/git-mode-permission.md)
-    - [Moving files from a Git repository to a new one](devops/git-move-repository.md)
-    - [Handling tags with Git commands](devops/git-tag.md)
-  - Docker
-    - [Docker Basics](devops/docker-basics.md)
-    - [Linux in Docker](devops/docker-linux.md)
-  - [Build Tools, Build Systems, Package Managers, Dependency Managers](devops/build-tools.md)
-  - MacPorts
-    - [MacPorts Packages](devops/macports.md)
-    - [macports.sh](devops/macports.sh)
-    - [macports.developer_essentials.txt](devops/macports.developer_essentials.txt)
-    - [macports.developer_extras.txt](devops/macports.developer_extras.txt)
+- Git
+  - [Handling modes (permissions) with Git commands](devops/git-mode-permission.md)
+  - [Moving files from a Git repository to a new one](devops/git-move-repository.md)
+  - [Handling tags with Git commands](devops/git-tag.md)
+- Docker
+  - [Docker Basics](devops/docker-basics.md)
+  - [Linux in Docker](devops/docker-linux.md)
+- [Build Tools, Build Systems, Package Managers, Dependency Managers](devops/build-tools.md)
+- MacPorts
+  - [MacPorts Packages](devops/macports.md)
+  - [macports.sh](devops/macports.sh)
+  - [macports.developer_essentials.txt](devops/macports.developer_essentials.txt)
+  - [macports.developer_extras.txt](devops/macports.developer_extras.txt)
 
 ### AWS
 - [Amazon DynamoDB Cheatsheet](dynamodb.md)
