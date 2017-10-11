@@ -1,4 +1,4 @@
-# Go (Golang) Naming Conventions Cheatsheet
+# Go (Golang) Naming Conventions
 
 ## Variables
 

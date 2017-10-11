@@ -1,9 +1,9 @@
 # A Collection of Cheatsheets
 
-### Programming
+### Development
 - Go (Golang)
   - [Go Keywords](dev/keywords-go.md)
-  - [Go (Golang) Naming Conventions Cheatsheet](dev/go-conventions.md)
+  - [Go (Golang) Naming Conventions](dev/go-conventions.md)
   - [Go (Golang) Testing, Benchmark, and Example Facilities](dev/go-testing-benchmark-example.md)
   - [Go (Golang) Channels](dev/go-channels.md)
   - [Go (Golang) Standard Library Interfaces (Selected)](https://gist.github.com/asukakenji/ac8a05644a2e98f1d5ea8c299541fce9)
@@ -28,12 +28,6 @@
 - Comparison
   - [Data Types Comparison](dev/data-types-comparison.rst)
 
-### AWS
-- [Amazon DynamoDB Cheatsheet](dynamodb.md)
-
-### Servers
-- [beanstalkd Commands](beanstalkd.md)
-
 ### DevOps
   - Git
     - [Handling modes (permissions) with Git commands](devops/git-mode-permission.md)
@@ -48,6 +42,12 @@
     - [macports.sh](devops/macports.sh)
     - [macports.developer_essentials.txt](devops/macports.developer_essentials.txt)
     - [macports.developer_extras.txt](devops/macports.developer_extras.txt)
+
+### AWS
+- [Amazon DynamoDB Cheatsheet](dynamodb.md)
+
+### Servers
+- [beanstalkd Commands](beanstalkd.md)
 
 ### Mathematics
 - [Points on a Unit Sphere](points-on-a-unit-sphere.md)
