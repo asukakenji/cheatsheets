@@ -14,6 +14,8 @@
   - [Swift 4 Data Types](dev/swift-data-types.md)
 - Ruby
   - [Ruby Cheatsheet](dev/ruby.md)
+- Perl
+  - [Perl 5 Data Types](dev/perl-data-types.md)
 - C
   - [C Keywords](dev/keywords-c.md)
 - C++
