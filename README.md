@@ -16,7 +16,7 @@
   - [Ruby Cheatsheet](dev/ruby.md)
   - [Ruby 2.4 Data Types](dev/ruby-data-types.md)
 - Python
-  - [Python 2.7 / 2.6 Data Types](dev/python-data-types.md)
+  - [Python 2.7 / 3.6 Data Types](dev/python-data-types.md)
 - Perl
   - [Perl 5 Data Types](dev/perl-data-types.md)
 - C
