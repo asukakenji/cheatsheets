@@ -1,6 +1,7 @@
 # Ruby 2.4 Data Types
 
 - Types
+  - NilClass
   - Numeric
     - Integer
       - Fixnum (deprecated in Ruby 2.4)
@@ -9,16 +10,17 @@
     - Rational (the `r` suffix was added in Ruby 2.1)
     - Complex (the `i` suffix was added in Ruby 2.1)
   - String
-  - NilClass
+  - Regexp (? not sure)
+  - Symbol
+  - Range
   - Array
   - Hash
-  - Range
-  - Symbol
 
 ## Class Hierarchy
 
 - [BasicObject](https://ruby-doc.org/core/BasicObject.html)
   - [Object](https://ruby-doc.org/core/Object.html)
+    - [NilClass](https://ruby-doc.org/core/NilClass.html)
     - [TrueClass](https://ruby-doc.org/core/TrueClass.html)
     - [FalseClass](https://ruby-doc.org/core/FalseClass.html)
     - [Numeric](https://ruby-doc.org/core/Numeric.html)
@@ -30,11 +32,10 @@
       - [Complex](https://ruby-doc.org/core/Complex.html) (the `i` suffix was added in Ruby 2.1)
     - [String](https://ruby-doc.org/core/String.html)
     - [Regexp](https://ruby-doc.org/core/Regexp.html)
-    - [NilClass](https://ruby-doc.org/core/NilClass.html)
+    - [Symbol](https://ruby-doc.org/core/Symbol.html)
+    - [Range](https://ruby-doc.org/core/Range.html)
     - [Array](https://ruby-doc.org/core/Array.html)
     - [Hash](https://ruby-doc.org/core/Hash.html)
-    - [Range](https://ruby-doc.org/core/Range.html)
-    - [Symbol](https://ruby-doc.org/core/Symbol.html)
 
 Note:
 Since Ruby 2.1.0, Rational literals are available, like these: `0r`, `2r/3`, `2/3r`.
