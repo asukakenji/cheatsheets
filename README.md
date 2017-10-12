@@ -18,6 +18,7 @@
 - Python
   - [Python 2.7 / 3.6 Data Types](dev/python-data-types.md)
 - Perl
+  - [Perl 5 Cheatsheet](dev/perl.md)
   - [Perl 5 Data Types](dev/perl-data-types.md)
 - C
   - [C Keywords](dev/keywords-c.md)
