@@ -60,7 +60,8 @@
 - [Deriving trigonometry formulae](trigonometry.md)
 - [Calculating the exact coordinates of the vertices of a polygram (star polygon)](polygram-star-polygon.md)
 
-### Configurations
+### Miscellaneous
+- [Common Unicode Characters](common-unicode-characters.md)
 - [QNAP NAS: Samba (SMB): Enable Windows ACL Support (Fixed Bug on NAS)](qnap-enable-windows-acl-support.md)
 
 ### Gaming
