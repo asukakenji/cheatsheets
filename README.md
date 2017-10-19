@@ -1,6 +1,8 @@
 # A Collection of Cheatsheets
 
 ### Development
+- Tensorflow
+  - [Tensorflow Cheatsheet](dev/tensorflow.md)
 - Go (Golang)
   - [Go Keywords](dev/keywords-go.md)
   - [Go (Golang) Naming Conventions](dev/go-conventions.md)
