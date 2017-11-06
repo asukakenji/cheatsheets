@@ -34,6 +34,12 @@ git push origin --tags
 git tag
 ```
 
+### Listing all tags with 9 lines of commit messages for each tag:
+
+```
+git tag -n9
+```
+
 ### Listing all tags with timestamp
 
 ```
