@@ -43,6 +43,7 @@
   - [Handling modes (permissions) with Git commands](devops/git-mode-permission.md)
   - [Moving files from a Git repository to a new one](devops/git-move-repository.md)
   - [Handling tags with Git commands](devops/git-tag.md)
+  - [Exporting (and optionally archiving) a Git repository like `svn export`](https://stackoverflow.com/q/160608/142239)
 - Docker
   - [Docker Basics](devops/docker-basics.md)
   - [Linux in Docker](devops/docker-linux.md)
