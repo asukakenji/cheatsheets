@@ -10,6 +10,7 @@
   - [Go (Golang) Channels](dev/go-channels.md)
   - [Go (Golang) Standard Library Interfaces (Selected)](https://gist.github.com/asukakenji/ac8a05644a2e98f1d5ea8c299541fce9)
   - [Go (Golang) GOOS and GOARCH](https://gist.github.com/asukakenji/f15ba7e588ac42795f421b48b8aede63)
+  - Go (Golang) Documentation Tricks: [GoDoc](https://godoc.org/github.com/fluhus/godoc-tricks) [GitHub](https://github.com/fluhus/godoc-tricks)
 - JavaScript
   - [JavaScript (ECMAScript 2015 (ES6)) Data Types](dev/javascript-data-types.md)
 - Swift
