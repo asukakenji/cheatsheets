@@ -2,6 +2,8 @@
 
 ## Fundamentals of Deep Learning: Designing Next-Generation Machine Intelligence Algorithms - 1st Edition
 
+![Fundamentals of Deep Learning: Designing Next-Generation Machine Intelligence Algorithms - 1st Edition](https://images-na.ssl-images-amazon.com/images/I/51eqc4el5WL.jpg)
+
 - Authors:
   - Nikhil Buduma (Author)
   - Nicholas Locascio (Contributor)
@@ -36,6 +38,8 @@
 
 ## Hands-On Machine Learning with Scikit-Learn and TensorFlow: Concepts, Tools, and Techniques to Build Intelligent Systems 1st Edition
 
+![Hands-On Machine Learning with Scikit-Learn and TensorFlow: Concepts, Tools, and Techniques to Build Intelligent Systems 1st Edition](https://images-na.ssl-images-amazon.com/images/I/516KsohG9XL.jpg)
+
 - Authors:
   - Aurélien Géron (Author)
 - Paperback: 576 pages
@@ -55,7 +59,7 @@
 
 ### Table of Contents
 
-- Part I. The Fundamentals of Machine Learning
+- **Part I. The Fundamentals of Machine Learning**
 1. The Machine Learning Landscape - 3
 2. End-to-End Machine Learning Project - 33
 3. Classification - 81
@@ -64,7 +68,7 @@
 6. Decision Trees - 169
 7. Ensemble Learning and Random Forests - 183
 8. Dimensionality Reduction - 207
-- Part II. Neural Networks and Deep Learning
+- **Part II. Neural Networks and Deep Learning**
 9. Up and Running with TensorFlow - 231
 10. Introduction to Artificial Neural Networks - 255
 11. Training Deep Neural Nets - 277
@@ -77,6 +81,8 @@
 
 
 ## Deep Learning with Keras: Implementing deep learning models and neural networks with the power of Python
+
+![Deep Learning with Keras: Implementing deep learning models and neural networks with the power of Python](https://images-na.ssl-images-amazon.com/images/I/51uKfff6oEL.jpg)
 
 - Authors:
   - Antonio Gulli (Author)
@@ -99,6 +105,8 @@
 
 
 ## Deep Learning with TensorFlow: Explore neural networks with Python
+
+![Deep Learning with TensorFlow: Explore neural networks with Python](https://images-na.ssl-images-amazon.com/images/I/51dfcO758qL.jpg)
 
 - Authors:
   - Giancarlo Zaccone (Author)
@@ -123,6 +131,8 @@
 
 ## TensorFlow Machine Learning Cookbook
 
+![TensorFlow Machine Learning Cookbook](https://images-na.ssl-images-amazon.com/images/I/51Vb8gcDnIL.jpg)
+
 - Authors:
   - Nick McClure (Author)
 - Paperback: 370 pages
@@ -144,6 +154,8 @@
 
 ## Building Machine Learning Projects with TensorFlow
 
+![Building Machine Learning Projects with TensorFlow](https://images-na.ssl-images-amazon.com/images/I/413i1c2pOIL.jpg)
+
 - Authors:
   - Rodolfo Bonnin (Author)
 - Paperback: 282 pages
@@ -164,6 +176,8 @@
 
 
 ## Python Data Science Essentials - Second Edition
+
+![Python Data Science Essentials - Second Edition](https://images-na.ssl-images-amazon.com/images/I/51Tk7oBuHOL.jpg)
 
 - Authors:
   - Alberto Boschetti (Author)
