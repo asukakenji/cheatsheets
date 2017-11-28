@@ -1,5 +1,8 @@
 # A Collection of Cheatsheets
 
+### Books
+- [Books for Machine Learning](machine-learning-books.md)
+
 ### Development
 - Tensorflow
   - [Tensorflow Cheatsheet](dev/tensorflow.md)
