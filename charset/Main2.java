@@ -4,6 +4,7 @@ import static java.lang.Character.MIN_SURROGATE;
 import static java.lang.Character.MAX_SURROGATE;
 
 import java.io.IOException;
+import java.nio.BufferUnderflowException;
 import java.nio.ByteBuffer;
 import java.nio.CharBuffer;
 import java.nio.charset.CharacterCodingException;
@@ -23,12 +24,27 @@ import java.util.Formatter;
 // - Big5, Big5-HKSCS
 public class Main2 {
 
-    private static String byteArrayToHexString(byte[] bytes) {
+    private static final String byteBufferToHexString(final ByteBuffer byteBuffer) {
         final Formatter formatter = new Formatter();
-        for (final byte b : bytes) {
-            formatter.format("%02X", b);
+        try {
+            byteBuffer.rewind();
+            while (true) {
+                formatter.format("%02X", byteBuffer.get());
+            }
+        } catch (final BufferUnderflowException e) {
+        } finally {
+            return formatter.toString();
         }
-        return formatter.toString();
+    }
+
+    private static final void printByteBuffer(final ByteBuffer byteBuffer) throws IOException {
+        try {
+            byteBuffer.rewind();
+            while (true) {
+                System.out.write(byteBuffer.get());
+            }
+        } catch (final BufferUnderflowException e) {
+        }
     }
 
     public static void main(String[] args) {
@@ -50,9 +66,8 @@ public class Main2 {
                 final CharBuffer charBuffer = CharBuffer.wrap(codePointChars);
                 try {
                     final ByteBuffer byteBuffer = charsetEncoder.reset().encode(charBuffer.rewind());
-                    byte[] bytes = byteBuffer.array();
-                    System.out.printf("U+%04x: 0x%s: ", codePoint, byteArrayToHexString(bytes));
-                    System.out.write(bytes);
+                    System.out.printf("U+%04x: 0x%s: ", codePoint, byteBufferToHexString(byteBuffer));
+                    printByteBuffer(byteBuffer);
                     System.out.write('\n');
                 } catch (final CharacterCodingException e) {
                 } catch (final IOException e) {
@@ -74,10 +89,8 @@ public class Main2 {
                 try {
                     final ByteBuffer inByteBuffer = inCharsetEncoder.reset().encode(charBuffer.rewind());
                     final ByteBuffer outByteBuffer = outCharsetEncoder.reset().encode(charBuffer.rewind());
-                    byte[] inBytes = inByteBuffer.array();
-                    byte[] outBytes = outByteBuffer.array();
-                    System.out.printf("U+%04x: 0x%s: 0x%s:", codePoint, byteArrayToHexString(inBytes), byteArrayToHexString(outBytes));
-                    System.out.write(outBytes);
+                    System.out.printf("U+%04x: 0x%s: 0x%s:", codePoint, byteBufferToHexString(inByteBuffer), byteBufferToHexString(outByteBuffer));
+                    printByteBuffer(outByteBuffer);
                     System.out.write('\n');
                 } catch (final CharacterCodingException e) {
                 } catch (final IOException e) {
