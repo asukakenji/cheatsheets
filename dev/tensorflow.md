@@ -141,3 +141,6 @@ with tf.Session() as sess:
     sess.run(model)
     print(sess.run(y, feed_dict={x: [[1, 2], [3, 4], [5, 6], [7, 8]]}))
 ```
+
+References:
+- https://www.tensorflow.org/api_docs/python/tf/placeholder
