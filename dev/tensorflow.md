@@ -120,7 +120,9 @@ with tf.Session() as sess:
 
 Note that `constant` starts with a small letter,
 while `Variable` starts with a capital letter.
-In real applications, variables are trained and tuned by the system.
+
+In real applications, variables are NOT set manually,
+but are trained and tuned by the system.
 
 References:
 - https://www.tensorflow.org/api_docs/python/tf/Variable
@@ -141,6 +143,8 @@ with tf.Session() as sess:
     sess.run(model)
     print(sess.run(y, feed_dict={x: [[1, 2], [3, 4], [5, 6], [7, 8]]}))
 ```
+
+Placeholders are used to hold input data.
 
 References:
 - https://www.tensorflow.org/api_docs/python/tf/placeholder
