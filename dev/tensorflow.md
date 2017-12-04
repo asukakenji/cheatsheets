@@ -124,3 +124,20 @@ In real applications, variables are trained and tuned by the system.
 
 References:
 - https://www.tensorflow.org/api_docs/python/tf/Variable
+
+## Placeholders
+
+```python
+import tensorflow as tf
+
+x = tf.placeholder(tf.float32, shape=(None, 2), name='x')
+w = tf.Variable(initial_value=[[1, 0, 0, 1]], dtype=tf.float32, name='w')
+b = tf.Variable(initial_value=[0, 10], dtype=tf.float32, name='b')
+y = tf.matmul(w, x) + b
+
+model = tf.global_variables_initializer()
+
+with tf.Session() as sess:
+    sess.run(model)
+    print(sess.run(y, feed_dict={x: [[1, 2], [3, 4], [5, 6], [7, 8]]}))
+```
