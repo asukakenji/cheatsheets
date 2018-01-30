@@ -4,6 +4,8 @@
 - [Books for Machine Learning](machine-learning-books.md)
 
 ### Development
+- Hyperledger Fabric
+  - [Hyperledger Composer Model File (cto) Cheatsheet](hyperledger-composer-cto.md)
 - Tensorflow
   - [Tensorflow Cheatsheet](dev/tensorflow.md)
 - Go (Golang)
