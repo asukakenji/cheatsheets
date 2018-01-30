@@ -26,7 +26,7 @@ A property is either a field or a relationship.
 
 > - *Italic*: The resource definition is abstract
 > - **Bold**: The field is the identity of the resource
-> - __Underline__: The field is a relationship (pointer)
+> - \*xxx: The field "xxx" is a relationship (pointer)
 > - xxx?: the field "xxx" is optional
 
 #### Assets (`asset`)
@@ -37,8 +37,8 @@ A property is either a field or a relationship.
     - ParticipantRegistry
     - TransactionRegistry
   - Network: (**networkId**)
-  - HistorianRecord: (**transactionId**, transactionType, __transactionInvoked__, __participantInvoking__?, __identityUsed__?, eventsEmitted?, transactionTimestamp)
-  - Identity: (**identityId**, name, issuer, certificate, state, __participant__)
+  - HistorianRecord: (**transactionId**, transactionType, \*transactionInvoked, \*participantInvoking?, \*identityUsed?, eventsEmitted?, transactionTimestamp)
+  - Identity: (**identityId**, name, issuer, certificate, state, \*participant)
 
 #### Participants (`participant`)
 
@@ -48,7 +48,7 @@ A property is either a field or a relationship.
 #### Transactions (`transaction`)
 
 - *Transaction*: (**transactionId**, timestamp)
-  - *RegistryTransaction*: (__targetRegistry__)
+  - *RegistryTransaction*: (\*targetRegistry)
     - *AssetTransaction*: (resources)
       - AddAsset: ()
       - UpdateAsset: ()
@@ -57,10 +57,10 @@ A property is either a field or a relationship.
       - AddParticipant: ()
       - UpdateParticipant: ()
       - RemoveParticipant: (resourceIds)
-  - IssueIdentity: (_participant_, identityName)
-  - BindIdentity: (_participant_, certificate)
+  - IssueIdentity: (\*participant, identityName)
+  - BindIdentity: (\*participant, certificate)
   - ActivateCurrentIdentity: ()
-  - RevokeIdentity: (_identity_)
+  - RevokeIdentity: (\*identity)
   - StartBusinessNetwork: (businessNetworkArchive, logLevel?, bootstrapTransactions?)
   - ResetBusinessNetwork: ()
   - UpdateBusinessNetwork: (businessNetworkArchive)
