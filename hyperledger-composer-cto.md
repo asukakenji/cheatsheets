@@ -24,10 +24,10 @@ A property is either a field or a relationship.
 
 ### Predefined Resource Definitions
 
-- *Italic*: The resource definition is abstract
-- **Bold**: The field is the identity of the resource
-- _Underline_: The field is a relationship (pointer)
-- xxx?: the field "xxx" is optional
+> - *Italic*: The resource definition is abstract
+> - **Bold**: The field is the identity of the resource
+> - __Underline__: The field is a relationship (pointer)
+> - xxx?: the field "xxx" is optional
 
 #### Assets (`asset`)
 
@@ -37,8 +37,8 @@ A property is either a field or a relationship.
     - ParticipantRegistry
     - TransactionRegistry
   - Network: (**networkId**)
-  - HistorianRecord: (**transactionId**, transactionType, _transactionInvoked_, _participantInvoking_?, _identityUsed_?, eventsEmitted?, transactionTimestamp)
-  - Identity: (**identityId**, name, issuer, certificate, state, _participant_)
+  - HistorianRecord: (**transactionId**, transactionType, __transactionInvoked__, __participantInvoking__?, __identityUsed__?, eventsEmitted?, transactionTimestamp)
+  - Identity: (**identityId**, name, issuer, certificate, state, __participant__)
 
 #### Participants (`participant`)
 
@@ -48,7 +48,7 @@ A property is either a field or a relationship.
 #### Transactions (`transaction`)
 
 - *Transaction*: (**transactionId**, timestamp)
-  - *RegistryTransaction*: (_targetRegistry_)
+  - *RegistryTransaction*: (__targetRegistry__)
     - *AssetTransaction*: (resources)
       - AddAsset: ()
       - UpdateAsset: ()
