@@ -1,4 +1,4 @@
-# Hyperledger Composer Model File (cto) Cheatsheet
+# Hyperledger Composer Modeling Language (cto) Cheatsheet
 
 ## Primitive Data Types
 

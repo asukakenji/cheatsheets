@@ -5,7 +5,7 @@
 
 ### Development
 - Hyperledger Fabric
-  - [Hyperledger Composer Model File (cto) Cheatsheet](hyperledger-composer-cto.md)
+  - [Hyperledger Composer Modeling Language (cto) Cheatsheet](hyperledger-composer-cto.md)
 - Tensorflow
   - [Tensorflow Cheatsheet](dev/tensorflow.md)
 - Go (Golang)
