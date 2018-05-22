@@ -73,7 +73,7 @@ Start the container `try_nginx`:
 
     docker start try_nginx
 
-### Start a running container
+### Stop a running container
 
 Stop the container `ac6aa090558c`:
 
