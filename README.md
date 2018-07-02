@@ -68,9 +68,10 @@
 
 ### Mathematics
 - [Mathematical Constants](math/constants.md)
+- [Deriving trigonometry formulae](math/trigonometry.md)
+- [Permutation and Probability](math/permutation-and-probability.md)
 - [Points on a Unit Sphere](math/points-on-a-unit-sphere.md)
 - [Calculating the exact coordinates of a regular tetrahedron circumscribed by the unit sphere at the origin](math/tetrahedron.md)
-- [Deriving trigonometry formulae](math/trigonometry.md)
 - [Calculating the exact coordinates of the vertices of a polygram (star polygon)](math/polygram-star-polygon.md)
 
 ### Miscellaneous
