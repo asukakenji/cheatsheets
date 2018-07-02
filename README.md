@@ -67,6 +67,7 @@
 - [beanstalkd Commands](beanstalkd.md)
 
 ### Mathematics
+- [Mathematical Constants](constants.md)
 - [Points on a Unit Sphere](points-on-a-unit-sphere.md)
 - [Calculating the exact coordinates of a regular tetrahedron circumscribed by the unit sphere at the origin](tetrahedron.md)
 - [Deriving trigonometry formulae](trigonometry.md)
