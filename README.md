@@ -69,6 +69,7 @@
 ### Mathematics
 - [Mathematical Constants](math/constants.md)
 - [Deriving trigonometry formulae](math/trigonometry.md)
+- [Solving sin(𝑧)=2 (Trigonometric Equations with Complex Numbers)](https://gist.github.com/asukakenji/581323aa053aab70dd21c4fdd5efdd76)
 - [Permutation and Probability](math/permutation-and-probability.md)
 - [Points on a Unit Sphere](math/points-on-a-unit-sphere.md)
 - [Calculating the exact coordinates of a regular tetrahedron circumscribed by the unit sphere at the origin](math/tetrahedron.md)
