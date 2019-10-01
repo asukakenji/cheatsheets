@@ -68,7 +68,8 @@
 
 ### Mathematics
 - [Mathematical Constants](math/constants.md)
-- [Deriving trigonometry formulae](math/trigonometry.md)
+- [Deriving Trigonometry Formulae](https://gist.github.com/asukakenji/f54013283e905414de8af86e1e6ce1ab)
+  - [Deriving trigonometry formulae (Old, Markdown Version)](math/trigonometry.md)
 - [Solving sin(𝑧)=2 (Trigonometric Equations with Complex Numbers)](https://gist.github.com/asukakenji/581323aa053aab70dd21c4fdd5efdd76)
 - [Permutation and Probability](math/permutation-and-probability.md)
 - [Points on a Unit Sphere](math/points-on-a-unit-sphere.md)
