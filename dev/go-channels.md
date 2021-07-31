@@ -1,25 +1,11 @@
 # Go (Golang) Channels
 
-Type of `ch`            | Status        | Operation   | Result                         | References
------------------------ | ------------- | ----------- | ------------------------------ | ----------
-Bidirectional (`chan`)  | not closed    | `ch <- v`   | Sends normally                 |
-Bidirectional (`chan`)  | not closed    | `<-ch`      | Receives normally              |
-Bidirectional (`chan`)  | not closed    | `close(ch)` | Closes the channel             |
-Bidirectional (`chan`)  | closed        | `ch <- v`   | Causes a Run-Time Panic        | [close]
-Bidirectional (`chan`)  | closed        | `<-ch`      | Returns zero value and `false` | [close], [recv]
-Bidirectional (`chan`)  | closed        | `close(ch)` | Causes a Run-Time Panic        | [close]
-Send Only (`chan<-`)    | any           | `<-ch`      | Compilation Error              |
-Send Only (`chan<-`)    | not closed    | `ch <- v`   | Sends normally                 |
-Send Only (`chan<-`)    | not closed    | `close(ch)` | Closes the channel             |
-Send Only (`chan<-`)    | closed        | `ch <- v`   | Causes a Run-Time Panic        | [close]
-Send Only (`chan<-`)    | closed        | `close(ch)` | Causes a Run-Time Panic        | [close], [send]
-Receive Only (`<-chan`) | any           | `ch <- v`   | Compilation Error              |
-Receive Only (`<-chan`) | any           | `close(ch)` | Compilation Error              | [close]
-Receive Only (`<-chan`) | not closed    | `<-ch`      | Receives normally              |
-Receive Only (`<-chan`) | closed        | `<-ch`      | Returns zero value and `false` | [close], [recv]
-Uninitialized (`nil`)   | uninitialized | `ch <- v`   | Blocks forever                 | [send]
-Uninitialized (`nil`)   | uninitialized | `<-ch`      | Blocks forever                 | [recv]
-Uninitialized (`nil`)   | uninitialized | `close(ch)` | Causes a Run-Time Panic        | [close]
+|                                 | Send:<br>`ch <- v`<br>([send]) | Receive:<br>`<-ch`<br>([recv]) | Close:<br>`close(ch)`<br>([close]) |
+| ------------------------------- | ------------------------------ | ------------------------------ | ---------------------------------- |
+| **Bidirectional: <br> `chan`**  | \[Not Closed\]<br>Sends normally<br><br>\[Closed\]<br>Run-time panic | \[Not Closed\]<br>Receives normally<br><br>\[Closed\]<br>Returns zero value and `false` | \[Not Closed\]<br>Closes the channel<br><br>\[Closed\]<br>Run-time panic |
+| **Send-Only:<br>`chan<-`**      | \[Not Closed\]<br>Sends normally<br><br>\[Closed\]<br>Run-time panic | Compilation error | \[Not Closed\]<br>Closes the channel<br><br>\[Closed\]<br>Run-time panic |
+| **Receive-Only:<br>`<-chan`**   | Compilation error | \[Not Closed\]<br>Receives normally<br><br>\[Closed\]<br>Returns zero value and `false` | Compilation error |
+| **Uninitialized:<br>`nil`**     | Blocks forever | Blocks forever | Run-time panic |
 
 ## References:
 
